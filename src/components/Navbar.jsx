@@ -49,18 +49,18 @@ const Navbar = () => {
                 </button>
                 
                 <div className="flex items-center justify-center w-full h-full pb-72">
-                    <div className="text-center mb-60">
-                        <img src="../src/img/logo.png" class="ml-28 mb-24"/>
+                    <div className="text-center mb-20">
+                        <img src="../src/img/logo.png" class="ml-28 mb-12 mt-56"/>
                         <GreenButton text="Reservation" width="250px" height="80px" fontSize="28px" backgroundColor="#8DA260"/>
-                        <a href="#" className="block py-2 px-4 text-5xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-7">Contact</a>
+                        <a href="#" className="mt-20 font-inika font-normal block py-2 px-4 text-5xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-7">Contact</a>
                         <div class="w-full bg-second-green h-0.5"></div>
-                        <a href="#" className="block py-2 px-4 text-5xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-7">Accomodation</a>
+                        <a href="#" className="mt-20 font-inika font-normal block py-2 px-4 text-5xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-7">Accomodation</a>
                         <div class="w-full bg-second-green h-0.5"></div>
-                        <a href="#" className=" block py-2 px-4 text-5xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-7">Boat</a>
+                        <a href="#" className="mt-20 font-inika font-normal block py-2 px-4 text-5xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-7">Boat</a>
                         <div class="w-full bg-second-green h-0.5"></div>
-                        <a href="#" className="block py-2 px-4 text-5xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-7">Menu</a>
+                        <a href="#" className="mt-20 font-inika font-normal block py-2 px-4 text-5xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-7">Menu</a>
                         <div class="w-full bg-second-green h-0.5"></div>
-                        <a href="#" className="block py-2 px-4 text-5xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-7">Teahouse-history</a>
+                        <a href="#" className="mt-20 font-inika font-normal block py-2 px-4 text-5xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-7">Teahouse-history</a>
 
 
                     </div>

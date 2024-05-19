@@ -18,6 +18,7 @@ import Card from './components/Card';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CardSlider from './components/CardSlider';
+import "../src/global.css"
 
 
 
@@ -92,17 +93,17 @@ function App() {
             <img src="../src/img/logo.png" class="p-10"/>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <h1 class="text-3xl text-white">Contact</h1>
+            <h1 class="font-rufina text-2xl text-white">Contact</h1>
             <p class="text-white">+1 86 852 346 000</p>
             <p class="text-white">info@lakebarrine.com</p>
             <span class="text-white">Lake Barrine.</span>
             <span class="text-white">Australia, 90230</span>
           </div>
           <div className="flex flex-col items-center justify-center p-10">
-            <h1 class="text-3xl text-white">Opening hours</h1>
+            <h1 class="font-rufina text-2xl text-white">Opening hours</h1>
             <p class="text-white">Monday to Sunday </p>
             <p class="text-white">9:00 am - 10:00 pm</p>
-            <h1 class="text-3xl text-white pb-10">Stay connected</h1>
+            <h1 class="font-rufina text-2xl text-white pb-10">Stay connected</h1>
             <SocialMediaIcons/>
           </div>
 

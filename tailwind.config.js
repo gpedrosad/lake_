@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        rufina: ['Rufina', 'sans-serif'],
+        inika: ['Inika', 'serif'],
+      },
       colors: {
         'custom-green': '#273812',
         'second-green': '#B8CAA8',

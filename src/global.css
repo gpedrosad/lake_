@@ -1,17 +1,24 @@
 @font-face {
     font-family: 'Rufina';
     font-weight: bold;
-    src: url('../assets/fonts/Rufina-Bold.ttf') format('truetype');
+    src: url('../src/assets/fonts/Rufina-Bold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Rufina';
+    font-weight: normal;
+    src: url('../src/assets/fonts/Inika-Regular.ttf') format('truetype');
   }
   
   @font-face {
     font-family: 'Inika';
     font-weight: bold;
-    src: url('../assets/fonts/Inika-Bold.ttf') format('truetype');
+    src: url('../src/assets/fonts/Inika-Bold.ttf') format('truetype');
   }
   
   @font-face {
     font-family: 'Inika';
     font-weight: normal;
-    src: url('../assets/fonts/Inika-Regular.ttf') format('truetype');
+    src: url('../src/assets/fonts/Inika-Regular.ttf') format('truetype');
   }
+  

@@ -63,7 +63,7 @@ function App() {
           <CustomImage src="../src/img/nalita.png"/>
         </div>
         <div class="flex-1 p-10">
-          <h1 class="mb-4 text-2xl">Lake Barrine Teahouse</h1>
+          <h1 class="font-rufina font-bold mb-4 text-3xl">Lake Barrine Teahouse</h1>
           <span class="mb-4 text-xl">Where the lake meets the rainforest</span>
           <p class="font-inika font-normal mb-4 text-xl">Our story is one of passion and refinement, where each dish is a carefully curated masterpiece. Elegance graces every detail, inviting you into a world where exquisite flavors and sophisticated ambiance harmonize, creating an unforgettable dining experience. Welcome to the epitome of gastronomic delight.</p>
           <TransparentButton class="mb-4" text="About us"/>
@@ -93,17 +93,17 @@ function App() {
             <img src="../src/img/logo.png" class="p-10"/>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <h1 class="font-rufina text-2xl text-white">Contact</h1>
+            <h1 class="font-rufina font-bold text-white text-3xl sm:text-5xl md:text-4xl lg:text-5xl pb-5">Contact</h1>
             <p class="text-white">+1 86 852 346 000</p>
             <p class="text-white">info@lakebarrine.com</p>
             <span class="text-white">Lake Barrine.</span>
             <span class="text-white">Australia, 90230</span>
           </div>
           <div className="flex flex-col items-center justify-center p-10">
-            <h1 class="font-rufina text-2xl text-white">Opening hours</h1>
+          <h1 class="font-rufina font-bold text-white text-3xl sm:text-5xl md:text-4xl lg:text-5xl pb-5">Opening hours</h1>
             <p class="text-white">Monday to Sunday </p>
             <p class="text-white">9:00 am - 10:00 pm</p>
-            <h1 class="font-rufina text-2xl text-white pb-10">Stay connected</h1>
+            <h1 class="font-rufina font-bold text-white text-3xl sm:text-5xl md:text-4xl lg:text-5xl pb-10 pt-10">Stay connected</h1>
             <SocialMediaIcons/>
           </div>
 

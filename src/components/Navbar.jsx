@@ -6,23 +6,24 @@ const Navbar = () => {
 
     return (
         <nav className="bg-transparent">
-            <div className="max-w-6xl mx-auto px-4">
-                <div className="flex justify-between">
-                    <div className="flex space-x-7">
-                        <div>
-                            {/* Logo del sitio, puede necesitar ajustes de color según tu logo */}
-                            <a href="#" className="flex items-center py-4 px-2">
-                                <span className="font-semibold text-gray-800 text-lg">Navbar</span>
-                            </a>
-                        </div>
-                        {/* Links de escritorio */}
-                        <div className="hidden md:flex items-center space-x-1">
-                            <a href="#" className="py-4 px-2 text-gray-800 hover:text-green-500 transition duration-300">About</a>
-                            <a href="#" className="py-4 px-2 text-gray-800 hover:text-green-500 transition duration-300">Menu</a>
-                            <a href="#" className="py-4 px-2 text-gray-800 hover:text-green-500 transition duration-300">Gallery</a>
-                            <a href="#" className="py-4 px-2 text-gray-800 hover:text-green-500 transition duration-300">Reservation</a>
-                        </div>
-                    </div>
+    <div className="max-w-6xl mx-auto px-4">
+        <div className="flex justify-between">
+            <div>
+                <a href="#" className="flex items-center py-4 px-2">
+                    <span className="font-semibold text-gray-800 text-lg">Navbar</span>
+                </a>
+            </div>
+            {/* Links de escritorio */}
+            <div className="flex items-center space-x-1">
+                {/* Las clases 'md:justify-end md:flex' aseguran que la justificación a la derecha solo aplique en pantallas medianas y más grandes */}
+                <div className="hidden md:flex md:justify-end md:space-x-3">
+                    <a href="#" className="text-2xl py-4 px-2 text-gray-800 hover:text-green-500 transition duration-300">About</a>
+                    <a href="#" className="text-2xl py-4 px-2 text-gray-800 hover:text-green-500 transition duration-300">Menu</a>
+                    <a href="#" className="text-2xl py-4 px-2 text-gray-800 hover:text-green-500 transition duration-300">Gallery</a>
+                    <GreenButton text="Reservation" width="250px" height="80px" fontSize="28px" backgroundColor="#8DA260"/>
+
+                </div>
+            </div>
                     {/* Botón de menú móvil */}
                     <div className="md:hidden flex items-center">
                         <button className="outline-none mobile-menu-button" onClick={() => setIsOpen(!isOpen)}>

@@ -65,7 +65,7 @@ function App() {
         <div class="flex-1 p-10">
           <h1 class="mb-4 text-2xl">Lake Barrine Teahouse</h1>
           <span class="mb-4 text-xl">Where the lake meets the rainforest</span>
-          <p class="mb-4 text-xl">Our story is one of passion and refinement, where each dish is a carefully curated masterpiece. Elegance graces every detail, inviting you into a world where exquisite flavors and sophisticated ambiance harmonize, creating an unforgettable dining experience. Welcome to the epitome of gastronomic delight.</p>
+          <p class="font-inika font-normal mb-4 text-xl">Our story is one of passion and refinement, where each dish is a carefully curated masterpiece. Elegance graces every detail, inviting you into a world where exquisite flavors and sophisticated ambiance harmonize, creating an unforgettable dining experience. Welcome to the epitome of gastronomic delight.</p>
           <TransparentButton class="mb-4" text="About us"/>
         </div>
       </div>

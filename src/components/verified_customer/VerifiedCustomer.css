@@ -1,0 +1,22 @@
+.customerContainer{
+    margin: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p_customerContainer{
+    color: green ;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 1060px) {
+    .customerContainer{
+        justify-content: space-around;
+    }
+    .p_customerContainer{
+        padding: 0%;
+        margin: 0%;
+    }
+}

@@ -1,0 +1,16 @@
+.user_comment_container{
+    margin-bottom: 8%;
+    width: 100%;
+    padding: 0% 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Estilos que se aplican cuando el ancho de la pantalla es 600px o menos */
+    .user_comment_container{
+        padding: 0%;
+    }
+}

@@ -19,7 +19,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CardSlider from './components/CardSlider';
 import "../src/global.css"
-
+import RatingSlider from './components/rating_slider/RatingSlider'
 
 
 function App() {
@@ -86,6 +86,8 @@ function App() {
           <FoodImage src = "../src/img/food.png" class=""/>
           <MissImage src ="../src/img/Miss.png" class=""/> 
         </div>
+
+        <RatingSlider/>
 
       </div>
         <div className="bg-custom-green grid grid-cols-1 md:grid-cols-3 gap-4">

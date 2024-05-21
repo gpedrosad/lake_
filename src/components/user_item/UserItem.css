@@ -17,23 +17,22 @@
     width: 20vh;
     height: 10vh;
     display: flex;
-    background-color: #FFF;
     border-radius:50%;
     padding: 2%;
     margin: 0% 10%;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
 }
-.user_image{
+.user_image {
     width: 150px;
     height: 150px;
     border-radius: 100%; 
     object-fit: cover;
     overflow: hidden;
+    border: 8px solid white; /* Añade un borde blanco de 5px */
 }
 .user_name{
-    font-size: 1.5rem;
-    white-space: nowrap;
+
     margin: 0%;
 }
 

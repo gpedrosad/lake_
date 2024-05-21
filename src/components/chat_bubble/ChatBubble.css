@@ -1,3 +1,4 @@
+/* Estilos base */
 .chat_bubble_container {
     padding: 3%;
     background: linear-gradient(145deg, #e6e6e6, #ffffff); /* Soft gradient background */
@@ -33,31 +34,36 @@
     z-index: -1;
 }
 
-
+/* Media queries */
 @media only screen and (max-width: 1060px) {
-    .chat_bubble_container{
-        border-radius: 20%;
+    .chat_bubble_container {
+        border-radius: 20px; /* Matches base style */
         padding: 5%;
         margin: 15% 0%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Matches base style */
+        background: linear-gradient(145deg, #e6e6e6, #ffffff); /* Matches base style */
+        border: 1px solid #ccc; /* Matches base style */
     }
 
-    .triangle_chat_bubble{
+    .triangle_chat_bubble {
         left: 40%;
     }
 }
 
-@media only screen and (max-width: 540px)  {
-    .chat_bubble_container{
+@media only screen and (max-width: 540px) {
+    .chat_bubble_container {
         min-width: 10%;
         max-width: 80%; 
         padding: 4%;
         margin: 20% 10%;
-        border-radius: 10%;
-
+        border-radius: 10%; /* Adjusted for smaller screens */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Matches base style */
+        background: linear-gradient(145deg, #e6e6e6, #ffffff); /* Matches base style */
+        border: 1px solid #ccc; /* Matches base style */
     }
-    .triangle_chat_bubble{
+
+    .triangle_chat_bubble {
         left: 40%;
         bottom: -15%; 
     }
-
 }

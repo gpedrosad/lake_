@@ -102,10 +102,10 @@ function App() {
             <span class="text-white">Australia, 90230</span>
           </div>
           <div className="flex flex-col items-center justify-center p-16">
-          <h1 class="font-rufina font-bold text-white text-3xl sm:text-5xl md:text-4xl lg:text-3xl pb-5 mr-10">Opening hours</h1>
-            <p class="text-white lg: mr-10">Monday to Sunday </p>
-            <p class="text-white lg: mr-10">9:00 am - 10:00 pm</p>
-            <h1 class="font-rufina font-bold text-white text-3xl sm:text-5xl md:text-4xl lg:text-3xl pb-10 pt-10 mr-10">Stay connected</h1>
+          <h1 class="font-rufina font-bold text-white text-3xl sm: text-5xl mr-0 md:text-4xl lg:text-3xl pb-5 mr-10">Opening hours</h1>
+            <p class="sm: mr-0 text-white lg: mr-10">Monday to Sunday </p>
+            <p class="sm: mr-0 text-white lg: mr-10">9:00 am - 10:00 pm</p>
+            <h1 class="font-rufina font-bold text-white text-3xl sm:text-5xl mr-0 md:text-4xl lg:text-3xl pb-10 pt-10 mr-10">Stay connected</h1>
             <SocialMediaIcons/>
           </div>
 

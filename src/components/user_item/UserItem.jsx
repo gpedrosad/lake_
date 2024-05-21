@@ -12,7 +12,7 @@ function UserItem ({src,userName}) {
                         <img src={src} className='user_image'/>
                     </div>
                     <div className='user_name_container'>
-                        <h2 className='user_name'>{userName}</h2>
+                        <h2 className='font-rufina text-bold sm:text-4xl whitespace-nowrap'>{userName}</h2>
                         <VerifiedCustomer />
                     </div>
                 </div>

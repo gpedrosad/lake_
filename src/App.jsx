@@ -72,7 +72,7 @@ function App() {
 
       <div class="w-screen h-32 flex justify-center items-center bg-white">
         <div class="w-full bg-yellow-500 h-0.5"></div>
-        <span class="text-xl font-bold m-10 text-4xl text-custom-green">Menu</span>
+        <span class="font-rufina text-6xl font-bold m-10 text-custom-green">Menu</span>
         <div class="w-full bg-yellow-500 h-0.5"></div>
       </div>
 
@@ -93,17 +93,17 @@ function App() {
             <img src="../src/img/logo.png" class="p-10"/>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <h1 class="font-rufina font-bold text-white text-3xl sm:text-5xl md:text-4xl lg:text-5xl pb-5">Contact</h1>
+            <h1 class="font-rufina font-bold text-white text-3xl sm:text-5xl md:text-4xl lg:text-3xl pb-5">Contact</h1>
             <p class="text-white">+1 86 852 346 000</p>
-            <p class="text-white">info@lakebarrine.com</p>
+            <p class="text-white mb-10">info@lakebarrine.com</p>
             <span class="text-white">Lake Barrine.</span>
             <span class="text-white">Australia, 90230</span>
           </div>
-          <div className="flex flex-col items-center justify-center p-10">
-          <h1 class="font-rufina font-bold text-white text-3xl sm:text-5xl md:text-4xl lg:text-5xl pb-5">Opening hours</h1>
-            <p class="text-white">Monday to Sunday </p>
-            <p class="text-white">9:00 am - 10:00 pm</p>
-            <h1 class="font-rufina font-bold text-white text-3xl sm:text-5xl md:text-4xl lg:text-5xl pb-10 pt-10">Stay connected</h1>
+          <div className="flex flex-col items-center justify-center p-16">
+          <h1 class="font-rufina font-bold text-white text-3xl sm:text-5xl md:text-4xl lg:text-3xl pb-5 mr-10">Opening hours</h1>
+            <p class="text-white lg: mr-10">Monday to Sunday </p>
+            <p class="text-white lg: mr-10">9:00 am - 10:00 pm</p>
+            <h1 class="font-rufina font-bold text-white text-3xl sm:text-5xl md:text-4xl lg:text-3xl pb-10 pt-10 mr-10">Stay connected</h1>
             <SocialMediaIcons/>
           </div>
 

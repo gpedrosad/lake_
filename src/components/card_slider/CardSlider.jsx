@@ -14,7 +14,8 @@ const CardSlider = () => {
     slidesToShow: 3, // Valor predeterminado para desktop
     slidesToScroll: 2,
     autoplay: false,
-    autoplaySpeed: 5000
+    autoplaySpeed: 5000,
+    
   });
 
   useLayoutEffect(() => {

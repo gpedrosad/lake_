@@ -32,8 +32,9 @@
 .logo_title_card_slider{
     width: 10%;
 }
-.slick_slider{
-    width: 50%;
-    display: flex;
-    justify-content: center;
+
+@media only screen and (max-width: 1060px) {
+    .card_slider_tittle{
+        font-size: 2rem;
+    }
 }

@@ -67,3 +67,12 @@
         bottom: -15%; 
     }
 }
+
+@media only screen and (max-width: 540px) {
+    .triangle_chat_bubble {
+        left: 40%;
+        bottom: -12%; 
+    }
+
+
+}

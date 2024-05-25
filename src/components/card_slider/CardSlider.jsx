@@ -1,6 +1,7 @@
 import React from 'react';
+import './CardSlider.css'
 import Slider from 'react-slick';
-import Card from './Card';
+import Card from '../Card';
 import { useLayoutEffect, useState } from 'react';
 
 const CardSlider = () => {
@@ -36,13 +37,18 @@ const CardSlider = () => {
   }, []);
 
   return (
+    <div className='Slider-component'>
+    <h1 className='title_card_slider'>Experience the tranquility</h1>
     <Slider {...settings}>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      
+      <Card title={'Indoor dining'} description={'Como estas que tal sksksksmvmsanba nabsubs'}/>
+      <Card title={'Outdoor dining'} description={'Como estas que tal sksksksmvmsanba nabsubs'}/>
+      <Card title={'Boat cruise'} description={'Como estas que tal sksksksmvmsanba nabsubs'}/>
+      <Card title={'Indoor dining'} description={'Como estas que tal sksksksmvmsanba nabsubs'}/>
+      <Card title={'Boat cruise'} description={'Como estas que tal sksksksmvmsanba nabsubs'}/>
+
     </Slider>
+    </div>
   );
 };
 

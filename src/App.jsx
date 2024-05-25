@@ -17,7 +17,7 @@ import SocialMediaIcons from './components/SocialMediaIcons';
 import Card from './components/Card';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import CardSlider from './components/CardSlider';
+import CardSlider from './components/card_slider/CardSlider';
 import "../src/global.css"
 import RatingSlider from './components/rating_slider/RatingSlider'
 

@@ -5,31 +5,56 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 
-export default function MultiActionAreaCard({title, description}) {
+export default function MultiActionAreaCard({title, description, image}) {
   return (
-    <Card sx={{ maxWidth: '50%', margin: '30% 30%', justifyContent: 'center', display: 'flex', alignItems: 'center', flexDirection: 'column'
-     }}>
+    <Card sx={
+      { width: '50%', 
+        height: '100%',
+        margin: '20% 40%', 
+        justifyContent: 'center', 
+        display: 'flex', 
+        alignItems: 'center', 
+        flexDirection: 'column'
+     }
+     }>
       <CardActionArea sx={{display:'flex', flexDirection:'column'}}>
         <CardMedia
           component="img"
           height="140"
-          image="src\assets\images\pexels-mikhail-nilov-8430908.jpg"
-          alt="green iguana"
+          image={image}
+          alt="card image"
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+        <CardContent sx={
+          {
+            backgroundColor:'#3C5220',
+            color:'white',
+            display:'flex',
+            justifyContent:'center',
+            flexDirection:'column',
+            alignItems:'center',
+            '&:hover': {
+              backgroundColor: '#273812',
+            },
+
+          }
+          
+          }>
+          <Typography gutterBottom variant="h5" component="div" >
             {title}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" color="white" sx={{textAlign:'justify', padding:'5%'}}>
             {description}
           </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary" sx={{border: '#FFF solid'}}>
+
+          <CardActions>
+        <Button size="small" color="primary" sx={{border: 'white solid', color: 'white', whiteSpace:'nowrap', width:'100%', alignItems:'center', fontSize:'0.5rem' }}>
           Discover our location
         </Button>
       </CardActions>
+        </CardContent>
+
+      </CardActionArea>
+
     </Card>
   );
 }

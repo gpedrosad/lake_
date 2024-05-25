@@ -1,4 +1,3 @@
-import React from 'react';
 import './CardSlider.css'
 import Slider from 'react-slick';
 import Card from '../Card';
@@ -38,14 +37,24 @@ const CardSlider = () => {
 
   return (
     <div className='Slider-component'>
-    <h1 className='title_card_slider'>Experience the tranquility</h1>
-    <Slider {...settings}>
+      <div className='component_t_card_slider'>
+        <div className='logo_title_card_slider'>
+          <img src="src/assets/images/logo-title-card-slider.png" alt="" />
+        </div>
+        <div className='card_slider_tittle'>
+          <h1 className='title_card_slider'>Experience the tranquility</h1>
+        </div>
+        <div className='logo_title_card_slider'>
+          <img src="src/assets/images/logo-title-card-slider.png" alt="" />
+        </div>
+      </div>
+    <Slider className='card_slider_component'{...settings}>
       
-      <Card title={'Indoor dining'} description={'Como estas que tal sksksksmvmsanba nabsubs'}/>
-      <Card title={'Outdoor dining'} description={'Como estas que tal sksksksmvmsanba nabsubs'}/>
-      <Card title={'Boat cruise'} description={'Como estas que tal sksksksmvmsanba nabsubs'}/>
-      <Card title={'Indoor dining'} description={'Como estas que tal sksksksmvmsanba nabsubs'}/>
-      <Card title={'Boat cruise'} description={'Como estas que tal sksksksmvmsanba nabsubs'}/>
+      <Card title={'Indoor dining'} description={'Immerse yourself in the warm embrace of our indoor oasis, savor al-fresco moments on our charming outdoor terrace, or unwind at the stylish bar where crafted libations await.'} image={'src/assets/images/card-image-1.png'}/>
+      <Card title={'Outdoor dining'} description={'Immerse yourself in the warm embrace of our indoor oasis, savor al-fresco moments on our charming outdoor terrace, or unwind at the stylish bar where crafted libations await.'}  image={'src/assets/images/card-image2.png'}/>
+      <Card title={'Boat cruise'} description={'Immerse yourself in the warm embrace of our indoor oasis, savor al-fresco moments on our charming outdoor terrace, or unwind at the stylish bar where crafted libations await.'} image={'src/assets/images/card-image3.png'}/>
+      <Card title={'Indoor dining'} description={'Immerse yourself in the warm embrace of our indoor oasis, savor al-fresco moments on our charming outdoor terrace, or unwind at the stylish bar where crafted libations await.'}  image={'src/assets/images/card-image-1.png'}/>
+      <Card title={'Boat cruise'} description={'Immerse yourself in the warm embrace of our indoor oasis, savor al-fresco moments on our charming outdoor terrace, or unwind at the stylish bar where crafted libations await.'}  image={'src/assets/images/card-image3.png'}/>
 
     </Slider>
     </div>

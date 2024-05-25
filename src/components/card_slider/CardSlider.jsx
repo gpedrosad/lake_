@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import Card from '../Card';
 import { useLayoutEffect, useState } from 'react';
 
+
 const CardSlider = () => {
   // Estado para almacenar la configuración
   const [settings, setSettings] = useState({
@@ -15,7 +16,7 @@ const CardSlider = () => {
     slidesToScroll: 2,
     autoplay: false,
     autoplaySpeed: 5000,
-    
+
   });
 
   useLayoutEffect(() => {

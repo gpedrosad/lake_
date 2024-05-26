@@ -6,7 +6,7 @@
     align-items: center;
 }
 .p_customerContainer{
-    color: green ;
+    color: #8DA260 ;
     font-size: 1rem;
     white-space: nowrap;
 }
@@ -18,5 +18,34 @@
     .p_customerContainer{
         padding: 0%;
         margin: 0%;
+        font-size: 1rem;
     }
+}
+
+@media only screen and (max-width: 540px) {
+    .customerContainer{
+        justify-content: space-around;
+    }
+    .p_customerContainer{
+        padding: 0%;
+        margin: 0%;
+        font-size: 0.8rem;
+    }
+    .customerContainer svg{
+        width: 15%;
+    }
+} 
+@media only screen and (max-width: 420px){
+    .p_customerContainer{
+        padding: 0%;
+        margin: 0%;
+        font-size: 0.5rem;
+    }
+    .customerContainer svg{
+        width: 12%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+
 }

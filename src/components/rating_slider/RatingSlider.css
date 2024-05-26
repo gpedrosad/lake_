@@ -8,10 +8,10 @@
     width: 100%;
     height: 100%;
     margin: 10% 0%;
-    background-color: F5F5F5;
-    background-image: url('src/assets/images/pexels-edward-jenner-4252525.jpg'); 
+    background-color: #f8f5f5;
+    /* background-image: url('src/assets/images/pexels-edward-jenner-4252525.jpg'); 
     background-repeat: no-repeat; 
-    background-size: cover;
+    background-size: cover; */
 
 }
 .slider_content {

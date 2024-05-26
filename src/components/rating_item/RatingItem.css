@@ -3,6 +3,7 @@
     display: flex;
     align-items: end;
     flex-direction: column;
+    justify-content: center;
 }
 
 .rating_component p {
@@ -14,4 +15,33 @@
         flex-direction: row;
         margin-bottom: 20%;
     }
+}
+@media only screen and (max-width: 1060px){
+    .rating_component{
+        font-size: 0.8rem;
+    }
+    .rating_component span{
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .rating_component{
+        width: 100%;
+        font-size: 0.7rem;
+    }
+
+    .rating_component span{
+        font-size: 0.8rem;
+    }
+
+}
+@media only screen and (max-width: 420px){
+    .rating_component{
+        font-size: 0.8rem;
+    }
+    .rating_component span{
+        font-size: 0.8rem;
+    }
+
 }

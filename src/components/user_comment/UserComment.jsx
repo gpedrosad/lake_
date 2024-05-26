@@ -7,7 +7,7 @@ function UserCommentComponent(){
     return(
         <div className='user_comment_container'>
             <ChatBubble text='Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos. Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos. Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos.'/>
-            <UserComponent src={'src/assets/images/pexels-olly-733872.jpg'} userName={"Maria Gonzales"}/>
+            <UserComponent src={'src/assets/images/user-mindy-monahan.png'} userName={"Mindy Monahan"}/>
         </div>
     )
 }

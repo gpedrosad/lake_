@@ -87,6 +87,28 @@ function App() {
           <MissImage src ="../src/img/Miss.png" class=""/> 
         </div>
 
+
+        <div class="relative overflow-hidden shadow-lg w-full md:w-[1500px] h-[500px] sm:w-[800px] sm:h-[800px]">
+    <img class="absolute inset-0 w-full h-full object-cover" src="src/assets/images/arboles.png" alt="Árboles"/>
+    <div class="absolute inset-0 bg-custom-green opacity-50"></div>
+    <div class="absolute inset-0 flex items-center justify-center z-10 p-6">
+    <img 
+      src="../src/assets/images/hojablanca.png" 
+      alt="Descripción de la imagen" 
+      style={{ width: '70px', height: '70px' }} 
+      class=""/>
+      <h1 class="text-white text-2xl md:text-4xl font-rufina font-bold text-center p-24">
+        Explore the rainforest in our walk of 5 km around the lake
+      </h1>    
+    </div>
+  </div>
+
+
+        
+        
+
+
+
         <RatingSlider/>
 
       </div>

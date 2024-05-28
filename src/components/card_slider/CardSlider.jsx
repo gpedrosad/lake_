@@ -39,16 +39,25 @@ const CardSlider = () => {
 
   return (
     <div className='Slider-component'>
-      <div className='component_t_card_slider'>
-        <div className='logo_title_card_slider'>
-          <img src="src/assets/images/logo-title-card-slider.png" alt="" />
+      <div className='component_t_card_slider '>
+
+
+        <div className='card_slider_tittle mb-4 flex items-center items-center'>
+        <img 
+      src="src/assets/images/hoja1.png" 
+      alt="Descripción de la imagen" 
+      style={{ width: '70px', height: '70px' }} 
+      class="ml-6"
+    />
+<h1 className='title_card_slider font-rufina font-bold text-custom-green sm:text-2xl md:text-5xl md:ml-10 md:mr-10 ml-0 mr-0'>Experience the tranquility</h1>
         </div>
-        <div className='card_slider_tittle'>
-          <h1 className='title_card_slider'>Experience the tranquility</h1>
-        </div>
-        <div className='logo_title_card_slider'>
-          <img src="src/assets/images/logo-title-card-slider.png" alt="" />
-        </div>
+        <img 
+      src="src/assets/images/hoja2.png" 
+      alt="Descripción de la imagen" 
+      style={{ width: '70px', height: '70px' }} 
+      class="ml-4"
+    />
+
       </div>
     <Slider className='card_slider_component'{...settings}>
       

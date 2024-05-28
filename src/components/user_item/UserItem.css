@@ -126,3 +126,33 @@
 
 
     }
+
+    @media only screen and (min-width: 421px ) and (max-width: 500px){
+        .user_image_container{
+            width: 12vh;
+            height: 11vh;
+        }
+    }
+
+
+    @media only screen and (min-width: 721px ) and (max-width: 1050px)
+    {
+        .user_name_container h2{
+            font-size: 1.5rem;
+
+        }
+        .user_image_container{
+
+            width: 14vh;
+            height: 14vh;
+            margin-right: 5%;
+        }
+
+        #div_username_userimage{
+            justify-content: center;
+        }
+        .user_info{
+            margin-top: 0%;
+            padding-top: 0%;
+        }
+    }

@@ -42,15 +42,17 @@ const CardSlider = () => {
       <div className='component_t_card_slider '>
 
 
-        <div className='card_slider_tittle mb-4 flex items-center items-center'>
+        <div className='flex items-center items-center mt-5 mb-5'>
         <img 
       src="src/assets/images/hoja1.png" 
       alt="Descripción de la imagen" 
       style={{ width: '70px', height: '70px' }} 
       class="ml-6"
     />
-<h1 className='title_card_slider font-rufina font-bold text-custom-green sm:text-2xl md:text-5xl md:ml-10 md:mr-10 ml-0 mr-0'>Experience the tranquility</h1>
-        </div>
+    <h1 className='font-rufina font-bold text-custom-green sm:text-3xl md:text-4xl lg:text-5xl'>
+      Experience the tranquility
+      </h1>        
+</div>
         <img 
       src="src/assets/images/hoja2.png" 
       alt="Descripción de la imagen" 

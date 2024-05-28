@@ -37,27 +37,6 @@ function App() {
 
 
 
-      <div class="flex flex-col md:flex-row w-full">
-        <div class="w-full md:order-first">
-          <div class="flex-1">
-            <DevonshireSpecial />
-            <TransparentButton
-          text="Click Me"
-          onClick={() => setButtonClicked(true)}
-          class=""
-        />
-          </div>
-        </div>
-        <div class="w-full md:order-last md:flex-col">
-          <div class="flex-1">
-            <Breakfast color="orange" />
-          </div>
-          <div class="flex-1">
-            <Breakfast color="red" />
-          </div>
-        </div>
-      </div>
-
       <div class="bg-[#B8CAA8] flex flex-col md:flex-row">
         <div class="flex-1 p-4">
           <CustomImage src="../src/img/nalita.png"/>
@@ -66,7 +45,7 @@ function App() {
           <h1 class="font-rufina font-bold mb-4 text-3xl">Lake Barrine Teahouse</h1>
           <span class="mb-4 text-xl">Where the lake meets the rainforest</span>
           <p class="font-inika font-normal mb-4 text-xl">Our story is one of passion and refinement, where each dish is a carefully curated masterpiece. Elegance graces every detail, inviting you into a world where exquisite flavors and sophisticated ambiance harmonize, creating an unforgettable dining experience. Welcome to the epitome of gastronomic delight.</p>
-          <TransparentButton class="mb-4" text="About us"/>
+          <TransparentButton class="" text="About us"/>
         </div>
       </div>
 
@@ -80,8 +59,7 @@ function App() {
 
 
         
-        <GreenButton class="m-5" text="Inquire here"/>
-        <YellowButton text="Inquire here"/>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 m-12 space-y-4 place-items-center">
           <ImageText class=""/> 
           <TableImage src = "../src/img/table.png" class=""/>
@@ -93,15 +71,21 @@ function App() {
         <div class="relative overflow-hidden shadow-lg w-full md:w-[1500px] h-[500px] sm:w-[800px] sm:h-[800px]">
     <img class="absolute inset-0 w-full h-full object-cover" src="src/assets/images/arboles.png" alt="Árboles"/>
     <div class="absolute inset-0 bg-custom-green opacity-50"></div>
-    <div class="absolute inset-0 flex items-center justify-center z-10 p-6">
+    <div class="absolute inset-0 grid place-items-center z-10 p-6 md:flex md:items-center md:justify-center">
     <img 
       src="../src/assets/images/hojablanca.png" 
       alt="Descripción de la imagen" 
       style={{ width: '70px', height: '70px' }} 
       class=""/>
-      <h1 class="text-white text-2xl md:text-4xl font-rufina font-bold text-center p-24">
+      <h1 class="text-white text-2xl md:text-4xl font-rufina font-bold text-center">
         Explore the rainforest in our walk of 5 km around the lake
-      </h1>    
+      </h1>
+      <img 
+      src="../src/assets/images/hojablanca2.png" 
+      alt="Descripción de la imagen" 
+      style={{ width: '70px', height: '70px' }} 
+      class=""/>
+      <YellowButton text="Texto"/>
     </div>
   </div>
 
@@ -119,17 +103,17 @@ function App() {
             <img src="../src/img/logo.png" class="p-10"/>
           </div>
           <div className="flex flex-col items-center justify-center">
-            <h1 class="font-rufina font-bold text-white text-3xl sm:text-5xl md:text-4xl lg:text-3xl pb-5">Contact</h1>
+            <h1 class="font-rufina font-bold text-white text-3xl sm: text-3xl md:text-4xl lg:text-3xl pb-5">Contact</h1>
             <p class="text-white">+1 86 852 346 000</p>
             <p class="text-white mb-10">info@lakebarrine.com</p>
             <span class="text-white">Lake Barrine.</span>
             <span class="text-white">Australia, 90230</span>
           </div>
           <div className="flex flex-col items-center justify-center p-16">
-          <h1 class="font-rufina font-bold text-white text-3xl sm: text-5xl mr-0 md:text-4xl lg:text-3xl pb-5 mr-10">Opening hours</h1>
-            <p class="sm: mr-0 text-white lg: mr-10">Monday to Sunday </p>
-            <p class="sm: mr-0 text-white lg: mr-10">9:00 am - 10:00 pm</p>
-            <h1 class="font-rufina font-bold text-white text-3xl sm:text-5xl mr-0 md:text-4xl lg:text-3xl pb-10 pt-10 mr-10">Stay connected</h1>
+          <h1 class="font-rufina font-bold text-white text-3xl md:text-3xl lg:mr-10 text-3xl pb-5">Opening hours</h1>
+            <p class="sm:mr-0 text-white lg:mr-10">Monday to Sunday</p>
+            <p class="sm:mr-0 text-white lg:mr-10">9:00 am - 10:00 pm</p>
+            <h1 class="font-rufina font-bold text-white text-3xl sm:text-3xl md:text-3xl pb-5 pt-10">Stay connected</h1>
             <SocialMediaIcons/>
           </div>
 
@@ -139,6 +123,7 @@ function App() {
           <div class="w-full bg-yellow-500 h-0.5"></div>
           <p class="m-6 text-white pt-10">© 2024. All Rights Reserved</p>
         </div>
+
     </>
   );
 }

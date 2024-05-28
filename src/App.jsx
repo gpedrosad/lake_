@@ -20,7 +20,7 @@ import "slick-carousel/slick/slick-theme.css";
 import CardSlider from './components/card_slider/CardSlider';
 import "../src/global.css"
 import RatingSlider from './components/rating_slider/RatingSlider'
-
+import MenuComponent from './components/menu_components/MenuComponents';
 
 function App() {
   const [buttonClicked, setButtonClicked] = useState(false); // Define el estado para manejar el clic
@@ -75,6 +75,8 @@ function App() {
         <span class="font-rufina text-6xl font-bold m-10 text-custom-green">Menu</span>
         <div class="w-full bg-yellow-500 h-0.5"></div>
       </div>
+
+      <MenuComponent/>
 
 
         

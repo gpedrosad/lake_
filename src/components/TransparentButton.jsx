@@ -14,9 +14,11 @@ const TransparentButton = ({ text, onClick }) => {
     };
   
     return (
-      <button style={buttonStyle} onClick={onClick}>
-        {text}
-      </button>
+      <>
+        <button style={buttonStyle} onClick={onClick}>
+          {text}
+        </button>
+      </>
     );
   };
   

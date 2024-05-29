@@ -38,15 +38,19 @@ function App() {
 
 
 
-      <div class="bg-[#B8CAA8] flex flex-col md:flex-row">
-        <div class="flex-1 p-4">
+      <div class="relative w-full bg-[#B8CAA8] flex flex-col md:flex-row">
+        <img src="../src/assets/images/hojaizq.png" alt="Descripción de la imagen" class="absolute top-0 left-0 w-20 h-20"/>
+
+        <div class="flex-1 p-16">
+          <h1 class="font-rufina font-bold mt-4 text-3xl">Lake Barrine Teahouse</h1>
           <CustomImage src="../src/img/nalita.png"/>
         </div>
         <div class="flex-1 p-10">
-          <h1 class="font-rufina font-bold mb-4 text-3xl">Lake Barrine Teahouse</h1>
-          <span class="mb-4 text-xl">Where the lake meets the rainforest</span>
+          <span class="text-xl">Where the lake meets the rainforest</span>
           <p class="font-inika font-normal mb-4 text-xl">Our story is one of passion and refinement, where each dish is a carefully curated masterpiece. Elegance graces every detail, inviting you into a world where exquisite flavors and sophisticated ambiance harmonize, creating an unforgettable dining experience. Welcome to the epitome of gastronomic delight.</p>
           <TransparentButton class="" text="About us"/>
+          <img src="../src/assets/images/hojader.png" alt="Descripción de la imagen" class="absolute bottom-0 right-0 w-20 h-20"/> 
+
         </div>
       </div>
 

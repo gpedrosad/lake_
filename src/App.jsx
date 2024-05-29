@@ -21,6 +21,7 @@ import CardSlider from './components/card_slider/CardSlider';
 import "../src/global.css"
 import RatingSlider from './components/rating_slider/RatingSlider'
 import MenuComponent from './components/menu_components/MenuComponents';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 function App() {
   const [buttonClicked, setButtonClicked] = useState(false); // Define el estado para manejar el clic

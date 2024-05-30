@@ -80,15 +80,15 @@ function App() {
     <img 
       src="../src/assets/images/hojablanca.png" 
       alt="Descripción de la imagen" 
-      style={{ width: '70px', height: '70px' }} 
+      style={{ width: '100px', height: '100px' }} 
       class=""/>
-      <h1 class="text-white text-2xl md:text-4xl font-rufina font-bold text-center">
+      <h1 class="text-white md:text-4xl sm:text-4xl font-rufina font-bold text-center">
         Explore the rainforest in our walk of 5 km around the lake
       </h1>
       <img 
       src="../src/assets/images/hojablanca2.png" 
       alt="Descripción de la imagen" 
-      style={{ width: '70px', height: '70px' }} 
+      style={{ width: '100px', height: '100px' }} 
       class=""/>
       <YellowButton text="Texto"/>
     </div>
@@ -115,10 +115,10 @@ function App() {
             <span class="text-white">Australia, 90230</span>
           </div>
           <div className="flex flex-col items-center justify-center p-16">
-          <h1 class="font-rufina font-bold text-white text-3xl md:text-3xl lg:mr-10 text-3xl pb-5">Opening hours</h1>
+          <h1 class="whitespace-nowrap font-rufina font-bold text-white text-3xl md:text-3xl lg:mr-10 text-3xl pb-5">Opening hours</h1>
             <p class="sm:mr-0 text-white lg:mr-10">Monday to Sunday</p>
             <p class="sm:mr-0 text-white lg:mr-10">9:00 am - 10:00 pm</p>
-            <h1 class="font-rufina font-bold text-white text-3xl sm:text-3xl md:text-3xl pb-5 pt-10">Stay connected</h1>
+            <h1 class="whitespace-nowrap font-rufina font-bold text-white sm:text-3xl md:text-3xl md:pb-5 md:pt-10 sm:pb-3 sm:pt-11">Stay connected</h1>
             <SocialMediaIcons/>
           </div>
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const TransparentButton = ({ text, onClick }) => {
+const TransparentButton = ({ text, onClick, className}) => {
     const buttonStyle = {
       width: '227px',
       height: '55px',
@@ -15,7 +15,7 @@ const TransparentButton = ({ text, onClick }) => {
   
     return (
       <>
-        <button style={buttonStyle} onClick={onClick}>
+        <button style={buttonStyle} onClick={onClick} className={`${className} tu-clase-default-de-estilo`}>
           {text}
         </button>
       </>

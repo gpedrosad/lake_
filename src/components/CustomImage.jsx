@@ -1,8 +1,8 @@
 import React from 'react';
 
-const CustomImage = ({ src, alt }) => {
+const CustomImage = ({ src, alt, className}) => {
   const imageStyle = {
-    width: '341px',
+    width: '342px',
     height: '324px',
     backgroundColor: 'grey',
     borderRadius: '187px 29px 29px 29px',  // Define el radio del borde para cada esquina
@@ -10,7 +10,7 @@ const CustomImage = ({ src, alt }) => {
   };
 
   return (
-    <img src={src} alt={alt} style={imageStyle} />
+    <img src={src} alt={alt} style={imageStyle} className={`${className} tu-clase-default-de-estilo`} />
   );
 };
 

@@ -31,28 +31,39 @@ function App() {
       <div>
 
         <Navbar/>
-        
-        <img src="../src/img/huevos.png" alt="" class="w-full h-full object-cover"/>
+        <div class="w-full h-64 md:h-96 lg:h-128 overflow-hidden">
+          <img src="../src/img/huevos.png" alt="" class="w-full h-full object-cover"/>
+
+        </div>
 
         <CardSlider/>
 
 
 
-      <div class="relative w-full bg-[#B8CAA8] flex flex-col md:flex-row">
-        <img src="../src/assets/images/hojaizq.png" alt="Descripción de la imagen" class="absolute top-0 left-0 w-20 h-20"/>
+        <div class="relative w-full bg-[#B8CAA8] flex flex-col md:flex-row md:justify-between">
+  <div class="md:flex-1 md:relative">
+    <img src="../src/assets/images/hojaizq.png" alt="Descripción de la imagen" class="absolute top-0 left-0 w-20 h-20"/>
+    <div class="mt-20 ml-28 md:mt-0 md:ml-40 md:mt-28">
+      <CustomImage src="../src/img/nalita.png"/>
+    </div>
+  </div>
 
-        <div class="flex-1 p-16">
-          <h1 class="font-rufina font-bold mt-4 text-3xl">Lake Barrine Teahouse</h1>
-          <CustomImage src="../src/img/nalita.png"/>
+  <div class="md:flex-1 md:overflow-hidden">
+    <div class="grid grid-col gap-4">
+      <div class="grid grid-cols-[40px_1fr_40px] items-center gap-2">
+        <img src="src/assets/images/hoja1.png" alt="Descripción de la imagen" class="w-full h-auto md:mt-20 mt-10"/>
+        <div class="text-center md:mt-28 mt-12">
+          <h1 class="whitespace-nowrap font-rufina font-bold text-2xl text-custom-green md:text-3xl">Lake Barrine Teahouse</h1>
+          <span class="font-rufina font-bold text-xl text-custom-green md:text-2xl">Where the lake meets the rainforest</span>
         </div>
-        <div class="flex-1 p-10">
-          <span class="text-xl">Where the lake meets the rainforest</span>
-          <p class="font-inika font-normal mb-4 text-xl">Our story is one of passion and refinement, where each dish is a carefully curated masterpiece. Elegance graces every detail, inviting you into a world where exquisite flavors and sophisticated ambiance harmonize, creating an unforgettable dining experience. Welcome to the epitome of gastronomic delight.</p>
-          <TransparentButton class="" text="About us"/>
-          <img src="../src/assets/images/hojader.png" alt="Descripción de la imagen" class="absolute bottom-0 right-0 w-20 h-20"/> 
-
-        </div>
+        <img src="src/assets/images/hoja2.png" alt="Descripción de la imagen" class="w-full h-auto md:mt-24 mt-10"/>
       </div>
+      <p class="font-inika font-normal ml-10 mr-10 mt-5 mb-20 text-xl">Our story is one of passion and refinement, where each dish is a carefully curated masterpiece. Elegance graces every detail, inviting you into a world where exquisite flavors and sophisticated ambiance harmonize, creating an unforgettable dining experience. Welcome to the epitome of gastronomic delight.</p>
+      <TransparentButton className="mb-32 ml-48 md:mb-20" text="About us"/>
+    </div>
+    <img src="../src/assets/images/hojader.png" alt="Descripción de la imagen" class="absolute bottom-0 right-0 w-20 h-20"/> 
+  </div>
+</div>
 
       <div class="w-screen h-32 flex justify-center items-center bg-white">
         <div class="w-full bg-yellow-500 h-0.5"></div>
@@ -80,16 +91,16 @@ function App() {
     <img 
       src="../src/assets/images/hojablanca.png" 
       alt="Descripción de la imagen" 
-      style={{ width: '100px', height: '100px' }} 
-      class=""/>
+      style={{ width: '50px', height: '50px' }} 
+      class="m-5"/>
       <h1 class="text-white md:text-4xl sm:text-4xl font-rufina font-bold text-center">
         Explore the rainforest in our walk of 5 km around the lake
       </h1>
       <img 
       src="../src/assets/images/hojablanca2.png" 
       alt="Descripción de la imagen" 
-      style={{ width: '100px', height: '100px' }} 
-      class=""/>
+      style={{ width: '50px', height: '50px' }} 
+      class="m-5"/>
       <YellowButton text="Texto"/>
     </div>
   </div>
@@ -118,7 +129,7 @@ function App() {
           <h1 class="whitespace-nowrap font-rufina font-bold text-white text-3xl md:text-3xl lg:mr-10 text-3xl pb-5">Opening hours</h1>
             <p class="sm:mr-0 text-white lg:mr-10">Monday to Sunday</p>
             <p class="sm:mr-0 text-white lg:mr-10">9:00 am - 10:00 pm</p>
-            <h1 class="whitespace-nowrap font-rufina font-bold text-white sm:text-3xl md:text-3xl md:pb-5 md:pt-10 sm:pb-3 sm:pt-11">Stay connected</h1>
+            <h1 class="whitespace-nowrap font-rufina font-bold text-white sm:text-3xl md:text-3xl md:pb-5 md:pt-10 sm:pb-3 sm:pt-11 sm:mb-1">Stay connected</h1>
             <SocialMediaIcons/>
           </div>
 

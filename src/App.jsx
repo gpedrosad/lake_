@@ -1,19 +1,8 @@
 import React, { useState } from 'react'; // Importa React y useState juntos
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
-import TransparentButton from "./components/TransparentButton"; // Corregido para importar correctamente la exportación por defecto
-import CustomImage from './components/CustomImage';
-import GreenButton from './components/GreenButton';
-import YellowButton from './components/YellowButton';
-import TableImage from './components/TableImage';
-import FoodImage from './components/FoodImage';
-import MissImage from './components/MissImage';
-import ImageText from './components/ImageText';
 import './index.css'; // Asegúrate de que este es el camino correcto al archivo CSS
-import DevonshireSpecial from './components/DevonshireSpecial';
-import Breakfast from './components/Breakfast';
 import Navbar from './components/Navbar';
-import SocialMediaIcons from './components/SocialMediaIcons';
 import Card from './components/Card';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -21,126 +10,34 @@ import CardSlider from './components/card_slider/CardSlider';
 import "../src/global.css"
 import RatingSlider from './components/rating_slider/RatingSlider'
 import MenuComponent from './components/menu_components/MenuComponents';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import Footer from './components/Footer';
+import ForestBanner from './components/ForestBanner';
+import MenuLine from './components/MenuLine';
+import LightGreenBanner from './components/LightGreenBanner';
+import PhotoGallery from './components/PhotoGallery';
+import HeroBanner from './components/HeroBanner';
 
 function App() {
   const [buttonClicked, setButtonClicked] = useState(false); // Define el estado para manejar el clic
 
   return (
     <>
-      <div>
+    <Navbar/>
 
-        <Navbar/>
-        <div class="w-full h-64 md:h-96 lg:h-128 overflow-hidden">
-          <img src="../src/img/huevos.png" alt="" class="w-full h-full object-cover"/>
+    <HeroBanner/>
+    <CardSlider/>
+    <LightGreenBanner/>
+    <MenuLine/>
+    <MenuComponent/>
+    <PhotoGallery/>
+    <ForestBanner/>
+    <RatingSlider/>
 
-        </div>
+    <Footer/>
+    
 
-        <CardSlider/>
+</>
 
-
-
-        <div class="relative w-full bg-[#B8CAA8] flex flex-col md:flex-row md:justify-between">
-  <div class="md:flex-1 md:relative">
-    <img src="../src/assets/images/hojaizq.png" alt="Descripción de la imagen" class="absolute top-0 left-0 w-20 h-20"/>
-    <div class="mt-20 ml-28 md:mt-0 md:ml-40 md:mt-28">
-      <CustomImage src="../src/img/nalita.png"/>
-    </div>
-  </div>
-
-  <div class="md:flex-1 md:overflow-hidden">
-    <div class="grid grid-col gap-4">
-      <div class="grid grid-cols-[40px_1fr_40px] items-center gap-2">
-        <img src="src/assets/images/hoja1.png" alt="Descripción de la imagen" class="w-full h-auto md:mt-20 mt-10"/>
-        <div class="text-center md:mt-28 mt-12">
-          <h1 class="whitespace-nowrap font-rufina font-bold text-2xl text-custom-green md:text-3xl">Lake Barrine Teahouse</h1>
-          <span class="font-rufina font-bold text-xl text-custom-green md:text-2xl">Where the lake meets the rainforest</span>
-        </div>
-        <img src="src/assets/images/hoja2.png" alt="Descripción de la imagen" class="w-full h-auto md:mt-24 mt-10"/>
-      </div>
-      <p class="font-inika font-normal ml-10 mr-10 mt-5 mb-20 text-xl">Our story is one of passion and refinement, where each dish is a carefully curated masterpiece. Elegance graces every detail, inviting you into a world where exquisite flavors and sophisticated ambiance harmonize, creating an unforgettable dining experience. Welcome to the epitome of gastronomic delight.</p>
-      <TransparentButton className="mb-32 ml-48 md:mb-20" text="About us"/>
-    </div>
-    <img src="../src/assets/images/hojader.png" alt="Descripción de la imagen" class="absolute bottom-0 right-0 w-20 h-20"/> 
-  </div>
-</div>
-
-      <div class="w-screen h-32 flex justify-center items-center bg-white">
-        <div class="w-full bg-yellow-500 h-0.5"></div>
-        <span class="font-rufina text-6xl font-bold m-10 text-custom-green">Menu</span>
-        <div class="w-full bg-yellow-500 h-0.5"></div>
-      </div>
-
-      <MenuComponent/>
-
-
-        
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 m-12 space-y-4 place-items-center">
-          <ImageText class=""/> 
-          <TableImage src = "../src/img/table.png" class=""/>
-          <FoodImage src = "../src/img/food.png" class=""/>
-          <MissImage src ="../src/img/Miss.png" class=""/> 
-        </div>
-
-
-        <div class="relative overflow-hidden shadow-lg w-full md:w-[1500px] h-[500px] sm:w-[800px] sm:h-[800px]">
-    <img class="absolute inset-0 w-full h-full object-cover" src="src/assets/images/arboles.png" alt="Árboles"/>
-    <div class="absolute inset-0 bg-custom-green opacity-50"></div>
-    <div class="absolute inset-0 grid place-items-center z-10 p-6 md:flex md:items-center md:justify-center">
-    <img 
-      src="../src/assets/images/hojablanca.png" 
-      alt="Descripción de la imagen" 
-      style={{ width: '50px', height: '50px' }} 
-      class="m-5"/>
-      <h1 class="text-white md:text-4xl sm:text-4xl font-rufina font-bold text-center">
-        Explore the rainforest in our walk of 5 km around the lake
-      </h1>
-      <img 
-      src="../src/assets/images/hojablanca2.png" 
-      alt="Descripción de la imagen" 
-      style={{ width: '50px', height: '50px' }} 
-      class="m-5"/>
-      <YellowButton text="Texto"/>
-    </div>
-  </div>
-
-
-        
-        
-
-
-
-        <RatingSlider/>
-
-      </div>
-        <div className="bg-custom-green grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="flex flex-col items-center justify-center">
-            <img src="../src/img/logo.png" class="p-10"/>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <h1 class="font-rufina font-bold text-white text-3xl sm: text-3xl md:text-4xl lg:text-3xl pb-5">Contact</h1>
-            <p class="text-white">+1 86 852 346 000</p>
-            <p class="text-white mb-10">info@lakebarrine.com</p>
-            <span class="text-white">Lake Barrine.</span>
-            <span class="text-white">Australia, 90230</span>
-          </div>
-          <div className="flex flex-col items-center justify-center p-16">
-          <h1 class="whitespace-nowrap font-rufina font-bold text-white text-3xl md:text-3xl lg:mr-10 text-3xl pb-5">Opening hours</h1>
-            <p class="sm:mr-0 text-white lg:mr-10">Monday to Sunday</p>
-            <p class="sm:mr-0 text-white lg:mr-10">9:00 am - 10:00 pm</p>
-            <h1 class="whitespace-nowrap font-rufina font-bold text-white sm:text-3xl md:text-3xl md:pb-5 md:pt-10 sm:pb-3 sm:pt-11 sm:mb-1">Stay connected</h1>
-            <SocialMediaIcons/>
-          </div>
-
-        </div>
-
-        <div class="bg-custom-green grid grid-cols-1 place-items-center">
-          <div class="w-full bg-yellow-500 h-0.5"></div>
-          <p class="m-6 text-white pt-10">© 2024. All Rights Reserved</p>
-        </div>
-
-    </>
   );
 }
 

@@ -1,34 +1,30 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import GreenButton from './GreenButton';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="bg-transparent">
-    <div className="max-w-6xl mx-auto px-4">
-        <div className="flex justify-between">
-            <div>
-                <a href="#" className="flex items-center py-4 px-2">
-                    <span className="font-semibold text-gray-800 text-lg">Navbar</span>
-                </a>
-            </div>
-            {/* Links de escritorio */}
-            <div className="flex items-center space-x-1">
-                {/* Las clases 'md:justify-end md:flex' aseguran que la justificación a la derecha solo aplique en pantallas medianas y más grandes */}
-                <div className="hidden md:flex md:justify-end md:space-x-3">
-                    <a href="#" className="text-2xl py-4 px-2 text-gray-800 hover:text-green-500 transition duration-300">About</a>
-                    <a href="#" className="text-2xl py-4 px-2 text-gray-800 hover:text-green-500 transition duration-300">Menu</a>
-                    <a href="#" className="text-2xl py-4 px-2 text-gray-800 hover:text-green-500 transition duration-300">Gallery</a>
-                    <GreenButton text="Reservation" width="250px" height="80px" fontSize="28px" backgroundColor="#8DA260"/>
-
-                </div>
-            </div>
+        <nav className="bg-transparent absolute top-0 left-0 w-full z-10">
+            <div className="max-w-6xl mx-auto px-4 bg-transparent">
+                <div className="flex justify-between items-center py-4">
+                    <div className='bg-transparent'>
+                        <Link to="/" className="flex items-center py-4 px-2">
+                            <img src="src/assets/images/logo-lake.png" alt="Logo" className="h-12 w-auto" />
+                        </Link>
+                    </div>
+                    {/* Links de escritorio */}
+                    <div className="hidden md:flex items-center space-x-3">
+                        <Link to="/about" className="text-2xl text-white hover:text-new-green transition duration-300">About</Link>
+                        <Link to="/accomodation" className="text-2xl text-white hover:text-new-green transition duration-300">Menu</Link>
+                        <Link to="/boat" className="text-2xl text-white hover:text-new-green transition duration-300">Gallery</Link>
+                        <GreenButton text="Reservation" width="170px" height="60px" fontSize="22px" backgroundColor="#8DA260"/>
+                    </div>
                     {/* Botón de menú móvil */}
                     <div className="md:hidden flex items-center">
                         <button className="outline-none mobile-menu-button" onClick={() => setIsOpen(!isOpen)}>
-                            <svg className=" w-6 h-6 text-gray-800 hover:text-green-500"
-                                x-show="!showMenu"
+                            <svg className="w-6 h-6 text-gray-800 hover:text-green-500"
                                 fill="none"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
@@ -42,28 +38,25 @@ const Navbar = () => {
                 </div>
             </div>
             {/* Menú móvil */}
-            <div className={`${isOpen ? 'fixed inset-0 bg-white z-50' : 'hidden'} md:hidden`}>
+            <div className={`${isOpen ? 'fixed inset-0 bg-transparent z-50' : 'hidden'} md:hidden`}>
                 <button className="absolute top-9 left-10 text-gray-800 hover:text-red-500" onClick={() => setIsOpen(false)}>
                     <svg className="w-9 h-9" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M6 18L18 6M6 6l12 12"></path>
                     </svg>
                 </button>
-                
                 <div className="flex items-center justify-center w-full h-full pb-72">
                     <div className="text-center mb-20">
-                        <img src="../src/img/logo.png" class="ml-32 mb-12 mt-56"/>
+                        <img src="../src/img/logo.png" className="ml-32 mb-12 mt-56"/>
                         <GreenButton text="Reservation" width="250px" height="80px" fontSize="28px" backgroundColor="#8DA260"/>
-                        <a href="#" className="mt-20 font-inika font-normal block py-2 px-4 text-5xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-7">Contact</a>
-                        <div class="w-full bg-second-green h-0.5"></div>
-                        <a href="#" className="mt-20 font-inika font-normal block py-2 px-4 text-5xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-7">Accomodation</a>
-                        <div class="w-full bg-second-green h-0.5"></div>
-                        <a href="#" className="mt-20 font-inika font-normal block py-2 px-4 text-5xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-7">Boat</a>
-                        <div class="w-full bg-second-green h-0.5"></div>
-                        <a href="#" className="mt-20 font-inika font-normal block py-2 px-4 text-5xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-7">Menu</a>
-                        <div class="w-full bg-second-green h-0.5"></div>
-                        <a href="#" className="mt-20 font-inika font-normal block py-2 px-4 text-5xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-7">Teahouse-history</a>
-
-
+                        <Link to="/contact" className="mt-20 font-inika font-normal block py-2 px-4 text-5xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-7">Contact</Link>
+                        <div className="w-full bg-second-green h-0.5"></div>
+                        <Link to="/accommodation" className="mt-20 font-inika font-normal block py-2 px-4 text-5xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-7">Accommodation</Link>
+                        <div className="w-full bg-second-green h-0.5"></div>
+                        <Link to="/boat" className="mt-20 font-inika font-normal block py-2 px-4 text-5xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-7">Boat</Link>
+                        <div className="w-full bg-second-green h-0.5"></div>
+                        <Link to="/menu" className="mt-20 font-inika font-normal block py-2 px-4 text-5xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-7">Menu</Link>
+                        <div className="w-full bg-second-green h-0.5"></div>
+                        <Link to="/teahouse-history" className="mt-20 font-inika font-normal block py-2 px-4 text-5xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-7">Teahouse-history</Link>
                     </div>
                 </div>
             </div>

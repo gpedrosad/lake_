@@ -13,7 +13,8 @@ export default {
       colors: {
         'custom-green': '#273812',
         'second-green': '#B8CAA8',
-        'third-green':'#3C5220'
+        'third-green':'#3C5220',
+        'new-green': '#8DA260', 
       }
     }
   },

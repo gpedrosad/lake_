@@ -15,7 +15,7 @@ const LightGreenBanner = () => {
       <div className="md:flex-1 md:overflow-hidden">
         <div className="grid grid-col gap-4">
           <div className="grid grid-cols-[40px_1fr_40px] items-center gap-2">
-            <img src="src/assets/images/hoja1.png" alt="Descripción de la imagen" class="w-full h-auto md:mt-20 mt-10"/>
+            <img src="src/assets/images/hojasvg.svg" alt="Descripción de la imagen" class="md:mt-20 mt-10"/>
             <div className="text-center md:mt-28 mt-12">
               <h1 className="whitespace-nowrap font-rufina font-bold text-2xl text-custom-green md:text-3xl">Lake Barrine Teahouse</h1>
               <span className="font-rufina font-bold text-xl text-custom-green md:text-2xl">Where the lake meets the rainforest</span>

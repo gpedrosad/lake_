@@ -1,9 +1,6 @@
 import React, { useState } from 'react'; // Importa React y useState juntos
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './index.css'; // Asegúrate de que este es el camino correcto al archivo CSS
 import Navbar from './components/Navbar';
-import Card from './components/Card';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CardSlider from './components/card_slider/CardSlider';

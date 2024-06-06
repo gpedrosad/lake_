@@ -23,7 +23,7 @@ function Boat() {
                     </p>
                 </div>
             </div>
-                <div className="bg-[#F7F7F7] flex justify-center">
+                <div className="bg-[#F7F7F7] flex justify-center pb-10">
                     <GreenButton text="Book now"/>
                 </div>
             
@@ -43,7 +43,7 @@ function Boat() {
                 <img src="src/img/huevos.png" alt="Imagen" className="h-2/3 w-96 md:rounded-3xl" />
             </div>
 
-            <div className="bg-second-green flex justify-center">
+            <div className="bg-second-green flex justify-center pb-10">
                     <YellowButton text="Book now"/>
                 </div>
 
@@ -60,7 +60,7 @@ function Boat() {
                     </p>
                 </div>
             </div>
-                <div className="bg-[#F7F7F7] flex justify-center">
+                <div className="bg-[#F7F7F7] flex justify-center sm:pb-10">
                     <GreenButton text="Book now"/>
                 </div>
                 <div class="bg-[#F7F7F7] pt-10">

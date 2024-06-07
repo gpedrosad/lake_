@@ -11,15 +11,15 @@ const Navbar = () => {
                 <div className="flex justify-between items-center py-4">
                     <div className='bg-transparent'>
                         <Link to="/" className="flex items-center py-4 px-2">
-                            <img src="src/assets/images/logo-lake.png" alt="Logo" className="h-12 w-auto" />
+                            <img src="src/assets/images/logo-lake.png" alt="Logo" className="h-12 w-auto md:h-20 md:pl-14" />
                         </Link>
                     </div>
                     {/* Links de escritorio */}
                     <div className="hidden md:flex items-center space-x-3">
-                        <Link to="/about" className="text-2xl text-white hover:text-new-green transition duration-300">About</Link>
-                        <Link to="/accomodation" className="text-2xl text-white hover:text-new-green transition duration-300">Menu</Link>
-                        <Link to="/boat" className="text-2xl text-white hover:text-new-green transition duration-300">Gallery</Link>
-                        <GreenButton text="Reservation" width="170px" height="60px" fontSize="22px" backgroundColor="#8DA260"/>
+                        <Link to="/about" className="text-xl text-white hover:text-new-green transition duration-300 md:mr-5">About</Link>
+                        <Link to="/accomodation" className="text-xl text-white hover:text-new-green transition duration-300 md:mr-5">Menu</Link>
+                        <Link to="/boat" className="text-xl text-white hover:text-new-green transition duration-300 md:mr-5">Gallery</Link>
+                        <GreenButton text="Reservation" width="170px" height="60px" fontSize="20px" backgroundColor="#8DA260"/>
                     </div>
                     {/* Botón de menú móvil */}
                     <div className="md:hidden flex items-center">
@@ -38,7 +38,7 @@ const Navbar = () => {
                 </div>
             </div>
             {/* Menú móvil */}
-            <div className={`${isOpen ? 'fixed inset-0 bg-transparent z-50' : 'hidden'} md:hidden`}>
+            <div className={`${isOpen ? 'fixed inset-0 bg-white z-50' : 'hidden'} md:hidden`}>
                 <button className="absolute top-9 left-10 text-gray-800 hover:text-red-500" onClick={() => setIsOpen(false)}>
                     <svg className="w-9 h-9" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M6 18L18 6M6 6l12 12"></path>

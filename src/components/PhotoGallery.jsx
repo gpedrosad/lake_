@@ -8,9 +8,11 @@ import MissImage from './MissImage';
 const PhotoGallery = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 m-12 space-y-4 place-items-center">
-      <ImageText className=""/> 
+      <ImageText className=""/>
       <TableImage src="../src/img/table.png" className=""/>
-      <FoodImage src="../src/img/food.png" className=""/>
+      <div class="">
+        <FoodImage src="../src/img/food.png" className=""/>
+      </div>
       <MissImage src="../src/img/Miss.png" className=""/> 
     </div>
   );

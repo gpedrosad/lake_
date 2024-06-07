@@ -10,16 +10,18 @@ const Navbar = () => {
             <div className="max-w-6xl mx-auto px-4 bg-transparent">
                 <div className="flex justify-between items-center py-4">
                     <div className='bg-transparent'>
-                        <Link to="/" className="flex items-center py-4 px-2">
-                            <img src="src/assets/images/logo-lake.png" alt="Logo" className="h-12 w-auto md:h-20 md:pl-14" />
+                        <Link to="/" className="flex items-center py-4 px-2 lg:py-16 lg:pr-20">
+                            <img src="src/assets/images/logo-lake.png" alt="Logo" className="h-12 w-auto md:h-20 md:h-32" />
                         </Link>
                     </div>
                     {/* Links de escritorio */}
                     <div className="hidden md:flex items-center space-x-3">
-                        <Link to="/about" className="text-xl text-white hover:text-new-green transition duration-300 md:mr-5">About</Link>
-                        <Link to="/accomodation" className="text-xl text-white hover:text-new-green transition duration-300 md:mr-5">Menu</Link>
-                        <Link to="/boat" className="text-xl text-white hover:text-new-green transition duration-300 md:mr-5">Gallery</Link>
-                        <GreenButton text="Reservation" width="170px" height="60px" fontSize="20px" backgroundColor="#8DA260"/>
+                        <Link to="/about" className="text-xl text-white hover:text-new-green transition duration-300 md:mr-5 lg:text-2xl lg:mr-10">About</Link>
+                        <Link to="/accomodation" className="text-xl text-white hover:text-new-green transition duration-300 md:pr-5 lg:text-2xl lg:pr-10">Menu</Link>
+                        <Link to="/boat" className="text-xl text-white hover:text-new-green transition duration-300 md:pr-5 lg:text-2xl lg:pr-10">Gallery</Link>
+                        <div class="pl-6 lg:mr-10">
+                            <GreenButton text="Reservation" width="170px" height="60px" fontSize="20px" backgroundColor="#8DA260"/>
+                        </div>
                     </div>
                     {/* Botón de menú móvil */}
                     <div className="md:hidden flex items-center">

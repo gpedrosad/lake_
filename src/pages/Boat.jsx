@@ -2,7 +2,27 @@ import HeroSection from "../components/SecondHeroSection";
 import GreenButton from "../components/GreenButton";
 import YellowButton from "../components/YellowButton";
 import RatingSlider from "../components/rating_slider/RatingSlider";
+import FeatureSection from "../components/FeatureSection";
+import GreenFeatureSection from "../components/GreenFeatureSection";
 
+const images_first_slider = [
+    'src/assets/images/slider-copas.png',
+    'src/assets/images/card-image-1.png',
+    'src/assets/images/card-image3.png',
+
+];
+
+const images_second_slider = [
+    'src/assets/images/slider-green.png',
+    'src/assets/images/card-image-1.png',
+    'src/assets/images/card-image3.png',
+]
+
+const images_third_slider = [
+    'src/assets/images/slider-wedding.png',
+    'src/assets/images/card-image-1.png',
+    'src/assets/images/card-image3.png',
+]
 function Boat() {
     return(
 
@@ -12,6 +32,34 @@ function Boat() {
             title="The waters of Lake Barrine"
             />
 
+            <FeatureSection
+            title="The family cruise"
+            description="Our story is one of passion and refinement, where each dish is a carefully curated masterpiece. Elegance graces every detail, inviting you into a world where exquisite flavors and sophisticated ambiance harmonize, creating an unforgettable dining experience. Welcome to the epitome of gastronomic delight.into a world where exquisite flavors and sophisticated ambiance harmonize, creating an unforgettable dining experience. Welcome to the epitome of gastronomic delight."
+            buttonText='Book Now'
+            borderRadius='0px'
+            bgcolor='#3C5220'
+            images={images_first_slider}
+            />
+            
+            <GreenFeatureSection
+                        title="A function like no other"
+                        description="Our story is one of passion and refinement, where each dish is a carefully curated masterpiece. Elegance graces every detail, inviting you into a world where exquisite flavors and sophisticated ambiance harmonize, creating an unforgettable dining experience. Welcome to the epitome of gastronomic delight.into a world where exquisite flavors and sophisticated ambiance harmonize, creating an unforgettable dining experience. Welcome to the epitome of gastronomic delight."
+                        buttonText='Book Now'
+                        borderRadius='0px'
+                        bgcolor='#F0B92B'
+                        images={images_second_slider}
+                        />
+            
+            <FeatureSection
+            title="Create your own package"
+            description="Our story is one of passion and refinement, where each dish is a carefully curated masterpiece. Elegance graces every detail, inviting you into a world where exquisite flavors and sophisticated ambiance harmonize, creating an unforgettable dining experience. Welcome to the epitome of gastronomic delight.into a world where exquisite flavors and sophisticated ambiance harmonize, creating an unforgettable dining experience. Welcome to the epitome of gastronomic delight."
+            buttonText='Book Now'
+            borderRadius='0px'
+            bgcolor='#3C5220'
+            images={images_third_slider}
+            />
+
+{/* 
 <div className="bg-[#F7F7F7] grid grid-cols-1 md:grid-cols-2 gap-4 p-4 justify-items-center items-center">
                 <img src="src/img/huevos.png" alt="Imagen" className="h-2/3 w-96 md:rounded-3xl" />
                 <div className="items-center justify-items-center px-10 py-5 md:mb-20">
@@ -65,7 +113,7 @@ function Boat() {
                 </div>
                 <div class="bg-[#F7F7F7] pt-10">
                     <div className="mx-auto bg-yellow-500 h-1 w-3/4 sm:w-1/2"></div> 
-                </div>
+                </div> */}
                 <RatingSlider />
         </div>
     )

@@ -2,6 +2,7 @@ import GreenButton from "../components/GreenButton";
 import HeroSection from "../components/SecondHeroSection";
 import RatingSlider from "../components/rating_slider/RatingSlider";
 
+
 function Accomodation() {
     return (
         <div>
@@ -66,6 +67,7 @@ function Accomodation() {
             </div>
 
             <RatingSlider />
+
         </div>
     )
 }

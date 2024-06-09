@@ -52,7 +52,7 @@ const Navbar = () => {
                         <GreenButton text="Reservation" width="250px" height="80px" fontSize="28px" backgroundColor="#8DA260"/>
                         <Link to="/contact" className="mt-20 font-inika font-normal block py-2 px-4 text-5xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-7">Contact</Link>
                         <div className="w-full bg-second-green h-0.5"></div>
-                        <Link to="/accommodation" className="mt-20 font-inika font-normal block py-2 px-4 text-5xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-7">Accommodation</Link>
+                        <Link to="/accomodation" className="mt-20 font-inika font-normal block py-2 px-4 text-5xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-7">Accommodation</Link>
                         <div className="w-full bg-second-green h-0.5"></div>
                         <Link to="/boat" className="mt-20 font-inika font-normal block py-2 px-4 text-5xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-7">Boat</Link>
                         <div className="w-full bg-second-green h-0.5"></div>

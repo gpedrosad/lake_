@@ -11,7 +11,7 @@ const Navbar = () => {
                 <div className="flex justify-between items-center py-4">
                     <div className='bg-transparent'>
                         <Link to="/" className="flex items-center py-4 px-2 lg:py-16 lg:pr-20">
-                            <img src="/src/assets/images/logo-lake.png" alt="Logo" className="h-12 w-auto md:h-20 md:h-32" />
+                            <img src="/src/assets/images/logo-lake.png" alt="Logo" className="h-12 w-auto sm:h-10 sm:w-auto md:h-20 lg:h-32" />
                         </Link>
                     </div>
                     {/* Links de escritorio */}
@@ -42,27 +42,27 @@ const Navbar = () => {
             {/* Menú móvil */}
             <div className={`${isOpen ? 'fixed inset-0 bg-white z-50 overflow-y-auto' : 'hidden'} md:hidden`}>
                 <div className="absolute top-9 left-10 text-gray-800 hover:text-red-500" onClick={() => setIsOpen(false)}>
-                    <svg className="w-9 h-9" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="w-9 h-9 sm:w-8 sm:h-8 xs:w-6 xs:h-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
                         <path d="M6 18L18 6M6 6l12 12"></path>
                     </svg>
                 </div>
-                <div className="flex flex-col items-center justify-center w-full h-full py-12 px-4 mt-40">
-                    <div className="text-center mb-20">
-                        <Link to="/" className="block mb-12">
-                            <img src="/src/assets/images/logo-lake.png" alt="Logo" className="mx-auto w-32 h-auto" />
+                <div className="flex flex-col items-center justify-center w-full h-full py-12 px-4 mt-4">
+                    <div className="text-center mb-10"> {/* Ajuste de margen aquí */}
+                        <Link to="/" className="block mb-6"> {/* Ajuste de margen aquí */}
+                            <img src="/src/assets/images/logo-lake.png" alt="Logo" className="mx-auto w-32 h-auto sm:w-24 sm:h-auto xs:w-20 xs:h-auto" />
                         </Link>
-                        <div className="w-full flex justify-center mb-10">
+                        <div className="w-full flex justify-center mb-5"> {/* Ajuste de margen aquí */}
                             <GreenButton text="Reservation" width="80%" height="50px" fontSize="20px" backgroundColor="#8DA260"/>
                         </div>
-                        <Link to="/contact" className="mt-10 font-inika font-normal block py-2 px-4 text-3xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-4">Contact</Link>
+                        <Link to="/contact" className="mt-5 font-inika font-normal block py-2 px-4 text-3xl sm:text-2xl xs:text-xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2">Contact</Link> {/* Ajuste de margen aquí */}
                         <div className="w-full bg-second-green h-0.5"></div>
-                        <Link to="/accomodation" className="mt-10 font-inika font-normal block py-2 px-4 text-3xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-4">Accommodation</Link>
+                        <Link to="/accomodation" className="mt-5 font-inika font-normal block py-2 px-4 text-3xl sm:text-2xl xs:text-xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2">Accommodation</Link> {/* Ajuste de margen aquí */}
                         <div className="w-full bg-second-green h-0.5"></div>
-                        <Link to="/boat" className="mt-10 font-inika font-normal block py-2 px-4 text-3xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-4">Boat</Link>
+                        <Link to="/boat" className="mt-5 font-inika font-normal block py-2 px-4 text-3xl sm:text-2xl xs:text-xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2">Boat</Link> {/* Ajuste de margen aquí */}
                         <div className="w-full bg-second-green h-0.5"></div>
-                        <Link to="/menu" className="mt-10 font-inika font-normal block py-2 px-4 text-3xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-4">Menu</Link>
+                        <Link to="/contact" className="mt-5 font-inika font-normal block py-2 px-4 text-3xl sm:text-2xl xs:text-xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2">Menu</Link> {/* Ajuste de margen aquí */}
                         <div className="w-full bg-second-green h-0.5"></div>
-                        <Link to="/teahouse-history" className="mt-10 font-inika font-normal block py-2 px-4 text-3xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-4">Teahouse-history</Link>
+                        <Link to="/contact" className="mt-5 font-inika font-normal block py-2 px-4 text-3xl sm:text-2xl xs:text-xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2">Teahouse-history</Link> {/* Ajuste de margen aquí */}
                     </div>
                 </div>
             </div>

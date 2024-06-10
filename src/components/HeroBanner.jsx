@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 
 const HeroBanner = () => {
     return (
-        <div className="relative w-full h-95 md:h-128 lg:h-160 overflow-hidden">
+        <div className="relative w-full h-95 md:h-90 lg:h-160 overflow-hidden">
             <Navbar />
             <div className="absolute inset-0 bg-gradient-to-br from-[#00000000] via-[#00000099] to-[#00000000]"></div>
             <img src="../src/img/huevos.png" alt="Imagen decorativa" className="w-full h-full object-cover" />

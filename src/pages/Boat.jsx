@@ -39,8 +39,7 @@ function Boat() {
             borderRadius='0px'
             bgcolor='#3C5220'
             images={images_first_slider}
-            />
-            
+            />            
             <GreenFeatureSection
                         title="A function like no other"
                         description="Our story is one of passion and refinement, where each dish is a carefully curated masterpiece. Elegance graces every detail, inviting you into a world where exquisite flavors and sophisticated ambiance harmonize, creating an unforgettable dining experience. Welcome to the epitome of gastronomic delight.into a world where exquisite flavors and sophisticated ambiance harmonize, creating an unforgettable dining experience. Welcome to the epitome of gastronomic delight."

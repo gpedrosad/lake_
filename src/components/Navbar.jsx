@@ -5,6 +5,10 @@ import GreenButton from './GreenButton';
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
+    const handleLinkClick = () => {
+        setIsOpen(false);
+    };
+
     return (
         <nav className="bg-transparent absolute top-0 left-0 w-full z-10">
             <div className="max-w-6xl mx-auto px-4 bg-transparent">
@@ -26,7 +30,7 @@ const Navbar = () => {
                     {/* Botón de menú móvil */}
                     <div className="md:hidden flex items-center">
                         <button className="outline-none mobile-menu-button" onClick={() => setIsOpen(!isOpen)}>
-                            <svg className="w-6 h-6 text-gray-800 hover:text-green-500"
+                            <svg className="w-6 h-6 text-white hover:text-green-500"
                                 fill="none"
                                 strokeLinecap="round"
                                 strokeLinejoin="round"
@@ -48,21 +52,21 @@ const Navbar = () => {
                 </div>
                 <div className="flex flex-col items-center justify-center w-full h-full py-12 px-4 mt-4">
                     <div className="text-center mb-10"> {/* Ajuste de margen aquí */}
-                        <Link to="/" className="block mb-6"> {/* Ajuste de margen aquí */}
+                        <Link to="/" className="block mb-6" onClick={handleLinkClick}> {/* Ajuste de margen aquí */}
                             <img src="/src/assets/images/logo-lake.png" alt="Logo" className="mx-auto w-32 h-auto sm:w-24 sm:h-auto xs:w-20 xs:h-auto" />
                         </Link>
                         <div className="w-full flex justify-center mb-5"> {/* Ajuste de margen aquí */}
                             <GreenButton text="Reservation" width="80%" height="50px" fontSize="20px" backgroundColor="#8DA260"/>
                         </div>
-                        <Link to="/contact" className="mt-5 font-inika font-normal block py-2 px-4 text-3xl sm:text-2xl xs:text-xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2">Contact</Link> {/* Ajuste de margen aquí */}
+                        <Link to="/contact" className="mt-5 font-inika font-normal block py-2 px-4 text-3xl sm:text-2xl xs:text-xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Contact</Link> {/* Ajuste de margen aquí */}
                         <div className="w-full bg-second-green h-0.5"></div>
-                        <Link to="/accomodation" className="mt-5 font-inika font-normal block py-2 px-4 text-3xl sm:text-2xl xs:text-xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2">Accommodation</Link> {/* Ajuste de margen aquí */}
+                        <Link to="/accomodation" className="mt-5 font-inika font-normal block py-2 px-4 text-3xl sm:text-2xl xs:text-xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Accommodation</Link> {/* Ajuste de margen aquí */}
                         <div className="w-full bg-second-green h-0.5"></div>
-                        <Link to="/boat" className="mt-5 font-inika font-normal block py-2 px-4 text-3xl sm:text-2xl xs:text-xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2">Boat</Link> {/* Ajuste de margen aquí */}
+                        <Link to="/boat" className="mt-5 font-inika font-normal block py-2 px-4 text-3xl sm:text-2xl xs:text-xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Boat</Link> {/* Ajuste de margen aquí */}
                         <div className="w-full bg-second-green h-0.5"></div>
-                        <Link to="/contact" className="mt-5 font-inika font-normal block py-2 px-4 text-3xl sm:text-2xl xs:text-xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2">Menu</Link> {/* Ajuste de margen aquí */}
+                        <Link to="/contact" className="mt-5 font-inika font-normal block py-2 px-4 text-3xl sm:text-2xl xs:text-xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Menu</Link> {/* Ajuste de margen aquí */}
                         <div className="w-full bg-second-green h-0.5"></div>
-                        <Link to="/contact" className="mt-5 font-inika font-normal block py-2 px-4 text-3xl sm:text-2xl xs:text-xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2">Teahouse-history</Link> {/* Ajuste de margen aquí */}
+                        <Link to="/contact" className="mt-5 font-inika font-normal block py-2 px-4 text-3xl sm:text-2xl xs:text-xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Teahouse-history</Link> {/* Ajuste de margen aquí */}
                     </div>
                 </div>
             </div>

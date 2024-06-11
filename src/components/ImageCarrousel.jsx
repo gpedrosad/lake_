@@ -12,7 +12,7 @@ const ImageCarrousel = ({ images }) => {
     };
 
     return (
-        <div className="relative w-full md:w-3/4 lg:w-2/3 mx-auto">
+        <div className="relative md:w-3/4 lg:w-2/3 sm:w-2/3 mx-auto">
             <div className="overflow-hidden rounded-3xl">
                 <img
                     src={images[currentIndex]}

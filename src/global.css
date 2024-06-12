@@ -1,3 +1,7 @@
+/* @tailwind base;
+@tailwind components; */
+@tailwind utilities;
+
 @font-face {
     font-family: 'Rufina';
     font-weight: bold;
@@ -22,4 +26,10 @@
     src: url('../src/assets/fonts/Inika-Regular.ttf') format('truetype');
   }
   
-  
+  @layer utilities {
+    .bg-double-image {
+      background-image: url('src/assets/images/Rectangle 26.png'), url('src/assets/images/bac-img-rat-slider.png');
+      background-size: cover, cover; /* Puedes ajustar los tamaños como desees */
+      background-position: center, center; /* Ajusta las posiciones según tus necesidades */
+    }
+  }

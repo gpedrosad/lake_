@@ -4,6 +4,7 @@ import YellowButton from "../components/YellowButton";
 import RatingSlider from "../components/rating_slider/RatingSlider";
 import FeatureSection from "../components/FeatureSection";
 import GreenFeatureSection from "../components/GreenFeatureSection";
+import RatingSliderSecond from "../components/RatSliderSecond";
 
 const images_first_slider = [
     'src/assets/images/slider-copas.png',
@@ -113,7 +114,7 @@ function Boat() {
                 <div class="bg-[#F7F7F7] pt-10">
                     <div className="mx-auto bg-yellow-500 h-1 w-3/4 sm:w-1/2"></div> 
                 </div> */}
-                <RatingSlider />
+                <RatingSliderSecond/>
         </div>
     )
 }

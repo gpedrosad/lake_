@@ -1,6 +1,9 @@
 import { useState } from 'react';
 
-const ImageCarrousel = ({ images }) => {
+const ImageCarrousel = ({ images, rounded }) => {
+
+    const roundedClass = rounded ? `rounded-${rounded}` : 'rounded';
+
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const nextSlide = () => {
@@ -13,7 +16,7 @@ const ImageCarrousel = ({ images }) => {
 
     return (
         <div className="relative md:w-3/4 lg:w-2/3 sm:w-2/3 mx-auto">
-            <div className="overflow-hidden rounded-3xl">
+            <div className={`overflow-hidden  ${roundedClass}`}>
                 <img
                     src={images[currentIndex]}
                     alt={`Slide ${currentIndex}`}

@@ -10,7 +10,7 @@ import ImageCarousel from './ImageCarrousel';
 const GreenFeatureSection = ({ title, description, buttonText, borderRadius, bgcolor, images  }) => {
     return (
         <>
-        <div className="mx-auto bg-yellow-500 h-1 w-3/4 sm:w-1/2"></div>
+        <div className="mx-auto bg-yellow-500 h-1 w-3/4 sm:w-1/2 "></div>
 
         <div className="bg-[#B8CAA8] grid grid-cols-1 md:grid-cols-2 gap-3 p-4 justify-items-center items-center">       
             <div className="items-center justify-items-center px-10 py-5 md:mb-20">
@@ -21,12 +21,12 @@ const GreenFeatureSection = ({ title, description, buttonText, borderRadius, bgc
                     {description}
                 </p>
             </div>
-            <div className="container mx-auto">
+            <div className="w-2/3 p-1 sm:w-2/3 md:w-full md:p-0 lg:p-0 xl:py-0 lg:w-full xl:w-full 2xl:w-full mx-auto pt-8">
                 <ImageCarousel images={images} />
             </div> 
 
         </div>
-                    <div className="bg-[#B8CAA8] flex justify-center pb-10">
+                <div className="bg-[#B8CAA8] flex justify-center pb-10">
                     <ButtonComponent text={buttonText} borderRadius={borderRadius} backgroundColor={bgcolor}/>
                 </div>
                 </>

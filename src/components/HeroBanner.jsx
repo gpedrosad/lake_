@@ -8,7 +8,7 @@ const HeroBanner = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-[#00000000] via-[#00000099] to-[#00000000]"></div>
             <img src="src/assets/images/hero.png" alt="Imagen decorativa" className="w-full h-full object-cover" />
             <div className="absolute inset-0 flex flex-col items-start justify-center text-left p-8 md:p-12">
-                <h1 className="ml-10 text-new-green text-4xl md:text-5xl lg:text-7xl font-bold leading-tight">
+                <h1 className="ml-10 mt-10 text-new-green text-5xl md:text-6xl lg:text-7xl font-bold leading-tight lg:mt-20">
                     <span className="font-rufina block">Where the lake</span>
                     <span className="font-rufina block">meets the</span>
                     <span className="font-rufina block">rainforest</span>

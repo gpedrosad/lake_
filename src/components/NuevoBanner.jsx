@@ -20,7 +20,7 @@ const NuevoBanner = () => {
         <p className="font-inika font-normal ml-10 mr-10 mt-5 mb-20 text-xl">
           Our story is one of passion and refinement, where each dish is a carefully curated masterpiece. Elegance graces every detail, inviting you into a world where exquisite flavors and sophisticated ambiance harmonize, creating an unforgettable dining experience. Welcome to the epitome of gastronomic delight.
         </p>
-        <TransparentButton className="mb-32 ml-48 md:mb-20" text="About us"/>
+        <TransparentButton className="mb-32 ml-48 md:mb-20 md:ml-28 lg:ml-48" text="About us"/>
       </div>
       <img src="../src/assets/images/hojader.png" alt="Descripción de la imagen" className="absolute bottom-0 right-0 w-20 h-20"/> 
     </div>

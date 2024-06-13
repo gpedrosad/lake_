@@ -15,7 +15,7 @@ const Navbar = () => {
                 <div className="flex justify-between items-center py-4">
                     <div className='bg-transparent'>
                         <Link to="/" className="flex items-center py-4 px-2 lg:py-16 lg:pr-20">
-                            <img src="/src/assets/images/logo-lake.png" alt="Logo" className="h-12 w-auto ml-10 sm:h-14 sm:ml-11 sm:mt-2 md:h-16 md:ml-14 lg:h-20" />
+                            <img src="/src/assets/images/logo-lake.png" alt="Logo" className="h-12 w-auto ml-10 sm:h-14 sm:ml-11 sm:mt-2 md:h-16 md:ml-14 lg:h-20 xl:ml-0 xl:h-24" />
                         </Link>
                     </div>
                     {/* Links de escritorio */}

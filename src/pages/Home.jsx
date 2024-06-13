@@ -9,7 +9,7 @@ import RatingSlider from "../components/rating_slider/RatingSlider";
 
 function Home() {
     return(
-        <div>
+        <div className="w-full">
             <HeroBanner/>
             <CardSlider/>
             <LightGreenBanner/>

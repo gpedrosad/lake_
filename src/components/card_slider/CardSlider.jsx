@@ -47,7 +47,7 @@ const CardSlider = () => {
       src="src/assets/images/hoja1.png" 
       alt="Descripción de la imagen" 
       style={{ width: '40px', height: '40px' }} 
-      class="ml-6 md:mr-2 md:mb-4"
+      className="ml-6 md:mr-2 md:mb-4"
     />
     <h1 className='font-rufina font-bold text-2xl text-custom-green sm:text-3xl md:text-4xl lg:text-5xl md:mt-10 md:mb-12'>
       Experience the tranquility
@@ -57,7 +57,7 @@ const CardSlider = () => {
       src="src/assets/images/hoja2.png" 
       alt="Descripción de la imagen" 
       style={{ width: '40px', height: '40px' }} 
-      class="ml-4 md:ml-2"
+      className="ml-4 md:ml-2"
     />
 
       </div>

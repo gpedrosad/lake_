@@ -20,7 +20,7 @@ const NuevoBanner = () => {
         <p className="font-inika font-normal ml-10 mr-10 mt-5 mb-20 text-xl">
           Our story is one of passion and refinement, where each dish is a carefully curated masterpiece. Elegance graces every detail, inviting you into a world where exquisite flavors and sophisticated ambiance harmonize, creating an unforgettable dining experience. Welcome to the epitome of gastronomic delight.
         </p>
-        <div class="flex justify-center align-center mb-10 md:mb-20">
+        <div class="flex justify-center align-center mb-20">
 
         <TransparentButton className="" text="About us"/>
         </div>

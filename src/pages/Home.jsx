@@ -6,13 +6,15 @@ import MenuComponent from "../components/menu_components/MenuComponents";
 import PhotoGallery from "../components/PhotoGallery";
 import ForestBanner from "../components/ForestBanner";
 import RatingSlider from "../components/rating_slider/RatingSlider";
+import NuevoBanner from "../components/NuevoBanner";
+
 
 function Home() {
     return(
         <div className="w-full">
             <HeroBanner/>
             <CardSlider/>
-            <LightGreenBanner/>
+            <NuevoBanner/>
             <MenuLine/>
             <MenuComponent/>
             <PhotoGallery/>

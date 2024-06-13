@@ -58,7 +58,7 @@ const Navbar = () => {
                         <div className="w-full flex justify-center mb-5"> {/* Ajuste de margen aquí */}
                             <GreenButton text="Reservation" width="80%" height="50px" fontSize="20px" backgroundColor="#8DA260"/>
                         </div>
-                        <Link to="/contact" className="mt-5 font-inika font-normal block py-2 px-4 text-3xl sm:text-2xl xs:text-xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Contact</Link> {/* Ajuste de margen aquí */}
+                        <Link to="/about" className="mt-5 font-inika font-normal block py-2 px-4 text-3xl sm:text-2xl xs:text-xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>About</Link> {/* Ajuste de margen aquí */}
                         <div className="w-full bg-second-green h-0.5"></div>
                         <Link to="/accomodation" className="mt-5 font-inika font-normal block py-2 px-4 text-3xl sm:text-2xl xs:text-xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Accommodation</Link> {/* Ajuste de margen aquí */}
                         <div className="w-full bg-second-green h-0.5"></div>

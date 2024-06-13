@@ -20,7 +20,7 @@ const ImageCarrousel = ({ images, rounded }) => {
                 <img
                     src={images[currentIndex]}
                     alt={`Slide ${currentIndex}`}
-                    className="w-full h-auto object-cover"
+                    className="w-full h-auto object-cover rounded-xl"
                 />
             </div>
             <div className="flex justify-center mt-4 space-x-4">

@@ -17,7 +17,7 @@ const FeatureAccom = ({ title, description, buttonText, borderRadius, bgcolorbut
         </div>
         <div className="items-center justify-items-center px-10 py-5 ">
             <div className=''>
-            <p className="text-justifytext-custom-green line-clamp-13">
+            <p className="text-justify text-custom-green line-clamp-13">
             {description}
           </p>
 

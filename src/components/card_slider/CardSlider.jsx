@@ -76,22 +76,21 @@
 
 // export default CardSlider;
 
-import React, { useState, useEffect, useRef } from 'react';
+
+import { useState, useEffect, useRef } from 'react';
 import './CardSlider.css';
-import Card from '../Card';
+import Card from '../card/Card';
 
 const CardSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsToShow, setItemsToShow] = useState(3);
-  const [showButtons, setShowButtons] = useState(true);
+  const [totalDots, setTotalDots] = useState(0); // Estado para almacenar el número de dots
   const sliderRef = useRef(null);
 
   useEffect(() => {
     const updateSettings = () => {
       const isMobile = window.innerWidth < 768;
-      // const isTablet = window.innerWidth < 1024;
       setItemsToShow(isMobile ? 1.5 : 3);
-      setShowButtons(!isMobile); // Oculta los botones en pantallas medianas y móviles
     };
 
     updateSettings(); // Llama a la función cuando el componente se monta
@@ -101,6 +100,13 @@ const CardSlider = () => {
       window.removeEventListener('resize', updateSettings); // Limpia el event listener al desmontar
     };
   }, []);
+
+  // UseEffect adicional para calcular el número total de dots después de que el componente esté montado
+  useEffect(() => {
+    if (sliderRef.current) {
+      setTotalDots(Math.ceil(sliderRef.current.children.length / itemsToShow));
+    }
+  }, [itemsToShow]);
 
   const nextSlide = () => {
     if (sliderRef.current && currentIndex < sliderRef.current.children.length - itemsToShow) {
@@ -113,8 +119,6 @@ const CardSlider = () => {
       setCurrentIndex(currentIndex - 1);
     }
   };
-
-  const totalDots = sliderRef.current ? Math.ceil(sliderRef.current.children.length / itemsToShow) : 0;
 
   return (
     <div className="slider-component">
@@ -142,7 +146,6 @@ const CardSlider = () => {
           <Card title="Outdoor dining" description="Immerse yourself in the warm embrace of our indoor oasis, savor al-fresco moments on our charming outdoor terrace, or unwind at the stylish bar where crafted libations await." image="src/assets/images/card-image2.png" />
           <Card title="Boat cruise" description="Immerse yourself in the warm embrace of our indoor oasis, savor al-fresco moments on our charming outdoor terrace, or unwind at the stylish bar where crafted libations await." image="src/assets/images/card-image3.png" />
           <Card title="Indoor dining" description="Immerse yourself in the warm embrace of our indoor oasis, savor al-fresco moments on our charming outdoor terrace, or unwind at the stylish bar where crafted libations await." image="src/assets/images/card-image-1.png" />
-          <Card title="Boat cruise" description="Immerse yourself in the warm embrace of our indoor oasis, savor al-fresco moments on our charming outdoor terrace, or unwind at the stylish bar where crafted libations await." image="src/assets/images/card-image3.png" />
         </div>
         <button className="slider-button right" onClick={nextSlide}></button>
       </div>
@@ -156,3 +159,5 @@ const CardSlider = () => {
 };
 
 export default CardSlider;
+
+

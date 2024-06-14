@@ -15,7 +15,7 @@ const Navbar = () => {
                 <div className="flex justify-between items-center py-4">
                     <div className='bg-transparent'>
                         <Link to="/" className="flex items-center py-4 px-2 lg:py-16 lg:pr-20">
-                            <img src="/src/assets/images/logo-lake.png" alt="Logo" className="h-12 w-auto sm:h-10 sm:w-auto md:h-20 lg:h-32" />
+                            <img src="/src/assets/images/logo-lake.png" alt="Logo" className="h-12 w-auto ml-10 sm:h-14 sm:ml-11 sm:mt-2 md:h-16 md:ml-14 lg:h-20 xl:ml-0 xl:h-24" />
                         </Link>
                     </div>
                     {/* Links de escritorio */}
@@ -51,23 +51,23 @@ const Navbar = () => {
                     </svg>
                 </div>
                 <div className="flex flex-col items-center justify-center w-full h-full py-12 px-4 mt-4">
-                    <div className="text-center mb-10"> {/* Ajuste de margen aquí */}
                         <Link to="/" className="block mb-6" onClick={handleLinkClick}> {/* Ajuste de margen aquí */}
-                            <img src="/src/assets/images/logo-lake.png" alt="Logo" className="mx-auto w-32 h-auto sm:w-24 sm:h-auto xs:w-20 xs:h-auto" />
-                        </Link>
-                        <div className="w-full flex justify-center mb-5"> {/* Ajuste de margen aquí */}
-                            <GreenButton text="Reservation" width="80%" height="50px" fontSize="20px" backgroundColor="#8DA260"/>
+                        <div className="w-full flex justify-center mb-5 flex-col"> {/* Ajuste de margen aquí */}
+                            <img src="/src/assets/images/logo-lake.png" alt="Logo" className="mx-auto w-36 h-auto mb-10" />
+                            <GreenButton text="Reservation" width="250px" height="50px" fontSize="20px" backgroundColor="#8DA260"/>
                         </div>
-                        <Link to="/about" className="mt-5 font-inika font-normal block py-2 px-4 text-3xl sm:text-2xl xs:text-xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>About</Link> {/* Ajuste de margen aquí */}
+                        </Link>
+                        <Link to="/about" className="mt-5 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>About</Link> {/* Ajuste de margen aquí */}
                         <div className="w-full bg-second-green h-0.5"></div>
-                        <Link to="/accomodation" className="mt-5 font-inika font-normal block py-2 px-4 text-3xl sm:text-2xl xs:text-xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Accommodation</Link> {/* Ajuste de margen aquí */}
+                        <Link to="/accomodation" className="mt-5 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Accommodation</Link> {/* Ajuste de margen aquí */}
                         <div className="w-full bg-second-green h-0.5"></div>
-                        <Link to="/boat" className="mt-5 font-inika font-normal block py-2 px-4 text-3xl sm:text-2xl xs:text-xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Boat</Link> {/* Ajuste de margen aquí */}
+                        <Link to="/boat" className="mt-5 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Boat</Link> {/* Ajuste de margen aquí */}
                         <div className="w-full bg-second-green h-0.5"></div>
-                        <Link to="/contact" className="mt-5 font-inika font-normal block py-2 px-4 text-3xl sm:text-2xl xs:text-xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Menu</Link> {/* Ajuste de margen aquí */}
+                        <Link to="/contact" className="mt-5 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Menu</Link> {/* Ajuste de margen aquí */}
                         <div className="w-full bg-second-green h-0.5"></div>
-                        <Link to="/contact" className="mt-5 font-inika font-normal block py-2 px-4 text-3xl sm:text-2xl xs:text-xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Teahouse-history</Link> {/* Ajuste de margen aquí */}
+                        <Link to="/contact" className="mt-5 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Teahouse-history</Link> {/* Ajuste de margen aquí */}
                     </div>
+                    <div className="text-center mb-10"> {/* Ajuste de margen aquí */}
                 </div>
             </div>
         </nav>

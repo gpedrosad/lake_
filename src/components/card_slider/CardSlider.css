@@ -1,4 +1,4 @@
-.Slider-component{
+/* .Slider-component{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -37,4 +37,138 @@
     .card_slider_tittle{
         font-size: 2rem;
     }
+} */
+
+.slider-component {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 2rem 0;
+  }
+  
+  .slider-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-image {
+    width: 5vw;
+    height: auto;
+  }
+  
+  .header-title {
+    font-family: 'Rufina', serif;
+    font-weight: bold;
+    font-size: 4vw;
+    color: #006400; 
+    margin: 0 1rem;
+  }
+  
+  .slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .slider-wrapper {
+    display: flex;
+    margin-left: 2%;
+    margin-right: 2%;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    width: 1rem;
+    height: 1rem;
+    background-size: cover;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0.5rem;
+  }
+  
+  .slider-button.left {
+    left: 2%;
+    background-image: url('src/assets/images/VectorPrevArrow.png');
+    background-position: center;
+    background-size: cover;
 }
+  
+  .slider-button.right {
+    right: 2%;
+    background-image: url('src/assets/images/VectorNextArrow.png');
+    background-size: cover;
+    background-position: center;
+
+  }
+  
+  .card {
+    flex: 0 0 calc(80% / 1.5); /* Ajusta el ancho de las tarjetas y aumenta la separación */
+    box-sizing: border-box;
+    padding: 0 1.5%; /* Aumenta la separación entre las tarjetas */
+  }
+  
+  .slider-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .dot {
+    width: 1rem;
+    height: 1rem;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #666;
+  }
+  
+  /* Media Queries for responsive design */
+  @media (min-width: 1024px) {
+    .card {
+      flex: 0 0 calc(100% / 3); /* Para pantallas grandes, muestra 3 tarjetas */
+    }
+    .slider-button {
+      display: block; /* Muestra los botones en pantallas grandes */
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .card {
+      flex: 0 0 calc(80% / 1.5); 
+    }
+    .slider-button {
+      display: none; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header-title {
+      font-size: 6vw;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header-title {
+      font-size: 8vw;
+    }
+  }
+  

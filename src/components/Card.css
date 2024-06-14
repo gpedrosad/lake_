@@ -1,0 +1,72 @@
+.card {
+    width: 40%; /* Usa un porcentaje para que la anchura sea relativa al contenedor padre */
+    max-width: 100%; /*Asegura que la tarjeta no exceda el ancho del contenedor */
+    margin: 1% auto; /* Usa auto para centrar la tarjeta y un porcentaje para el margen superior e inferior */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    overflow: hidden;
+
+  }
+  
+  .card-action-area {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .card-media {
+    width: 100%;
+    height: 40vh; 
+    object-fit: cover;
+  }
+  
+  .card-content {
+    background-color: #3C5220;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 10%; /* Usa porcentajes para que el relleno sea relativo al tamaño del contenedor */
+    transition: background-color 0.3s;
+  }
+  
+  .card-content:hover {
+    background-color: #273812;
+  }
+  
+  .card-title {
+    margin: 0;
+    font-size: 1.5rem; 
+    font-weight: bold;
+    white-space: nowrap
+  }
+  
+  .card-description {
+    font-size: 1rem; 
+    text-align: justify;
+    padding: 5%; 
+  }
+  
+  .card-actions {
+    margin-top: 1rem; 
+  }
+  
+  .card-button {
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    padding: 0.5rem 1rem; 
+    font-size: 0.875rem; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .card-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  

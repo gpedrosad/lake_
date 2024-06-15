@@ -76,7 +76,6 @@
 
 // export default CardSlider;
 
-
 import { useState, useEffect, useRef } from 'react';
 import './CardSlider.css';
 import Card from '../card/Card';
@@ -84,8 +83,10 @@ import Card from '../card/Card';
 const CardSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsToShow, setItemsToShow] = useState(3);
-  const [totalDots, setTotalDots] = useState(0); // Estado para almacenar el número de dots
+  const [totalDots, setTotalDots] = useState(0);
   const sliderRef = useRef(null);
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
 
   useEffect(() => {
     const updateSettings = () => {
@@ -93,15 +94,14 @@ const CardSlider = () => {
       setItemsToShow(isMobile ? 1.5 : 3);
     };
 
-    updateSettings(); // Llama a la función cuando el componente se monta
-    window.addEventListener('resize', updateSettings); // Ajusta la configuración cuando se cambia el tamaño de la ventana
+    updateSettings();
+    window.addEventListener('resize', updateSettings);
 
     return () => {
-      window.removeEventListener('resize', updateSettings); // Limpia el event listener al desmontar
+      window.removeEventListener('resize', updateSettings);
     };
   }, []);
 
-  // UseEffect adicional para calcular el número total de dots después de que el componente esté montado
   useEffect(() => {
     if (sliderRef.current) {
       setTotalDots(Math.ceil(sliderRef.current.children.length / itemsToShow));
@@ -117,6 +117,23 @@ const CardSlider = () => {
   const prevSlide = () => {
     if (currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
+    }
+  };
+
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    const touchDiff = touchStartX.current - touchEndX.current;
+    if (touchDiff > 50) {
+      nextSlide();
+    } else if (touchDiff < -50) {
+      prevSlide();
     }
   };
 
@@ -139,7 +156,12 @@ const CardSlider = () => {
           />
         </div>
       </div>
-      <div className="slider-container">
+      <div 
+        className="slider-container"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
         <button className="slider-button left" onClick={prevSlide}></button>
         <div className="slider-wrapper" ref={sliderRef} style={{ transform: `translateX(-${currentIndex * (100 / itemsToShow)}%)` }}>
           <Card title="Indoor dining" description="Immerse yourself in the warm embrace of our indoor oasis, savor al-fresco moments on our charming outdoor terrace, or unwind at the stylish bar where crafted libations await." image="src/assets/images/card-image-1.png" />
@@ -159,5 +181,3 @@ const CardSlider = () => {
 };
 
 export default CardSlider;
-
-

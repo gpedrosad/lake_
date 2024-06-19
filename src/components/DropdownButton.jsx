@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import MenuItem from './MenuItem';
 
 const DropdownButton = () => {
   const [selectedOption, setSelectedOption] = useState('Drinks');
@@ -13,9 +14,16 @@ const DropdownButton = () => {
 
   const options = ['Drinks', 'Breakfast', 'Lunch'];
   const menuContent = {
-    Drinks: "Aquí se muestran imágenes y descripciones de bebidas.",
-    Breakfast: "Explora nuestras opciones de desayuno, incluyendo huevos y panqueques.",
-    Lunch: "Descubre los platos disponibles para el almuerzo, desde ensaladas hasta hamburguesas."
+    Drinks: [
+      <MenuItem nombre="Coffee" ingredientes="Black or with milk" precio="5" imagen="src/img/huevos.png"/>
+    ],
+    Breakfast: [
+      <MenuItem nombre="Eggs Benedict" ingredientes="Poached eggs, hollandaise, ham, English muffin" precio="$12" imagen="src/img/huevos.png"/>,
+      <MenuItem nombre="Pancakes" ingredientes="Maple syrup, butter" precio="10" imagen="src/img/huevos.png"/>
+    ],
+    Lunch: [
+      <MenuItem nombre="Halloumi Bao (V)" ingredientes="Zing chilli, basil, pickled cucumber" precio="20" imagen="src/img/huevos.png"/>
+    ]
   };
 
   return (

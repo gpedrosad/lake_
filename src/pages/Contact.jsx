@@ -3,7 +3,7 @@ import TeaDescription from "../components/TeaDescription";
 import HeroSection from "../components/SecondHeroSection";
 import HoursAndBookingInfo from "../components/HoursAndBookingInfo";
 import DropdownButton from "../components/DropdownButton";
-
+import MenuItem from "../components/MenuItem";
 
 
 function Contact () {
@@ -17,6 +17,7 @@ function Contact () {
         <TeaDescription/>
         <HoursAndBookingInfo/>
         <DropdownButton/>
+        <MenuItem nombre="Halloumi Bao (V)" ingredientes="| Zing chilli, basil, pickled cucumber" precio="20" imagen="../assets/images/TeaPhoto.png"/>
 
 
         </div>

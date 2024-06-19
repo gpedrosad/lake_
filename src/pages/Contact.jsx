@@ -17,7 +17,7 @@ function Contact () {
         <TeaDescription/>
         <HoursAndBookingInfo/>
         <DropdownButton/>
-        <MenuItem nombre="Halloumi Bao (V)" ingredientes="| Zing chilli, basil, pickled cucumber" precio="20" imagen="../assets/images/TeaPhoto.png"/>
+        <MenuItem nombre="Halloumi Bao (V)" ingredientes="| Zing chilli, basil, pickled cucumber" precio="20" imagen="src/img/huevos.png"/>
 
 
         </div>

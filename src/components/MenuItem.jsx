@@ -1,13 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const MenuItem = ({ nombre, ingredientes, precio, imagen }) => {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setModalOpen(!modalOpen);
+  };
+
   return (
     <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-4 m-2">
-      <div className="w-full text-left p-4">
-        <h2 className="text-2xl font-bold text-custom-green text-center font-rufina">{nombre}</h2>
-        <p className="text-gray-600 mt-2 text-center">{ingredientes}</p>
-        <p className="text-4xl font-rufina font-bold text-gray-800 mt-4 text-center custom-green">{precio}</p>
+      <div className="w-full p-4 flex flex-col md:flex-row md:items-center md:justify-center md:space-x-4">
+        <h2 className="text-2xl font-bold text-custom-green text-center font-rufina cursor-pointer" onClick={toggleModal}>{nombre}</h2>
+        <p className="text-gray-600 mt-2 md:mt-0 text-center">{ingredientes}</p>
+        <p className="text-4xl font-rufina font-bold text-gray-800 mt-4 md:mt-0 text-center custom-green">{precio}</p>
       </div>
+      {modalOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white p-4 rounded-lg shadow-lg mx-auto max-w-lg md:max-w-2xl text-center">
+            <div className="flex flex-col md:flex-row">
+              <div className="md:w-1/2 p-4">
+                <h2 className="text-xl font-bold">{nombre}</h2>
+                <p>{ingredientes}</p>
+                <p className="text-2xl font-bold">{precio}</p>
+                <button onClick={toggleModal} className="mt-4 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-700 transition duration-300">
+                  Close
+                </button>
+              </div>
+              <div className="md:w-1/2">
+                <img src={imagen} alt="Dish image" className="rounded-lg w-full h-full object-cover" />
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

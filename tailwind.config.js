@@ -14,7 +14,8 @@ export default {
         'custom-green': '#273812',
         'second-green': '#B8CAA8',
         'third-green':'#3C5220',
-        'new-green': '#8DA260', 
+        'new-green': '#8DA260',
+        'black-87': '#f5f5f5',
       },
       screens: {
         'xs': '150px',  

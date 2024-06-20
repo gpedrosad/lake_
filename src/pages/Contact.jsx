@@ -5,6 +5,7 @@ import HoursAndBookingInfo from "../components/HoursAndBookingInfo";
 import DropdownButton from "../components/DropdownButton";
 import MenuItem from "../components/MenuItem";
 import IframeComponent from "../components/IframeComponent";
+import VideoBanner from "../components/VideoBanner";
 
 
 function Contact () {
@@ -14,7 +15,7 @@ function Contact () {
         <HeroSection
                 imageSrc="src/assets/images/30ef8a84f0f4e51616f759e50c285eff.png"
                 title="Experience the tranquility"
-            />
+                />
         <TeaDescription/>
         <HoursAndBookingInfo/>
         <DropdownButton/>
@@ -32,6 +33,7 @@ function Contact () {
         </div>
 
         <IframeComponent/>
+        <VideoBanner/>
         </div>
 
         </>

@@ -14,4 +14,4 @@ ChatBubble.propTypes = {
     text: PropTypes.string.isRequired,
   };
 
-export default ChatBubble;
+export default ChatBubble; 

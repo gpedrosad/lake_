@@ -10,10 +10,10 @@ function VerifiedCustomer() {
             
           }
           }/>
-            <p className='p_customerContainer'>Verified Customer</p>
+            <p className='p_customerContainer'>Verified Customer </p>
         </div>
     );
 }
 
-export default VerifiedCustomer;
+export default VerifiedCustomer; 
  

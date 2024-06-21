@@ -3,13 +3,13 @@ import UserComponent from '../user_item/UserItem'
 import ChatBubble from '../chat_bubble/ChatBubble'
 
  
-function UserCommentComponent(){
+function UserCommentComponent({text, src, userName, defaultValue, colorName, colorStar, colorRating}){
     return(
         <div className='user_comment_container'>
-            <ChatBubble text='Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos. Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos. Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos.'/>
-            <UserComponent src={'src/assets/images/user-mindy-monahan.png'} userName={"Mindy Monahan"}/>
+            <ChatBubble text={text}/>
+            <UserComponent src={src} userName={userName} defaultValue={defaultValue} colorName={colorName} colorStar={colorStar} colorRating={colorRating}/>
         </div>
     )
 }
 
-export default UserCommentComponent
+export default UserCommentComponent; 

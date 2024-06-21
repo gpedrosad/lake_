@@ -7,15 +7,33 @@ import './RatingSlider.css';
 const testimonialData = [
   {
     id: 1,
-    component: <UserCommentComponent />
+    component: <UserCommentComponent 
+                  text={'Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos. Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos. Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos.'}
+                  src={'src/assets/images/user-mindy-monahan.png'} 
+                  userName={"Mindy Monahan"}
+                  defaultValue={4.5}
+                  colorStar='#8DA260'
+                  />
   },
   {
     id: 2,
-    component: <UserCommentComponent />
+    component: <UserCommentComponent 
+                  text={'Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos. Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos. Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos.'}
+                  src={'src/assets/images/pexels-olly-733872.jpg'} 
+                  userName={"Mary Williams"}
+                  defaultValue={5.0}
+                  colorStar='#8DA260'
+    />
   },
   {
     id: 3,
-    component: <UserCommentComponent />
+    component: <UserCommentComponent 
+                  text={'Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos. Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos. Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos.'}
+                  src={'src/assets/images/man-299488_1280.jpg'} 
+                  userName={"Logan Pazcual"}
+                  defaultValue={5.0}
+                  colorStar='#8DA260'
+    />
   }
 ];
 
@@ -63,4 +81,4 @@ const RatingSlider = () => {
   );
 }
 
-export default RatingSlider;
+export default RatingSlider; 

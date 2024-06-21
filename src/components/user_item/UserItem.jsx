@@ -3,7 +3,7 @@ import VerifiedCustomer from '../verified_customer/VerifiedCustomer';
 import PropTypes from 'prop-types';
 import RatingComponent from '../rating_item/RatingItem';
  
-function UserItem ({src,userName}) {
+function UserItem ({src,userName, defaultValue, colorName, colorRating, colorStar}) {
     return(
         <>
             <div className='user_container'>
@@ -14,7 +14,7 @@ function UserItem ({src,userName}) {
                     </div>
                     <div className='user_name_container'>
                         <div>
-                        <h2 className='font-rufina text-bold sm:text-4xl whitespace-nowrap'>{userName}</h2>
+                        <h2 className='font-rufina text-bold sm:text-4xl whitespace-nowrap color' style={{ color: colorName }}>{userName}</h2>
                         </div>
                         <div>
                             <VerifiedCustomer />
@@ -22,7 +22,7 @@ function UserItem ({src,userName}) {
                     </div>
                     </div>
                     <div className='rating_u_component'>
-                        <RatingComponent defaultValue={4.5}/>
+                        <RatingComponent defaultValue={defaultValue} colorStar={colorStar} colorRating={colorRating}/>
                     </div>
                 </div>
 
@@ -36,7 +36,10 @@ function UserItem ({src,userName}) {
 UserItem.propTypes = {
     src: PropTypes.string.isRequired,
     alt: PropTypes.string,
-    userName: PropTypes.string
-  };
+    userName: PropTypes.string,
+    defaultValue: PropTypes.number,
+    colorName: PropTypes.string
 
-export default UserItem;
+};
+
+export default UserItem; 

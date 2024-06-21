@@ -1,172 +1,147 @@
-/* .Slider-component{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.component_t_card_slider{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo_title_card_slider{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.logo_title_card_slider img{
-    width: 50%;
-    
-}
-.card_slider_tittle{
-    width: auto;
-    margin: 5% 0%;
-    font-size: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: rufina;
-    font-weight: bold;
-}
-.logo_title_card_slider{
-    width: 10%;
-}
-
-@media only screen and (max-width: 1060px) {
-    .card_slider_tittle{
-        font-size: 2rem;
-    }
-} */
 
 .slider-component {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    padding: 2rem 0;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem 0rem;
+}
+
+.slider-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.header-image {
+  width: 4vw;
+  height: auto;
+}
+
+.header-title {
+  font-family: 'Rufina', serif;
+  font-weight: bold;
+  font-size: 4vw;
+  color: #273812;
+  margin: 1rem 1rem;
+}
+
+.slider-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  cursor: pointer;
+  z-index: 10;
+  padding: 0;
+}
+
+.slider-button.left {
+  left: 2%;
+  background-image: url('src/assets/images/VectorPrevArrow.png');
+}
+
+.slider-button.right {
+  right: 2%;
+  background-image: url('src/assets/images/VectorNextArrow.png');
+}
+
+.card {
+  flex: 0 0 calc(80% / 1.5); /* Ajusta el ancho de las tarjetas y aumenta la separación */
+  box-sizing: border-box;
+  padding: 0 1.5%; /* Aumenta la separación entre las tarjetas */
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.dot {
+  width: 1rem;
+  height: 1rem;
+  background-color: #D3E4AE;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #273812;
+}
+
+/* Media Queries for responsive design */
+@media (min-width: 1024px) {
+  .card {
+    flex: 0 0 calc(100% / 3); /* Para pantallas grandes, muestra 3 tarjetas */
   }
-  
-  .slider-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3rem;
-    margin-top: 2rem;
+  .slider-button {
+    display: block; /* Muestra los botones en pantallas grandes */
   }
-  
-  .header-content {
-    display: flex;
-    align-items: center;
+
+}
+
+@media (max-width: 1024px) {
+  .card {
+    flex: 0 0 calc(110% / 1.5);
+
   }
-  
-  .header-image {
-    width: 4vw;
-    height: auto;
+  .slider-button {
+    display: none;
   }
-  
   .header-title {
-    font-family: 'Rufina', serif;
-    font-weight: bold;
-    font-size: 4vw;
-    color: #273812;
-    margin: 0 1rem;
+    font-size: 3vw;
   }
-  
-  .slider-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    
+}
+
+@media (max-width: 1020px) {
+  .header-title {
+    font-size: 3vw;
+  }
+
+  .card {
+    /*flex: 0 0 100%;  Para pantallas medianas y móviles, muestra una tarjeta */
+    padding: 0; /* Elimina el padding para centrar las tarjetas */
+    margin-bottom: 1rem; /* Añade un margen inferior entre las tarjetas */
   }
   
   .slider-wrapper {
-    display: flex;
-    margin-left: 2%;
-    margin-right: 2%;
-    transition: transform 0.5s ease-in-out;
-    width: 100%;
+    transform: translateX(-${currentIndex * 100}%); /* Ajusta la traducción de la tarjeta */
   }
-  
-  .slider-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    width: 1.5rem;
-    height: 1.5rem;
-    background-size: contain; 
-    background-repeat: no-repeat; 
-    cursor: pointer;
-    z-index: 10;
-    padding: 0;
+
+  .slider-container {
+    overflow: hidden; /* Oculta las tarjetas que no están visibles */
+  } 
+}
+
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 2vw;
   }
-  
-  .slider-button.left {
-    left: 2%;
-    background-image: url('src/assets/images/VectorPrevArrow.png');
-  }
-  
-  .slider-button.right {
-    right: 2%;
-    background-image: url('src/assets/images/VectorNextArrow.png');
-  }
-  
-  .card {
-    flex: 0 0 calc(80% / 1.5); /* Ajusta el ancho de las tarjetas y aumenta la separación */
-    box-sizing: border-box;
-    padding: 0 1.5%; /* Aumenta la separación entre las tarjetas */
-  }
-  
-  .slider-dots {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-  }
-  
-  .dot {
-    width: 1rem;
-    height: 1rem;
-    background-color: #D3E4AE;
-    border-radius: 50%;
-    margin: 0 0.5rem;
-    cursor: pointer;
-  }
-  
-  .dot.active {
-    background-color: #273812;
-  }
-  
-  /* Media Queries for responsive design */
-  @media (min-width: 1024px) {
-    .card {
-      flex: 0 0 calc(100% / 3); /* Para pantallas grandes, muestra 3 tarjetas */
-    }
-    .slider-button {
-      display: block; /* Muestra los botones en pantallas grandes */
-    }
-  }
-  
-  @media (max-width: 1024px) {
-    .card {
-      flex: 0 0 calc(80% / 1.5);
-    }
-    .slider-button {
-      display: none;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .header-title {
-      font-size: 6vw;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .header-title {
-      font-size: 8vw;
-    }
-  }
-  
+}

@@ -8,12 +8,12 @@ const CardSlider = () => {
   const [totalDots, setTotalDots] = useState(0);
   const sliderRef = useRef(null);
   const touchStartX = useRef(0);
-  const touchEndX = useRef(0); 
+  const touchEndX = useRef(0);
 
   useEffect(() => {
     const updateSettings = () => {
-      const isMobile = window.innerWidth < 768;
-      setItemsToShow(isMobile ? 1.5 : 3);
+      const isSmallScreen = window.innerWidth < 1025;
+      setItemsToShow(isSmallScreen ? 1 : 3);
     };
 
     updateSettings();
@@ -103,3 +103,4 @@ const CardSlider = () => {
 };
 
 export default CardSlider;
+

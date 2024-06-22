@@ -14,13 +14,11 @@ function Contact () {
         <div>
         <HeroSection
                 imageSrc="src/assets/images/30ef8a84f0f4e51616f759e50c285eff.png"
-                title="Experience the tranquility"
+                title="Our Story"
                 />
         <TeaDescription/>
         <HoursAndBookingInfo/>
         <DropdownButton/>
-        <MenuItem nombre="Halloumi Bao (V)" ingredientes="| Zing chilli, basil, pickled cucumber" precio="20" imagen="src/img/huevos.png"/>
-        <MenuItem nombre="Caesar Salad" ingredientes="| Zing chilli, basil, pickled cucumber, " precio="30" imagen="src/img/huevos.png"/>
 
         <div class="flex justify-center bg-black-87">
 

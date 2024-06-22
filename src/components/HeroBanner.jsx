@@ -9,9 +9,9 @@ const HeroBanner = () => {
             <img src="src/assets/images/hero.png" alt="Imagen decorativa" className="w-full h-full object-cover" />
             <div className="absolute inset-0 flex flex-col items-start justify-center text-left p-8 md:p-12">
                 <h1 className="ml-10 mt-10 text-new-green text-3xl md:text-6xl lg:text-7xl font-bold leading-tight lg:mt-20 sm:text-4xl">
-                    <span className="font-rufina block">Where the lake</span>
+                    <span className="font-rufina block">Where the Rainforest</span>
                     <span className="font-rufina block">meets the</span>
-                    <span className="font-rufina block">rainforest</span>
+                    <span className="font-rufina block">Lake</span>
                 </h1>
                 <p className="ml-10 text-white text-lg md:text-2xl lg:text-3xl mt-4 font-rufina">
                     Relax and get away from it all

@@ -1,9 +1,8 @@
-
 .slider-component {
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding: 2rem 0rem;
+  padding: 2rem 0;
 }
 
 .slider-header {
@@ -53,8 +52,8 @@
   border: none;
   width: 1.5rem;
   height: 1.5rem;
-  background-size: contain; 
-  background-repeat: no-repeat; 
+  background-size: contain;
+  background-repeat: no-repeat;
   cursor: pointer;
   z-index: 10;
   padding: 0;
@@ -71,9 +70,9 @@
 }
 
 .card {
-  flex: 0 0 calc(80% / 1.5); /* Ajusta el ancho de las tarjetas y aumenta la separación */
+  flex: 0 0 calc(80% / 1.5);
   box-sizing: border-box;
-  padding: 0 1.5%; /* Aumenta la separación entre las tarjetas */
+  padding: 0 1.5%;
 }
 
 .slider-dots {
@@ -99,18 +98,16 @@
 /* Media Queries for responsive design */
 @media (min-width: 1024px) {
   .card {
-    flex: 0 0 calc(100% / 3); /* Para pantallas grandes, muestra 3 tarjetas */
+    flex: 0 0 calc(100% / 3);
   }
   .slider-button {
-    display: block; /* Muestra los botones en pantallas grandes */
+    display: block;
   }
-
 }
 
 @media (max-width: 1024px) {
   .card {
     flex: 0 0 calc(110% / 1.5);
-
   }
   .slider-button {
     display: none;
@@ -124,20 +121,13 @@
   .header-title {
     font-size: 3vw;
   }
-
   .card {
-    /*flex: 0 0 100%;  Para pantallas medianas y móviles, muestra una tarjeta */
-    padding: 0; /* Elimina el padding para centrar las tarjetas */
-    margin-bottom: 1rem; /* Añade un margen inferior entre las tarjetas */
+    padding: 0;
+    margin-bottom: 1rem;
   }
-  
-  .slider-wrapper {
-    transform: translateX(-${currentIndex * 100}%); /* Ajusta la traducción de la tarjeta */
-  }
-
   .slider-container {
-    overflow: hidden; /* Oculta las tarjetas que no están visibles */
-  } 
+    overflow: hidden;
+  }
 }
 
 @media (max-width: 768px) {

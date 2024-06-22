@@ -14,7 +14,7 @@ function Contact () {
         <div>
         <HeroSection
                 imageSrc="src/assets/images/30ef8a84f0f4e51616f759e50c285eff.png"
-                title="Experience the tranquility"
+                title="Our Story"
                 />
         <TeaDescription/>
         <HoursAndBookingInfo/>

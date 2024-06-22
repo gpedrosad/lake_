@@ -69,7 +69,7 @@ const CardSlider = () => {
             className="header-image"
           />
           <h1 className="header-title">
-            Experience the tranquility
+            Experiences
           </h1>
           <img 
             src="src/assets/images/hoja2.png" 

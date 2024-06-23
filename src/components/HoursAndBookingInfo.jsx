@@ -3,7 +3,7 @@ import GreenButton from './GreenButton';
 
 const HoursAndBookingInfo = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-second-green">
+    <div className="flex justify-center items-center h-2/3 bg-second-green">
       <div className="text-center bg-second-green max-w-2xl p-20">
         <p className="font-rufina font-bold text-3xl mb-2 text-custom-green p-5">Open 7 days a week</p>
         <p className="mb-1 font-bold text-custom-green">Mon – Sun <span className="font-normal">12pm – 3pm</span></p>

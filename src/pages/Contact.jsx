@@ -32,8 +32,6 @@ function Contact () {
             <script src="https://plugins.nowbookit.com/iframe-resizer-build/bundle.js"></script>
         </div>
 
-        <IframeComponent/>
-        <VideoBanner/>
         </div>
 
         </>

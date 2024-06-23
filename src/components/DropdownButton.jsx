@@ -34,7 +34,7 @@ const DropdownButton = () => {
     ],
     Breakfast: [
       <MenuItem nombre="Eggs Benedict" ingredientes="Poached eggs, hollandaise, ham, English muffin" precio="$12" imagen="src/img/huevos.png"/>,
-      <MenuItem nombre="Pancakes" ingredientes="Maple syrup, butter" precio="10" imagen="src/img/huevos.png"/>,
+      <MenuItem nombre="Pancakes" ingredientes="Maple syrup, butter" precio="$10" imagen="src/img/huevos.png"/>,
       <MenuItem nombre="Eggs Benedict" ingredientes="Ciabatta bread, baby spinach, free-range eggs, choice of bacon/mushrooms/smoked salmon, hollandaise sauce" descripcion="Classic breakfast with your choice of topping" precio="$27.00" />,
       <MenuItem nombre="Twice Fried Bacon and Egg Roll" ingredientes="Crispy bacon, free-range egg, toasted Turkish bread, BBQ sauce" descripcion="Seasoned with housemade creole spices" precio="$17.00" />,
       <MenuItem nombre="Smoked Salmon and Cream Cheese" ingredientes="Smoked salmon, baby spinach, cream cheese, fresh herbs, Spanish onion, capers, toasted Turkish bread, lemon wedge" precio="$22.00" />,
@@ -50,14 +50,16 @@ const DropdownButton = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative mt-10">
       <div className="sm:hidden">
-        <button onClick={toggleDropdown} className="bg-custom-green text-white px-3 py-1 rounded-lg flex items-center justify-between w-36">
-          {selectedOption}
-          <span className="ml-2 text-sm">&#9660;</span>
-        </button>
+        <div class="flex justify-center">
+
+          <button onClick={toggleDropdown} className="bg-custom-green text-white px-3 py-1 rounded-lg flex items-center justify-between w-36 h-10">
+            {selectedOption}
+            <span className="ml-2 text-sm">&#9660;</span>
+          </button>
         {isOpen && (
-          <div className="absolute mt-1 w-36 bg-white rounded-lg shadow-lg z-10">
+          <div className="absolute mt-10 w-36 bg-white rounded-lg shadow-lg z-10">
             <ul className="text-gray-700">
               {options.map((option, index) => (
                 <li key={index}
@@ -69,6 +71,7 @@ const DropdownButton = () => {
             </ul>
           </div>
         )}
+        </div>
       </div>
       <div className="hidden sm:flex space-x-10 mt-3 justify-center mb-5">
         {options.map((option) => (

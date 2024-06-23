@@ -91,4 +91,4 @@ const RatingSlider = () => {
   );
 }
 
-export default RatingSlider; 
+export default RatingSlider;  

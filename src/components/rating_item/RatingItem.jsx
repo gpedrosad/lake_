@@ -7,7 +7,7 @@ function RatingComponent ({defaultValue, colorStar, colorRating}) {
         <div className='rating_component'>
             <div>
             <Rating name="size-medium" defaultValue={defaultValue} precision={0.5} readOnly sx={{ color: colorStar }}/>
-
+ 
             </div>
             <div>
             <p style={{ color: colorRating}}>{defaultValue} rating</p>

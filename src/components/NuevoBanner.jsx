@@ -12,7 +12,7 @@ const NuevoBanner = () => {
     <div className="relative w-full bg-[#B8CAA8] grid md:grid-cols-2">
       <div className="relative grid place-items-center">
         <img src={hojaIzq} alt="Descripción de la imagen" className="absolute top-0 left-0 w-20 h-20" />
-        <img src={nalita2} className="w-auto max-w-xs shadow-none mt-24 md:mt-0 lg:mt-0 m-24" />
+        <img src={nalita2} className="w-auto max-w-xs shadow-none mt-24 md:mt-0 lg:mt-0 m-24 xs:m-10" />
       </div>
     
       <div className="relative overflow-hidden">

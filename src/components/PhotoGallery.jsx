@@ -14,9 +14,9 @@ const PhotoGallery = () => {
       <ImageText className=""/>
       <TableImage src={tableImage} className=""/>
       <div className="">
-        <FoodImage src={foodImage} className=""/>
+        <FoodImage src={foodImage} className="object-cover"/>
       </div>
-      <MissImage src={missImage} className=""/> 
+      <MissImage src={missImage} className="object-cover"/> 
     </div>
   );
 }

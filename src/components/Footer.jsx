@@ -20,7 +20,7 @@ const Footer = () => {
           <h1 className="whitespace-nowrap font-rufina font-bold text-white text-3xl md:text-xl pb-5">Opening hours</h1>
           <p className="sm:mr-0 text-white sm:text-xl md:text-sm">Monday to Sunday</p>
           <p className="sm:mr-0 text-white sm:text-xl md:text-sm">9:00 am - 10:00 pm</p>
-          <h1 className="whitespace-nowrap font-rufina font-bold text-white text-3xl sm:text-3xl md:text-3xl md:pt-10 sm:pb-3 sm:pt-12 md:text-xl mt-4">Stay connected</h1>
+          <h1 className="whitespace-nowrap font-rufina font-bold text-white text-3xl sm:text-3xl md:text-3xl md:pt-10 sm:pb-3 sm:pt-12 md:text-xl mt-4 xs:pt-6">Stay connected</h1>
           <SocialMediaIcons/>
         </div>
       </div>

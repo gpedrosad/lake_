@@ -32,7 +32,7 @@ html, body {
   
   @layer utilities {
     .bg-double-image {
-      background-image: url('src/assets/images/Rectangle 26.png'), url('src/assets/images/bac-img-rat-slider.png');
+      background-image: url('/public/images/Rectangle26.png'), url('/public/images/bac-img-rat-slider.png');
       background-size: cover, cover; 
       background-position: center, center; 
     }

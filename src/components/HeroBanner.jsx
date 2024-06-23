@@ -1,17 +1,18 @@
-import React from 'react';
 import Navbar from './Navbar';
-
-const HeroBanner = () => {
+//img
+import heroimg from '../../public/images/hero.png'
+// h-95 md:h-90 lg:h-160
+const HeroBanner = () => { 
     return (
-        <div className="relative w-full h-95 md:h-90 lg:h-160 overflow-hidden">
+        <div className="relative w-full h-[930px] overflow-hidden">
             <Navbar />
             <div className="absolute inset-0 bg-gradient-to-br from-[#00000000] via-[#00000099] to-[#00000000]"></div>
-            <img src="src/assets/images/hero.png" alt="Imagen decorativa" className="w-full h-full object-cover" />
+            <img src={heroimg} alt="Imagen decorativa" className="w-full h-full object-cover" />
             <div className="absolute inset-0 flex flex-col items-start justify-center text-left p-8 md:p-12">
-                <h1 className="ml-10 mt-10 text-new-green text-3xl md:text-6xl lg:text-7xl font-bold leading-tight lg:mt-20 sm:text-4xl">
-                    <span className="font-rufina block">Where the Rainforest</span>
-                    <span className="font-rufina block">meets the</span>
-                    <span className="font-rufina block">Lake</span>
+                <h1 className="ml-10 mt-10 text-new-green text-3xl md:text-6xl lg:text-7xl font-bold leading-tight lg:mt-20 sm:text-6xl">
+                    <span className="font-rufina block">Where the </span>
+                    <span className="font-rufina block">lake meets </span>
+                    <span className="font-rufina block">the rainforest</span>
                 </h1>
                 <p className="ml-10 text-white text-lg md:text-2xl lg:text-3xl mt-4 font-rufina">
                     Relax and get away from it all

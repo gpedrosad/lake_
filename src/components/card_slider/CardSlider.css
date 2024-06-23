@@ -2,20 +2,22 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 
 .slider-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
-  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 .header-content {
   display: flex;
   align-items: center;
+  width: 100%;
+  justify-content: center;
 }
 
 .header-image {
@@ -26,9 +28,12 @@
 .header-title {
   font-family: 'Rufina', serif;
   font-weight: bold;
-  font-size: 4vw;
+  font-size: 4rem;
   color: #273812;
   margin: 1rem 1rem;
+}
+.bg-wh{
+  display: none;
 }
 
 .slider-container {
@@ -40,8 +45,10 @@
 
 .slider-wrapper {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.9s ease-in-out;
   width: 100%;
+  align-items: center;
+  height: 100%;
 }
 
 .slider-button {
@@ -61,12 +68,12 @@
 
 .slider-button.left {
   left: 2%;
-  background-image: url('src/assets/images/VectorPrevArrow.png');
+  background-image: url('../../../public/images/VectorPrevArrow.png');
 }
 
 .slider-button.right {
   right: 2%;
-  background-image: url('src/assets/images/VectorNextArrow.png');
+  background-image: url('../../../public/images/VectorNextArrow.png');
 }
 
 .card {
@@ -76,6 +83,7 @@
 }
 
 .slider-dots {
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,8 +102,9 @@
 .dot.active {
   background-color: #273812;
 }
-
+ 
 /* Media Queries for responsive design */
+
 @media (min-width: 1024px) {
   .card {
     flex: 0 0 calc(100% / 3);
@@ -106,20 +115,54 @@
 }
 
 @media (max-width: 1024px) {
+  .slider-component{
+    height: 140vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
   .card {
     flex: 0 0 calc(110% / 1.5);
   }
   .slider-button {
     display: none;
   }
+  .slider-header{
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+    height: 10%;
+  }
   .header-title {
     font-size: 3vw;
+  }
+  .slider-wrapper{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-left: 22%;
+    height: 100%;
+  }
+  .slider-container{
+    height: 80%;
+    position: relative;
+  }
+  .bg-wh{
+    width: 18%;
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    display: block;
+  }
+  .slider-dots{
+    height: 1%;
   }
 }
 
 @media (max-width: 1020px) {
   .header-title {
-    font-size: 3vw;
+    font-size: 3rem;
   }
   .card {
     padding: 0;
@@ -132,6 +175,27 @@
 
 @media (max-width: 768px) {
   .header-title {
-    font-size: 2vw;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width:640px) and (min-width:512px){
+  .header-title{
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width:511px) and (min-width:480px){
+  .header-title{
+    font-size: 2rem;
+  }
+}
+@media (max-width: 480px){
+  .header-title{
+    font-size:1.8rem ;
+  }
+  .slider-dots{
+    height: 0%;
+    margin-top: 5%;
   }
 }

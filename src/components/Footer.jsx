@@ -1,13 +1,13 @@
-
-import React from 'react';
 import SocialMediaIcons from './SocialMediaIcons';
+//img
+import logo from '../../public/images/logo-lake.png'
 
 const Footer = () => {
   return (
     <>
       <div className="bg-custom-green grid grid-cols-1 md:grid-cols-3 gap-4">
         <div className="flex flex-col items-center justify-center">
-          <img src="../src/img/logo.png" className="p-10"/>
+          <img src={logo} className="p-10"/>
         </div>
         <div className="flex flex-col items-center justify-center">
           <h1 className="font-rufina font-bold text-white text-3xl sm:text-3xl md:text-2xl pb-5">Contact</h1>

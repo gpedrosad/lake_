@@ -2,13 +2,17 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import UserCommentComponent from './user_comment/UserComment';
+//img
+import imgUserMindy from '../../public/images/user-mindy-monahan.png'
+import imgUserMary from '../../public/images/pexels-olly-733872.jpg'
+import imgUserMan from '../../public/images/man-299488_1280.jpg'
 
 const testimonialData = [
   {
     id: 1,
     component: <UserCommentComponent 
                   text={'Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos. Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos. Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos.'}
-                  src={'src/assets/images/user-mindy-monahan.png'} 
+                  src={imgUserMindy} 
                   userName={"Mindy Monahan"}
                   defaultValue={4.5}
                   colorName="white"
@@ -20,7 +24,7 @@ const testimonialData = [
     id: 2,
     component: <UserCommentComponent 
                   text={'Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos. Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos. Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos.'}
-                  src={'src/assets/images/pexels-olly-733872.jpg'} 
+                  src={imgUserMary} 
                   userName={"Mary Williams"}
                   defaultValue={5.0}
                   colorName="white"
@@ -32,7 +36,7 @@ const testimonialData = [
     id: 3,
     component: <UserCommentComponent 
                   text={'Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos. Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos. Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos.'}
-                  src={'src/assets/images/man-299488_1280.jpg'} 
+                  src={imgUserMan} 
                   userName={"Logan Pazcual"}
                   defaultValue={5.0}
                   colorName="white"

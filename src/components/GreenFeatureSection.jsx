@@ -1,11 +1,6 @@
 import ButtonComponent from './ButtonComponent';
 import ImageCarousel from './ImageCarrousel';
 
-// const images = [
-//     'src/assets/images/card-image-1.png',
-//     'src/assets/images/card-image3.png',
-
-// ];
 
 const GreenFeatureSection = ({ title, description, buttonText, borderRadius, bgcolor, images  }) => {
     return (

@@ -1,12 +1,15 @@
 import ButtonComponent from './ButtonComponent';
 import ImageCarousel from './ImageCarrousel';
 
+// Img
+import teaPhoto from '/public/images/TeaPhoto.png';
+
 const TeaDescription = () => {
   return (
     <>
       <div className="bg-[#F7F7F7] grid grid-cols-1 md:grid-cols-2 gap-3 p-4 justify-items-center items-center pt-16">
         
-        <img src="src/assets/images/TeaPhoto.png" alt="foto" class="w-3/4 md:w-full" />
+        <img src={teaPhoto} alt="foto" className="w-3/4 md:w-full" />
         
         <div className="items-center px-10 py-5 md:mb-20">
           <h1 className="text-center whitespace-nowrap font-rufina pb-3 mb-1 mt-6 font-bold text-third-green text-3xl sm:text-3xl md:text-3xl md:pb-5 md:pt-10 sm:pb-3 sm:pt-11 sm:mb-1">
@@ -24,3 +27,4 @@ const TeaDescription = () => {
 };
 
 export default TeaDescription;
+

@@ -11,7 +11,7 @@ const Card = ({ title, description, image }) => {
           <p className="card-description">{description}</p>
           <div className="card-actions">
             <button className="card-button">Discover our location</button>
-          </div>
+          </div> 
         </div>
       </div>
     </div>
@@ -25,4 +25,5 @@ Card.propTypes = {
 };
 
 export default Card;
+ 
  

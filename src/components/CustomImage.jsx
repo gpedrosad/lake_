@@ -1,4 +1,3 @@
-import React from 'react';
 
 const CustomImage = ({ src, alt, className}) => {
   const imageStyle = {

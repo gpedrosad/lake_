@@ -5,14 +5,14 @@ import UserCommentComponent from '../user_comment/UserComment';
 import './RatingSlider.css';
 
 //img
-import imgUserMindy from '../../../public/images/user-mindy-monahan.png'
-import imgUserMary from '../../../public/images/pexels-olly-733872.jpg'
-import imgUserMan from '../../../public/images/man-299488_1280.jpg'
+import imgUserMindy from '/public/images/user-mindy-monahan.png'
+import imgUserMary from '/public/images/pexels-olly-733872.jpg'
+import imgUserMan from '/public/images/man-299488_1280.jpg'
 
-import leftBackground from '../../../public/images/Groupleft399.png'
-import rightBackgound from '../../../public/images/Groupright398.png'
-import topBackground from '../../../public/images/Group399.png'
-import bottomBackground from '../../../public/images/Group398.png'
+import leftBackground from '/public/images/Groupleft399.png'
+import rightBackgound from '/public/images/Groupright398.png'
+import topBackground from '/public/images/Group399.png'
+import bottomBackground from '/public/images/Group398.png'
 
 const testimonialData = [
   {

@@ -3,9 +3,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import UserCommentComponent from './user_comment/UserComment';
 //img
-import imgUserMindy from '../../public/images/user-mindy-monahan.png'
-import imgUserMary from '../../public/images/pexels-olly-733872.jpg'
-import imgUserMan from '../../public/images/man-299488_1280.jpg'
+import imgUserMindy from '/public/images/user-mindy-monahan.png'
+import imgUserMary from '/public/images/pexels-olly-733872.jpg'
+import imgUserMan from '/public/images/man-299488_1280.jpg'
 
 const testimonialData = [
   {

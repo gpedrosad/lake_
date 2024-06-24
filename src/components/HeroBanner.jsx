@@ -1,6 +1,6 @@
 import Navbar from './Navbar';
 //img
-import heroimg from '../../public/images/banner_home.jpg'
+import heroimg from '/public/images/banner_home.jpg'
 // h-95 md:h-90 lg:h-160
 const HeroBanner = () => { 
     return (

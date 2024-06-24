@@ -1,6 +1,6 @@
 import SocialMediaIcons from './SocialMediaIcons';
 //img
-import logo from '../../public/images/logo-lake.png'
+import logo from '/public/images/logo-lake.png'
 
 const Footer = () => {
   return (

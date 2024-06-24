@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import GreenButton from './GreenButton';
 
 //img
-import logo from '../../public/images/logo-lake.png'
+import logo from '/public/images/logo-lake.png'
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);

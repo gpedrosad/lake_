@@ -1,7 +1,7 @@
 import { useState } from 'react';
 //img
-import imgPrev from '../../public/images/VectorPrevArrow.png'
-import imgNext from '../../public/images/VectorNextArrow.png'
+import imgPrev from '/public/images/VectorPrevArrow.png'
+import imgNext from '/public/images/VectorNextArrow.png'
 
 const ImageCarrousel = ({ images, rounded }) => {
 

@@ -3,12 +3,12 @@ import './CardSlider.css';
 import Card from '../card/Card';
 
 //img
-import hoja1 from '../../../public/images/hoja1.png';
-import hoja2 from '../../../public/images/hoja2.png';
-import cardimg1 from '../../../public/images/card-image-1.png';
-import cardimg2 from '../../../public/images/card-image2.png';
-import cardimg3 from '../../../public/images/card-image3.png';
-import bgwhite from '../../../public/images/Rectangle27.png'
+import hoja1 from '/public/images/hoja1.png';
+import hoja2 from '/public/images/hoja2.png';
+import cardimg1 from '/public/images/card-image-1.png';
+import cardimg2 from '/public/images/card-image2.png';
+import cardimg3 from '/public/images/card-image3.png';
+import bgwhite from '/public/images/Rectangle27.png'
 
 const CardSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

@@ -1,4 +1,3 @@
-import React, { useState } from 'react'; // Importa React y useState juntos
 import './index.css'; // Asegúrate de que este es el camino correcto al archivo CSS
 import Navbar from './components/Navbar';
 import "slick-carousel/slick/slick.css";

@@ -6,7 +6,7 @@ import hojablanca2 from '/public/images/hojablanca2.png'
 
 const ForestBanner = () => {
   return (
-    <div className="relative overflow-hidden shadow-lg w-auto sm:h-[800px]">
+    <div className="relative overflow-hidden shadow-lg w-auto h-[800px] sm:h-[800px]">
       <img className="absolute inset-0 w-full h-full object-cover" src={arboles} alt="Árboles" />
       <div className="absolute inset-0 bg-custom-green opacity-50"></div>
       <div className="absolute inset-0 grid place-items-center z-10 p-6 md:flex md:items-center md:justify-center">

@@ -82,7 +82,7 @@ const DropdownButton = () => {
           </button>
         ))}
       </div>
-      <div className="flex justify-center mt-5">
+      <div className="flex justify-center mt-5 mb-20">
         <p>{menuContent[selectedOption]}</p>
       </div>
     </div>

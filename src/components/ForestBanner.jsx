@@ -1,6 +1,6 @@
 import React from 'react';
 import YellowButton from './YellowButton';
-import arboles from '/public/images/arboles.png'
+import arboles from '/public/images/walk.jpg'
 import hojablanca1 from '/public/images/hojablanca.png'
 import hojablanca2 from '/public/images/hojablanca2.png'
 

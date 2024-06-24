@@ -8,7 +8,7 @@ import IframeComponent from "../components/IframeComponent";
 import VideoBanner from "../components/VideoBanner";
 
 //img
-import heroimg from '/public/images/30ef8a84f0f4e51616f759e50c285eff.png'
+import heroimg from '/public/images/banner_restaurante.jpg'
 
 function Contact () {
     return(

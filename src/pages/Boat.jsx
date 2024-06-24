@@ -5,16 +5,14 @@ import RatingSliderSecond from "../components/RatSliderSecond";
 
 // Importar imágenes
 import imgHeroSection from '../../public/images/boat.jpg';
-import sliderCopas from '../../public/images/slider-copas.png';
-import cardImage1 from '../../public/images/card-image-1.png';
-import cardImage3 from '../../public/images/card-image3.png';
-import sliderGreen from '../../public/images/slider-green.png';
-import sliderWedding from '../../public/images/slider-wedding.png';
+import sliderCopas from '../../public/images/family-cruise.jpg';
+import cardImage1 from '../../public/images/boat1.jpg';
+import cardImage3 from '../../public/images/boat2.jpg';
+import sliderGreen from '../../public/images/boat3.jpg';
+import sliderWedding from '../../public/images/boat4.jpg';
 
 const imagesFirstSlider = [
     sliderCopas,
-    cardImage1,
-    cardImage3,
 ];
 
 const imagesSecondSlider = [

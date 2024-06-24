@@ -2,23 +2,31 @@ import React from 'react';
 import ImageCarrousel from './ImageCarrousel';
 
 // img
-import down1 from '/public/images/down1.jpg';
-import down2 from '/public/images/down2.jpg';
-import down3 from '/public/images/down3.jpg';
-import down4 from '/public/images/down4.jpg';
-import hojaIzq from '/public/images/hojaizq.png';
-import hojaDer from '/public/images/hojader.png';
-import huevos from '/public/images/huevos.png';
+import down1 from '/images/down1.jpg';
+import down2 from '/images/down2.jpg';
+import down3 from '/images/down3.jpg';
+import down4 from '/images/down4.jpg';
+import hojaIzq from '/images/hojaizq.png';
+import hojaDer from '/images/hojader.png';
+import huevos from '/images/huevos.png';
+import firstGen from '/images/first_gen.jpg';
+import secondGen from '/images/second_gen.jpg';
+import thirdGen from '/images/third_gen.jpg';
+import fourthGen from '/images/fourth_gen.jpg';
+import down5 from '/images/down5.jpg';
+import down6 from '/images/down6.jpg';
+import down7 from '/images/down7.jpg';
+import down8 from '/images/down8.jpg';
 
 const images = [
     down1,
     down2,
     down3,
     down4,
-    '/public/images/down5.jpg',
-    '/public/images/down6.jpg',
-    '/public/images/down7.jpg',
-    '/public/images/down8.jpg',
+    down5,
+    down6,
+    down7,
+    down8,
 ];
 
 const LightGreenBannerDos = () => {
@@ -29,11 +37,10 @@ const LightGreenBannerDos = () => {
                     <img src={hojaIzq} alt="Descripción de la imagen" className="absolute top-0 left-0 w-20 h-20" />
                 </div>
                 <div className="grid grid-cols-1 items-center gap-10 justify-items-center md:m-5 md:mt-14 md:mb-14 xs:m-10">
-                    <img src="/public/images/first_gen.jpg" alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-left-top mt-14 xs:h-66" />
-                    <img src="/public/images/second_gen.jpg" alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-left-top xs:h-66" />
-                    <img src="/public/images/third_gen.jpg" alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-left-top xs:h-66" />
-                    <img src="/public/images/fourth_gen.jpg" alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-center mb-14 xs:h-66" />
-
+                    <img src={firstGen} alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-left-top mt-14 xs:h-66" />
+                    <img src={secondGen} alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-left-top xs:h-66" />
+                    <img src={thirdGen} alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-left-top xs:h-66" />
+                    <img src={fourthGen} alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-center mb-14 xs:h-66" />
                 </div>
                 <img src={hojaDer} alt="Descripción de la imagen" className="absolute bottom-0 right-0 w-20 h-20" />
             </div>

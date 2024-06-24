@@ -29,10 +29,10 @@ const LightGreenBannerDos = () => {
                     <img src={hojaIzq} alt="Descripción de la imagen" className="absolute top-0 left-0 w-20 h-20" />
                 </div>
                 <div className="grid grid-cols-1 items-center gap-10 justify-items-center md:m-5 md:mt-14 md:mb-14 xs:m-10">
-                    <img src="/public/images/first_gen.jpg" alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-left-top mt-14 xs:h-48" />
-                    <img src="/public/images/second_gen.jpg" alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-left-top xs:h-48git a" />
-                    <img src="/public/images/third_gen.jpg" alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-left-top xs:h-48" />
-                    <img src="/public/images/fourth_gen.jpg" alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-left-top mb-14 xs:h-48" />
+                    <img src="/public/images/first_gen.jpg" alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-left-top mt-14 xs:h-66" />
+                    <img src="/public/images/second_gen.jpg" alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-left-top xs:h-66" />
+                    <img src="/public/images/third_gen.jpg" alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-left-top xs:h-66" />
+                    <img src="/public/images/fourth_gen.jpg" alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-center mb-14 xs:h-66" />
 
                 </div>
                 <img src={hojaDer} alt="Descripción de la imagen" className="absolute bottom-0 right-0 w-20 h-20" />

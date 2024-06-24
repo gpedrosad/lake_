@@ -27,7 +27,13 @@ const Navbar = () => {
                         <Link to="/accomodation" className="text-xl text-white hover:text-new-green transition duration-300 md:pr-5 lg:text-2xl lg:pr-10">Menu</Link>
                         <Link to="/boat" className="text-xl text-white hover:text-new-green transition duration-300 md:pr-5 lg:text-2xl lg:pr-10">Gallery</Link>
                         <div className="pl-6 lg:mr-10">
-                            <GreenButton text="Reservation" width="170px" height="60px" fontSize="20px" backgroundColor="#8DA260"/>
+                        <GreenButton
+                                text="Reservation"
+                                url="https://bookings.nowbookit.com/?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&colors=hex,0d5302&font=Barlow"
+                                width="250px"
+                                height="50px"
+                                fontSize="20px"
+                                backgroundColor="#8DA260"/>
                         </div>
                     </div>
                     {/* Botón de menú móvil */}
@@ -57,7 +63,13 @@ const Navbar = () => {
                         <Link to="/" className="block mb-6" onClick={handleLinkClick}> {/* Ajuste de margen aquí */}
                         <div className="w-full flex justify-center mb-5 flex-col"> {/* Ajuste de margen aquí */}
                             <img src={logo} alt="Logo" className="mx-auto w-36 h-auto mb-10" />
-                            <GreenButton text="Reservation" width="250px" height="50px" fontSize="20px" backgroundColor="#8DA260"/>
+                            <GreenButton
+                                text="Reservation"
+                                url="https://bookings.nowbookit.com/?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&colors=hex,0d5302&font=Barlow"
+                                width="250px"
+                                height="50px"
+                                fontSize="20px"
+                                backgroundColor="#8DA260"/>
                         </div>
                         </Link>
                         <Link to="/about" className="mt-5 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>About</Link> {/* Ajuste de margen aquí */}

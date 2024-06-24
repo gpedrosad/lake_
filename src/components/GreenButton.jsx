@@ -1,9 +1,9 @@
 import React from 'react';
 
-// Añadiendo `width`, `height`, `fontSize`, `backgroundColor`, y `textColor` como props con valores por defecto
+// Añadiendo `width`, `height`, `fontSize`, `backgroundColor`, `textColor` como props con valores por defecto
 const GreenButton = ({
   text,
-  onClick,
+  url, // Prop para la URL a la que el botón debe redirigir
   width = '160px',
   height = '58px',
   fontSize = '16px',
@@ -11,18 +11,23 @@ const GreenButton = ({
   textColor = 'white'           // Color de texto predeterminado
 }) => {
   const buttonStyle = {
-    width: width,                  // Usando la prop `width` para el ancho del botón
-    height: height,                // Usando la prop `height` para la altura del botón
-    backgroundColor: backgroundColor,  // Usando la prop `backgroundColor`
-    color: textColor,              // Usando la prop `textColor`
-    borderRadius: '8px',           // Radio del borde
-    border: 'none',                // Sin borde
-    fontSize: fontSize,            // Usando la prop `fontSize` para el tamaño del texto
-    cursor: 'pointer'              // Cursor como puntero
+    width: width,
+    height: height,
+    backgroundColor: backgroundColor,
+    color: textColor,
+    borderRadius: '8px',
+    border: 'none',
+    fontSize: fontSize,
+    cursor: 'pointer'
+  };
+
+  // Función para manejar el clic, redirige a la URL
+  const handleClick = () => {
+    window.location.href = url; // Redirige al usuario a la URL proporcionada
   };
 
   return (
-    <button style={buttonStyle} onClick={onClick}>
+    <button style={buttonStyle} onClick={handleClick}>
       {text}
     </button>
   );

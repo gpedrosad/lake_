@@ -4,12 +4,12 @@ import GreenFeatureSection from "../components/GreenFeatureSection";
 import RatingSliderSecond from "../components/RatSliderSecond";
 
 // Importar imágenes
-import imgHeroSection from '../../public/images/boat.jpg';
-import sliderCopas from '../../public/images/family-cruise.jpg';
-import cardImage1 from '../../public/images/boat1.jpg';
-import cardImage3 from '../../public/images/boat2.jpg';
-import sliderGreen from '../../public/images/boat3.jpg';
-import sliderWedding from '../../public/images/boat4.jpg';
+import imgHeroSection from '/public/images/boat.jpg';
+import sliderCopas from    '/public/images/family-cruise.jpg';
+import cardImage1 from     '/public/images/boat1.jpg';
+import cardImage3 from     '/public/images/boat2.jpg';
+import sliderGreen from    '/public/images/boat3.jpg';
+import sliderWedding from  '/public/images/boat4.jpg';
 
 const imagesFirstSlider = [
     sliderCopas,

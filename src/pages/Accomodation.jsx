@@ -5,12 +5,12 @@ import FeatureAccom from "../components/FeatureAccom";
 import GreenFeatureAccom from "../components/GreenFeatAccom";
 
 //img
-import imgHeroSection from '../../public/images/30ef8a84f0f4e51616f759e50c285eff.png';
-import sliderCopas from '../../public/images/slider-copas.png';
-import sliderGreen from '../../public/images/slider-green.png';
-import cardImage1 from '../../public/images/card-image-1.png';
-import sliderWedding from '../../public/images/slider-wedding.png';
-import cardImage3 from '../../public/images/card-image3.png';
+import imgHeroSection from '/public/images/30ef8a84f0f4e51616f759e50c285eff.png';
+import sliderCopas from '/public/images/slider-copas.png';
+import sliderGreen from '/public/images/slider-green.png';
+import cardImage1 from '/public/images/card-image-1.png';
+import sliderWedding from '/public/images/slider-wedding.png';
+import cardImage3 from '/public/images/card-image3.png';
 
 const imagesFirstSlider = [
     sliderCopas,

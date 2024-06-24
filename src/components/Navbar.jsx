@@ -17,7 +17,7 @@ const Navbar = () => {
             <div className="max-w-6xl mx-auto px-4 bg-transparent">
                 <div className="flex justify-between items-center py-4">
                     <div className='bg-transparent'>
-                        <Link to="/" className="flex items-center py-4 px-2 lg:py-16 lg:pr-20">
+                        <Link to="/lake_" className="flex items-center py-4 px-2 lg:py-16 lg:pr-20">
                             <img src={logo} alt="Logo" className="h-12 w-auto ml-10 sm:h-14 sm:ml-11 sm:mt-2 md:h-16 md:ml-14 lg:h-20 xl:ml-0 xl:h-24 xs:ml-0 xs:h-14" />
                         </Link>
                     </div>
@@ -60,7 +60,7 @@ const Navbar = () => {
                     </svg>
                 </div>
                 <div className="flex flex-col items-center justify-center w-full h-full py-12 px-4 mt-4">
-                        <Link to="/" className="block mb-6" onClick={handleLinkClick}> {/* Ajuste de margen aquí */}
+                        <Link to="/lake_" className="block mb-6" onClick={handleLinkClick}> {/* Ajuste de margen aquí */}
                         <div className="w-full flex justify-center mb-5 flex-col"> {/* Ajuste de margen aquí */}
                             <img src={logo} alt="Logo" className="mx-auto w-36 h-auto mb-10" />
                             <GreenButton

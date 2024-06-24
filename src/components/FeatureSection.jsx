@@ -14,7 +14,7 @@ const FeatureSection = ({ title, description, buttonText, borderRadius, bgcolorb
           <h1 className="text-center whitespace-nowrap font-rufina pb-3 mb-1 mt-6 font-bold text-third-green text-3xl sm:text-3xl md:text-3xl md:pb-5 md:pt-10 sm:pb-3 sm:pt-11 sm:mb-1">
             {title}
           </h1>
-          <p className="text-justify text-xl text-custom-green">
+          <p className="text-justify text-xl text-custom-green xs:m-5">
             {description}
           </p>
         </div>

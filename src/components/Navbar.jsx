@@ -68,7 +68,7 @@ const Navbar = () => {
                         <div className="w-full bg-second-green h-0.5"></div>
                         <Link to="/contact" className="mt-5 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Menu</Link> {/* Ajuste de margen aquí */}
                         <div className="w-full bg-second-green h-0.5"></div>
-                        <Link to="/contact" className="mt-5 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Teahouse-history</Link> {/* Ajuste de margen aquí */}
+                        <Link to="/contact" className="mt-5 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Our Story</Link> {/* Ajuste de margen aquí */}
                     </div>
                     <div className="text-center mb-10"> {/* Ajuste de margen aquí */}
                 </div>

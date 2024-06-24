@@ -18,7 +18,7 @@
   }
   
   .menu-column1 {
-    background-image: url('src/assets/images/927c27ef57a7422e56dcc7b70f8d33c6.jpg');
+    background-image: url('/public/images/927c27ef57a7422e56dcc7b70f8d33c6.jpg');
     position: relative;
 }
   
@@ -33,7 +33,7 @@
   }
   
   .child-menu-column-1 {
-    background-image: url('src/assets/images/6c7b0435079d201ebe72ced917e0717d.jpg');
+    background-image: url('/public/images/6c7b0435079d201ebe72ced917e0717d.jpg');
     height: 50%; /* Cada hijo ocupa el 50% del contenedor */
     background-size: cover; /* Ajusta la imagen para que cubra completamente el contenedor */
     background-position: center; /* Centra la imagen en el contenedor */
@@ -43,7 +43,7 @@
 }
   
   .child-menu-column-2 {
-    background-image: url('src/assets/images/cb1ede58b981ff44a060f0871eb9eb6a.jpg');
+    background-image: url('/public/images/cb1ede58b981ff44a060f0871eb9eb6a.jpg');
     height: 50%; 
     background-size: cover; 
     background-position: center;

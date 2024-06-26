@@ -7,8 +7,15 @@ const Card = ({ title, description, image }) => {
       <div className="card-action-area">
         <img src={image} alt="card image" className="card-media" />
         <div className="card-content">
+          <div className='title-container'>
           <h5 className="card-title">{title}</h5>
+          </div>
+          <div className='description-container'>
           <p className="card-description">{description}</p>
+
+
+          </div>
+          
           <div className="card-actions">
             <button className="card-button">Discover our location</button>
           </div> 

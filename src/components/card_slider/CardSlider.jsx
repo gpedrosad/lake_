@@ -48,8 +48,14 @@ const CardSlider = () => {
   }, [itemsToShow]);
 
   const nextSlide = () => {
-    if (sliderRef.current && currentIndex < sliderRef.current.children.length - itemsToShow) {
-      setCurrentIndex(currentIndex + 1);
+    if (sliderRef.current) {
+      const totalCards = sliderRef.current.children.length;
+      // Si el currentIndex alcanza el último grupo de tarjetas visible, vuelve al inicio
+      if (currentIndex >= totalCards - itemsToShow) {
+        setCurrentIndex(0);
+      } else {
+        setCurrentIndex(currentIndex + 1);
+      }
     }
   };
 

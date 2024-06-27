@@ -119,7 +119,7 @@
   .card {
       width: 100%; 
       height: 100%;
-      padding: 0% 0% 0% 5%;
+      padding: 0% 10% 0% 10%;
       display: block;
       margin: 0%;
     }
@@ -158,7 +158,7 @@
     font-size: 1.8rem
   }
   .card-media{
-    height: 400px;
+    height: 45vw;
   }
   .card-content{
     width: 100%;
@@ -274,6 +274,9 @@
 
     align-items: start;
   
+  }
+  .card-media{
+    height: 40vw;
   }
 
 }

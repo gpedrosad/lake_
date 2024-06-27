@@ -10,14 +10,21 @@ import missImage from '/public/images/Miss.png';
 
 const PhotoGallery = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 m-12 space-y-4 place-items-center">
-      <ImageText className=""/>
-      <TableImage src={tableImage} className=""/>
-      <div class="xl:mr-60">
-
-        <FoodImage src={foodImage} className="object-cover"/>
+    <div className="grid grid-cols-1 sm:grid-cols-12 sm:grid-rows-8 gap-0 m-12">
+      <div className="col-span-1 sm:col-start-2 sm:col-span-3 sm:row-start-1 sm:row-span-4">
+        <ImageText className=""/>
       </div>
-      <MissImage src={missImage} className="object-cover"/> 
+      <div className="col-span-1 sm:col-start-7 sm:col-span-5 sm:row-start-1 sm:row-span-4">
+        <TableImage src={tableImage} className=""/>
+      </div>
+      <div className="col-span-1 sm:col-start-1 sm:col-span-6 sm:row-start-5 sm:row-span-5">
+        <div className="object-cover">
+          <FoodImage src={foodImage} className=""/>
+        </div>
+      </div>
+      <div className="col-span-1 sm:col-start-7 sm:col-span-5 sm:row-start-5 sm:row-span-11 xs:mt-10 sm:mt-0">
+        <MissImage src={missImage} className="object-cover"/>
+      </div>
     </div>
   );
 }

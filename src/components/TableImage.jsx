@@ -5,7 +5,7 @@ const TableImage = ({ src, alt }) => {
     <img 
       src={src} 
       alt={alt} 
-      className="w-[345px] h-[371px] rounded-[190px_19px_19px_19px] shadow-[5px_5px_15px_rgba(0,0,0,0.5)] object-cover"
+      className="sm:ml-10 object-cover xs:mt-10 sm:mt-10 xs:mb-10 md:mt-0 md:mb-0"
     />
   );
 };

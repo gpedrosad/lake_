@@ -16,7 +16,7 @@ const GreenFeatureSection = ({ title, description, buttonText, borderRadius, bgc
                     {description}
                 </p>
             </div>
-            <div className="w-2/3 p-1 sm:w-2/3 md:w-full md:p-0 lg:p-0 xl:py-0 lg:w-full xl:w-full 2xl:w-full mx-auto pt-8">
+            <div className="w-11/12 p-1 sm:w-2/3 md:w-full md:p-0 lg:p-0 xl:py-0 lg:w-full xl:w-full 2xl:w-full mx-auto pt-8">
                 <ImageCarousel images={images} rounded='3xl'/>
             </div> 
 

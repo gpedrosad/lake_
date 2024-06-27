@@ -68,12 +68,12 @@
 
 .slider-button.left {
   left: 2%;
-  background-image: url('../../../public/images/VectorPrevArrow.png');
+  background-image: url('/public/images/VectorPrevArrow.png');
 }
 
 .slider-button.right {
   right: 2%;
-  background-image: url('../../../public/images/VectorNextArrow.png');
+  background-image: url('/public/images/VectorNextArrow.png');
 }
 
 .card {

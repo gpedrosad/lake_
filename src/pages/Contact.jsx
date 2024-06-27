@@ -1,11 +1,11 @@
-import Working from "../components/Working";
+// import Working from "../components/Working";
 import TeaDescription from "../components/TeaDescription";
 import HeroSection from "../components/SecondHeroSection";
 import HoursAndBookingInfo from "../components/HoursAndBookingInfo";
 import DropdownButton from "../components/DropdownButton";
-import MenuItem from "../components/MenuItem";
-import IframeComponent from "../components/IframeComponent";
-import VideoBanner from "../components/VideoBanner";
+// import MenuItem from "../components/MenuItem";
+// import IframeComponent from "../components/IframeComponent";
+// import VideoBanner from "../components/VideoBanner";
 
 //img
 import heroimg from '/public/images/banner_restaurante.jpg'

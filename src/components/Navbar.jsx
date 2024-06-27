@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import GreenButton from './GreenButton';
+// import GreenButton from './GreenButton';
 
 // img
-import logo from '../../public/images/logo-lake.png';
+import logo from '/public/images/logo-lake.png';
 
 const Navbar = () => {
 const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +16,7 @@ return (
         <div className="max-w mx-auto px-4 bg-transparent">
             <div className="flex justify-between items-center py-4">
                 <div className="flex items-center">
-                    <Link to="/" className="ml-5 md:ml-14">
+                    <Link to="/lake_" className="ml-5 md:ml-14">
                         <img src={logo} alt="Logo" className="h-12 w-auto lg:h-20 xl:h-24" />
                     </Link>
                 </div>
@@ -27,7 +27,7 @@ return (
                     <Link to="/boat" className="text-xl text-white hover:text-new-green transition duration-300 md:pr-5 lg:text-2xl lg:pr-10">Gallery</Link>
                     <div className="pl-0 lg:mr-12">
                     <button
-                        class="bg-button-green text-white rounded-lg cursor-pointer hover:bg-green-700 px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 text-base md:text-lg lg:text-xl"
+                        className="bg-button-green text-white rounded-lg cursor-pointer hover:bg-green-700 px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 text-base md:text-lg lg:text-xl"
                         onclick="window.location.href='<https://example.com>';">Reservation
                     </button>
 
@@ -51,11 +51,11 @@ return (
                 </svg>
             </div>
             <div className="flex flex-col items-center justify-center w-full h-full py-12 px-4 mt-4">
-                <Link to="/" className="block mb-6" onClick={handleLinkClick}>
+                <Link to="/lake_" className="block mb-6" onClick={handleLinkClick}>
                     <div className="w-full flex justify-center mb-5 flex-col">
                         <img src={logo} alt="Logo" className="mx-auto w-36 h-auto mb-10" />
                         <button
-                        class="bg-button-green text-white rounded-lg cursor-pointer hover:bg-green-700 px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 text-base md:text-lg lg:text-xl"
+                        className="bg-button-green text-white rounded-lg cursor-pointer hover:bg-green-700 px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 text-base md:text-lg lg:text-xl"
                         onclick="window.location.href='<https://google.com>';">Reservation
                     </button>
                     </div>

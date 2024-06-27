@@ -69,6 +69,8 @@ return (
                 <Link to="/contact" className="mt-5 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Menu</Link>
                 <div className="w-full bg-second-green h-0.5"></div>
                 <Link to="/contact" className="mt-5 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Our Story</Link>
+                <div className="w-full bg-second-green h-0.5"></div>
+                <Link to="/functions" className="mt-5 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Functions</Link>
             </div>
             <div className="text-center mb-10"></div>
         </div>

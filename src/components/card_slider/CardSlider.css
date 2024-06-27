@@ -47,7 +47,7 @@
 
 .slider-wrapper {
   display: flex;
-  transition: transform 1.9s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   width: 100%;
   align-items: center;
   height: 100%;
@@ -79,13 +79,12 @@
 }
 
 .card {
-  flex: 0 0 calc(80% / 1.5);
+  flex: 0 0 calc(100% / 1);
   box-sizing: border-box;
   padding: 0 1.5%;
 }
 
 .slider-dots {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,15 +117,14 @@
 
 @media (max-width: 1024px) {
   .slider-component{
-    height: 140vw;
+    height: 160vw;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
-    
   }
   .card {
-    flex: 0 0 calc(110% / 1.5);
+    flex: 0 0 calc(100% / 1);
   }
   .slider-button {
     display: none;
@@ -147,59 +145,22 @@
     height: 100%;
   }
   .slider-container{
-    height: 80%;
-    position: relative;
+    height: 100%;
   }
   .bg-wh{
-    width: 18%;
     position: absolute;
-    right: 0px;
     height: 100%;
+    width: 110%;
+    z-index: -1;
     display: block;
   }
-  .slider-dots{
-    height: 1%;
-  }
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 500px) {
   .header-title {
-    font-size: 3rem;
+    font-size: 6vw;
   }
-  .card {
-    padding: 0;
-    margin-bottom: 1rem;
+  .header-image {
+    width: 12vw;
   }
-  .slider-container {
-    overflow: hidden;
-  }
-}
-
-@media (max-width: 768px) {
-  .header-title {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width:640px) and (min-width:512px){
-  .header-title{
-    font-size: 2.2rem;
-  }
-}
- 
-@media (max-width:511px) and (min-width:480px){
-  .header-title{
-    font-size: 2rem;
-  }
-}
-@media (max-width: 480px){
-  .header-title{
-    font-size:1.8rem ;
-  }
-  .slider-dots{
-    height: 0%;
-    margin-top: 0.8rem;
-  }
-
-
 }

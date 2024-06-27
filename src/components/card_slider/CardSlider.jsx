@@ -37,20 +37,13 @@ const CardSlider = () => {
   useEffect(() => {
     if (sliderRef.current) {
       const childrenCount = sliderRef.current.children.length;
-      const totalVisibleItems = itemsToShow;
-      const windowWidth = window.innerWidth;
-      if (windowWidth < 1025) {
-        setTotalDots(Math.max(0, Math.ceil(childrenCount - totalVisibleItems)));
-      } else {
-        setTotalDots(Math.max(0, Math.ceil(childrenCount / totalVisibleItems)));
-      }
+      setTotalDots(Math.ceil(childrenCount / itemsToShow));
     }
   }, [itemsToShow]);
 
   const nextSlide = () => {
     if (sliderRef.current) {
       const totalCards = sliderRef.current.children.length;
-      // Si el currentIndex alcanza el último grupo de tarjetas visible, vuelve al inicio
       if (currentIndex >= totalCards - itemsToShow) {
         setCurrentIndex(0);
       } else {
@@ -74,7 +67,7 @@ const CardSlider = () => {
     if (!dragging) return;
     touchEndX.current = e.touches[0].clientX;
     const touchDiff = touchStartX.current - touchEndX.current;
-    
+
     if (sliderRef.current) {
       sliderRef.current.style.transition = 'none';
       sliderRef.current.style.transform = `translateX(calc(${-currentIndex * 100}% - ${touchDiff}px))`;
@@ -113,13 +106,12 @@ const CardSlider = () => {
           <Card title="Boat cruise" description="Let us sweep you away on a gentle journey across the calm waters of Lake Barrine. A time of simple elegance, where nature's beauty and the company of loved ones create unforgettable memories." image={cardimg2} />
           <Card title="Events" description="Not a day goes by where we don’t meet someone who shares a memory of a time long ago celebrated at Lake Barrine. The historic Teahouse and the setting of the sun across the water naturally lend themselves to the most special of occasions." image={cardimg4} />
         </div>
-        <button className="slider-button right" onClick={nextSlide}>
-        </button>
+        <button className="slider-button right" onClick={nextSlide}></button>
         <img src={bgwhite} className='bg-wh'></img>
       </div>
       <div className="slider-dots">
         {[...Array(totalDots)].map((_, index) => (
-          <div key={index} className={`dot ${index === currentIndex ? 'active' : ''}`} onClick={() => setCurrentIndex(index)}></div>
+          <div key={index} className={`dot ${index === currentIndex ? 'active' : ''}`} onClick={() => setCurrentIndex(index * itemsToShow)}></div>
         ))}
       </div>
     </div>
@@ -127,4 +119,5 @@ const CardSlider = () => {
 };
 
 export default CardSlider;
+
 

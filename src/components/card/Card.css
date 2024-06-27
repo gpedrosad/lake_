@@ -234,7 +234,7 @@
 
 @media (max-width: 480px){
   .card-description {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 
   }
 
@@ -273,6 +273,20 @@
   .description-container{
 
     align-items: start;
+  
+  }
+
+}
+@media (max-width: 330px) {
+  .card-description{
+    font-size: 0.4rem;
+    
+  }
+  .card-button{
+    margin-top: 2%;
+    margin-bottom: 0%;
+    font-size: 0.35rem;
+    width: 50%;
   
   }
 

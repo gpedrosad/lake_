@@ -21,6 +21,9 @@ export default {
       screens: {
         'xs': '150px',  
       },
+      inset: {
+        '14': '10%',
+      }
     }
   },
   plugins: [

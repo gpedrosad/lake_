@@ -18,11 +18,11 @@ const NuevoBanner = () => {
       <div className="relative overflow-hidden">
         <div className="grid grid-cols-1 gap-4">
           <div className="text-center md:mt-32">
-            <h1 className="whitespace-nowrap font-rufina font-bold text-2xl text-custom-green md:text-3xl">Lake Barrine Teahouse</h1>
-            <span className="font-rufina font-bold text-xl text-custom-green md:text-2xl">Where the lake meets the rainforest</span>
+            <h1 className="whitespace-nowrap font-rufina font-bold text-2xl text-custom-green md:text-3xl">Our Story</h1>
+            <span className="font-rufina font-bold text-xl text-custom-green md:text-2xl">As you walk around our beautiful gardens, stroll through our historic Teahouse and dip your toes in the natural waters of Lake Barrine, you might find, just like I did, that falling in love with this place comes easy. </span>
           </div>
           <p className="font-inika font-normal ml-10 mr-10 mt-5 mb-20 text-xl">
-            Our story is one of passion and refinement, where each dish is a carefully curated masterpiece. Elegance graces every detail, inviting you into a world where exquisite flavors and sophisticated ambiance harmonize, creating an unforgettable dining experience. Welcome to the epitome of gastronomic delight.
+          We have been a family run business since 1924. It started with love, with a celebration for our natural surroundings and even more so, with the joy of sharing this unique piece of paradise with family and friends alike.  
           </p>
           <div className="flex justify-center align-center mb-20">
             <TransparentButton className="" text="About us" />

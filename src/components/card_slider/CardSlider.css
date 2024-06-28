@@ -69,12 +69,12 @@
 }
 
 .slider-button.left {
-  left: 2%;
+  left: 1.5%;
   background-image: url('/public/images/VectorPrevArrow.png');
 }
 
 .slider-button.right {
-  right: 2%;
+  right: 1.5%;
   background-image: url('/public/images/VectorNextArrow.png');
 }
 

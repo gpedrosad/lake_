@@ -14,7 +14,7 @@
 .card-action-area {
   display: flex;
   flex-direction: column;
-  width: 22vw;
+  width: 25vw;
   max-width: 30vw;
   max-height: 50vw;
   text-align: center;
@@ -113,13 +113,27 @@
   .card-description{
     font-size: 0.859rem;
   }
+
 }
+
+@media (min-width: 850px) and (max-width:1125px)
+{
+
+  .card-action-area {
+    width: 100%;
+    min-height: 90%;
+    max-width: 85%;
+    height: 100%;
+    margin: 0 0 0 2%;
+}
+}
+
 @media (max-width: 1024px) {
 
   .card {
       width: 100%; 
-      height: 100%;
-      padding: 0% 10% 0% 10%;
+      height: 90%;
+      padding: 0% 12% 0% 12%;
       display: block;
       margin: 0%;
     }
@@ -175,6 +189,7 @@
 
   }
 }
+
 @media (max-width:900px) and (min-width:769px){
   .card-description {
     font-size: 1.5rem

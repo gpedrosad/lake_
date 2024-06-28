@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import './Card.css';
+import { Link } from 'react-router-dom';
 
 const Card = ({ title, description, image }) => {
   return (
@@ -8,17 +9,16 @@ const Card = ({ title, description, image }) => {
         <img src={image} alt="card image" className="card-media" />
         <div className="card-content">
           <div className='title-container'>
-          <h5 className="card-title">{title}</h5>
+            <h5 className="card-title">{title}</h5>
           </div>
           <div className='description-container'>
-          <p className="card-description">{description}</p>
-
-
+            <p className="card-description">{description}</p>
           </div>
-          
           <div className="card-actions">
-            <button className="card-button">Discover our location</button>
-          </div> 
+            <Link to='/contact'>
+              <button className="card-button">Discover our location</button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
@@ -32,5 +32,6 @@ Card.propTypes = {
 };
 
 export default Card;
+
  
  

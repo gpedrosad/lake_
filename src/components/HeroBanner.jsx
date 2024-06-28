@@ -11,8 +11,8 @@ const HeroBanner = () => {
             <div className="absolute inset-0 flex flex-col items-start justify-center text-left p-8 md:p-12">
                 <h1 className="ml-10 mt-10 text-new-green text-6xl sm:text-8xl lg:text-9xl font-bold leading-tight lg:mt-20 xs:ml-0">
                     <span className="font-rufina block">Where the </span>
-                    <span className="font-rufina block">lake meets </span>
-                    <span className="font-rufina block">the rainforest</span>
+                    <span className="font-rufina block">Rainforest meets </span>
+                    <span className="font-rufina block">the Lake</span>
                 </h1>
                 <p className="ml-10 text-white text-lg md:text-2xl lg:text-3xl mt-4 font-rufina xs:ml-0">
                     Relax and get away from it all

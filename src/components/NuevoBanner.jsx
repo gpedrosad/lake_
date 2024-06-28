@@ -19,10 +19,10 @@ const NuevoBanner = () => {
         <div className="grid grid-cols-1 gap-4">
           <div className="text-center md:mt-32">
             <h1 className="whitespace-nowrap font-rufina font-bold text-2xl text-custom-green md:text-3xl">Our Story</h1>
-            <span className="font-rufina font-bold text-xl text-custom-green md:text-2xl">As you walk around our beautiful gardens, stroll through our historic Teahouse and dip your toes in the natural waters of Lake Barrine, you might find, just like I did, that falling in love with this place comes easy. </span>
+            <span className="font-rufina font-bold text-lg text-custom-green md:text-xl"></span>
           </div>
           <p className="font-inika font-normal ml-10 mr-10 mt-5 mb-20 text-xl">
-          We have been a family run business since 1924. It started with love, with a celebration for our natural surroundings and even more so, with the joy of sharing this unique piece of paradise with family and friends alike.  
+          As you walk around our beautiful gardens, stroll through our historic Teahouse and dip your toes in the natural waters of Lake Barrine, you might find, just like I did, that falling in love with this place comes easy.   
           </p>
           <div className="flex justify-center align-center mb-20">
             <TransparentButton className="" text="About us" />

@@ -1,6 +1,7 @@
-import React from 'react';
-import CustomImage from './CustomImage'; // Asegúrate de tener este componente o cámbialo por uno existente
+// import React from 'react';
+// import CustomImage from './CustomImage'; // Asegúrate de tener este componente o cámbialo por uno existente
 import TransparentButton from './TransparentButton'; // Asegúrate de tener este componente o cámbialo por uno existente
+import { Link } from 'react-router-dom';
 
 // Importar imágenes
 import hojaIzq from '/public/images/hojaizq.png';
@@ -24,9 +25,11 @@ const NuevoBanner = () => {
           <p className="font-inika font-normal ml-10 mr-10 mt-5 mb-20 text-xl">
           As you walk around our beautiful gardens, stroll through our historic Teahouse and dip your toes in the natural waters of Lake Barrine, you might find, just like I did, that falling in love with this place comes easy.   
           </p>
+          <Link to='/about'>
           <div className="flex justify-center align-center mb-20">
             <TransparentButton className="" text="About us" />
           </div>
+          </Link>
         </div>
         <img src={hojaDer} alt="Descripción de la imagen" className="absolute bottom-0 right-0 w-20 h-20" /> 
       </div>

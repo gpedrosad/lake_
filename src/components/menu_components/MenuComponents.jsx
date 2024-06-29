@@ -1,30 +1,28 @@
 import './MenuComponents.css';
 import MenuItem from '../menu_item/MenuItem';
+import { Link } from 'react-router-dom';
 
 const MenuComponent = () => {
   return (
     <div className="menu-container">
-        <div className='menu-column menu-column1'>
-            <MenuItem title='Devonshire Special'/>
-        </div>
-        <div className='menu-column menu-column2'>
-            <div className='child-menu-column-1'>
-            <MenuItem title='Breakfast'  />
-            </div>
-            <div className='child-menu-column-2'>
-            <MenuItem title='Lunch' />
-
-            </div>
-
-
-
-        </div>
-
+      <Link to='/contact' className='menu-column menu-column1'>
+        <MenuItem title='Devonshire Special' style={{ zIndex: 2 }} />
+      </Link>
+      <div className='menu-column menu-column2'>
+        <Link to='/contact' className='child-menu-column child-menu-column-1'>
+          <MenuItem title='Breakfast' style={{ zIndex: 2 }} />
+        </Link> 
+        <Link to='/contact' className='child-menu-column child-menu-column-2'>
+          <MenuItem title='Lunch' style={{ zIndex: 2 }} />
+        </Link>
+      </div>
     </div>
   );
 };
 
 export default MenuComponent;
+
+
 
 
 

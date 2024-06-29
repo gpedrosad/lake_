@@ -8,6 +8,6 @@ function MenuItem({title}) {
       </div>
     </div>
   );
-}
+} 
 
 export default MenuItem;

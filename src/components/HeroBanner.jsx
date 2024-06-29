@@ -1,6 +1,7 @@
 import Navbar from './Navbar';
 import heroimg from '/public/images/banner_home.jpg';
 import line from '/public/images/Line1.png'
+
 const HeroBanner = () => {
     return (
         <div className="relative w-full sm:h-[930px] xs:h-[600px] overflow-hidden">
@@ -18,23 +19,22 @@ const HeroBanner = () => {
                 </p>
             </div>
             {/* Estilo para la línea vertical */}
-            <div className="h-4 absolute origin-bottom-right flex flex-row h-8 justify-center items-center -rotate-90 top-14 right-12 w-2/4 ">
+            <div className="hidden lg:flex absolute origin-bottom-right flex-row h-8 justify-center items-center -rotate-90 top-14 right-12 w-2/4">
                 <div className='-rotate-90 w-auto m-0 mr-40'>
-                    <img src={line}></img>
+                    <img src={line} alt="Linea decorativa"></img>
                 </div>
-                <div  className=" w-auto m-0m flex justify-center items-center">
-                <p className=" text-white text-base font-bold w-auto  m-0 whitespace-nowrap">
-                    Nurture your heart and your soul
-                </p>
-
+                <div className="w-auto m-0 flex justify-center items-center">
+                    <p className="text-white text-base font-bold w-auto m-0 whitespace-nowrap">
+                        Nurture your heart and your soul
+                    </p>
                 </div>
-
             </div>
         </div>
     );
 };
 
 export default HeroBanner;
+
 
 
 

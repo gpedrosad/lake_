@@ -37,7 +37,7 @@ function Boat() {
 
             <FeatureSection
                 title="The family cruise"
-                description="Our story is one of passion and refinement, where each dish is a carefully curated masterpiece. Elegance graces every detail, inviting you into a world where exquisite flavors and sophisticated ambiance harmonize, creating an unforgettable dining experience. "
+                description="“Mother Nature’s simple reflections can be missed as we fly through life, but her healing charms can be caught in the eyes of those who take the time to study her natural rhythms” – Steve Curry"
                 buttonText='Book Now'
                 borderRadius='0px'
                 bgcolorbutton='#3C5220'
@@ -45,8 +45,10 @@ function Boat() {
             />    
 
             <GreenFeatureSection
-                title="A function like no other"
-                description="Our story is one of passion and refinement, where each dish is a carefully curated masterpiece."
+                title="Our Cruise"
+                description="Our cruise is about taking the time to experience natures beauty in one of its most tranquil forms. My Great Grandfather George Curry always said, “You haven’t truly experienced the Lake until you’ve done the boat cruise.”
+
+                Step on board and see what truly inspired the very beginning of Lake Barrine Teahouses rich history."
                 buttonText='Book Now'
                 borderRadius='0px'
                 bgcolor='#F0B92B'
@@ -54,8 +56,8 @@ function Boat() {
             />
             
             <FeatureSection
-                title="Create your own package"
-                description="Our story is one of passion and refinement, where each dish is a carefully curated masterpiece. "
+                title="Sail into Celebration"
+                description="Set against the backdrop of a hundred year old rainforest, with the tranquil waters reflecting the hues of the sky, each moment on our boat is crafted to be memorable. Let us turn your event into an occasion that not only stands out but remains etched in the hearts of all who attend."
                 buttonText='Book Now'
                 borderRadius='0px'
                 bgcolorbutton='#3C5220'

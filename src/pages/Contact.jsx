@@ -20,7 +20,7 @@ function Contact () {
         <div>
         <HeroSection
                 imageSrc={heroimg}
-                title="Our Story"
+                title="Restaurant"
                 />
         <TeaDescription/>
         <HoursAndBookingInfo/>

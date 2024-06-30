@@ -1,10 +1,14 @@
 import ButtonComponent from './ButtonComponent';
 import ImageCarousel from './ImageCarrousel';
+import hojaizq from '/public/images/hojaizq.png';
+import hojader from '/public/images/hojader.png';
 
 const GreenFeatureAccom = ({ title, description, buttonText, borderRadius, bgcolorbutton, images }) => {
   return (
-    <div className='pb-8 bg-[#B8CAA8] pt-8'>
-      <div className='justify-center flex bg-[#B8CAA8]'>
+    <div className="relative pb-8 bg-[#B8CAA8] pt-8">
+      <img src={hojaizq} alt="Hoja izquierda" className="absolute top-0 left-0 w-24 h-auto" />
+      <img src={hojader} alt="Hoja derecha" className="absolute bottom-0 right-0 w-24 h-auto" />
+      <div className="justify-center flex bg-[#B8CAA8]">
         <h1 className="bg-[#B8CAA8] text-center whitespace-nowrap font-rufina pb-0 mb-1 mt-6 font-bold text-third-green text-2xl sm:text-3xl md:text-4xl lg:text-5xl md:pb-5 md:pt-10 sm:pb-3 sm:pt-11 sm:mb-1">
           {title}
         </h1>
@@ -18,17 +22,16 @@ const GreenFeatureAccom = ({ title, description, buttonText, borderRadius, bgcol
           </div>
           <div className="bg-[#B8CAA8] flex justify-center pb-10 pt-8 hidden md:flex">
             <a href="https://bookings.nowbookit.com/?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&colors=hex,0d5302&font=Barlow" target="_blank">
-            <ButtonComponent text={buttonText} borderRadius={borderRadius} backgroundColor={bgcolorbutton} />
+              <ButtonComponent text={buttonText} borderRadius={borderRadius} backgroundColor={bgcolorbutton} />
             </a>
           </div>
         </div>
         <div className="w-2/3 p-1 sm:w-full md:w-full md:p-0 lg:p-0 xl:py-0 lg:w-full xl:w-full 2xl:w-full mx-auto pt-2 flex justify-center">
-          <ImageCarousel images={images} rounded='none'/>
+          <ImageCarousel images={images} rounded="none" />
         </div>
-
         <div className="w-full flex justify-center md:hidden">
           <a href="https://bookings.nowbookit.com/?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&colors=hex,0d5302&font=Barlow" target="_blank">
-          <ButtonComponent text={buttonText} borderRadius={borderRadius} backgroundColor={bgcolorbutton} />
+            <ButtonComponent text={buttonText} borderRadius={borderRadius} backgroundColor={bgcolorbutton} />
           </a>
         </div>
       </div>
@@ -37,4 +40,3 @@ const GreenFeatureAccom = ({ title, description, buttonText, borderRadius, bgcol
 };
 
 export default GreenFeatureAccom;
-

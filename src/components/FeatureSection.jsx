@@ -1,11 +1,15 @@
 import ButtonComponent from './ButtonComponent';
 import ImageCarousel from './ImageCarrousel';
+import hojaizq from '/public/images/hojaizq.png';
+import hojader from '/public/images/hojader.png';
 
 const FeatureSection = ({ title, description, buttonText, borderRadius, bgcolorbutton, images }) => {
   return (
-    <>
-      <div className="bg-[#F7F7F7] grid grid-cols-1 md:grid-cols-2 gap-3 p-4 justify-items-center items-center pt-16">
-        
+    <div className="relative bg-[#F7F7F7] pt-8 pb-8">
+      <img src={hojaizq} alt="Hoja izquierda" className="absolute top-0 left-0 w-24 h-auto" />
+      <img src={hojader} alt="Hoja derecha" className="absolute bottom-0 right-0 w-24 h-auto" />
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 p-4 justify-items-center items-center pt-16">
         <div className="w-11/12 p-1 sm:w-2/3 md:w-full md:p-0 lg:p-0 xl:py-0 lg:w-full xl:w-full 2xl:w-full mx-auto pt-8">
           <ImageCarousel images={images} rounded='3xl' />
         </div>
@@ -18,16 +22,17 @@ const FeatureSection = ({ title, description, buttonText, borderRadius, bgcolorb
             {description}
           </p>
         </div>
-
       </div>
-      <div className="bg-[#F7F7F7] flex justify-center pb-10">
+
+      <div className="flex justify-center pb-10">
         <a href="https://bookings.nowbookit.com/?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&colors=hex,0d5302&font=Barlow" target="_blank">
-        <ButtonComponent text={buttonText} borderRadius={borderRadius} backgroundColor={bgcolorbutton} />
+          <ButtonComponent text={buttonText} borderRadius={borderRadius} backgroundColor={bgcolorbutton} />
         </a>
       </div>
-    </>
+    </div>
   );
 };
 
 export default FeatureSection;
+
 

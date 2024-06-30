@@ -18,7 +18,7 @@ const PhotoGallery = () => {
       <div className="col-span-1 sm:col-start-7 sm:col-span-5 sm:row-start-1 sm:row-span-4">
         <img src={tableImage} className="w-screen" />
       </div>
-      <div className="mt-24 col-span-1 sm:col-start-1 sm:col-span-6 sm:row-start-4 sm:row-span-5">
+      <div className="mt-10 md:mt-40 col-span-1 sm:col-start-1 sm:col-span-6 sm:row-start-4 sm:row-span-5">
           <img src={foodImage} className="w-screen" />
       </div>
       <div className="col-span-1 sm:col-start-7 sm:col-span-5 sm:row-start-5 sm:row-span-11 xs:mt-10 sm:mt-0">

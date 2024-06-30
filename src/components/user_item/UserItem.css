@@ -32,8 +32,8 @@
     align-items: center; /* Centra verticalmente */
 }
 .user_image {
-    width: 60%;
-    height: 60%;
+    width: 65%;
+    height: 50%;
     border-radius: 100%; 
     object-fit: cover;
     overflow: hidden;

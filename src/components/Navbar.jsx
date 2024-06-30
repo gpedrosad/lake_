@@ -21,7 +21,7 @@ const Navbar = () => {
                         </Link>
                     </div>
                     {/* Links de escritorio */}
-                    <div className="hidden md:flex items-center space-x-5">
+                    <div className="hidden md:flex items-center space-x-5 xl:space-x-10">
                         <Link to="/about" className="text-xl text-white hover:text-new-green transition duration-300">About</Link>
                         <Link to="/accomodation" className="text-xl text-white hover:text-new-green transition duration-300">Accommodation</Link>
                         <Link to="/boat" className="text-xl text-white hover:text-new-green transition duration-300">Boat</Link>

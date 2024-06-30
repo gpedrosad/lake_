@@ -26,15 +26,7 @@ function Contact () {
         <HoursAndBookingInfo/>
         <DropdownButton/>
 
-        <div className="flex justify-center bg-black-87">
-
-            <iframe data-id="nbi-widget" 
-            src="https://bookings.nowbookit.com/?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&colors=hex,0d5302&font=Barlow" 
-            width="800" 
-            height="600">
-            </iframe>
-            <script src="https://plugins.nowbookit.com/iframe-resizer-build/bundle.js"></script>
-        </div>
+        
 
         </div>
 

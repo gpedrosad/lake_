@@ -18,7 +18,7 @@ const CarruselDos = ({ images, rounded }) => {
     };
 
     return (
-        <div className="relative md:w-3/4 lg:w-2/3 sm:w-2/3 mx-auto">
+        <div className="relative md:w-96 lg:w-96 sm:w-2/3 mt-2">
             <div className={`overflow-hidden  ${roundedClass}`}>
                 <img
                     src={images[currentIndex]}

@@ -2,6 +2,7 @@ import HeroSection from "../components/SecondHeroSection";
 import FeatureSection from "../components/FeatureSection";
 import GreenFeatureSection from "../components/GreenFeatureSection";
 import RatingSliderSecond from "../components/RatSliderSecond";
+import { useEffect } from "react";
 
 // Importar imágenes
 import imgHeroSection from '/public/images/boat.jpg';
@@ -28,6 +29,9 @@ const imagesThirdSlider = [
 ];
 
 function Boat() {
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top of the page when the component mounts
+      }, []);
     return (
         <div>
             <HeroSection

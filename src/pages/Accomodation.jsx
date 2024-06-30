@@ -3,7 +3,7 @@ import HeroSection from "../components/SecondHeroSection";
 import RatingSlider from "../components/rating_slider/RatingSlider";
 import FeatureAccom from "../components/FeatureAccom";
 import GreenFeatureAccom from "../components/GreenFeatAccom";
-
+import { useEffect } from "react";
 //img
 import imgHeroSection from '/public/images/30ef8a84f0f4e51616f759e50c285eff.png';
 import sliderCopas from '/public/images/slider-copas.png';
@@ -21,6 +21,9 @@ const imagesFirstSlider = [
 ];
 
 function Accomodation() {
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top of the page when the component mounts
+      }, []);
     return (
         <div>
             <HeroSection

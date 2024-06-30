@@ -22,12 +22,12 @@ const GreenButton = ({
   };
 
   // Función para manejar el clic, redirige a la URL
-  const handleClick = () => {
-    window.location.href = url; // Redirige al usuario a la URL proporcionada
-  };
+  // const handleClick = () => {
+  //   window.location.href = url; // Redirige al usuario a la URL proporcionada
+  // };
 
   return (
-    <button style={buttonStyle} onClick={handleClick}>
+    <button style={buttonStyle} >
       {text}
     </button>
   );

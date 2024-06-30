@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const ForestBanner = () => {
   return (
     <div className="relative overflow-hidden shadow-lg w-auto h-[800px] sm:h-[800px]">
-      <img className="absolute inset-0 w-full h-full object-cover" src={arboles} alt="Árboles" />
+      <img className="absolute inset-0 w-full h-full object-cover object-right-bottom" src={arboles} alt="Árboles" />
       <div className="absolute inset-0 bg-custom-green opacity-50"></div>
       <div className="absolute inset-0 grid place-items-center z-10 p-6 md:flex md:items-center md:justify-center">
         <img src={hojablanca1} alt="Descripción de la imagen" style={{ width: '60px', height: '60px' }} className="m-5 md:mb-40"/>

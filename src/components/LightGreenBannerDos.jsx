@@ -1,11 +1,9 @@
 import React from 'react';
 import ImageCarrousel from './ImageCarrousel';
+import CarruselDos from './CarruselDos';
 
 // img
-import down1 from '/public/images/down1.jpg';
-import down2 from '/public/images/down2.jpg';
-import down3 from '/public/images/down3.jpg';
-import down4 from '/public/images/down4.jpg';
+
 import hojaIzq from '/public/images/hojaizq.png';
 import hojaDer from '/public/images/hojader.png';
 import huevos from '/public/images/huevos.png';
@@ -13,12 +11,20 @@ import firstGen from '/public/images/first_gen.jpg';
 import secondGen from '/public/images/second_gen.jpg';
 import thirdGen from '/public/images/third_gen.jpg';
 import fourthGen from '/public/images/fourth_gen.jpg';
+import down1 from '/public/images/down1.jpg';
+import down2 from '/public/images/down2.jpg';
+import down3 from '/public/images/down3.jpg';
+import down4 from '/public/images/down4.jpg';
 import down5 from '/public/images/down5.jpg';
 import down6 from '/public/images/down6.jpg';
 import down7 from '/public/images/down7.jpg';
 import down8 from '/public/images/down8.jpg';
 
 const images = [
+    down1,
+    down2,
+    down3,
+    down4,
     down5,
     down6,
     down7,
@@ -35,7 +41,7 @@ const LightGreenBannerDos = () => {
                 <div className="grid grid-cols-1 items-center gap-10 justify-items-center md:m-5 md:mt-14 md:mb-14 xs:m-10">
                     <img src={firstGen} alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-left-top mt-14 xs:h-66" />
                     <img src={secondGen} alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-left-top xs:h-66" />
-                    <img src={thirdGen} alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-left-top xs:h-66" />
+                    <CarruselDos images={images} />
                     <img src={fourthGen} alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-center mb-14 xs:h-66" />
                 </div>
                 <img src={hojaDer} alt="Descripción de la imagen" className="absolute bottom-0 right-0 w-20 h-20" />

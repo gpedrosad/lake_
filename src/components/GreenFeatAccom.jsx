@@ -17,14 +17,19 @@ const GreenFeatureAccom = ({ title, description, buttonText, borderRadius, bgcol
             </p>
           </div>
           <div className="bg-[#B8CAA8] flex justify-center pb-10 pt-8 hidden md:flex">
+            <a href="https://bookings.nowbookit.com/?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&colors=hex,0d5302&font=Barlow" target="_blank">
             <ButtonComponent text={buttonText} borderRadius={borderRadius} backgroundColor={bgcolorbutton} />
+            </a>
           </div>
         </div>
         <div className="w-2/3 p-1 sm:w-full md:w-full md:p-0 lg:p-0 xl:py-0 lg:w-full xl:w-full 2xl:w-full mx-auto pt-2 flex justify-center">
           <ImageCarousel images={images} rounded='none'/>
         </div>
+
         <div className="w-full flex justify-center md:hidden">
+          <a href="https://bookings.nowbookit.com/?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&colors=hex,0d5302&font=Barlow" target="_blank">
           <ButtonComponent text={buttonText} borderRadius={borderRadius} backgroundColor={bgcolorbutton} />
+          </a>
         </div>
       </div>
     </div>

@@ -9,8 +9,10 @@ const ImageText = () => {
       <p className="py-4 text-xl md:text-xl lg:text-4xl text-custom-green">Immerse yourself in the warm embrace of our indoor oasis, savor al-fresco moments on our charming outdoor terrace, or unwind at the stylish bar where crafted libations await. Discover a trifecta of atmospheres that elevate your dining journey.</p>
       <div className="py-4">
 
+    <Link to='/functions'>
     <button className="w-48 h-20 bg-[#3C5220] text-white rounded-lg text-lg cursor-pointer" onclick="window.location.href='URL_AQUI'">
       Explore</button>
+      </Link>
     </div>
     </div>
   );

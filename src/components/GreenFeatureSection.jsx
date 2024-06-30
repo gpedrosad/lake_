@@ -22,7 +22,9 @@ const GreenFeatureSection = ({ title, description, buttonText, borderRadius, bgc
 
         </div>
                 <div className="bg-[#B8CAA8] flex justify-center pb-10">
+                    <a href="https://bookings.nowbookit.com/?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&colors=hex,0d5302&font=Barlow" target="_blank">
                     <ButtonComponent text={buttonText} borderRadius={borderRadius} backgroundColor={bgcolor}/>
+                    </a>
                 </div>
                 </>
     );

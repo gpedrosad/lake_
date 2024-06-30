@@ -28,10 +28,12 @@ const Navbar = () => {
                         <Link to="/contact" className="text-xl text-white hover:text-new-green transition duration-300">Restaurant</Link>
                         <Link to="/functions" className="text-xl text-white hover:text-new-green transition duration-300">Functions</Link>
                         <div className="pl-0 lg:mr-12">
+                            <a href="https://bookings.nowbookit.com/?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&colors=hex,0d5302&font=Barlow" target="_blank">
                             <button
                                 className="bg-button-green text-white rounded-lg cursor-pointer hover:bg-green-700 px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 text-base md:text-lg lg:text-xl"
                                 onClick="window.location.href='<https://example.com>';">Reservation
                             </button>
+                            </a>
                         </div>
                     </div>
                     {/* Botón de menú móvil */}

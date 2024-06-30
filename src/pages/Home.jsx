@@ -15,10 +15,10 @@ function Home() {
             <HeroBanner/>
             <CardSlider/>
             <NuevoBanner/>
-            <MenuLine/>
-            <MenuComponent/>
             <PhotoGallery/>
             <ForestBanner/>
+            <MenuLine/>
+            <MenuComponent/>
             <RatingSlider/>
         </div>
     )

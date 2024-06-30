@@ -11,7 +11,7 @@ import missImage from '/public/images/Miss.png';
 
 const PhotoGallery = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-11 sm:grid-rows-8 gap-0 m-12">
+    <div className="bg-[#F7F7F7] grid grid-cols-1 sm:grid-cols-11 sm:grid-rows-8 gap-0 p-12">
       <div className="sm:ml-10 col-span-1 sm:col-start-1 sm:col-span-5 sm:row-start-1 sm:row-span-4">
         <ImageText className=""/>
       </div>

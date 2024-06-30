@@ -7,6 +7,10 @@ import { Link } from 'react-router-dom';
 import hojaIzq from '/public/images/hojaizq.png';
 import nalita2 from '/public/images/nalita2.png';
 import hojaDer from '/public/images/hojader.png';
+import ramaizq from '/public/images/ramaizq.svg';
+import ramader from '/public/images/ramader.svg';
+
+
 
 const NuevoBanner = () => {
   return (
@@ -17,18 +21,21 @@ const NuevoBanner = () => {
       </div>
     
       <div className="col-start-6 col-span-4 row-start-1 row-span-1 mt-40 relative">
-        <img src={hojaIzq} alt="Descripción de la imagen" className="top-0 left-0 w-20 h-20" />
-        <h1 className="whitespace-nowrap font-rufina font-bold text-2xl text-custom-green md:text-3xl lg:text-4xl">Our Story</h1>
+        <div class="grid grid-cols-3">
+        <img src={ramaizq} alt="Descripción de la imagen" className="w-20 h-20 ml-52" />
+        <h1 className="whitespace-nowrap font-rufina font-bold text-2xl text-third-green md:text-3xl lg:text-5xl text-center">Our Story</h1>
+        <img src={ramader} alt="Descripción de la imagen" className="w-20 h-20" />
+        </div>
         <span className="font-rufina font-bold text-lg text-custom-green md:text-xl lg:text-2xl"></span>
-        <p className="font-inika font-normal text-xl lg:text-2xl">
+        <p className="font-inika font-normal text-xl lg:text-2xl mt-5">
           As you walk around our beautiful gardens, stroll through our historic Teahouse and dip your toes in the natural waters of Lake Barrine, you might find, just like I did, that falling in love with this place comes easy.   
           </p>
       </div>
-      <div class="mt-72 ml-20 col-start-2 col-span-6 row-start-2 row-span-4 w-full border-t-4 border-buttong-green"></div>
-      <div class="col-start-9 row-start-2">
+      <div class="mt-72 ml-20 col-start-2 col-span-5 row-start-2 row-span-4 w-full border-t-4 border-new-green"></div>
+      <div class="col-start-8 row-start-2">
 
           <Link to='/about'>
-          <TransparentButton className="mt-56" text="About us" />
+          <TransparentButton className="mt-64" text="About us" />
           </Link>
       </div>
         <img src={hojaDer} alt="Descripción de la imagen" className="absolute bottom-0 right-0 w-20 h-20 lg:w-40 lg:h-40" /> 

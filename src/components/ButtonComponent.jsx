@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 const ButtonComponent = ({
   text,
   onClick,
-  width = '160px',
-  height = '58px',
+  width = '200px',
+  height = '70px',
   fontSize = '16px',
   backgroundColor,
   borderRadius,  

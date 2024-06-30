@@ -6,6 +6,11 @@
   position: relative;
   overflow: hidden;
 }
+.slick-slide img {
+  display: block;
+  width: 9vw;
+  height: 8vw;
+}
 
 .background-container {
   position: absolute;

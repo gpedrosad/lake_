@@ -50,9 +50,9 @@ const testimonialData = [
 const settings = {
   dots: true,
   infinite: true,
-  autoplay: true,
-  speed: 500,
-  autoplaySpeed: 3000,
+  // autoplay: true,
+  // speed: 500,
+  // autoplaySpeed: 3000,
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
@@ -78,7 +78,7 @@ const RatingSlider = () => {
         </div>
       </div>
 
-      <div style={{ width: '80%', margin: '0 auto' }}>
+      <div style={{ width: '80%', margin: '10%' }}>
         <Slider {...settings}>
           {testimonialData.map(item => (
             <div key={item.id}>

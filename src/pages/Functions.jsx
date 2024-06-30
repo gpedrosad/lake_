@@ -11,14 +11,19 @@ import cardImage3 from     '/public/images/boat2.jpg';
 import sliderGreen from    '/public/images/boat3.jpg';
 import sliderWedding from  '/public/images/boat4.jpg';
 
+import fun1 from     '/public/images/function1.jpg';
+import fun2 from     '/public/images/function2.jpg';
+import fun3 from     '/public/images/function3.jpg';
+
+
 const imagesFirstSlider = [
     sliderCopas,
 ];
 
 const imagesSecondSlider = [
-    sliderGreen,
-    cardImage1,
-    cardImage3,
+    fun1,
+    fun2,
+    fun3,
 ];
 
 const imagesThirdSlider = [

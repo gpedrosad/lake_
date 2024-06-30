@@ -44,15 +44,6 @@ function App() {
 
     </Routes>
 
-    {/* <HeroBanner/>
-    <CardSlider/>
-    <LightGreenBanner/>
-    <MenuLine/>
-    <MenuComponent/>
-    <PhotoGallery/>
-    <ForestBanner/>
-    <RatingSlider/> */}
-
     <Footer/>
     
 

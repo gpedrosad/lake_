@@ -14,7 +14,7 @@ import ramader from '/public/images/ramader.svg';
 
 const NuevoBanner = () => {
   return (
-    <div className="lg:relative w-full bg-[#B8CAA8] grid grid-cols-1 lg:grid-cols-10 lg:grid-rows-2">
+    <div className="relative w-full bg-[#B8CAA8] grid grid-cols-1 lg:grid-cols-10 lg:grid-rows-2">
   <img src={hojaIzq} alt="Descripción de la imagen" className="absolute top-0 left-0 w-20 h-20 lg:w-30 lg:h-30" />
   
   <div className="relative col-start-1 lg:col-start-1 lg:col-span-4 lg:row-start-1 lg:row-span-2 flex justify-center lg:flex-none lg:justify-start xl:mb-20">

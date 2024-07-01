@@ -102,16 +102,7 @@
 .background-image-bottom-rating-slider {
   bottom: 50px; 
   right: 0px; 
-  width: 14%;
-  height: 50vh;
-}
-
-.background-image-left-rating-slider img,
-.background-image-right-rating-slider img,
-.background-image-top-rating-slider img,
-.background-image-bottom-rating-slider img {
-  width: 100%;
-  height: auto;
+  width: 15%;
 }
 
 .slider_container {
@@ -159,8 +150,7 @@
 
 @media (min-width:250px) and (max-width:300px){
   .background-image-bottom-rating-slider {
-    bottom: -75%;
-    right: 0%;
+    bottom: 5%;
     width: 15%;
   }
   
@@ -180,8 +170,7 @@
   }
   
   .background-image-bottom-rating-slider {
-    bottom: -65%;
-    right: 0%;
+    bottom:5%;
     width: 15%;
   }
   
@@ -202,9 +191,8 @@
     }
     
     .background-image-bottom-rating-slider {
-      bottom: -30%;
-      right: 0%;
       width: 15%;
+      bottom: 5%;
     }
     
     .background-image-bottom-rating-slider img {
@@ -224,8 +212,7 @@
   }
   
   .background-image-bottom-rating-slider {
-    bottom: -25%;
-    right: 0%;
+
     width: 15%;
   }
   
@@ -244,8 +231,6 @@
       width: 100%;
     }
     .background-image-bottom-rating-slider {
-      bottom: -20%;
-      right: 0%;
       width: 15%;
     }
     
@@ -267,8 +252,7 @@
   }
   
   .background-image-bottom-rating-slider {
-    bottom: -20%;
-    right: 0%;
+    bottom: 5%;
     width: 15%;
   }
   
@@ -287,10 +271,9 @@
     }
     
     .background-image-bottom-rating-slider {
-      bottom: -10%;
-      right: -1%;
+      bottom: 5%;
       width: 15%;
-      /* height: 40vh; */
+     
     }
     
     .background-image-bottom-rating-slider img {
@@ -310,10 +293,9 @@
     }
     
     .background-image-bottom-rating-slider {
-      bottom: -5%;
+      bottom: 5%;
       right: -1%;
       width: 15%;
-      /* height: 40vh; */
     }
     
     .background-image-bottom-rating-slider img {
@@ -333,10 +315,8 @@
     }
     
     .background-image-bottom-rating-slider {
-      bottom: -5%;
-      right: -1%;
+      bottom: 5%;
       width: 13%;
-      /* height: 40vh; */
     }
     
     .background-image-bottom-rating-slider img {

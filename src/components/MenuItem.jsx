@@ -10,9 +10,9 @@ const MenuItem = ({ nombre, ingredientes, precio, imagen }) => {
   return (
     <div className="flex flex-col items-center bg-white">
       <div className="w-full p-4 flex flex-col md:flex-row md:items-center md:justify-center md:space-x-4">
-        <h2 className="text-2xl font-bold text-custom-green text-center font-rufina cursor-pointer">{nombre}</h2>
+        <h2 className="text-xl font-bold text-custom-green text-center font-rufina cursor-pointer">{nombre}</h2>
         <p className="text-black mt-2 md:mt-0 text-center">{ingredientes}</p>
-        <p className="text-3xl font-rufina font-bold mt-4 md:mt-0 text-center text-custom-green">{precio}</p>
+        <p className="text-3xl font-rufina font-bold mt-4 md:mt-0 text-center text-custom-green xl:mb-2">{precio}</p>
       </div>
       {modalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">

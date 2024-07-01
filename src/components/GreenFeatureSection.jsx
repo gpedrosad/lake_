@@ -6,10 +6,9 @@ import hojader from '/public/images/hojader.png';
 const GreenFeatureSection = ({ title, description, buttonText, borderRadius, bgcolor, images }) => {
     return (
         <div className="relative bg-[#B8CAA8]">
-            <img src={hojaizq} alt="Hoja izquierda" className="absolute top-0 left-0 w-24 h-auto" />
-            <img src={hojader} alt="Hoja derecha" className="absolute bottom-0 right-0 w-24 h-auto" />
+            <img src={hojaizq} alt="Hoja izquierda" className="absolute top-0 left-0 w-16 h-auto" />
+            <img src={hojader} alt="Hoja derecha" className="absolute bottom-0 right-0 w-16 h-auto" />
 
-            <div className="mx-auto bg-yellow-500 h-1 w-3/4 sm:w-1/2"></div>
 
             <div className="bg-[#B8CAA8] grid grid-cols-1 md:grid-cols-2 gap-3 p-4 justify-items-center items-center">
                 <div className="items-center justify-items-center px-10 py-5 md:mb-20">

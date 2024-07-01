@@ -5,7 +5,7 @@ import Card from '../card/Card';
 //img
 import hoja1 from '/public/images/hoja1.png';
 import hoja2 from '/public/images/hoja2.png';
-import cardimg1 from '/public/images/card-image-1.png';
+import cardimg1 from '/public/images/card-image-1.jpg';
 import cardimg2 from '/public/images/slider-card1.jpeg';
 import cardimg3 from '/public/images/slider-card2.jpeg';
 import cardimg4 from '/public/images/slider-card3.jpeg';
@@ -102,9 +102,9 @@ const CardSlider = () => {
         <button className="slider-button left" onClick={prevSlide}></button>
         <div className="slider-wrapper" ref={sliderRef} style={{ transform: `translateX(-${currentIndex * (100 / itemsToShow)}%)` }}>
           <Card title="Restaurant" description="A good meal always starts with an appetite. Nestled within the embrace of the rainforest, our family-run business invites you to gather around our tables and experience the warmth and comfort of homemade food." image={cardimg1} />
-          <Card title="Accommodation" description="Step inside and experience the beauty and tranquillity of our lakeside lodge. Whether you're seeking adventure or a moment of quiet reflection, our accommodation provides the perfect base for your exploration." image={cardimg3} />
           <Card title="Boat cruise" description="Let us sweep you away on a gentle journey across the calm waters of Lake Barrine. A time of simple elegance, where nature's beauty and the company of loved ones create unforgettable memories." image={cardimg2} />
-          <Card title="Events" description="Not a day goes by where we don’t meet someone who shares a memory of a time long ago celebrated at Lake Barrine. The historic Teahouse and the setting of the sun across the water naturally lend themselves to the most special of occasions." image={cardimg4} />
+          <Card title="Functions" description="Not a day goes by where we don’t meet someone who shares a memory of a time long ago celebrated at Lake Barrine. The historic Teahouse and the setting of the sun across the water naturally lend themselves to the most special of occasions." image={cardimg3} />
+          <Card title="Accommodation" description="Step inside and experience the beauty and tranquillity of our lakeside lodge. Whether you're seeking adventure or a moment of quiet reflection, our accommodation provides the perfect base for your exploration." image={cardimg4} />
         </div>
         <button className="slider-button right" onClick={nextSlide}></button>
         <img src={bgwhite} className='bg-wh'></img>

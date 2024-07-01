@@ -85,6 +85,8 @@
     .user_name_container{
         margin: 0%;
         padding: 0%;
+        justify-content: center;
+        align-items: center;
 
 
     }

@@ -15,8 +15,8 @@ const Card = ({ title, description, image }) => {
             <p className="card-description">{description}</p>
           </div>
           <div className="card-actions">
-            <Link to='/contact'>
-              <button className="card-button">Discover our location</button>
+            <Link to='/restaurant'>
+              <button className="card-button">Discover our restaurant</button>
             </Link>
           </div>
         </div>

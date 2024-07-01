@@ -24,7 +24,7 @@
 
 @media only screen and (max-width: 540px) {
     .customerContainer{
-        justify-content: space-around;
+        justify-content: center;
     }
     .p_customerContainer{
         padding: 0%;
@@ -48,4 +48,12 @@
     }
 
 
+}
+
+@media (max-width:350px) {
+    .customerContainer svg{
+        width: 10%;
+        padding: 0%;
+        margin: 0%;
+    }
 }

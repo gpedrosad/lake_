@@ -180,3 +180,13 @@
             padding-top: 0%;
         }
     }
+    @media(max-width:255px){
+        .user_name_container h2{
+            font-size: 0.5rem ;
+        }
+
+    }
+    @media(max-width:350px){
+    #div_username_userimage{
+        justify-content: space-around;
+    }}

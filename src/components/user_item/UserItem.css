@@ -72,7 +72,7 @@
         height: 20vw;
     }
     .user_image_container{
-        width: 10vh;
+        width: auto;
         height: 10vh;
         margin: 0% ;
         padding: 0%;
@@ -107,15 +107,22 @@
         font-size: 1.5rem;
     }
     #div_username_userimage{
-        justify-content: center;
+        width:100%;
+        justify-content: space-evenly;
+    }
+    .user_image_container {
+        height: auto;
     }
 
 }
+@media (max-width:540px){
+    #div_username_userimage{
+        justify-content: center;
+    }
+}
 @media only screen and (max-width: 420px){
     .user_image_container{
-        width: 10vh;
-        height: 9vh;
-        margin-right: 5%;
+        width: auto;
     }
     .user_name_container h2{
         font-size: 1rem;
@@ -165,6 +172,7 @@
         }
 
         #div_username_userimage{
+            width: 100%;
             justify-content: center;
         }
         .user_info{

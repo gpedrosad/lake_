@@ -8,9 +8,40 @@
 }
 .slick-slide img {
   display: block;
-  width: 9vw;
-  height: 8vw;
+  width: 100px;
+  height: 100px;
 }
+@media(max-width: 750px){
+  .slick-slide img {
+    width: 70px;
+    height: 70px;
+  }
+
+}
+
+@media(max-width: 380px){
+  .slick-slide img {
+    width: 50px;
+    height: 50px;
+  }
+
+}
+@media(max-width: 280px){
+  .slick-slide img {
+    width: 40px;
+    height: 40px;
+  }
+
+}
+@media(max-width: 240px){
+  .slick-slide img {
+    width: 35px;
+    height: 35px;
+  }
+
+}
+
+
 
 .background-container {
   position: absolute;

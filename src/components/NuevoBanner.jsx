@@ -15,16 +15,16 @@ import ramader from '/public/images/ramader.svg';
 const NuevoBanner = () => {
   return (
     <div className="relative w-full bg-[#B8CAA8] grid grid-cols-10 grid-rows-2">
-      <img src={hojaIzq} alt="Descripción de la imagen" className="absolute top-0 left-0 w-20 h-20 lg:w-40 lg:h-40" />
-      <div className="col-start-2 col-span-4 row-start-1 row-span-2">
+      <img src={hojaIzq} alt="Descripción de la imagen" className="absolute top-0 left-0 w-20 h-20 lg:w-30 lg:h-30" />
+      <div className="col-start-1 col-span-4 row-start-1 row-span-2">
         <img src={nalita2} className="shadow-none m-20" />
       </div>
     
       <div className="col-start-6 col-span-4 row-start-1 row-span-1 mt-40 relative">
         <div class="grid grid-cols-3">
-        <img src={ramaizq} alt="Descripción de la imagen" className="w-20 h-20 ml-52" />
-        <h1 className="whitespace-nowrap font-rufina font-bold text-2xl text-third-green md:text-3xl lg:text-5xl text-center">Our Story</h1>
-        <img src={ramader} alt="Descripción de la imagen" className="w-20 h-20" />
+        <img src={ramaizq} alt="Descripción de la imagen" className="w-20 h-20 ml-24" />
+        <h1 className="col-start-2 whitespace-nowrap font-rufina font-bold text-2xl text-third-green md:text-3xl lg:text-5xl text-center">Our Story</h1>
+        <img src={ramader} alt="Descripción de la imagen" className="w-20 h-20 col-start-3 ml-10" />
         </div>
         <span className="font-rufina font-bold text-lg text-custom-green md:text-xl lg:text-2xl"></span>
         <p className="font-inika font-normal text-xl lg:text-2xl mt-5">
@@ -38,7 +38,7 @@ const NuevoBanner = () => {
           <TransparentButton className="mt-64" text="About us" />
           </Link>
       </div>
-        <img src={hojaDer} alt="Descripción de la imagen" className="absolute bottom-0 right-0 w-20 h-20 lg:w-40 lg:h-40" /> 
+        <img src={hojaDer} alt="Descripción de la imagen" className="absolute bottom-0 right-0 w-20 h-20 lg:w-30 lg:h-30" /> 
     </div>
   );
 };

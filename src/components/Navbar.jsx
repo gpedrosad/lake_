@@ -22,11 +22,11 @@ const Navbar = () => {
                     </div>
                     {/* Links de escritorio */}
                     <div className="hidden md:flex items-center space-x-5 xl:space-x-10">
-                        <Link to="/about" className="text-xl text-white hover:text-new-green transition duration-300">About</Link>
-                        <Link to="/accomodation" className="text-xl text-white hover:text-new-green transition duration-300">Accommodation</Link>
-                        <Link to="/boat" className="text-xl text-white hover:text-new-green transition duration-300">Boat</Link>
+                        <Link to="/about" className="text-xl text-white hover:text-new-green transition duration-300">About us</Link>
                         <Link to="/restaurant" className="text-xl text-white hover:text-new-green transition duration-300">Restaurant</Link>
+                        <Link to="/boat" className="text-xl text-white hover:text-new-green transition duration-300">Boat Cruise</Link>
                         <Link to="/functions" className="text-xl text-white hover:text-new-green transition duration-300">Functions</Link>
+                        <Link to="/accomodation" className="text-xl text-white hover:text-new-green transition duration-300">Accommodation</Link>
                         <div className="pl-0 lg:mr-12">
                             <a href="https://bookings.nowbookit.com/?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&colors=hex,0d5302&font=Barlow" target="_blank">
                             <button
@@ -64,11 +64,12 @@ const Navbar = () => {
                         </div>
                     </Link>
                     {/* Enlaces actualizados para el menú móvil */}
+                    <Link to="/lake_" className="mt-5 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Home</Link>
                     <Link to="/about" className="mt-5 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>About</Link>
-                    <Link to="/accomodation" className="mt-5 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Accommodation</Link>
-                    <Link to="/boat" className="mt-5 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Boat</Link>
                     <Link to="/restaurant" className="mt-5 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Restaurant</Link>
+                    <Link to="/boat" className="mt-5 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Boat Cruise</Link>
                     <Link to="/functions" className="mt-5 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Functions</Link>
+                    <Link to="/accomodation" className="mt-5 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Accommodation</Link>
                 </div>
             </div>
         </nav>

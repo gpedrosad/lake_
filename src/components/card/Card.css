@@ -331,7 +331,7 @@
 
   }
   .card-description{
-    font-size: 1rem;
+    font-size: 0.9rem;
     
   }
   .card-button{
@@ -353,7 +353,7 @@
 }
 @media (max-width: 330px) {
   .card-description{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     
   }
   .card-button{

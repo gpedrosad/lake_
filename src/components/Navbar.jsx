@@ -12,7 +12,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-transparent absolute top-0 left-0 w-full z-10 pr-10">
+        <nav className="bg-transparent absolute top-0 left-0 w-full z-10 pr-0">
             <div className="max-w mx-auto px-4 bg-transparent">
                 <div className="flex justify-between items-center py-4">
                     <div className="flex items-center">

@@ -3,6 +3,7 @@ import FeatureSection from "../components/FeatureSection";
 import GreenFeatureSection from "../components/GreenFeatureSection";
 import RatingSliderSecond from "../components/RatSliderSecond";
 import { useEffect } from "react";
+import QuoteSection from "../components/QuoteSection";
 
 // Importar imágenes
 import imgHeroSection from '/public/images/boat.jpg';
@@ -33,20 +34,11 @@ function Boat() {
         window.scrollTo(0, 0); // Scroll to the top of the page when the component mounts
       }, []);
     return (
-        <div>
+        <div class="bg-[#F7F7F7]">
             <HeroSection
                 imageSrc={imgHeroSection}
                 title="The waters of Lake Barrine"
             />
-
-            <FeatureSection
-                title="The family cruise"
-                description="“Mother Nature’s simple reflections can be missed as we fly through life, but her healing charms can be caught in the eyes of those who take the time to study her natural rhythms” – Steve Curry"
-                buttonText='Book Now'
-                borderRadius='0px'
-                bgcolorbutton='#3C5220'
-                images={imagesFirstSlider}
-            />    
 
             <GreenFeatureSection
                 title="Our Cruise"
@@ -58,15 +50,21 @@ function Boat() {
                 bgcolor='#F0B92B'
                 images={imagesSecondSlider}
             />
+            <div className="mx-auto bg-yellow-500 h-1 w-3/4 sm:w-1/2"></div>
+
+                <FeatureSection
+                    title="Sail into Celebration"
+                    description="Set against the backdrop of a hundred year old rainforest, with the tranquil waters reflecting the hues of the sky, each moment on our boat is crafted to be memorable. Let us turn your event into an occasion that not only stands out but remains etched in the hearts of all who attend."
+                    buttonText='Book Now'
+                    borderRadius='0px'
+                    bgcolorbutton='#3C5220'
+                    images={imagesThirdSlider}
+                />
+
+        <div className="mx-auto bg-yellow-500 h-1 w-3/4 sm:w-1/2"></div>
+            <QuoteSection quote='“Mother Nature’s simple reflections can be missed as we fly through life, but her healing charms can be caught in the eyes of those who take the time to study her natural rhythms“' author=" – Steve Curry"/>
+
             
-            <FeatureSection
-                title="Sail into Celebration"
-                description="Set against the backdrop of a hundred year old rainforest, with the tranquil waters reflecting the hues of the sky, each moment on our boat is crafted to be memorable. Let us turn your event into an occasion that not only stands out but remains etched in the hearts of all who attend."
-                buttonText='Book Now'
-                borderRadius='0px'
-                bgcolorbutton='#3C5220'
-                images={imagesThirdSlider}
-            />
         
             <RatingSliderSecond />
         </div>

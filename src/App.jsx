@@ -22,7 +22,7 @@ import About from './pages/About.jsx';
 import Home from './pages/Home.jsx';
 import Boat from './pages/Boat.jsx';
 import Accomodation from './pages/Accomodation.jsx';
-import Contact from './pages/Contact.jsx';
+import Restaurant from './pages/Restaurant.jsx';
 import Functions from './pages/Functions.jsx'
 //React router
 import { Routes, Route } from 'react-router-dom';
@@ -39,7 +39,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/boat" element={<Boat/>} />
         <Route path="/accomodation" element={<Accomodation/>} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/restaurant" element={<Restaurant/>} />
         <Route path="/functions" element={<Functions/>} />
 
     </Routes>

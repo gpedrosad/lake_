@@ -228,10 +228,10 @@
 
   }
   .card-button{
-    width: 70%;
     height: 6vw;
-    padding: 1% 1%;
-    font-size: 1.8rem;
+
+    font-size: 1rem;
+    white-space: nowrap;
 
   }
 }
@@ -307,7 +307,7 @@
   margin-top: 2%;
   margin-bottom: 0%;
   font-size: 0.6rem;
-  width: 60%;
+  width: 100%;
 
 }
   
@@ -328,7 +328,7 @@
     margin-top: 2%;
     margin-bottom: 0%;
     font-size: 0.4rem;
-    width: 50%;
+    width: 100%;
   
   }
   .description-container{
@@ -350,8 +350,10 @@
     margin-top: 2%;
     margin-bottom: 0%;
     font-size: 0.35rem;
-    width: 50%;
+    width: 100%;
   
   }
-
+  .card{
+    height: 100%;
+  }
 }

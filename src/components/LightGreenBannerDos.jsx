@@ -67,7 +67,7 @@ const LightGreenBannerDos = () => {
             </div>
             <div className="relative w-full bg-[#F7F7F7] grid grid-cols-1 items-center justify-items-center px-60 py-5 md:col-span-2">
                 <h1 className="text-center whitespace-nowrap font-rufina mt-6 font-bold text-custom-green text-3xl sm:text-3xl md:text-3xl md:pt-8 sm:pt-11 xl:text-5xl">About us</h1>
-                <div className="w-1/6 bg-yellow-500 h-1 sm:mb-10"></div>
+                <div className="lg:w-6/12 xl:w-3/12 bg-yellow-500 h-1 sm:mb-10"></div>
                 <section className="mb-12">
                     <header className="text-2xl font-bold text-center my-4 xl:text-4xl mb-10">
                         A Living History of Lake Barrine

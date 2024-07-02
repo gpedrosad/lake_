@@ -1,18 +1,8 @@
 import React, { useState } from 'react';
 import MenuItem from './MenuItem';
-<<<<<<< HEAD
-import leftBg from '/public/images/Group409.png'
-import rightBg from '/public/images/Group408.png'
-=======
-
-import derecha from '/public/images/grupoder.svg';
-import izquierda from '/public/images/grupoizq.svg';
-import hoja from '/public/images/hojader2.svg';
-
-
-
-
->>>>>>> 164341b (cambios en boat y functions)
+import izquierda from '/public/images/grupoizq.svg'
+import derecha from '/public/images/grupoder.svg'
+import hoja from '/public/images/hojader2.svg'
 const DropdownButton = () => {
   const [selectedOption, setSelectedOption] = useState('Drinks');
   const [isOpen, setIsOpen] = useState(false);
@@ -62,11 +52,8 @@ const DropdownButton = () => {
   };
 
   return (
-<<<<<<< HEAD
     <div className="relative mt-10">
-=======
-    <div className="relative mt-10 w-full">
-      <div className="absolute left-0 top-36">
+      <div className="absolute left-0 top-56">
         <img src={derecha} alt="Decorative Background" className="w-full h-full object-cover" />
       </div>
       <div className="absolute right-0 top-0">
@@ -75,11 +62,9 @@ const DropdownButton = () => {
       <div className="absolute right-0 top-72">
         <img src={hoja} alt="Decorative Background" className="w-full h-full object-cover" />
       </div>
-      <div className="sm:hidden">
-        <div class="flex justify-center">
->>>>>>> 164341b (cambios en boat y functions)
 
       <h1 className="text-5xl font-bold text-center font-rufina m-16">Menu</h1>
+      
       <div className="sm:hidden">
         <div className="flex justify-center">
           <button onClick={toggleDropdown} className="bg-custom-green text-white px-3 py-1 rounded-lg flex items-center justify-between w-36 h-10">
@@ -112,8 +97,6 @@ const DropdownButton = () => {
         ))}
       </div>
       <div className="relative flex font-rufina justify-center mt-16 mb-20">
-      <img src={leftBg} className='absolute w-20 z-0 left-0 h-full object-cover'/>
-      <img src={rightBg}  className='absolute w-20 z-0 right-0 h-full object-cover'/>
         <div className='w-2/3'>
           {menuContent[selectedOption]}
         </div>

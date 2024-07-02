@@ -19,16 +19,16 @@ const NuevoBanner = () => {
     <div className="col-span-4 row-span-5 col-start-2 row-start-2">
       <img src={nalita2} className="shadow-none p-10 lg:p-0" />
     </div>
-  <div className="col-span-4 row-span-4 col-start-6 row-start-2 xl:row-start-3">
-  <div className="flex flex-col items-center justify-center lg:mb-10">
+  <div className="col-span-4 row-span-4 col-start-6 row-start-2 xl:row-start-2">
+  <div className="flex flex-col items-center justify-center lg:mb-10 lg:mt-16">
   <div className="flex items-center space-x-1">
     <img src={ramaizq} alt="Descripción de la imagen" className="w-15 h-15" />
-    <h1 className="p-2 font-rufina font-bold text-2xl text-third-green md:text-3xl lg:text-5xl text-center">
+    <h1 className="p-2 font-rufina font-bold text-2xl text-third-green md:text-3xl lg:text-4xl text-center">
       Where the Rainforest
     </h1>
     <img src={ramader} alt="Descripción de la imagen" className="w-15 h-15" />
     </div>
-    <h1 className="p-2 font-rufina font-bold text-2xl text-third-green md:text-3xl lg:text-5xl text-center">
+    <h1 className="p-2 font-rufina font-bold text-2xl text-third-green md:text-3xl lg:text-4xl text-center">
       meets the Lake
     </h1>
   </div>

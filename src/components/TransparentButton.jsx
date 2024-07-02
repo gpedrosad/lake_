@@ -3,7 +3,7 @@ import React from 'react';
 
 const TransparentButton = ({ text, onClick, className}) => {
     const buttonStyle = {
-      width: '270px',
+      width: '240px',
       height: '70px',
       backgroundColor: 'transparent',
       border: '3px solid #000', // Puedes cambiar el color del borde si deseas

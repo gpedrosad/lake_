@@ -56,18 +56,18 @@ const LightGreenBannerDos = () => {
                 <div className="md:flex-1 md:relative">
                     <img src={hojaIzq} alt="Descripción de la imagen" className="absolute top-0 left-0 w-20 h-20" />
                 </div>
-                <div className="grid grid-cols-1 items-center gap-10 justify-items-center md:m-5 md:mt-14 md:mb-14 xs:m-10">
-                    <img src={firstGen} alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-left-top mt-14 xs:h-66" />
+                <div className="grid grid-cols-1 items-center gap-8 justify-items-center md:m-5 md:mt-14 md:mb-12 xs:m-10">
+                    <img src={firstGen} alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-left-top mt-14 mb-8 xs:h-66" />
                     <CarruselDos images={images3} />
 
                     <CarruselDos images={images2} />
-                    <img src={fourthGen} alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-center mb-14 xs:h-66" />
+                    <img src={fourthGen} alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-center mb-14 mt- xs:h-66" />
                 </div>
                 <img src={hojaDer} alt="Descripción de la imagen" className="absolute bottom-0 right-0 w-20 h-20" />
             </div>
             <div className="relative w-full bg-[#F7F7F7] grid grid-cols-1 items-center justify-items-center px-60 py-5 md:col-span-2">
                 <h1 className="text-center whitespace-nowrap font-rufina mt-6 font-bold text-custom-green text-3xl sm:text-3xl md:text-3xl md:pt-8 sm:pt-11 xl:text-5xl">About us</h1>
-                <div className="lg:w-6/12 xl:w-3/12 bg-yellow-500 h-1 sm:mb-10"></div>
+                <div className="w-8/12 lg:w-6/12 xl:w-5/12 2xl:w-5/12 bg-yellow-500 h-1 sm:mb-10"></div>
                 <section className="mb-12">
                     <header className="text-2xl font-bold text-center my-4 xl:text-4xl mb-10">
                         A Living History of Lake Barrine

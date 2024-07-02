@@ -15,9 +15,18 @@ import fun1 from     '/public/images/function1.jpg';
 import fun2 from     '/public/images/function2.jpg';
 import fun3 from     '/public/images/function3.jpg';
 
+import functions1 from     '/public/images/functions1.jpg';
+import functions2 from     '/public/images/functions2.jpg';
+import functions3 from     '/public/images/functions3.jpg';
+import functions4 from     '/public/images/functions4.jpg';
+
+
 
 const imagesFirstSlider = [
-    sliderCopas,
+    functions1,
+    functions2,
+    functions3,
+    functions4
 ];
 
 const imagesSecondSlider = [

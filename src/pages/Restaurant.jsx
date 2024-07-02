@@ -20,10 +20,13 @@ function Contact () {
         <div>
         <HeroSection
                 imageSrc={heroimg}
-                title="Restaurant"
+                title="Tea-House"
                 />
         <TeaDescription/>
+        <div className="mx-auto bg-yellow-500 h-1 w-3/4 sm:w-1/2"></div>
         <HoursAndBookingInfo/>
+        <div className="mx-auto bg-yellow-500 h-1 w-3/4 sm:w-1/2"></div>
+
         <DropdownButton/>
 
         

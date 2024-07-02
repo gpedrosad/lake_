@@ -6,9 +6,15 @@ const HoursAndBookingInfo = () => {
     <div className="flex justify-center items-center h-2/3 bg-second-green xl:text-2xl">
       <div className="text-center bg-second-green max-w-2xl p-20">
         <p className="font-rufina font-bold text-3xl mb-2 text-custom-green p-5 xl:text-4xl">Open 7 days a week</p>
-        <p className="mb-1 font-bold text-custom-green">Mon – Sun <span className="font-normal">12pm – 3pm</span></p>
+        <p className="mb-1 font-bold text-custom-green">Monday <span className="font-normal">9 am – 14:30 pm</span></p>
+        <p className="mb-1 font-bold text-custom-green">Tuesday <span className="font-normal">9 am – 14:30 pm</span></p>
+        <p className="mb-1 font-bold text-custom-green">Wednesday <span className="font-normal">9 am – 14:30 pm</span></p>
+        <p className="mb-1 font-bold text-custom-green">Thursday <span className="font-normal">9 am – 14:30 pm</span></p>
+        <p className="mb-1 font-bold text-custom-green">Friday <span className="font-normal">9 am – 14:30 pm</span></p>
+        <p className="mb-1 font-bold text-custom-green">Saturday <span className="font-normal">8:30 am - 15:00 pm</span></p>
+        <p className="mb-1 font-bold text-custom-green">Sunday <span className="font-normal">8:30 am - 15:00 pm</span></p>
+
         <p className="mb-2 text-custom-green">
-          <span className="font-bold">Dinner: Sun – Thu</span> – 5:30 – 9pm; Fri/Sat – 5:30pm – 9.30pm
         </p>
         <p className="text-custom-green">
         </p>

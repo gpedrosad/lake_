@@ -18,7 +18,7 @@ const CarruselDos = ({ images, rounded }) => {
     };
 
     return (
-        <div className="relative md:w-96 lg:w-96 sm:w-2/3 mt-2">
+        <div className="relative md:w-96 lg:w-96 sm:w-2/3">
             <div className={`overflow-hidden  ${roundedClass}`}>
                 <img
                     src={images[currentIndex]}
@@ -26,7 +26,7 @@ const CarruselDos = ({ images, rounded }) => {
                     className="w-full h-auto object-cover rounded-xl"
                 />
             </div>
-            <div className="flex justify-center mt-4 space-x-4">
+            <div className="flex justify-center space-x-4">
                 <button
                     onClick={prevSlide}
                     className="p-2"

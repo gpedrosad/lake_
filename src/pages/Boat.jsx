@@ -37,7 +37,7 @@ function Boat() {
         <div class="bg-[#F7F7F7]">
             <HeroSection
                 imageSrc={imgHeroSection}
-                title="The waters of Lake Barrine"
+                title="Boat Cruise"
             />
 
             <FeatureSection

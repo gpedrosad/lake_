@@ -40,6 +40,16 @@ function Boat() {
                 title="The waters of Lake Barrine"
             />
 
+            <FeatureSection
+                title="Sail into Celebration"
+                description="Set against the backdrop of a hundred year old rainforest, with the tranquil waters reflecting the hues of the sky, each moment on our boat is crafted to be memorable. Let us turn your event into an occasion that not only stands out but remains etched in the hearts of all who attend."
+                buttonText='Book Now'
+                borderRadius='0px'
+                bgcolorbutton='#3C5220'
+                images={imagesThirdSlider}
+            />
+                        <div className="mx-auto bg-yellow-500 h-1 w-3/4 sm:w-1/2"></div>
+
             <GreenFeatureSection
                 title="Our Cruise"
                 description="Our cruise is about taking the time to experience natures beauty in one of its most tranquil forms. My Great Grandfather George Curry always said, “You haven’t truly experienced the Lake until you’ve done the boat cruise.”
@@ -52,14 +62,6 @@ function Boat() {
             />
             <div className="mx-auto bg-yellow-500 h-1 w-3/4 sm:w-1/2"></div>
 
-                <FeatureSection
-                    title="Sail into Celebration"
-                    description="Set against the backdrop of a hundred year old rainforest, with the tranquil waters reflecting the hues of the sky, each moment on our boat is crafted to be memorable. Let us turn your event into an occasion that not only stands out but remains etched in the hearts of all who attend."
-                    buttonText='Book Now'
-                    borderRadius='0px'
-                    bgcolorbutton='#3C5220'
-                    images={imagesThirdSlider}
-                />
 
         <div className="mx-auto bg-yellow-500 h-1 w-3/4 sm:w-1/2"></div>
             <QuoteSection quote='“Mother Nature’s simple reflections can be missed as we fly through life, but her healing charms can be caught in the eyes of those who take the time to study her natural rhythms“' author=" – Steve Curry"/>

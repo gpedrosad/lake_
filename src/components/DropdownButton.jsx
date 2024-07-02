@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import MenuItem from './MenuItem';
-
+import leftBg from '/public/images/Group409.png'
+import rightBg from '/public/images/Group408.png'
 const DropdownButton = () => {
   const [selectedOption, setSelectedOption] = useState('Drinks');
   const [isOpen, setIsOpen] = useState(false);
@@ -39,8 +40,8 @@ const DropdownButton = () => {
       <MenuItem nombre="Twice Fried Bacon and Egg Roll" ingredientes="Crispy bacon, free-range egg, toasted Turkish bread, BBQ sauce" descripcion="Seasoned with housemade creole spices" precio="$17.00" />,
       <MenuItem nombre="Smoked Salmon and Cream Cheese" ingredientes="Smoked salmon, baby spinach, cream cheese, fresh herbs, Spanish onion, capers, toasted Turkish bread, lemon wedge" precio="$22.00" />,
       <MenuItem nombre="Smashed Avocado" ingredientes="Local avocado, fresh tomato, marinated feta, ciabatta toast, balsamic drizzle" precio="$20.00" />,
-      <MenuItem nombre="BREKKY BLT" ingredientes={<span> Crunchy twice-fried bacon, lettuce, fresh tomato on Turkish bread with a drizzle of homemade aioli.<br/>Add avocado and fried egg for a delicious twist! $28</span>} descripcion="" precio="$20"
-/>    ],
+      <MenuItem nombre="BREKKY BLT" ingredientes={<span> Crunchy twice-fried bacon, lettuce, fresh tomato on Turkish bread with a drizzle of homemade aioli.<br/>Add avocado and fried egg for a delicious twist! $28</span>} descripcion="" precio="$20"/>
+    ],
     Lunch: [
       <MenuItem nombre="Pumpkin Fetta and Spinach Frittata" ingredientes="Roast pumpkin, Danish fetta, baby spinach, served with salad and toasted garlic bread" precio="$24.00" />,
       <MenuItem nombre="Open Grill Chicken and Cheese Toastie" ingredientes="Grilled Turkish bread, virgin olive oil, chicken, cheese, choice of asparagus or pineapple" precio="$20.00" />,
@@ -51,29 +52,31 @@ const DropdownButton = () => {
 
   return (
     <div className="relative mt-10">
-      <div className="sm:hidden">
-        <div class="flex justify-center">
 
+      <h1 className="text-5xl font-bold text-center font-rufina m-16">Menu</h1>
+      <div className="sm:hidden">
+        <div className="flex justify-center">
           <button onClick={toggleDropdown} className="bg-custom-green text-white px-3 py-1 rounded-lg flex items-center justify-between w-36 h-10">
             {selectedOption}
             <span className="ml-2 text-sm">&#9660;</span>
           </button>
-        {isOpen && (
-          <div className="absolute mt-10 w-36 bg-white rounded-lg shadow-lg z-10">
-            <ul className="text-gray-700">
-              {options.map((option, index) => (
-                <li key={index}
-                    className={`px-3 py-1 text-sm hover:bg-gray-100 ${index !== 0 ? 'border-t border-custom-green' : ''}`}
-                    onClick={() => handleSelect(option)}>
-                  {option}
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
+          {isOpen && (
+            <div className="absolute mt-10 w-36 bg-white rounded-lg shadow-lg z-10">
+              <ul className="text-gray-700">
+                {options.map((option, index) => (
+                  <li key={index}
+                      className={`px-3 py-1 text-sm hover:bg-gray-100 ${index !== 0 ? 'border-t border-custom-green' : ''}`}
+                      onClick={() => handleSelect(option)}>
+                    {option}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       </div>
-      <div className="hidden sm:flex space-x-10 mt-3 justify-center mb-5">
+      <div className=" hidden sm:flex space-x-10 mt-3 justify-center mb-5">
+
         {options.map((option) => (
           <button key={option}
                   onClick={() => handleSelect(option)}
@@ -82,8 +85,12 @@ const DropdownButton = () => {
           </button>
         ))}
       </div>
-      <div className="flex justify-center mt-5 mb-20">
-        <p>{menuContent[selectedOption]}</p>
+      <div className="relative flex font-rufina justify-center mt-16 mb-20">
+      <img src={leftBg} className='absolute w-20 z-0 left-0 h-full object-cover'/>
+      <img src={rightBg}  className='absolute w-20 z-0 right-0 h-full object-cover'/>
+        <div className='w-2/3'>
+          {menuContent[selectedOption]}
+        </div>
       </div>
     </div>
   );

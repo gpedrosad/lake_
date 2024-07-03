@@ -27,7 +27,7 @@ const Footer = () => {
 
       <div className="bg-custom-green grid grid-cols-1 place-items-center">
         <div className="w-full bg-yellow-500 h-0.5"></div>
-        <p className="m-6 text-white">© 2024. All Rights Reserved</p>
+        <p className="m-4 text-white">© 2024. All Rights Reserved</p>
       </div>
     </>
   );

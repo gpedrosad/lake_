@@ -105,19 +105,19 @@
 /* Media Queries for responsive design */
 @media (min-width: 1200px) {
   .card-description {
-    font-size: 1.1rem; 
+    font-size: 1rem; 
   }
 
 }
 @media (min-width: 1200px) and (max-width: 1310px) {
   .card-description {
-    font-size: 1rem; 
+    font-size: 0.8rem; 
   }
 }
 
 @media (min-width: 1400px){
   .card-description {
-    font-size: 1.2rem; 
+    font-size: 1rem; 
   }
 
 }
@@ -146,7 +146,7 @@
     font-size: 2.5rem;
   }
   .card-description {
-    font-size: 1.8rem; 
+    font-size: 1.6rem; 
   }
   .card-button {
 
@@ -275,11 +275,15 @@
 
 .card-button{
   margin-top: 0%;
-  margin-bottom: 0%;
+  margin-bottom:0;
   font-size: 1.5rem;
   height: auto;
+  width:auto;
 
+}.card-content{
+  height: 600px;
 }
+
 
 }
 

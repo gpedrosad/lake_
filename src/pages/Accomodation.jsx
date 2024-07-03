@@ -28,7 +28,7 @@ function Accomodation() {
         <div>
             <HeroSection
                 imageSrc={imgHeroSection}
-                title="Experience the tranquility"
+                title="Accommodation"
             />
 
             <FeatureAccom

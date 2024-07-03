@@ -41,7 +41,7 @@ const DropdownButton = () => {
       <MenuItem nombre="Twice Fried Bacon and Egg Roll" ingredientes="Crispy bacon, free-range egg, toasted Turkish bread, BBQ sauce" descripcion="Seasoned with housemade creole spices" precio="$17.00" />,
       <MenuItem nombre="Smoked Salmon and Cream Cheese" ingredientes="Smoked salmon, baby spinach, cream cheese, fresh herbs, Spanish onion, capers, toasted Turkish bread, lemon wedge" precio="$22.00" />,
       <MenuItem nombre="Smashed Avocado" ingredientes="Local avocado, fresh tomato, marinated feta, ciabatta toast, balsamic drizzle" precio="$20.00" />,
-      <MenuItem nombre="BREKKY BLT" ingredientes={<span> Crunchy twice-fried bacon, lettuce, fresh tomato on Turkish bread with a drizzle of homemade aioli.<br/>Add avocado and fried egg for a delicious twist! $28</span>} descripcion="" precio="$20.00"/>
+      <MenuItem nombre="BREKKY BLT" ingredientes="Crunchy twice-fried bacon, lettuce, fresh tomato on Turkish bread with a drizzle of homemade aioli" descripcion="" precio="$20.00"/>
     ],
     Lunch: [
       <MenuItem nombre="Pumpkin Fetta and Spinach Frittata" ingredientes="Roast pumpkin, Danish fetta, baby spinach, served with salad and toasted garlic bread" precio="$24.00" />,
@@ -97,7 +97,7 @@ const DropdownButton = () => {
         ))}
       </div>
       <div className="relative flex font-rufina justify-center mt-16 mb-20">
-        <div className='w-2/3'>
+        <div className='w-11/12'>
           {menuContent[selectedOption]}
         </div>
       </div>

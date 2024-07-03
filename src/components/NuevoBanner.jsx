@@ -16,8 +16,8 @@ const NuevoBanner = () => {
   return (
   <div className="relative bg-[#B8CAA8] grid grid-cols-1 lg:grid-cols-10 g:grid-rows-8 gap-5">
     <img src={hojaIzq} alt="Descripción de la imagen" className="absolute top-0 left-0 w-20 h-20 lg:w-30 lg:h-30" />
-    <div className="col-start-1 lg:col-span-4 lg:row-span-5 lg:col-start-2 lg:row-start-2 flex md:flex-none justify-center">
-      <img src={nalita2} className="shadow-none p-10 lg:p-0 mt-10" />
+    <div className="col-start-1 lg:col-span-3 lg:row-span-5 lg:col-start-2 lg:row-start-2 flex md:flex-none justify-center">
+      <img src={nalita2} className="shadow-none p-10 lg:p-0 mt-10 lg:pt-10" />
     </div>
   <div className="lg:col-span-4 lg:row-span-4 lg:col-start-6 lg:row-start-2 lg:xl:row-start-2">
   <div className="flex flex-col items-center justify-center lg:mb-10 lg:mt-24">

@@ -1,6 +1,6 @@
 // import Working from "../components/Working";
 import TeaDescription from "../components/TeaDescription";
-import HeroResto from "../components/SecondHeroSection";
+import HeroResto from "../components/HeroResto";
 import HoursAndBookingInfo from "../components/HoursAndBookingInfo";
 import DropdownButton from "../components/DropdownButton";
 import { useEffect } from "react";

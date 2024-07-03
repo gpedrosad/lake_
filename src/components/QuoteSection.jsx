@@ -7,7 +7,7 @@ const QuoteSection = ({ quote, author }) => {
       <img src={hojaizq} alt="Hoja izquierda" className="absolute top-0 left-0 w-16 h-auto" />
       <img src={hojader} alt="Hoja derecha" className="absolute bottom-0 right-0 w-16 h-auto" />
       <div className="text-center mx-auto mt-16">
-        <p className="text-lg md:text-2xl xl:text-3xl text-custom-green font-semibold">
+        <p className="text-lg md:text-2xl xl:text-3xl text-custom-green font-semibold px-80">
           {quote}
         </p>
         <p className="text-md md:text-lg xl:text-xl text-custom-green font-medium mt-4">

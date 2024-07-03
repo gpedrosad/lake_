@@ -35,7 +35,6 @@ const DropdownButton = () => {
       <MenuItem nombre="Ginger & Lemongrass" precio="$5.00" />
     ],
     Breakfast: [
-      <MenuItem nombre="Eggs Benedict" ingredientes="Poached eggs, hollandaise, ham, English muffin" precio="$12.00" imagen="src/img/huevos.png"/>,
       <MenuItem nombre="Pancakes" ingredientes="Maple syrup, butter" precio="$10.00" imagen="src/img/huevos.png"/>,
       <MenuItem nombre="Eggs Benedict" ingredientes="Ciabatta bread, baby spinach, free-range eggs, choice of bacon/mushrooms/smoked salmon, hollandaise sauce" descripcion="Classic breakfast with your choice of topping" precio="$27.00" />,
       <MenuItem nombre="Twice Fried Bacon and Egg Roll" ingredientes="Crispy bacon, free-range egg, toasted Turkish bread, BBQ sauce" descripcion="Seasoned with housemade creole spices" precio="$17.00" />,

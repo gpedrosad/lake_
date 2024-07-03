@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import './Card.css';
 import { Link } from 'react-router-dom';
 
-const Card = ({ title, description, image }) => {
+const Card = ({ title, description, image, textButton }) => {
   return ( 
     <div className="card">
       <div className="card-action-area">
@@ -16,7 +16,7 @@ const Card = ({ title, description, image }) => {
           </div>
           <div className="card-actions">
             <Link to='/restaurant'>
-              <button className="card-button">Discover our restaurant</button>
+              <button className="card-button">{textButton}</button>
             </Link>
           </div>
         </div>

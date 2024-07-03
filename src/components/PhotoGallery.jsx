@@ -2,9 +2,9 @@ import ImageText from './ImageText';
 
 
 // Importar imágenes
-import tableImage from '/public/images/arriba.jpg';
-import foodImage from '/public/images/abajo_izquierda.jpg';
-import missImage from '/public/images/abajo_derecha.jpg';
+import tableImage from '/public/images/table.png';
+import foodImage from '/public/images/food.png';
+import missImage from '/public/images/Miss.png';
 
 
 const PhotoGallery = () => {

@@ -1,6 +1,6 @@
 // import Working from "../components/Working";
 import TeaDescription from "../components/TeaDescription";
-import HeroSection from "../components/SecondHeroSection";
+import HeroResto from "../components/SecondHeroSection";
 import HoursAndBookingInfo from "../components/HoursAndBookingInfo";
 import DropdownButton from "../components/DropdownButton";
 import { useEffect } from "react";
@@ -18,9 +18,11 @@ function Contact () {
     return(
         <>
         <div>
-        <HeroSection
+        <HeroResto
                 imageSrc={heroimg}
-                title="Tea-House Lake Barrine"
+                title="Tea-House"
+                title2="Lake Barrine"
+
                 />
         <TeaDescription/>
         <div className="mx-auto bg-yellow-500 h-1 w-3/4 sm:w-1/2"></div>

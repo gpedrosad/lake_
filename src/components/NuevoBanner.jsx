@@ -35,7 +35,7 @@ const NuevoBanner = () => {
         As you walk around our beautiful gardens, stroll through our historic Teahouse and dip your toes in the natural waters of Lake Barrine, you might find, just like I did, that falling in love with this place comes easy.
       </p>
     </div>
-    <div className="lg:col-span-6 lg:col-start-2 lg:row-start-7">
+    <div className="lg:col-span-6 lg:col-start-2 lg:row-start-7 md:mt-10">
       <div className="w-full border-t-4 border-new-green"></div>
     </div>
 

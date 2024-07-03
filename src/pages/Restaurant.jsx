@@ -20,7 +20,7 @@ function Contact () {
         <div>
         <HeroResto
                 imageSrc={heroimg}
-                title="Tea-House"
+                title="Teahouse"
                 title2="Lake Barrine"
 
                 />

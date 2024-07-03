@@ -19,7 +19,7 @@ const HoursAndBookingInfo = () => {
         <p className="text-custom-green">
         </p>
         <a href="https://bookings.nowbookit.com/?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&colors=hex,0d5302&font=Barlow" target="_blank">
-        <button className="bg-third-green text-white py-5 px-12 m-10">
+        <button className="bg-third-green text-white py-4 px-10 m-10 whitespace-nowrap">
           Book now
         </button>
         </a>

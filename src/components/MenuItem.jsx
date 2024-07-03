@@ -8,7 +8,7 @@ const MenuItem = ({ nombre, ingredientes, precio, imagen }) => {
   };
 
   return (
-    <div className="flex flex-col items-center bg-white font-rufina">
+    <div className="flex flex-col items-center bg-transparent font-rufina">
       <div className="w-full p-4 flex flex-col md:flex-row md:items-center md:justify-between lg:justify-center md:justify-center md:items-center md:space-x-4">
         <h2 className="text-lg md:text-xl font-semibold text-custom-green w-1/3 lg:text-xl cursor-pointer">{nombre}</h2>
         <p className="flex lg:justify-center text-gray-700 text-sm md:text-base lg:text-sm w-1/3 ">{ingredientes}</p>

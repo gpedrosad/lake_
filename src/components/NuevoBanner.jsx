@@ -23,7 +23,7 @@ const NuevoBanner = () => {
   <div className="flex flex-col items-center justify-center lg:mb-10 lg:mt-24">
   <div className="flex items-center space-x-1">
     <img src={ramaizq} alt="Descripción de la imagen" className="w-10 h-10 mb-3" />
-    <h1 className="whitespace-nowrap p-2 font-rufina font-bold text-3xl text-third-green md:text-4xl lg:text-5xl text-center">
+    <h1 className="whitespace-nowrap p-2 font-rufina font-bold text-2xl text-third-green md:text-4xl lg:text-5xl text-center">
   Where the Rainforest<br/>
   <span class="">meets the Lake</span>
     </h1>

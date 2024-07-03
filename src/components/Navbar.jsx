@@ -64,12 +64,12 @@ const Navbar = () => {
                         </div>
                     </Link>
                     {/* Enlaces actualizados para el menú móvil */}
-                    <Link to="/lake_" className="mt-4 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Home</Link>
-                    <Link to="/about" className="mt-4 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>About</Link>
-                    <Link to="/restaurant" className="mt-4 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Restaurant</Link>
-                    <Link to="/boat" className="mt-4 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Boat Cruise</Link>
-                    <Link to="/functions" className="mt-4 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Functions</Link>
-                    <Link to="/accomodation" className="mt-4 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Accommodation</Link>
+                    <Link to="/lake_" className="mt-3 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Home</Link>
+                    <Link to="/about" className="mt-3 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>About</Link>
+                    <Link to="/restaurant" className="mt-3 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Restaurant</Link>
+                    <Link to="/boat" className="mt-3 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Boat Cruise</Link>
+                    <Link to="/functions" className="mt-3 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Functions</Link>
+                    <Link to="/accomodation" className="mt-3 font-inika font-normal block py-2 px-4 text-4xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Accommodation</Link>
                 </div>
             </div>
         </nav>

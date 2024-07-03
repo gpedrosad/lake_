@@ -5,7 +5,7 @@
     flex-direction: column;
     margin: 0%;
     padding: 0%;
-    width: 80%;
+    width: 640px;
 }
 .user_info{
     padding: 0%;
@@ -17,23 +17,23 @@
     width: 100%;
 }
 #div_username_userimage{
-    width: 60%;
+    width: 384px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-right: 5%;
 }
 .user_image_container{
-    width: 10vw;
-    height: 8vw;
+    width: 100%; /* Asegura que la imagen cubra completamente el contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
     display: flex;
     border-radius: 50%;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
 }
 .user_image {
-    /* width: 65%;
-    height: 50%; */
+    width: 150px; /* Ancho fijo del contenedor de la imagen */
+    height: 150px; /* Altura fija del contenedor de la imagen */
     border-radius: 100%; 
     object-fit: cover;
     overflow: hidden;

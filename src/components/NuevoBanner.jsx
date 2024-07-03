@@ -40,7 +40,7 @@ const NuevoBanner = () => {
       <div className="w-full border-t-4 border-new-green mt-8"></div>
     </div>
 
-  <div className="col-start-1 lg:col-span-2 lg:col-start-8 lg:row-start-7 flex justify-center mb-15 md:mb-10 lg:flex-none lg:justify-start lg:ml-20">
+  <div className="col-start-1 lg:col-span-2 lg:col-start-8 lg:row-start-7 flex justify-center mb-16 md:mb-10 lg:flex-none lg:justify-start lg:ml-20">
     <Link to='/about'>
       <TransparentButton className="" text="About us" />
     </Link>

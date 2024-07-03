@@ -24,13 +24,12 @@ const NuevoBanner = () => {
   <div className="flex items-center space-x-1">
     <img src={ramaizq} alt="Descripción de la imagen" className="w-15 h-15" />
     <h1 className="p-2 font-rufina font-bold text-3xl text-third-green md:text-4xl lg:text-5xl text-center">
-      Where the Rainforest
-    </h1>
+  Where the Rainforest<br/>
+  <span>meets the Lake</span>
+</h1>
     <img src={ramader} alt="Descripción de la imagen" className="w-15 h-15" />
     </div>
-    <h1 className="p-2 font-rufina font-bold text-3xl text-third-green md:text-4xl lg:text-5xl text-center">
-      meets the Lake
-    </h1>
+    
   </div>
       <p className="font-inika font-normal text-lg md:text-xl lg:text-2xl p-20 lg:p-0">
         As you walk around our beautiful gardens, stroll through our historic Teahouse and dip your toes in the natural waters of Lake Barrine, you might find, just like I did, that falling in love with this place comes easy.

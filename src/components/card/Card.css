@@ -83,13 +83,19 @@
 }
 
 .card-button {
+  display: flex;          /* Habilita Flexbox */
+  justify-content: center; /* Centra contenido horizontalmente */
+  align-items: center;    /* Centra contenido verticalmente */
   border: 2px solid white;
   color: white;
   background-color: transparent;
-  padding: 0.5rem 1rem; 
-  font-size: 0.875rem; 
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
   cursor: pointer;
   transition: background-color 0.3s;
+  width: 240px;
+  height: 50px;
+  margin-top: 20px;
 }
 
 .card-button:hover {
@@ -117,7 +123,7 @@
 }
 @media (min-width: 1700px){
   .card-description {
-    font-size: 1.5rem; 
+    font-size: 1.2rem; 
   }
 
 }
@@ -126,7 +132,7 @@
     font-size: 2rem;
   }
   .card-description {
-    font-size: 1.7rem; 
+    font-size: 1.5rem; 
   }
   .card-button {
 
@@ -140,12 +146,12 @@
     font-size: 2.5rem;
   }
   .card-description {
-    font-size: 2.18rem; 
+    font-size: 1.8rem; 
   }
   .card-button {
 
     padding: 0.5rem 1rem; 
-    font-size: 1.5rem; 
+    font-size: 1.0rem; 
 
   }
 

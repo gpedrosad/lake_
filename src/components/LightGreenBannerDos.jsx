@@ -65,7 +65,7 @@ const LightGreenBannerDos = () => {
                 </div>
                 <img src={hojaDer} alt="Descripción de la imagen" className="absolute bottom-0 right-0 w-20 h-20" />
             </div>
-            <div className="relative w-full bg-[#F7F7F7] grid grid-cols-1 items-center justify-items-center px-60 py-5 md:col-span-2">
+            <div className="relative w-full bg-[#F7F7F7] grid grid-cols-1 items-center justify-items-center md:px-60 py-5 md:col-span-2 px-10">
                 <h1 className="text-center whitespace-nowrap font-rufina mt-6 font-bold text-custom-green text-3xl sm:text-3xl md:text-3xl md:pt-8 sm:pt-11 xl:text-5xl">About us</h1>
                 <div className="w-8/12 lg:w-6/12 xl:w-5/12 2xl:w-5/12 bg-yellow-500 h-1 sm:mb-10"></div>
                 <section className="mb-12">

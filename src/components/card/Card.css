@@ -58,6 +58,7 @@
 }
 .description-container p{
   text-align: center;
+  height: 100%;
 }
 .card-content:hover {
   background-color: #273812;

@@ -41,8 +41,10 @@ function Boat() {
             />
 
             <FeatureSection
-                title="Sail into Celebration"
-                description="Set against the backdrop of a hundred year old rainforest, with the tranquil waters reflecting the hues of the sky, each moment on our boat is crafted to be memorable. Let us turn your event into an occasion that not only stands out but remains etched in the hearts of all who attend."
+                title="Lake Cruises"
+                description="Step on board and experience the chance to see Lake Barrine’s native fauna and flora! Such as emerald pythons, water dragons, turtles, birds, eels, and much more! An interactive cruise, filled with fun facts, laughter, and a time to experience nature's beauty in one of its most tranquil forms.
+
+                George Curry the founder of Lake Barrine Teahouse always said, “You haven’t truly experienced the Lake until you’ve done the boat cruise.” Come on board and see what truly inspired the very beginning of Lake Barrine Teahouse's rich history. "
                 buttonText='Book Now'
                 borderRadius='0px'
                 bgcolorbutton='#3C5220'

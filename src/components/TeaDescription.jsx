@@ -1,5 +1,8 @@
 import ButtonComponent from './ButtonComponent';
 import ImageCarousel from './ImageCarrousel';
+import hojaizq from '/public/images/hojaizq.svg';
+import hojader from '/public/images/hojader.svg';
+
 
 // Img
 import teaPhoto from '/public/images/TeaPhoto.png';
@@ -7,9 +10,10 @@ import teaPhoto from '/public/images/TeaPhoto.png';
 const TeaDescription = () => {
   return (
     <>
-      <div className="bg-[#F7F7F7] grid grid-cols-1 md:grid-cols-2 gap-3 p-4 justify-items-center items-center pt-16">
-        
-        <img src={teaPhoto} alt="foto" className="w-full md:w-full h-3/6 object-contain" />
+      <div className="relative bg-[#F7F7F7] grid grid-cols-1 md:grid-cols-2 gap-3 p-4 justify-items-center items-center pt-16">
+      <img src={hojaizq} alt="Hoja izquierda" className="absolute top-0 left-0 w-16 h-auto" />
+      <img src={hojader} alt="Hoja derecha" className="absolute bottom-0 right-0 w-16 h-auto" />
+        <img src={teaPhoto} alt="foto" className="w-full md:w-full h-5/6 lg:h-3/6 object-contain" />
         
         <div className="items-center px-10 py-5 md:mb-20">
   <h1 className="text-center whitespace-nowrap font-rufina pb-3 mb-1 mt-6 font-bold text-third-green text-3xl sm:text-3xl md:text-3xl lg:text-4xl md:pb-5 md:pt-10 sm:pb-3 sm:pt-11 sm:mb-1 xl:text-5xl">

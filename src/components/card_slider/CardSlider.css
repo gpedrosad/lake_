@@ -176,38 +176,44 @@
 
 @media (max-width: 530px){
 .slider-component{
-  padding: 1rem 0;
-  height: 170vw;
+  height: 180vw;
 }}
 
 @media (max-width: 425px){
   .slider-component{
-    height: 175vw;
+    height: 210vw;
   }}
 
 @media (max-width: 405px){
     .slider-component{
-      height: 190vw;
+      height: 220vw;
       padding: 1.5rem 0;
     }}
 
 @media (max-width: 364px){
       .slider-component{
-        height: 200vw;
+        height: 250vw;
         padding: 2rem 0;
+      }
+      .slider-wrapper{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        height: 100%;
+
       }}
 @media (max-width: 340px){
         .slider-component{
-          height: 210vw;
+          height: 250vw;
         }}
 @media (max-width: 333px){
   .slider-component{
-    height: 220vw;
+    height: 250vw;
   }
 }
 @media (max-width: 330px){
   .slider-component{
-    height: 210vw;
+    height: 250vw;
   }
 
 }

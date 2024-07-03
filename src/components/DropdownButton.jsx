@@ -35,13 +35,13 @@ const DropdownButton = () => {
       <MenuItem nombre="Ginger & Lemongrass" precio="$5.00" />
     ],
     Breakfast: [
-      <MenuItem nombre="Eggs Benedict" ingredientes="Poached eggs, hollandaise, ham, English muffin" precio="$12" imagen="src/img/huevos.png"/>,
-      <MenuItem nombre="Pancakes" ingredientes="Maple syrup, butter" precio="$10" imagen="src/img/huevos.png"/>,
+      <MenuItem nombre="Eggs Benedict" ingredientes="Poached eggs, hollandaise, ham, English muffin" precio="$12.00" imagen="src/img/huevos.png"/>,
+      <MenuItem nombre="Pancakes" ingredientes="Maple syrup, butter" precio="$10.00" imagen="src/img/huevos.png"/>,
       <MenuItem nombre="Eggs Benedict" ingredientes="Ciabatta bread, baby spinach, free-range eggs, choice of bacon/mushrooms/smoked salmon, hollandaise sauce" descripcion="Classic breakfast with your choice of topping" precio="$27.00" />,
       <MenuItem nombre="Twice Fried Bacon and Egg Roll" ingredientes="Crispy bacon, free-range egg, toasted Turkish bread, BBQ sauce" descripcion="Seasoned with housemade creole spices" precio="$17.00" />,
       <MenuItem nombre="Smoked Salmon and Cream Cheese" ingredientes="Smoked salmon, baby spinach, cream cheese, fresh herbs, Spanish onion, capers, toasted Turkish bread, lemon wedge" precio="$22.00" />,
       <MenuItem nombre="Smashed Avocado" ingredientes="Local avocado, fresh tomato, marinated feta, ciabatta toast, balsamic drizzle" precio="$20.00" />,
-      <MenuItem nombre="BREKKY BLT" ingredientes={<span> Crunchy twice-fried bacon, lettuce, fresh tomato on Turkish bread with a drizzle of homemade aioli.<br/>Add avocado and fried egg for a delicious twist! $28</span>} descripcion="" precio="$20"/>
+      <MenuItem nombre="BREKKY BLT" ingredientes={<span> Crunchy twice-fried bacon, lettuce, fresh tomato on Turkish bread with a drizzle of homemade aioli.<br/>Add avocado and fried egg for a delicious twist! $28</span>} descripcion="" precio="$20.00"/>
     ],
     Lunch: [
       <MenuItem nombre="Pumpkin Fetta and Spinach Frittata" ingredientes="Roast pumpkin, Danish fetta, baby spinach, served with salad and toasted garlic bread" precio="$24.00" />,
@@ -52,8 +52,8 @@ const DropdownButton = () => {
   };
 
   return (
-    <div className="relative mt-10">
-      <div className="absolute left-0 top-56">
+    <div className="relative mt-10 ">
+      <div className="absolute left-0 top-36">
         <img src={derecha} alt="Decorative Background" className="w-full h-full object-cover" />
       </div>
       <div className="absolute right-0 top-0">

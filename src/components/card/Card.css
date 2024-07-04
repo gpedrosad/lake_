@@ -5,12 +5,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* Asegura que los elementos se alineen al inicio */
   background-color: #fff;
   overflow: hidden;
   height: 100%;
   font-family: Rufina;
-} 
+}
 
 .card-action-area {
   display: flex;
@@ -26,7 +26,7 @@
   width: 100%;
   height: 15vw; 
   max-height: 30vh;
-  min-height:20vh;
+  min-height: 20vh;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
@@ -37,43 +37,47 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5% 10%; /* Usa porcentajes para que el relleno sea relativo al tamaño del contenedor */
+  padding: 5% 10%;
   transition: background-color 0.3s;
   border-radius: 0 0 10px 10px;
-  width: auto;
   height: 30vw;
+  flex-grow: 1; /* Permite que el contenido crezca para ocupar el espacio disponible */
+  justify-content: space-between; /* Distribuye el espacio entre elementos */
 }
-.parent-div > * {
-  height: 100%;
-}
-.title-container{
-  height: 10%;
 
-}
-.description-container{
-  height: 100%;
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-
-}
-.description-container p{
-  text-align: center;
-  height: 100%;
-}
 .card-content:hover {
   background-color: #273812;
 }
 
+.parent-div > * {
+  height: 100%;
+}
+
+.title-container {
+  height: 10%;
+}
+
+.description-container {
+  height: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.description-container p {
+  text-align: center;
+  height: 100%;
+}
+
 .card-title {
   margin: 0;
-  font-size: 1.5rem; 
+  font-size: 2rem; 
   font-weight: bold;
   white-space: nowrap;
 }
 
 .card-description {
-  font-size: 0.7rem; 
+  font-size: 1rem; 
   text-align: justify;
   padding: 5%; 
 }
@@ -83,9 +87,9 @@
 }
 
 .card-button {
-  display: flex;          /* Habilita Flexbox */
-  justify-content: center; /* Centra contenido horizontalmente */
-  align-items: center;    /* Centra contenido verticalmente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 2px solid white;
   color: white;
   background-color: transparent;
@@ -95,6 +99,10 @@
   transition: background-color 0.3s;
   width: 240px;
   height: 50px;
+  margin-bottom: 40px;
+  font-size: 1rem;
+
+
 }
 
 .card-button:hover {
@@ -102,106 +110,23 @@
 }
 
 /* Media Queries for responsive design */
-@media (min-width: 1200px) {
-  .card-description {
-    font-size: 1rem; 
+@media (max-width: 1024px) {
+  .card {
+    width: 100%; 
+    height: 90%;
+    padding: 0 12%;
+    display: block;
+    margin: 0;
   }
-
-}
-@media (min-width: 1200px) and (max-width: 1310px) {
-  .card-description {
-    font-size: 0.8rem; 
-  }
-}
-
-@media (min-width: 1400px){
-  .card-description {
-    font-size: 1rem; 
-  }
-
-}
-@media (min-width: 1700px){
-  .card-description {
-    font-size: 1.2rem; 
-  }
-  .card-button {
-      margin-bottom:20px;
-    
-  }
-
-}
-@media (min-width: 2000px){
-  .card-title{
-    font-size: 2rem;
-  }
-  .card-description {
-    font-size: 1.5rem; 
-  }
-  .card-button {
-    margin-bottom:20px;
-
-    font-size:1.2rem; 
-  }
-
-}
-@media (min-width: 2300px){
-  .card-title{
-    font-size: 2.5rem;
-  }
-  .card-description {
-    font-size: 1.6rem; 
-  }
-  .card-button {
-
-    padding: 0.5rem 1rem; 
-    font-size: 1.0rem; 
-
-  }
-
-}
-
-@media (min-width: 1025px) and (max-width:1125px){
-  .card-actions{
-    margin-top: 0%;
-  }
-  .card-description{
-    font-size: 0.859rem;
-  }
-
-}
-
-@media (min-width: 850px) and (max-width:1125px)
-{
 
   .card-action-area {
-    margin: 0 0 0 7%;
-}
-}
-@media (max-width:850px){
-  .card-action-area{
-    max-height: 100%;
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 1024px) {
-
-  .card {
-      width: 100%; 
-      height: 90%;
-      padding: 0% 12% 0% 12%;
-      display: block;
-      margin: 0%;
-    }
-  .card-action-area{
     width: 100%;
     height: 100%;
     min-width: 90%;
     min-height: 100vw;
-
-
   }
-  .card-actions{
+
+  .card-actions {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,6 +134,7 @@
     height: 100%;
     width: 100%;
   }
+
   .card-title {
     font-size: 3rem; 
     display: flex;
@@ -216,7 +142,6 @@
     justify-content: center;
     width: 100%;
     margin-bottom: 2%;
-    /* max-height: 15%; */
   }
 
   .card-description {
@@ -225,185 +150,152 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.8rem
+    font-size: 1rem;
   }
-  .card-media{
+
+  .card-media {
     height: 45vw;
   }
-  .card-content{
+
+  .card-content {
     width: 100%;
     max-height: 100%;
     height: 100%;
     padding: 4%;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-
   }
-  .card-button{
+
+  .card-button {
     height: 6vw;
-    font-size: 2rem;
+    font-size: 1.8rem;
     display: flex;
     align-items: center;
     white-space: nowrap;
+    width:280px;
     
-
   }
-  .title-container{
+
+  .title-container {
     height: auto;
   }
 }
 
-@media (max-width:900px) and (min-width:769px){
-  .card-description {
-    font-size: 1.5rem
+@media (max-width: 850px) {
+  .card-action-area {
+    max-height: 100%;
+    max-width: 100%;
   }
-  .card-button{
-    margin-top: 5%;
-    margin-bottom: 2%;
+  .card {
+    height: 990px;
+  }
+  .card-button {
     font-size: 1.5rem;
+    height: 70px;
+    width: 250px;
   }
-
-}
-
-@media (max-width: 769px){
-  .card-description {
-    font-size: 1.5rem
-
-  }
-
-  .card-title{
-    font-size: 2.5rem
-
-  }
-
-.card-button{
-  margin-top: 0%;
-  margin-bottom:0;
-  font-size: 1.5rem;
-  height: auto;
-  width:auto;
-
-}.card-content{
-  height: 600px;
-}
-
-
-}
-
-
-@media (max-width:640px) and (min-width:512px){
-  .card-description{
-    font-size: 1.2rem;
-  }
-  .card-button{
-    font-size: 1.2rem;
-  }
-.card-title{
-  font-size: 1.8rem;
-}
-
-
-}
-@media (max-width:512px) and (min-width:481px){
-  .card-title{
-    font-size: 1.8rem;
-  }
-  .card-description{
-    font-size: 1.15rem;
-  }
-  .card-button{
-    font-size: 1.19rem;
-  }
-}
-@media (max-width:500px){
-
-}
-
-
-
-@media (max-width: 480px){
   .card-description {
     font-size: 1rem;
+  }
+}
 
+@media (max-width: 769px) {
+  .card-description {
+    font-size: 1rem;
   }
 
-  .card-title{
+  .card-title {
+    font-size: 2.5rem;
+  }
+
+  .card-button {
+    font-size: 1.5rem;
+    height: auto;
+    width: auto;
+  }
+
+  .card-content {
+    height: 500px;
+  }
+  .card {
+    height: 890px;
+  }
+}
+
+@media (max-width: 640px) and (min-width: 512px) {
+  .card-description {
+    font-size: 1.2rem;
+  }
+
+  .card-button {
+    font-size: 1.2rem;
+  }
+
+  .card-title {
+    font-size: 2.8rem;
+  }
+  .card {
+    height: 700px;
+  }
+}
+
+@media (max-width: 512px) {
+  .card-description {
+    font-size: 0.9rem;
+  }
+
+  .card-title {
     font-size: 1.6rem;
-
   }
-.card-button{
-  font-size: 1rem;
-  
-}
-.card{
-  height: 100%;
-}
-.card-content{
-  height: 60%;
-}
-.card-media{
-  height: 20vw;
-}
 
-  
+  .card-button {
+    font-size: 1rem;
+  }
+
+  .card {
+    height: 550px;
+  }
+
+  .card-content {
+    height: 10%;
+  }
+
+  .card-media {
+    height: 30vw;
+  }
+
 }
 
 @media (max-width: 380px) {
-  .card{
-    height: 100%;
-  }
-  .card-content{
-    height: 60%;
-  }
-  .card-media{
-    height: 20vw;
-  }
-
-
-  .card-title{
+  .card-title {
     font-size: 1.5rem;
+  }
 
+  .card-description {
+    font-size: 0.7rem;
   }
-  .card-description{
-    font-size: 0.9rem;
-    
-  }
-  .card-button{
+
+  .card-button {
     margin-top: 2%;
-    margin-bottom: 0%;
     font-size: 1rem;
     width: 100%;
-  
   }
-  .description-container{
 
+  .description-container {
     align-items: start;
-  
   }
-  
-
+  .card {
+    height: 600px;
+  }
 }
+
 @media (max-width: 330px) {
-  .card-description{
+  .card-description {
     font-size: 0.8rem;
-    
   }
-  .card-button{
-    margin-top: 2%;
-    margin-bottom: 0%;
+
+  .card-button {
     font-size: 0.9rem;
-    width: 100%;
-  
   }
-  .card{
-    height: 100%;
-  }
-  .card-content{
-    height: 60%;
-  }
-  .card-media{
-    height: 20vw;
-  }
-  
 }

@@ -111,6 +111,7 @@
 /* Media Queries for responsive design */
 
 @media (min-width: 1024px) {
+  
   .card {
     flex: 0 0 calc(100% / 3);
   }

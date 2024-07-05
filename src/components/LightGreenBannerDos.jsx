@@ -16,7 +16,7 @@ import down2 from '/public/images/down2.jpg';
 import down3 from '/public/images/down3.jpg';
 import down4 from '/public/images/down4.jpg';
 import down5 from '/public/images/down5.jpg';
-import down6 from '/public/images/down6.jpg';
+import down6 from '/public/images/down5.jpg';
 import down7 from '/public/images/down7.jpg';
 import down8 from '/public/images/down8.jpg';
 import third1 from '/public/images/third1.jpg';

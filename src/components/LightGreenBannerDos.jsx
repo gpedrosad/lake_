@@ -4,24 +4,24 @@ import CarruselDos from './CarruselDos';
 
 // img
 
-import hojaIzq from '/public/images/hojaizq.png';
-import hojaDer from '/public/images/hojader.png';
-import huevos from '/public/images/huevos.png';
-import firstGen from '/public/images/first_gen.jpg';
-import secondGen from '/public/images/second_gen.jpg';
-import thirdGen from '/public/images/third_gen.jpg';
-import fourthGen from '/public/images/fourth_gen.jpg';
-import down1 from '/public/images/down1.jpg';
-import down2 from '/public/images/down2.jpg';
-import down3 from '/public/images/down3.jpg';
-import down4 from '/public/images/down4.jpg';
-import down5 from '/public/images/down5.jpg';
-import down6 from '/lake_/images/down6.jpg';
-import down7 from '/lake_/images/down7.jpg';
-import down8 from '/public/images/down8.jpg';
-import third1 from '/public/images/third1.jpg';
-import third2 from '/public/images/third2.jpg';
-import second2 from '/public/images/second2.jpg';
+import hojaIzq from '/images/hojaizq.png';
+import hojaDer from '/images/hojader.png';
+import huevos from '/images/huevos.png';
+import firstGen from '/images/first_gen.jpg';
+import secondGen from '/images/second_gen.jpg';
+import thirdGen from '/images/third_gen.jpg';
+import fourthGen from '/images/fourth_gen.jpg';
+import down1 from '/images/down1.jpg';
+import down2 from '/images/down2.jpg';
+import down3 from '/images/down3.jpg';
+import down4 from '/images/down4.jpg';
+import down5 from '/images/down5.jpg';
+import down6 from '/images/down6.jpg'; // Ajustado
+import down7 from '/images/down7.jpg'; // Ajustado
+import down8 from '/images/down8.jpg';
+import third1 from '/images/third1.jpg';
+import third2 from '/images/third2.jpg';
+import second2 from '/images/second2.jpg';
 
 
 

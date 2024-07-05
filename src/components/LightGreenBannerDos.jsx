@@ -16,8 +16,6 @@ import down2 from '/images/down2.jpg';
 import down3 from '/images/down3.jpg';
 import down4 from '/images/down4.jpg';
 import down5 from '/images/down5.jpg';
-import down6 from '/images/down6.jpg'; // Ajustado
-import down7 from '/images/down7.jpg'; // Ajustado
 import down8 from '/images/down8.jpg';
 import third1 from '/images/third1.jpg';
 import third2 from '/images/third2.jpg';
@@ -32,8 +30,6 @@ const images = [
     down3,
     down4,
     down5,
-    down6,
-    down7,
     down8,
 ];
 

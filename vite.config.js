@@ -1,7 +1,9 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/lake_/', // Ajusta esto al nombre de tu repositorio
-  plugins: [react()],
-})
+  base: '/', // Asegúrate de que la base está configurada para producción
+  build: {
+    outDir: 'dist', // Confirma que este es el directorio correcto
+    // Otras configuraciones de build específicas de Vite pueden ir aquí
+  }
+});

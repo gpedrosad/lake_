@@ -1,19 +1,16 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
-import path from 'path'; // Asegúrate de importar 'path' para manejar rutas
 
 export default defineConfig({
-  base: '/lake_/', // Ajusta esto al nombre de tu repositorio
+  base: '/lake_/', // Esto ajusta el base path para recursos, adecuado para subdirectorios en producción
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: [
-        // Define aquí los recursos que deben tratarse como externos
-        '/lake_/images/down6.jpg',
-        '/lake_/images/down7.jpg'
-      ]
+      output: {
+        // Configura cómo se nombran los archivos de activos en la salida
+        assetFileNames: 'assets/[name]-[hash][extname]', // Agrega un hash para evitar problemas de caché
+      }
     },
-    // Ajusta la dirección del directorio de activos si es necesario
-    assetsDir: path.resolve(__dirname, 'public'),
+    assetsDir: 'assets', // Subdirectorio dentro de 'dist' para todos los activos estáticos
   }
 });

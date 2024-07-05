@@ -9,8 +9,8 @@ export default defineConfig({
     rollupOptions: {
       external: [
         // Define aquí los recursos que deben tratarse como externos
-        '/public/images/down6.jpg',
-        '/public/images/down7.jpg'
+        '/lake_/images/down6.jpg',
+        '/lake_/images/down7.jpg'
       ]
     },
     // Ajusta la dirección del directorio de activos si es necesario

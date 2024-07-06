@@ -17,6 +17,7 @@ const DropdownButton = () => {
   const options = ['Drinks', 'Breakfast', 'Lunch'];
   const menuContent = {
     Drinks: [
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">COFFEE</h1>,
       <MenuItem nombre="Espresso" precio="$4.00" />,
       <MenuItem nombre="Long Black" precio="$5.00" />,
       <MenuItem nombre="Flat White" precio="$5.50" />,
@@ -27,26 +28,140 @@ const DropdownButton = () => {
       <MenuItem nombre="Piccolo" precio="$5.00" />,
       <MenuItem nombre="Macchiato" precio="$5.00" />,
       <MenuItem nombre="Affogato" precio="$5.50" />,
+
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">LOOSE LEAF TEA</h1>,
       <MenuItem nombre="Local Black Tea" precio="$5.00" />,
       <MenuItem nombre="English Breakfast" precio="$5.00" />,
       <MenuItem nombre="Earl Grey" precio="$5.00" />,
       <MenuItem nombre="Peppermint" precio="$5.00" />,
       <MenuItem nombre="Green Tea" precio="$5.00" />,
-      <MenuItem nombre="Ginger & Lemongrass" precio="$5.00" />
+      <MenuItem nombre="Ginger & Lemongrass" precio="$5.00" />,
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">ALTERNATE MILKS</h1>,
+      <MenuItem nombre="Almond" precio="$1.00" />,
+      <MenuItem nombre="Soy" precio="$1.00" />,
+      <MenuItem nombre="Oat" precio="$1.00" />,
+      <MenuItem nombre="Lactose Free Milk" precio="$1.00" />,
+
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">COFFEE ALTERNATES</h1>,
+
+      <MenuItem nombre="Hot Chocolate" precio="$6.00" />,
+      <MenuItem nombre="Chai Latte" precio="$6.00" />,
+      <MenuItem nombre="Tumeric Latte" precio="$6.00" />,
+
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">SYRUPS</h1>,
+      <MenuItem nombre="Hazelnut" precio="$6.00" />,
+      <MenuItem nombre="Caramel" precio="$6.00" />,
+      <MenuItem nombre="Vainilla" precio="$6.00" />,
+
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">MILKSHAKES</h1>,
+      <MenuItem nombre="Chocolate Milkshake" precio="$8.50" />,
+      <MenuItem nombre="Strawberry Milkshake" precio="$8.50" />,
+      <MenuItem nombre="Banana Milkshake" precio="$8.50" />,
+      <MenuItem nombre="Caramel Milkshake" precio="$8.50" />,
+      <MenuItem nombre="Vanilla Milkshake" precio="$8.50" />,
+      <MenuItem nombre="Lime Milkshake" precio="$8.50" />,
+      <MenuItem nombre="Malta Milkshake" precio="$8.50" />,
+
+<h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">IN THE FRIDGE</h1>,
+      <MenuItem nombre="Softdrink" precio="$3.50" />,
+      <MenuItem nombre="Bundaberg" precio="$5.00" />,
+      <MenuItem nombre="Iced Tea" precio="$5.50" />,
+      <MenuItem nombre="Organic Juice" precio="$5.50" />,
+      <MenuItem nombre="Coconut Water" precio="$6.00" />,
+
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">MINI WINE BOTTLES</h1>,
+      <MenuItem nombre="Rose Prosecco" precio="$10.00" />,
+      <MenuItem nombre="Sauvignon Blanc" precio="$10.00" />,
+      <MenuItem nombre="Chardonday" precio="$10.00" />,
+      <MenuItem nombre="Pink Moscato" precio="$10.00" />,
+
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">HEMINGWAY BEER</h1>,
+      <MenuItem nombre="Tropical Ale" precio="$8.50" />,
+      <MenuItem nombre="Canecutter Lager" precio="$8.50" />,
+      <MenuItem nombre="Bettys Pale Ale" precio="$8.50" />,
+      <MenuItem nombre="Prospector Pilsner" precio="$8.50" />,
+      <MenuItem nombre="Tunnel 10 Lager" precio="$8.50" />,
+
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">ICED DRINKS</h1>,
+      <MenuItem nombre="Ice Long Black" precio="$6.00" />,
+      <MenuItem nombre="Ice Coffee" precio="$8.00" />,
+      <MenuItem nombre="Ice Chocolate" precio="$8.00" />,
+      <MenuItem nombre="Ice Mocha" precio="$8.00" />,
+      <MenuItem nombre="Ice Latte" precio="$6.50" />,
+      <MenuItem nombre="Ice Chai" precio="$6.50" />,
+
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">KOMBUCHA</h1>,
+      <MenuItem nombre="Kombucha" precio="$9.50" />,
+
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">FOR THE LITTLE ONES</h1>,
+      <MenuItem nombre="Kids Hot Chocolate" precio="$5.50" />,
+      <MenuItem nombre="Babycino" precio="$3.50" />,
+      <MenuItem nombre="Kids Milkshake" precio="$5.50" />,
+
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">ICE CREAM BOWL</h1>,
+
+      <MenuItem nombre="Ice Cream Bowl" precio="$6.00" />,
+      <br></br>,
+      <MenuItem nombre="Our Famous Scone" precio="$8.50" />,
+      <MenuItem nombre="Housemade Cake" precio="$9,50" />,
+      <MenuItem nombre="Golden Damper" precio="$9,50" />,
+
+
+
+
+
+
     ],
     Breakfast: [
-      <MenuItem nombre="Pancakes" ingredientes="Maple syrup, butter" precio="$10.00" imagen="src/img/huevos.png"/>,
       <MenuItem nombre="Eggs Benedict" ingredientes="Ciabatta bread, baby spinach, free-range eggs, choice of bacon/mushrooms/smoked salmon, hollandaise sauce" descripcion="Classic breakfast with your choice of topping" precio="$27.00" />,
       <MenuItem nombre="Twice Fried Bacon and Egg Roll" ingredientes="Crispy bacon, free-range egg, toasted Turkish bread, BBQ sauce" descripcion="Seasoned with housemade creole spices" precio="$17.00" />,
-      <MenuItem nombre="Smoked Salmon and Cream Cheese" ingredientes="Smoked salmon, baby spinach, cream cheese, fresh herbs, Spanish onion, capers, toasted Turkish bread, lemon wedge" precio="$22.00" />,
       <MenuItem nombre="Smashed Avocado" ingredientes="Local avocado, fresh tomato, marinated feta, ciabatta toast, balsamic drizzle" precio="$20.00" />,
-      <MenuItem nombre="BREKKY BLT" ingredientes="Crunchy twice-fried bacon, lettuce, fresh tomato on Turkish bread with a drizzle of homemade aioli" descripcion="" precio="$20.00"/>
+      <MenuItem nombre="Brekky BLT" ingredientes="Crunchy twice-fried bacon, lettuce, fresh tomato on Turkish bread with a drizzle of homemade aioli" descripcion="" precio="$20.00"/>,
+      <MenuItem nombre="Poached Eggs on Toast" ingredientes="Keep it simple with two free range poached eggs atop freshly toasted bread" descripcion="" precio="$16.00"/>,
+
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">ADD ON</h1>,
+      <MenuItem nombre="Twice fried bacon" ingredientes="" descripcion="" precio="$6.00"/>,
+      <MenuItem nombre="Smoked Salmon" ingredientes="" descripcion="" precio="$6.00"/>,
+      <MenuItem nombre="Mushrooms" ingredientes="" descripcion="" precio="$5.00"/>,
+      <MenuItem nombre="Free range poached or fried egg" ingredientes="" descripcion="" precio="$3.00"/>,
+      <MenuItem nombre="Smashed avocado" ingredientes="" descripcion="" precio="$5.00"/>,
+      <MenuItem nombre="Spinach" ingredientes="" descripcion="" precio="$3.00"/>,
+      <MenuItem nombre="Hollandaise" ingredientes="" descripcion="" precio="$4.00"/>,
+      <MenuItem nombre="Extra toast" ingredientes="" descripcion="" precio="$3.00"/>,
+      
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">FOR THE LITTLE ONES</h1>,
+
+      <MenuItem nombre="Cheesy fingers" ingredientes="" descripcion="" precio="$10.00"/>,
+      <MenuItem nombre="Vegemite soldiers" ingredientes="" descripcion="" precio="$8.00"/>,
+      <MenuItem nombre="Fried egg on toast" ingredientes="" descripcion="" precio="$12.00"/>,
+      
+      
+      
     ],
     Lunch: [
       <MenuItem nombre="Pumpkin Fetta and Spinach Frittata" ingredientes="Roast pumpkin, Danish fetta, baby spinach, served with salad and toasted garlic bread" precio="$24.00" />,
+      <MenuItem nombre="Twice Fried Bacon and Egg Roll" ingredientes="Delicious crispy bacon seasoned in our housemade creole spices, with local free range fried egg, toasted Turkish bread and bbq sauce." precio="$17.00" />,
+      <MenuItem nombre="Smoked Salmon and Cream Cheese" ingredientes="Smoked salmon, baby spinach, cream cheese, fresh herbs, Spanish onion, capers, toasted Turkish bread, lemon wedge" precio="$22.00" />,
+      <MenuItem nombre="Soup of the Day" ingredientes="Ask our lovely staff for the soup of the day!" precio="" />,
       <MenuItem nombre="Open Grill Chicken and Cheese Toastie" ingredientes="Grilled Turkish bread, virgin olive oil, chicken, cheese, choice of asparagus or pineapple" precio="$20.00" />,
       <MenuItem nombre="Mediterranean Veggie Stack" ingredientes="Sweet potato, eggplant, zucchini, marinated feta, basil pesto, tomato passata, spinach, garlic bread" precio="$26.00" />,
-      <MenuItem nombre="Kofta Balls" ingredientes="Lentil and cashew koftas, salad, homemade chutney" descripcion="Vegan friendly with flavors of India" precio="$27.00" />
+
+      <MenuItem nombre="Chicken Salad" ingredientes="Chicken cooked in herb broth, then tossed in a leafy salad with fresh mint, pear, cashews and a drizzle of delicious homemade ginger and lemon dressing. Served with a side of hot garlic bread." precio="$27.00" />,
+      <MenuItem nombre="Steak Salad" ingredientes="The same yummy salad as above but this time tossed with delicious strips of pan-fried steak." precio="$28.00" />,
+      <MenuItem nombre="Kofta Balls" ingredientes="With the flavours of India our lentil and cashew Kofta's are vegan friendly.Served atop a lovely colorful salad with a side of homemade chutney." precio="$27.00" />,
+      <MenuItem nombre="Pork and Apple Sausage Rolls" ingredientes="With the flavours of India our lentil and cashew Kofta's are vegan friendly.Served atop a lovely colorful salad with a side of homemade chutney." precio="$26.00" />,
+      <MenuItem nombre="Cowboy Steak Sandwich" ingredientes="Delicious steak lightly tossed in homemade spices, served with lettuce, fresh tomato, caramelised onion and melted cheese served on toasted Turkish bread." precio="$28.00" />,
+      <MenuItem nombre="BLT" ingredientes="Crunchy twice-fried bacon, lettuce, fresh tomato on Turkish bread with a drizzle of homemade aioli." precio="$20.00" />,
+
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">FOR THE LITTLE ONES</h1>,
+
+      <MenuItem nombre="Homemade Sausage Rolls" ingredientes="" precio="$12.00" />,
+      <MenuItem nombre="Chessy Fingers" ingredientes="Crunchy twice-fried bacon, lettuce, fresh tomato on Turkish bread with a drizzle of homemade aioli." precio="$10.00" />,
+      <MenuItem nombre="BLT" ingredientes="Crunchy twice-fried bacon, lettuce, fresh tomato on Turkish bread with a drizzle of homemade aioli." precio="$14.00" />,
+
+
+
+      
     ],
   };
 

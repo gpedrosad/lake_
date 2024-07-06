@@ -34,8 +34,8 @@ const images = [
 ];
 
 const images2 = [
-    third1,
-    third2
+    third2,
+    third1
 ];
 
 const images3 = [
@@ -53,11 +53,18 @@ const LightGreenBannerDos = () => {
                     <img src={hojaIzq} alt="Descripción de la imagen" className="absolute top-0 left-0 w-20 h-20" />
                 </div>
                 <div className="grid grid-cols-1 items-center gap-8 justify-items-center md:m-5 md:mt-14 md:mb-12 xs:m-10">
-                    <img src={firstGen} alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-left-top mt-14 mb-8 xs:h-66" />
+                    <p class="font-rufina text-custom-green text-xl font-bold">1st generation</p>
+                    <img src={firstGen} alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-left-top mt-0 mb-8 xs:h-66" />
+
+                    <p class="font-rufina text-custom-green text-xl font-bold">2nd generation</p>
                     <CarruselDos images={images3} />
 
+                    <p class="font-rufina text-custom-green text-xl font-bold">3rd generation</p>
                     <CarruselDos images={images2} />
-                    <img src={fourthGen} alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-center mb-14 mt- xs:h-66" />
+
+                    <p class="font-rufina text-custom-green text-xl font-bold">4th generation</p>
+                    <img src={fourthGen} alt="Imagen" className="h-60 w-96 rounded-3xl object-cover object-center mb-4 mt- xs:h-66" />
+
                 </div>
                 <img src={hojaDer} alt="Descripción de la imagen" className="absolute bottom-0 right-0 w-20 h-20" />
             </div>

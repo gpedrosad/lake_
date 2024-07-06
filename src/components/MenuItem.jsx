@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
 
 const MenuItem = ({ nombre, ingredientes, precio, imagen }) => {
-  const [modalOpen, setModalOpen] = useState(false);
-
-  const toggleModal = () => {
-    setModalOpen(!modalOpen);
-  };
+  
 
   return (
     <div className="flex flex-col items-center bg-transparent font-rufina">

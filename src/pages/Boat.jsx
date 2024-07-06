@@ -13,8 +13,14 @@ import cardImage3 from     '/public/images/boat2.jpg';
 import sliderGreen from    '/public/images/boat3.jpg';
 import sliderWedding from  '/public/images/boat4.jpg';
 
+import bote1 from     '/public/images/bote1.jpg';
+import bote2 from     '/public/images/bote2.jpg';
+import bote3 from    '/public/images/bote3.jpg';
+
 const imagesFirstSlider = [
-    sliderCopas,
+    bote1,
+    bote2,
+    bote3,
 ];
 
 const imagesSecondSlider = [
@@ -42,21 +48,17 @@ function Boat() {
 
             <FeatureSection
                 title="Lake Cruises"
-                description="Step on board and experience the chance to see Lake Barrine’s native fauna and flora! Such as emerald pythons, water dragons, turtles, birds, eels, and much more! An interactive cruise, filled with fun facts, laughter, and a time to experience nature's beauty in one of its most tranquil forms.
-
-                George Curry the founder of Lake Barrine Teahouse always said, “You haven’t truly experienced the Lake until you’ve done the boat cruise.” Come on board and see what truly inspired the very beginning of Lake Barrine Teahouse's rich history. "
+                description="Our cruise is about taking the time to experience natures beauty in one of its most tranquil forms. My Great Grandfather George Curry always said, “You haven’t truly experienced the Lake until you’ve done the boat cruise.” Step on board and see what truly inspired the very beginning of Lake Barrine Teahouses rich history."
                 buttonText='Book Now'
                 borderRadius='0px'
                 bgcolorbutton='#3C5220'
-                images={imagesThirdSlider}
+                images={imagesFirstSlider}
             />
                         <div className="mx-auto bg-yellow-500 h-1 w-3/4 sm:w-1/2"></div>
 
             <GreenFeatureSection
-                title="Our Cruise"
-                description="Our cruise is about taking the time to experience natures beauty in one of its most tranquil forms. My Great Grandfather George Curry always said, “You haven’t truly experienced the Lake until you’ve done the boat cruise.”
-
-                Step on board and see what truly inspired the very beginning of Lake Barrine Teahouses rich history."
+                title="Sail into Celebration"
+                description="Set against the backdrop of a hundred year old rainforest, with the tranquil waters reflecting the hues of the sky, each moment on our boat is crafted to be memorable. Let us turn your event into an occasion that not only stands out but remains etched in the hearts of all who attend."
                 buttonText='Book Now'
                 borderRadius='0px'
                 bgcolor='#F0B92B'

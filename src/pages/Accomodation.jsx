@@ -11,13 +11,11 @@ import sliderGreen from '/public/images/slider-green.png';
 import cardImage1 from '/public/images/card-image-1.png';
 import sliderWedding from '/public/images/slider-wedding.png';
 import cardImage3 from '/public/images/card-image3.png';
+import coming from '/public/images/coming.png';
+
 
 const imagesFirstSlider = [
-    sliderCopas,
-    sliderGreen,
-    cardImage1,
-    sliderWedding,
-    cardImage3,
+    coming,
 ];
 
 function Accomodation() {

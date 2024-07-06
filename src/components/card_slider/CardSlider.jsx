@@ -8,7 +8,7 @@ import hoja2 from '/public/images/hoja2.png';
 import cardimg1 from '/public/images/card-image-1.jpg';
 import cardimg2 from '/public/images/slider-card1.jpeg';
 import cardimg3 from '/public/images/slider-card2.jpeg';
-import cardimg4 from '/public/images/slider-card3.jpeg';
+import cardimg4 from '/public/images/coming.png';
 import bgwhite from '/public/images/Rectangle27.png'
 
 const CardSlider = () => {

@@ -53,37 +53,36 @@ function Functions() {
             />
 
             <FeatureSection
+                title="Sail into Celebration"
+                description="Set against the backdrop of a century old rainforest, with the tranquil waters reflecting the
+                hues of the sky, each moment on our boat is crafted to be memorable. Let us turn your
+                event into an occasion that not only stands out but remains etched in the hearts of all who
+                attend."
+                buttonText='Book Now'
+                borderRadius='0px'
+                bgcolorbutton='#3C5220'
+                images={imagesFirstSlider}
+            />    
+            <GreenFeatureSection
+                title="The Teahouse at Lake Barrine"
+                description="Step into a century of tradition and timeless charm by booking your special event at the
+                Teahouse. Nestled on the edge of our tranquil lake, and surrounded by beautiful gardens,
+                our historic venue offers a unique setting for celebrations of all kinds. Its warm atmosphere
+                mixed with the heart of its staff promote a feeling of joy and togetherness."
+                buttonText='Book Now'
+                borderRadius='0px'
+                bgcolor='#F0B92B'
+                images={imagesSecondSlider}
+            />
+
+            
+            <FeatureSection
                 title="Create your own Event"
                 description="Would you like to incorporate our historic Teahouse, Boat and beautiful gardens all in one?
                 Create your own perfect evening in one of the most enchanting settings. Whether you&#39;re
                 drawn to the natural serenity of the Lake, the beauty of our gardens, or the historical allure
                 of the Teahouse, we are here to create an event that seamlessly blends your personal style
                 with the captivating essence of this extraordinary venue."
-                buttonText='Book Now'
-                borderRadius='0px'
-                bgcolorbutton='#3C5220'
-                images={imagesFirstSlider}
-            />    
-
-            <GreenFeatureSection
-                title="Sail into Celebration"
-                description="Set against the backdrop of a century old rainforest, with the tranquil waters reflecting the
-                hues of the sky, each moment on our boat is crafted to be memorable. Let us turn your
-                
-                event into an occasion that not only stands out but remains etched in the hearts of all who
-                attend."
-                buttonText='Book Now'
-                borderRadius='0px'
-                bgcolor='#F0B92B'
-                images={imagesSecondSlider}
-            />
-            
-            <FeatureSection
-                title="The Teahouse at Lake Barrine"
-                description="Step into a century of tradition and timeless charm by booking your special event at the
-                Teahouse. Nestled on the edge of our tranquil lake, and surrounded by beautiful gardens,
-                our historic venue offers a unique setting for celebrations of all kinds. Its warm atmosphere
-                mixed with the heart of its staff promote a feeling of joy and togetherness."
                 buttonText='Book Now'
                 borderRadius='0px'
                 bgcolorbutton='#3C5220'

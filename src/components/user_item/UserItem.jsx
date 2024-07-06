@@ -9,9 +9,7 @@ function UserItem({ src, userName, defaultValue, colorName, colorRating, colorSt
             <div className='user_container'>
                 <div className='user_info'>
                     <div id='div_username_userimage'>
-                        <div className='flex justify-center items-center'>
-                            <img src={src} className='w-36 h-36 rounded-full object-cover border-4 border-white' alt={userName} />
-                        </div>
+                        
                         <div className='flex flex-col justify-start items-start'>
                             <div>
                                 <h2 className='font-rufina sm:text-3xl whitespace-nowrap mb-2' style={{ color: colorName }}>{userName}</h2>

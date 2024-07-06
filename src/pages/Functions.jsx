@@ -5,40 +5,36 @@ import RatingSliderSecond from "../components/RatSliderSecond";
 import { useEffect } from "react";
 // Importar imágenes
 import imgHeroSection from '/public/images/boat.jpg';
-import sliderCopas from    '/public/images/family-cruise.jpg';
-import cardImage1 from     '/public/images/boat1.jpg';
-import cardImage3 from     '/public/images/boat2.jpg';
-import sliderGreen from    '/public/images/boat3.jpg';
-import sliderWedding from  '/public/images/boat4.jpg';
 
-import fun1 from     '/public/images/function1.jpg';
-import fun2 from     '/public/images/function2.jpg';
-import fun3 from     '/public/images/function3.jpg';
+import tres1 from  '/public/images/tres1.jpg';
+import tres2 from  '/public/images/tres2.jpg';
 
-import functions1 from     '/public/images/functions1.jpg';
-import functions2 from     '/public/images/functions2.jpg';
-import functions3 from     '/public/images/functions3.jpg';
-import functions4 from     '/public/images/functions4.jpg';
+
+import fun1 from     '/public/images/fun1.jpg';
+import fun2 from     '/public/images/fun2.jpg';
+
+import sail1 from     '/public/images/sail1.jpg';
+import sail2 from     '/public/images/sail2.jpg';
+import sail3 from     '/public/images/sail3.jpg';
+import sail4 from     '/public/images/sail4.jpg';
 
 
 
 const imagesFirstSlider = [
-    functions1,
-    functions2,
-    functions3,
-    functions4
+    sail1,
+    sail2,
+    sail3,
+    sail4
 ];
 
 const imagesSecondSlider = [
     fun1,
     fun2,
-    fun3,
 ];
 
 const imagesThirdSlider = [
-    sliderWedding,
-    cardImage1,
-    cardImage3,
+    tres1,
+    tres2,
 ];
 
 function Functions() {

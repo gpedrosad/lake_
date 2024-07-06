@@ -27,6 +27,8 @@ const Navbar = () => {
                         <Link to="/boat" className="text-xl text-white hover:text-new-green transition duration-300">Boat Cruise</Link>
                         <Link to="/functions" className="text-xl text-white hover:text-new-green transition duration-300">Functions</Link>
                         <Link to="/accomodation" className="text-xl text-white hover:text-new-green transition duration-300">Accommodation</Link>
+                        <Link to="/contact" className="text-xl text-white hover:text-new-green transition duration-300">Contact us</Link>
+
                         <div className="pl-0 lg:mr-12">
                             <a href="https://bookings.nowbookit.com/?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&colors=hex,0d5302&font=Barlow" target="_blank">
                             <button
@@ -70,6 +72,8 @@ const Navbar = () => {
                     <Link to="/boat" className="mt-4 font-inika font-normal block py-2 px-4 text-3xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Boat Cruise</Link>
                     <Link to="/functions" className="mt-4 font-inika font-normal block py-2 px-4 text-3xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Functions</Link>
                     <Link to="/accomodation" className="mt-4 font-inika font-normal block py-2 px-4 text-3xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Accommodation</Link>
+                    <Link to="/contact" className="mt-4 font-inika font-normal block py-2 px-4 text-3xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Contact us</Link>
+
                 </div>
             </div>
         </nav>

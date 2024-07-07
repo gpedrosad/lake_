@@ -16,7 +16,7 @@ const Navbar = () => {
             <div className="max-w mx-auto px-4 bg-transparent">
                 <div className="flex justify-between items-center py-4">
                     <div className="flex items-center">
-                        <Link to="/lake_" className="ml-5 md:ml-14">
+                        <Link to="/" className="ml-5 md:ml-14">
                             <img src={logo} alt="Logo" className="h-12 w-auto lg:h-20 xl:h-24" />
                         </Link>
                     </div>
@@ -56,7 +56,7 @@ const Navbar = () => {
                     </svg>
                 </div>
                 <div className="flex flex-col items-center justify-center w-full h-full py-12 px-4 mt-4">
-                    <Link to="/lake_" className="block mb-6" onClick={handleLinkClick}>
+                    <Link to="/" className="block mb-6" onClick={handleLinkClick}>
                         <div className="w-full flex justify-center mb-5 flex-col">
                             <img src={logo} alt="Logo" className="mx-auto w-36 h-auto mb-10" />
                             <button
@@ -66,7 +66,7 @@ const Navbar = () => {
                         </div>
                     </Link>
                     {/* Enlaces actualizados para el menú móvil */}
-                    <Link to="/lake_" className="mt-4 font-inika font-normal block py-2 px-4 text-3xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Home</Link>
+                    <Link to="/" className="mt-4 font-inika font-normal block py-2 px-4 text-3xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Home</Link>
                     <Link to="/about" className="mt-4 font-inika font-normal block py-2 px-4 text-3xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>About</Link>
                     <Link to="/restaurant" className="mt-4 font-inika font-normal block py-2 px-4 text-3xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Restaurant</Link>
                     <Link to="/boat" className="mt-4 font-inika font-normal block py-2 px-4 text-3xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Boat Cruise</Link>

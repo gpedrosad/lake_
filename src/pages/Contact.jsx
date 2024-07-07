@@ -14,7 +14,6 @@ function Contact() {
             <div className="mx-auto p-6">
                 <p className="text-center font-rufina text-lg sm:text-lg md:text-xl lg:text-2xl text-custom-green mt-2 mb-2">Have a question or want to plan your visit? Get in touch with Lake Barrine Teahouse today.</p>
                 <p className="text-center font-rufina text-lg sm:text-lg md:text-xl lg:text-2xl text-custom-green mt-2 mb-2">Our friendly team is here to assist with reservations, event inquiries, and more.</p>
-
                 <p className="text-center font-rufina text-lg sm:text-lg md:text-xl lg:text-2xl text-custom-green mb-10 mt-10">Reach out and let us help make your experience unforgettable.</p>
                 <div className="flex flex-col md:grid md:grid-cols-2 gap-4">
                     <div className="m-4 bg-white shadow-md rounded-lg p-6 order-2 md:order-none">

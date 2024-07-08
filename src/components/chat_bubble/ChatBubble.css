@@ -22,17 +22,6 @@
     color: #555; /* Slightly lighter text color for softer appearance */
 }
 
-.triangle_chat_bubble {
-    width: 0;
-    height: 0;
-    border-bottom: 50px solid #FFFFFF; 
-    border-right: 50px solid transparent; 
-    position: absolute;
-    bottom: -18%; 
-    left: 25%; 
-    transform: rotate(100deg);
-    /* z-index: -1; */
-}
 
 /* Media queries */
 @media only screen and (min-width: 1060px) {
@@ -80,23 +69,4 @@
     }
 
 
-}
-
-@media only screen and (max-width: 420px){
-    .p_chat_bubble_container{
-        font-size: 0.8rem;
-        padding: 1%;
-    }
-}
-
-@media only screen and (max-width: 380px){
-    .triangle_chat_bubble {
-        left: 40%;
-        bottom: -30%; 
-        z-index: -1;
-    }
-    .p_chat_bubble_container{
-        font-size: 0.5rem;
-        padding: 1%;
-    }
 }

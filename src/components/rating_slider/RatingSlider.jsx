@@ -23,6 +23,8 @@ const testimonialData = [
                   userName={"Holly"}
                   defaultValue={5.0}
                   colorStar='#8DA260'
+                  city=""
+                  
                   />
   },
   {

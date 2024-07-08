@@ -3,7 +3,7 @@ import VerifiedCustomer from '../verified_customer/VerifiedCustomer';
 import PropTypes from 'prop-types';
 import RatingComponent from '../rating_item/RatingItem';
 
-function UserItem({ src, userName, defaultValue, colorName, colorRating, colorStar }) {
+function UserItem({ src, userName, defaultValue, colorName, colorRating, colorStar,city }) {
     return (
         <>
             <div className='user_container'>
@@ -12,7 +12,8 @@ function UserItem({ src, userName, defaultValue, colorName, colorRating, colorSt
                         
                         <div className='flex flex-col justify-start items-start'>
                             <div>
-                                <h2 className='font-rufina sm:text-3xl whitespace-nowrap mb-2' style={{ color: colorName }}>{userName}</h2>
+                                <h2 className='font-rufina sm:text-3xl whitespace-nowrap mb-2 ml-10' style={{ color: colorName }}>{userName}</h2>
+                                <p class="ml-1 mb-2">{city}</p>
                             </div>
                             <div>
                                 <VerifiedCustomer />

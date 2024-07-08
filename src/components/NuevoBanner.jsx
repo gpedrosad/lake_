@@ -31,11 +31,11 @@ const NuevoBanner = () => {
     </div>
     
   </div>
-      <p className="text-center font-inika font-normal text-lg md:text-xl lg:text-xl p-10 lg:p-0">
+      <p className="text-center font-inika font-normal text-lg md:text-xl lg:text-xl px-10 lg:p-0 mt-10">
         As you walk around our beautiful gardens, stroll through our historic Teahouse and dip your toes in the natural waters of Lake Barrine, you might find, just like I did, that falling in love with this place comes easy.
       </p>
       <br></br>
-      <p className="text-center font-inika font-normal text-lg md:text-xl lg:text-xl p-10 lg:p-0">
+      <p className="text-center font-inika font-normal text-lg md:text-xl lg:text-xl px-10 mb-10 lg:p-0">
       We have been a family run business since 1924. It started with love, with a celebration for
 our natural surroundings and even more so the joy of sharing this unique piece of paradise
 with family and friends alike.      </p>

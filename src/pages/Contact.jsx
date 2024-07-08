@@ -7,6 +7,8 @@ import contact from '/public/images/contact.jpg';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import AirbnbIcon from '/public/images/airbnb.svg'; // Suponiendo que el SVG está en esta ruta
+import Email from '/public/images/email.svg';
+import Phone from '/public/images/phone.svg';
 
 
 function Contact() {
@@ -54,20 +56,30 @@ function Contact() {
                             </div>
                         </form>
                     </div>
-                    <div className="bg-white shadow-md rounded-lg p-6 flex flex-col">
+                    <div className="bg-white shadow-md rounded-lg p-6 grid grid-cols-8 grid-rows-5">
                         {/* Social Links and other contact info */}
-                        <p>Phone: (07) 4095 3847</p>
-                        <p>Email: info@lakebarrine.com.au</p>
-                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                        <InstagramIcon className="text-custom-green text-[40px] md:text-[30px] cursor-pointer" />
-                    </a>
-                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                        <img src={Phone} alt="Airbnb" className="w-7 h-7 cursor-pointer col-start-1" />
+                        <p class="grid grid-start-2 col-span-3">(07) 4095 3847</p>
+                        <img src={Email} alt="Airbnb" className="w-6 h-6 cursor-pointer col-start-1 row-start-2" />
+                        <p class="grid grid-start-2 col-span-3 row-start-2">info@lakebarrine.com.au</p>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="cursor-pointer col-start-1 row-start-3">
+                            <InstagramIcon className="text-custom-green text-[40px] md:text-[30px] cursor-pointer " />
+                        </a>
+                        <p class="grid grid-start-2 col-span-3 row-start-3">@lakebarrine</p>
+
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="cursor-pointer col-start-1 row-start-4">
                         <FacebookIcon className="text-custom-green text-[40px] md:text-[30px] cursor-pointer" />
                     </a>
-                    <a href="https://www.airbnb.com" target="_blank" rel="noopener noreferrer"/>
+                    <p class="grid grid-start-2 col-span-3 row-start-4">facebook.com/LakeBarrine/</p>
+
+                    <a href="https://www.airbnb.com" target="_blank" rel="noopener noreferrer" class="cursor-pointer col-start-1 row-start-5">
                         <img src={AirbnbIcon} alt="Airbnb" className="w-6 h-6 cursor-pointer" />
+                    </a>
+                    <p class="grid grid-start-2 col-span-3 row-start-5">airbnb.com/lakebarrine</p>
+
 
                     </div>
+
                 </div>
                 <div className="md:col-span-2 bg-white shadow-md rounded-lg p-6 mt-4">
                     <GoogleMap />

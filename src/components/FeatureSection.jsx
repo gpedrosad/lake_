@@ -11,14 +11,14 @@ const FeatureSection = ({ title, description, buttonText, borderRadius, bgcolorb
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 p-4 justify-items-center items-center pt-16">
         <div className="w-11/12 p-1 sm:w-2/3 md:w-full md:p-0 lg:p-0 xl:py-0 lg:w-full xl:w-full 2xl:w-full mx-auto pt-8">
+          <h1 className="text-center whitespace-nowrap font-rufina pb-3 mb-1 mt-6 font-bold text-third-green text-2xl sm:text-3xl md:text-3xl md:pb-5 md:pt-10 sm:pb-3 sm:pt-11 sm:mb-1 xl:text-4xl">
+            {title}
+          </h1>
           <ImageCarousel images={images} rounded='3xl' />
         </div>
         
         <div className="flex flex-col items-center justify-center px-10 py-5 md:mb-20">
-          <h1 className="text-center whitespace-nowrap font-rufina pb-3 mb-1 mt-6 font-bold text-third-green text-2xl sm:text-3xl md:text-3xl md:pb-5 md:pt-10 sm:pb-3 sm:pt-11 sm:mb-1 xl:text-4xl">
-            {title}
-          </h1>
-          <p className="text-justify text-xl text-custom-green xs:m-5 xl:text-2xl">
+          <p className="text-justify text-xl text-custom-green xl:text-2xl">
             {description}
           </p>
         </div>

@@ -17,7 +17,7 @@ const DropdownButton = () => {
   const options = ['Drinks', 'Breakfast', 'Lunch'];
   const menuContent = {
     Drinks: [
-      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">COFFEE</h1>,
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center mt-2 mb-2">COFFEE</h1>,
       <MenuItem nombre="Espresso" precio="$4.00" />,
       <MenuItem nombre="Long Black" precio="$5.00" />,
       <MenuItem nombre="Flat White" precio="$5.50" />,
@@ -29,31 +29,31 @@ const DropdownButton = () => {
       <MenuItem nombre="Macchiato" precio="$5.00" />,
       <MenuItem nombre="Affogato" precio="$5.50" />,
 
-      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">LOOSE LEAF TEA</h1>,
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center mt-2 mb-2">LOOSE LEAF TEA</h1>,
       <MenuItem nombre="Local Black Tea" precio="$5.00" />,
       <MenuItem nombre="English Breakfast" precio="$5.00" />,
       <MenuItem nombre="Earl Grey" precio="$5.00" />,
       <MenuItem nombre="Peppermint" precio="$5.00" />,
       <MenuItem nombre="Green Tea" precio="$5.00" />,
       <MenuItem nombre="Ginger & Lemongrass" precio="$5.00" />,
-      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">ALTERNATE MILKS</h1>,
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center mt-2 mb-2">ALTERNATE MILKS</h1>,
       <MenuItem nombre="Almond" precio="$1.00" />,
       <MenuItem nombre="Soy" precio="$1.00" />,
       <MenuItem nombre="Oat" precio="$1.00" />,
       <MenuItem nombre="Lactose Free Milk" precio="$1.00" />,
 
-      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">COFFEE ALTERNATES</h1>,
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center mt-2 mb-2">COFFEE ALTERNATES</h1>,
 
       <MenuItem nombre="Hot Chocolate" precio="$6.00" />,
       <MenuItem nombre="Chai Latte" precio="$6.00" />,
       <MenuItem nombre="Tumeric Latte" precio="$6.00" />,
 
-      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">SYRUPS</h1>,
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center mt-2 mb-2">SYRUPS</h1>,
       <MenuItem nombre="Hazelnut" precio="$6.00" />,
       <MenuItem nombre="Caramel" precio="$6.00" />,
       <MenuItem nombre="Vainilla" precio="$6.00" />,
 
-      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">MILKSHAKES</h1>,
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center mt-2 mb-2">MILKSHAKES</h1>,
       <MenuItem nombre="Chocolate Milkshake" precio="$8.50" />,
       <MenuItem nombre="Strawberry Milkshake" precio="$8.50" />,
       <MenuItem nombre="Banana Milkshake" precio="$8.50" />,
@@ -62,27 +62,27 @@ const DropdownButton = () => {
       <MenuItem nombre="Lime Milkshake" precio="$8.50" />,
       <MenuItem nombre="Malta Milkshake" precio="$8.50" />,
 
-<h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">IN THE FRIDGE</h1>,
+<h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center mt-2 mb-2">IN THE FRIDGE</h1>,
       <MenuItem nombre="Softdrink" precio="$3.50" />,
       <MenuItem nombre="Bundaberg" precio="$5.00" />,
       <MenuItem nombre="Iced Tea" precio="$5.50" />,
       <MenuItem nombre="Organic Juice" precio="$5.50" />,
       <MenuItem nombre="Coconut Water" precio="$6.00" />,
 
-      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">MINI WINE BOTTLES</h1>,
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center mt-2 mb-2">MINI WINE BOTTLES</h1>,
       <MenuItem nombre="Rose Prosecco" precio="$10.00" />,
       <MenuItem nombre="Sauvignon Blanc" precio="$10.00" />,
       <MenuItem nombre="Chardonday" precio="$10.00" />,
       <MenuItem nombre="Pink Moscato" precio="$10.00" />,
 
-      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">HEMINGWAY BEER</h1>,
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center mt-2 mb-2">HEMINGWAY BEER</h1>,
       <MenuItem nombre="Tropical Ale" precio="$8.50" />,
       <MenuItem nombre="Canecutter Lager" precio="$8.50" />,
       <MenuItem nombre="Bettys Pale Ale" precio="$8.50" />,
       <MenuItem nombre="Prospector Pilsner" precio="$8.50" />,
       <MenuItem nombre="Tunnel 10 Lager" precio="$8.50" />,
 
-      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">ICED DRINKS</h1>,
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center mt-2 mb-2">ICED DRINKS</h1>,
       <MenuItem nombre="Ice Long Black" precio="$6.00" />,
       <MenuItem nombre="Ice Coffee" precio="$8.00" />,
       <MenuItem nombre="Ice Chocolate" precio="$8.00" />,
@@ -90,15 +90,15 @@ const DropdownButton = () => {
       <MenuItem nombre="Ice Latte" precio="$6.50" />,
       <MenuItem nombre="Ice Chai" precio="$6.50" />,
 
-      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">KOMBUCHA</h1>,
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center mt-2 mb-2">KOMBUCHA</h1>,
       <MenuItem nombre="Kombucha" precio="$9.50" />,
 
-      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">FOR THE LITTLE ONES</h1>,
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center mt-2 mb-2">FOR THE LITTLE ONES</h1>,
       <MenuItem nombre="Kids Hot Chocolate" precio="$5.50" />,
       <MenuItem nombre="Babycino" precio="$3.50" />,
       <MenuItem nombre="Kids Milkshake" precio="$5.50" />,
 
-      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">ICE CREAM BOWL</h1>,
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center mt-2 mb-2">ICE CREAM BOWL</h1>,
 
       <MenuItem nombre="Ice Cream Bowl" precio="$6.00" />,
       <br></br>,
@@ -119,7 +119,7 @@ const DropdownButton = () => {
       <MenuItem nombre="Brekky BLT" ingredientes="Crunchy twice-fried bacon, lettuce, fresh tomato on Turkish bread with a drizzle of homemade aioli" descripcion="" precio="$20.00"/>,
       <MenuItem nombre="Poached Eggs on Toast" ingredientes="Keep it simple with two free range poached eggs atop freshly toasted bread" descripcion="" precio="$16.00"/>,
 
-      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">ADD ON</h1>,
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center mt-2 mb-2">ADD ON</h1>,
       <MenuItem nombre="Twice fried bacon" ingredientes="" descripcion="" precio="$6.00"/>,
       <MenuItem nombre="Smoked Salmon" ingredientes="" descripcion="" precio="$6.00"/>,
       <MenuItem nombre="Mushrooms" ingredientes="" descripcion="" precio="$5.00"/>,
@@ -129,7 +129,7 @@ const DropdownButton = () => {
       <MenuItem nombre="Hollandaise" ingredientes="" descripcion="" precio="$4.00"/>,
       <MenuItem nombre="Extra toast" ingredientes="" descripcion="" precio="$3.00"/>,
       
-      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">FOR THE LITTLE ONES</h1>,
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center mt-2 mb-2">FOR THE LITTLE ONES</h1>,
 
       <MenuItem nombre="Cheesy fingers" ingredientes="" descripcion="" precio="$10.00"/>,
       <MenuItem nombre="Vegemite soldiers" ingredientes="" descripcion="" precio="$8.00"/>,
@@ -153,7 +153,7 @@ const DropdownButton = () => {
       <MenuItem nombre="Cowboy Steak Sandwich" ingredientes="Delicious steak lightly tossed in homemade spices, served with lettuce, fresh tomato, caramelised onion and melted cheese served on toasted Turkish bread." precio="$28.00" />,
       <MenuItem nombre="BLT" ingredientes="Crunchy twice-fried bacon, lettuce, fresh tomato on Turkish bread with a drizzle of homemade aioli." precio="$20.00" />,
 
-      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center">FOR THE LITTLE ONES</h1>,
+      <h1 class="font-rufina text-xl pl-3 text-custom-green font-bold text-center mt-2 mb-2">FOR THE LITTLE ONES</h1>,
 
       <MenuItem nombre="Homemade Sausage Rolls" ingredientes="" precio="$12.00" />,
       <MenuItem nombre="Chessy Fingers" ingredientes="Crunchy twice-fried bacon, lettuce, fresh tomato on Turkish bread with a drizzle of homemade aioli." precio="$10.00" />,

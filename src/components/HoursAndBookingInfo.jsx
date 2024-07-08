@@ -9,9 +9,9 @@ const HoursAndBookingInfo = () => {
         <p className="mb-1 font-bold text-custom-green">Monday to Friday <span className="font-normal">9 am – 14:30 pm</span></p>
         <p className="mb-1 font-bold text-custom-green">Saturday & Sunday <span className="font-normal">8:30 am - 15:00 pm</span></p>
         <br></br>
-        <p className="text-center mb-1 text-custom-green">Bookings are highly recommended. For groups of 10 people or under, bookings can be made online</p>
+        <p className="text-center text-custom-green px-2 ml-2 mr-4">Bookings are highly recommended.<br></br> For groups of 10 people or under, bookings can be made online</p>
         <br></br>
-        <p className="text-center mb-1 text-custom-green whitespace-nowrap">For groups of over 10 people, please call to book (07) 4095 3847</p>
+        <p className="text-center text-custom-green px-2 mr-2 ml-4">For groups of over 10 people, <br></br>please call to book (07) 4095 3847</p>
 
         <p className="mb-2 text-custom-green">
         </p>

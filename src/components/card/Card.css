@@ -25,7 +25,7 @@
 .card-media {
   width: 100%;
   height: 15vw; 
-  max-height: 30vh;
+  max-height: 40vh;
   min-height: 20vh;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
@@ -176,7 +176,7 @@
   }
 
   .card-media {
-    height: 45vw;
+    height: 30vw;
   }
 
   .card-content {
@@ -243,6 +243,9 @@
   .card {
     height: 890px;
   }
+  .card-media {
+    height: 45vw;
+  }
 }
 
 @media (max-width: 640px) and (min-width: 512px) {
@@ -260,6 +263,9 @@
   .card {
     height: 700px;
   }
+  .card-media {
+    height: 30vw;
+  }
 }
 
 @media (max-width: 512px) {
@@ -276,7 +282,7 @@
   }
 
   .card {
-    height: 570px;
+    height: 550px;
   }
 
   .card-content {
@@ -284,7 +290,7 @@
   }
 
   .card-media {
-    height: 30vw;
+    height: 40vw;
   }
 
 }
@@ -292,6 +298,9 @@
 @media (max-width: 380px) {
   .card-title {
     font-size: 1.5rem;
+  }
+  .card-media {
+    height: 30vw;
   }
 
   .card-description {
@@ -310,6 +319,9 @@
   .card {
     height: 600px;
   }
+  .card-media {
+    height: 40vw;
+  }
 }
 
 @media (max-width: 330px) {
@@ -320,4 +332,5 @@
   .card-button {
     font-size: 0.9rem;
   }
+
 }

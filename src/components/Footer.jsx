@@ -13,8 +13,10 @@ const Footer = () => {
         <h1 className="font-rufina font-bold text-white text-3xl sm:text-3xl md:text-3xl xl:text-4xl pb-5">Contact</h1>
         <p className="text-white text-xl md:text-md xl:text-xl">(07) 4095 3847</p>
         <p className="text-white mb-10 text-xl md:text-md xl:text-xl">info@lakebarrine.com.au</p>
-        <span className="text-white text-xl md:text-md xl:text-xl text-center md:text-left">Lake Barrine</span>
-        <span className="text-white text-xl md:text-md xl:text-xl ml-5 mr-5 text-center md:text-left md:ml-0 md:mr-0">Gillies Highway, <br></br>Yungaburra Queensland 4884</span>
+        <span className="text-white text-xl md:text-md xl:text-xl text-center md:text-left">27 Lake Barrine Road,</span>
+        <span className="text-white text-xl md:text-md xl:text-xl ml-5 mr-5 text-center md:text-left md:ml-0 md:mr-0">Yunguburra, QLD</span>
+        <span className="text-white text-xl md:text-md xl:text-xl ml-5 mr-5 text-center md:text-left md:ml-0 md:mr-0">4884</span>
+
     </div>
     <div className="flex flex-col xs:items-center md:items-start justify-center p-16 sm:pt-3 md:pt-24">
         <h1 className="whitespace-nowrap font-rufina font-bold text-white text-3xl md:text-3xl xl:text-3xl pb-5">Opening hours</h1>

@@ -9,7 +9,7 @@ const GreenFeatureSection = ({ title, description, buttonText, borderRadius, bgc
             <img src={hojaizq} alt="Hoja izquierda" className="absolute top-0 left-0 w-16 h-auto" />
             <img src={hojader} alt="Hoja derecha" className="absolute bottom-0 right-0 w-16 h-auto" />
 
-                    <h1 className="text-center whitespace-nowrap font-rufina font-bold pb-3 mb-1 mt-6 font-bold text-third-green text-xl sm:text-2xl md:text-3xl md:pb-5 md:pt-10 sm:pb-3 sm:pt-11 sm:mb-1 xs:pb-3 xs:pt- 11 xl:text-4xl">
+                    <h1 className="text-center whitespace-nowrap font-rufina font-bold pb-3 mb-1 pt-6 font-bold text-third-green text-xl sm:text-2xl md:text-3xl md:pb-5 md:pt-10 sm:pb-3 sm:pt-11 sm:mb-1 xs:pb-3 xs:pt- 11 xl:text-4xl">
                         {title}
                     </h1>
 

@@ -84,22 +84,22 @@ function Contact() {
                         <div className="grid grid-cols-8 grid-rows-5 items-center">
                             <img src={Phone} alt="Phone icon" className="w-7 h-7 cursor-pointer col-start-1" />
                             <p className="whitespace-nowrap col-start-2 col-span-7">(07) 4095 3847</p>
-                            <img src={Email} alt="Email icon" className="w-6 h-6 cursor-pointer col-start-1 row-start-2" />
-                            <p className="whitespace-nowrap col-start-2 col-span-7 row-start-2">info@lakebarrine.com.au</p>
-                            <a href="https://www.instagram.com/lakebarrine" target="_blank" rel="noopener noreferrer" className="col-start-1 row-start-3">
-                                <InstagramIcon className="text-custom-green text-[40px] md:text-[30px]" />
-                            </a>
+                            <img src={Email} alt="Email icon" className="w-6 h-6 cursor-pointer col-start-1 row-start-3" />
+                            <p className="whitespace-nowrap col-start-2 col-span-7 row-start-3">info@lakebarrine.com.au</p>
                             <a href="https://www.facebook.com/LakeBarrine" target="_blank" rel="noopener noreferrer" className="col-start-1 row-start-4">
                                 <FacebookIcon className="text-custom-green text-[40px] md:text-[30px]" />
                                 
                             </a>
-                            <a href="https://maps.app.goo.gl/36dBFdTyxmWJEo3o7" target="_blank" rel="noopener noreferrer" className="col-start-1 row-start-5">                                
+                            <a href="https://www.instagram.com/lakebarrine" target="_blank" rel="noopener noreferrer" className="col-start-1 row-start-5">
+                                <InstagramIcon className="text-custom-green text-[40px] md:text-[30px]" />
+                            </a>
+                            <a href="https://maps.app.goo.gl/36dBFdTyxmWJEo3o7" target="_blank" rel="noopener noreferrer" className="col-start-1 row-start-2">                                
                                 <img src={map} alt="map icon" className="w-6 h-6 cursor-pointer col-start-1 row-start-5" />
                             </a>
-                            <p className="whitespace-nowrap col-start-2 col-span-7 row-start-5">27 Lake Barrine Road, Yunguburra, QLD 4884</p>
+                            <p className="whitespace-nowrap col-start-2 col-span-7 row-start-2">27 Lake Barrine Road, Yunguburra, QLD 4884</p>
 
 
-                            <p className="col-start-2 col-span-7 row-start-3">instagram.com/lakebarrine</p>
+                            <p className="col-start-2 col-span-7 row-start-5">instagram.com/lakebarrine</p>
                             <p className="col-start-2 col-span-7 row-start-4">facebook.com/lakebarrine</p>
                         </div>
                     </div>

@@ -59,9 +59,9 @@ function Contact() {
                     <div className="bg-white shadow-md rounded-lg p-6 grid grid-cols-8 grid-rows-5">
                         {/* Social Links and other contact info */}
                         <img src={Phone} alt="Airbnb" className="w-7 h-7 cursor-pointer col-start-1" />
-                        <p class="grid grid-start-2 col-span-3">(07) 4095 3847</p>
-                        <img src={Email} alt="Airbnb" className="w-6 h-6 cursor-pointer col-start-1 row-start-2" />
-                        <p class="grid grid-start-2 col-span-3 row-start-2">info@lakebarrine.com.au</p>
+                        <p class="grid grid-start-2 col-span-3 whitespace-nowrap">(07) 4095 3847</p>
+                        <img src={Email} alt="Airbnb" className="whitespace-nowrap w-6 h-6 cursor-pointer col-start-1 row-start-2" />
+                        <p class="whitespace-nowrap grid grid-start-2 col-span-3 row-start-2">info@lakebarrine.com.au</p>
                         <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="cursor-pointer col-start-1 row-start-3">
                             <InstagramIcon className="text-custom-green text-[40px] md:text-[30px] cursor-pointer " />
                         </a>
@@ -70,12 +70,12 @@ function Contact() {
                     <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="cursor-pointer col-start-1 row-start-4">
                         <FacebookIcon className="text-custom-green text-[40px] md:text-[30px] cursor-pointer" />
                     </a>
-                    <p class="grid grid-start-2 col-span-3 row-start-4">facebook.com/LakeBarrine/</p>
+                    <p class="grid grid-start-2 col-span-3 row-start-4 whitespace-nowrap">facebook.com/LakeBarrine/</p>
 
                     <a href="https://www.airbnb.com" target="_blank" rel="noopener noreferrer" class="cursor-pointer col-start-1 row-start-5">
                         <img src={AirbnbIcon} alt="Airbnb" className="w-6 h-6 cursor-pointer" />
                     </a>
-                    <p class="grid grid-start-2 col-span-3 row-start-5">airbnb.com/lakebarrine</p>
+                    <p class="grid grid-start-2 col-span-3 row-start-5 whitespace-nowrap">airbnb.com/lakebarrine</p>
 
 
                     </div>

@@ -75,7 +75,6 @@ function Contact() {
                     <a href="https://www.airbnb.com" target="_blank" rel="noopener noreferrer" class="cursor-pointer col-start-1 row-start-5">
                         <img src={AirbnbIcon} alt="Airbnb" className="w-6 h-6 cursor-pointer" />
                     </a>
-                    <p class="grid grid-start-2 col-span-3 row-start-5 whitespace-nowrap">airbnb.com/lakebarrine</p>
 
 
                     </div>

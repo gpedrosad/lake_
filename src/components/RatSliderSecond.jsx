@@ -11,36 +11,32 @@ const testimonialData = [
   {
     id: 1,
     component: <UserCommentComponent 
-                  text={'Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos. Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos. Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos.'}
+                  text={'The BEST BLT EVER!! As a BLT connoisseur this is the best one I have ever had, the bacon was cooked perfectly , everything about it was DELICIOUS! Highly highly recommend, and the staff were really lovely and friendly too. It’s also in a great location with fab views of the lake!'}
                   src={imgUserMindy} 
-                  userName={"Mindy Monahan"}
-                  defaultValue={4.5}
-                  colorName="white"
-                  colorRating="white"
+                  userName={"Holly"}
+                  defaultValue={5.0}
                   colorStar='#8DA260'
+                  city=""
+                  
                   />
   },
   {
     id: 2,
     component: <UserCommentComponent 
-                  text={'Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos. Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos. Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos.'}
+                  text={'Really friendly staff, great iced coffee, amazing views over the lake. Thoroughly recommended!! Also a lovely short circular walk through the rainforest starting from the tea house.'}
                   src={imgUserMary} 
-                  userName={"Mary Williams"}
+                  userName={"Karen"}
                   defaultValue={5.0}
-                  colorName="white"
-                  colorRating="white"
                   colorStar='#8DA260'
     />
   },
   {
     id: 3,
     component: <UserCommentComponent 
-                  text={'Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos. Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos. Libero suscipit unde. Labore cumque voluptatum accusamus fugiat qui voluptates corporis dignissimos.'}
+                  text={'Unique situated on the crater lake of Lake Barrine with lush tropical gardens, blooming flowers,Butterflys. There are two gigantic Kauri trees nearby.The House Looks classical though it‘s rebuild after a fire. Very nice ambiente inside. You can sit inside or on a Balkon overlooking the lake. The staff is very friendly and helpful. The prices are moderate. We were very satified with our visit.'}
                   src={imgUserMan} 
-                  userName={"Logan Pazcual"}
+                  userName={"Achim"}
                   defaultValue={5.0}
-                  colorName="white"
-                  colorRating="white"
                   colorStar='#8DA260'
     />
   }
@@ -61,7 +57,7 @@ const settings = {
 
 const RatingSliderSecond = () => {
   return (
-    <div className='w-full h-full py-10 bg-gray-100 relative overflow-hidden bg-double-image'>
+    <div className='w-full h-full text-white bg-gray-100 relative overflow-hidden bg-double-image'>
         <div style={{ width: '80%', margin: '0 auto' }}>
         <Slider   Slider {...settings}>
         {testimonialData.map(item => (

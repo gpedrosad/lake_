@@ -82,9 +82,9 @@ function Contact() {
                         {/* Social Links and other contact info */}
                         <div className="grid grid-cols-8 grid-rows-5 items-center">
                             <img src={Phone} alt="Phone icon" className="w-7 h-7 cursor-pointer col-start-1" />
-                            <p className="col-start-2 col-span-7">(07) 4095 3847</p>
+                            <p className="whitespace-nowrap col-start-2 col-span-7">(07) 4095 3847</p>
                             <img src={Email} alt="Email icon" className="w-6 h-6 cursor-pointer col-start-1 row-start-2" />
-                            <p className="col-start-2 col-span-7 row-start-2">info@lakebarrine.com.au</p>
+                            <p className="whitespace-nowrap col-start-2 col-span-7 row-start-2">info@lakebarrine.com.au</p>
                             <a href="https://www.instagram.com/lakebarrine" target="_blank" rel="noopener noreferrer" className="col-start-1 row-start-3">
                                 <InstagramIcon className="text-custom-green text-[40px] md:text-[30px]" />
                             </a>

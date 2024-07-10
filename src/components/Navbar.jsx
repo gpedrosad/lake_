@@ -21,14 +21,14 @@ const Navbar = () => {
                         </Link>
                     </div>
                     {/* Links de escritorio */}
-                    <div className="hidden md:flex items-center space-x-3 xl:space-x-4 2xl:space-x-9">
-                        <Link to="/" className="text-sm lg:text-lg 2xl:text-2xl text-white hover:text-new-green transition duration-300">Home</Link>
-                        <Link to="/about" className="text-sm lg:text-lg 2xl:text-2xl text-white hover:text-new-green transition duration-300">About us</Link>
-                        <Link to="/restaurant" className="text-sm lg:text-lg 2xl:text-2xl text-white hover:text-new-green transition duration-300">Restaurant</Link>
-                        <Link to="/boat" className="text-sm lg:text-lg 2xl:text-2xl text-white hover:text-new-green transition duration-300">Boat Cruise</Link>
-                        <Link to="/functions" className="text-sm lg:text-lg 2xl:text-2xl text-white hover:text-new-green transition duration-300">Functions</Link>
-                        <Link to="/accomodation" className="text-sm lg:text-lg 2xl:text-2xl text-white hover:text-new-green transition duration-300">Accommodation</Link>
-                        <Link to="/contact" className="text-sm lg:text-lg 2xl:text-2xl text-white hover:text-new-green transition duration-300">Contact us</Link>
+                    <div className="hidden md:flex items-center space-x-3 xl:space-x-4 2xl:space-x-7">
+                        <Link to="/" className="whitespace-nowrap text-sm lg:text-lg 2xl:text-2xl text-white hover:text-new-green transition duration-300">Home</Link>
+                        <Link to="/about" className="whitespace-nowrap text-sm lg:text-lg 2xl:text-2xl text-white hover:text-new-green transition duration-300">About us</Link>
+                        <Link to="/restaurant" className="whitespace-nowrap text-sm lg:text-lg 2xl:text-2xl text-white hover:text-new-green transition duration-300">Restaurant</Link>
+                        <Link to="/boat" className="whitespace-nowrap text-sm lg:text-lg 2xl:text-2xl text-white hover:text-new-green transition duration-300">Boat Cruise</Link>
+                        <Link to="/functions" className="whitespace-nowrap text-sm lg:text-lg 2xl:text-2xl text-white hover:text-new-green transition duration-300">Functions</Link>
+                        <Link to="/accomodation" className="whitespace-nowrap text-sm lg:text-lg 2xl:text-2xl text-white hover:text-new-green transition duration-300">Accommodation</Link>
+                        <Link to="/contact" className="whitespace-nowrap text-sm lg:text-lg 2xl:text-2xl text-white hover:text-new-green transition duration-300">Contact us</Link>
 
                         <div className="pl-0 lg:mr-12">
                             <a href="https://bookings.nowbookit.com/?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&colors=hex,0d5302&font=Barlow" target="_blank">

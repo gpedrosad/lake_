@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import HeroSection from '../components/SecondHeroSection'; // Adjust this path if necessary
-import GoogleMap from '../components/GoogleMap'; // Adjust this path if necessary
-import hojaIzq from '/public/images/hojader1.svg'; // Adjust this path if necessary
-import hojaDer from '/public/images/hojaizq1.svg'; // Adjust this path if necessary
-import contact from '/public/images/contact.jpg'; // Adjust this path if necessary
+import emailjs from 'emailjs-com'; // Import EmailJS
+import HeroSection from '../components/SecondHeroSection'; // Adjust the path if necessary
+import GoogleMap from '../components/GoogleMap'; // Adjust the path if necessary
+import hojaIzq from '/public/images/hojader1.svg'; // Adjust the path if necessary
+import hojaDer from '/public/images/hojaizq1.svg'; // Adjust the path if necessary
+import contact from '/public/images/contact.jpg'; // Adjust the path if necessary
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import AirbnbIcon from '/public/images/airbnb.svg'; // Adjust this path if necessary
-import Email from '/public/images/email.svg'; // Adjust this path if necessary
-import Phone from '/public/images/phone.svg'; // Adjust this path if necessary
-import map from '/public/images/map.svg'; // Adjust this path if necessary
+import AirbnbIcon from '/public/images/airbnb.svg'; // Adjust the path if necessary
+import Email from '/public/images/email.svg'; // Adjust the path if necessary
+import Phone from '/public/images/phone.svg'; // Adjust the path if necessary
+import map from '/public/images/map.svg'; // Adjust the path if necessary
 
 function Contact() {
     useEffect(() => {
@@ -33,8 +34,19 @@ function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const mailtoLink = `mailto:info@lakebarrine.com.au?subject=Contact from ${formData.name}&body=Name: ${formData.name}%0AEmail: ${formData.email}%0APhone: ${formData.phone}%0AMessage: ${formData.message}`;
-        window.open(mailtoLink, '_blank');
+        console.log("Submitting form with data:", formData); // Log the data being submitted
+    
+        // Use EmailJS to send the form
+        emailjs.sendForm('service_55qyrmd', 'template_mj7x5v8', e.target, 'VAJlaJb5Q_FJhE9rr')
+          .then((result) => {
+              console.log('Email successfully sent!', result.text);
+              alert("Thank you for your message. We will contact you soon!");
+              setFormData({ name: '', email: '', phone: '', message: '' }); // Reset form after successful send
+          }, (error) => {
+              console.log('Failed to send email:', error.text);
+              console.error("Error details:", error); // Log the error details
+              alert("Failed to send message. Please try again later.");
+          });
     };
 
     return (
@@ -42,17 +54,16 @@ function Contact() {
             <HeroSection imageSrc={contact} title="Contact Us" />
             <img src={hojaIzq} alt="Leaf on the left" className="absolute top-30 left-0 w-16 h-16 lg:w-30 lg:h-30" />
             <img src={hojaDer} alt="Leaf on the right" className="absolute bottom-0 right-0 w-16 h-16 lg:w-30 lg:h-30" />
-            
+
             <div className="mx-auto p-6">
                 <div className="text-center font-rufina text-lg md:text-xl lg:text-2xl text-custom-green mt-20 mb-20">
                     <p>Have a question or want to plan your visit? Get in touch with Lake Barrine Teahouse today.</p>
                     <p>Our friendly team is here to assist with reservations, event inquiries, and more.</p>
                     <p>Reach out and let us help make your experience unforgettable.</p>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="bg-white shadow-md rounded-lg p-6">
-                        {/* Contact Form */}
                         <form className="space-y-4" onSubmit={handleSubmit}>
                             <div>
                                 <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>

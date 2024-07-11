@@ -36,6 +36,7 @@ function Accomodation() {
                 borderRadius='0px'
                 bgcolorbutton='#273812'
                 images={imagesFirstSlider}
+                url="/"
             />    
 
             <div className="bg-[#F7F7F7]">
@@ -49,6 +50,7 @@ function Accomodation() {
                 borderRadius='0px'
                 bgcolorbutton='#3C5220'
                 images={imagesFirstSlider}
+                url="/"
             />
 
             <div className="mx-auto bg-yellow-500 h-1 w-3/4 sm:w-1/2"></div>
@@ -60,6 +62,7 @@ function Accomodation() {
                 borderRadius='0px'
                 bgcolorbutton='#8DA260'
                 images={imagesFirstSlider}
+                url="/"
             />    
 
             <div className="bg-[#F7F7F7]">

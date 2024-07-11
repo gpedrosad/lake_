@@ -3,7 +3,7 @@ import ImageCarousel from './ImageCarrousel';
 import hojaizq from '/public/images/hojaizq.png';
 import hojader from '/public/images/hojader.png';
 
-const GreenFeatureAccom = ({ title, description, buttonText, borderRadius, bgcolorbutton, images }) => {
+const GreenFeatureAccom = ({ title, description, buttonText, borderRadius, bgcolorbutton, images,url }) => {
   return (
     <div className="relative pb-8 bg-[#B8CAA8] pt-8">
       <img src={hojaizq} alt="Hoja izquierda" className="absolute top-0 left-0 w-24 h-auto" />
@@ -21,7 +21,7 @@ const GreenFeatureAccom = ({ title, description, buttonText, borderRadius, bgcol
             </p>
           </div>
           <div className="bg-[#B8CAA8] flex justify-center pb-10 pt-8 hidden md:flex">
-            <a href="https://bookings.nowbookit.com/?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&colors=hex,0d5302&font=Barlow" target="_blank">
+            <a href={url} target="_blank">
               <ButtonComponent text={buttonText} borderRadius={borderRadius} backgroundColor={bgcolorbutton} />
             </a>
           </div>
@@ -30,7 +30,7 @@ const GreenFeatureAccom = ({ title, description, buttonText, borderRadius, bgcol
           <ImageCarousel images={images} rounded="none" />
         </div>
         <div className="w-full flex justify-center md:hidden">
-          <a href="https://bookings.nowbookit.com/?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&colors=hex,0d5302&font=Barlow" target="_blank">
+          <a href={url} target="_blank">
             <ButtonComponent text={buttonText} borderRadius={borderRadius} backgroundColor={bgcolorbutton} />
           </a>
         </div>

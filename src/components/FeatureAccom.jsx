@@ -1,7 +1,7 @@
 import ButtonComponent from './ButtonComponent';
 import ImageCarousel from './ImageCarrousel';
 
-const FeatureAccom = ({ title, description, buttonText, borderRadius, bgcolorbutton, images }) => {
+const FeatureAccom = ({ title, description, buttonText, borderRadius, bgcolorbutton, images,url }) => {
   return (
     <div  className='pb-8 bg-[#F7F7F7] pt-8'>
       <div className='justify-center flex bg-[#F7F7F7]'>
@@ -24,7 +24,7 @@ const FeatureAccom = ({ title, description, buttonText, borderRadius, bgcolorbut
             </div>
 
           <div className="bg-[#F7F7F7] flex justify-center pb-10 pt-8">
-            <a href="https://bookings.nowbookit.com/?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&colors=hex,0d5302&font=Barlow" target="_blank">
+            <a href={url} target="_blank">
             <ButtonComponent text={buttonText} borderRadius={borderRadius} backgroundColor={bgcolorbutton} />
             </a>
           </div>

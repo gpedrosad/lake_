@@ -21,7 +21,7 @@ const GreenFeatureAccom = ({ title, description, buttonText, borderRadius, bgcol
             </p>
           </div>
           <div className="bg-[#B8CAA8] flex justify-center pb-10 pt-8 hidden md:flex">
-            <a href={url} target="_blank">
+            <a href={url}>
               <ButtonComponent text={buttonText} borderRadius={borderRadius} backgroundColor={bgcolorbutton} />
             </a>
           </div>
@@ -30,7 +30,7 @@ const GreenFeatureAccom = ({ title, description, buttonText, borderRadius, bgcol
           <ImageCarousel images={images} rounded="none" />
         </div>
         <div className="w-full flex justify-center md:hidden">
-          <a href={url} target="_blank">
+          <a href={url}>
             <ButtonComponent text={buttonText} borderRadius={borderRadius} backgroundColor={bgcolorbutton} />
           </a>
         </div>

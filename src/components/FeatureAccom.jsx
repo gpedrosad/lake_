@@ -24,7 +24,7 @@ const FeatureAccom = ({ title, description, buttonText, borderRadius, bgcolorbut
             </div>
 
           <div className="bg-[#F7F7F7] flex justify-center pb-10 pt-8">
-            <a href={url} target="_blank">
+            <a href={url}>
             <ButtonComponent text={buttonText} borderRadius={borderRadius} backgroundColor={bgcolorbutton} />
             </a>
           </div>

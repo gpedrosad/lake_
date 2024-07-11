@@ -3,7 +3,7 @@ import ImageCarousel from './ImageCarrousel';
 import hojaizq from '/public/images/hojaizq.png';
 import hojader from '/public/images/hojader.png';
 
-const GreenFeatureSection = ({ title, description, buttonText, borderRadius, bgcolor, images }) => {
+const GreenFeatureSection = ({ title, description, buttonText, borderRadius, bgcolor, images,href }) => {
     return (
         <div className="relative bg-[#B8CAA8] ">
             <img src={hojaizq} alt="Hoja izquierda" className="absolute top-0 left-0 w-16 h-auto" />
@@ -24,7 +24,7 @@ const GreenFeatureSection = ({ title, description, buttonText, borderRadius, bgc
                 </div>
             </div>
             <div className="bg-[#B8CAA8] flex justify-center pb-10">
-                <a href="https://bookings.nowbookit.com/?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&colors=hex,0d5302&font=Barlow" target="_blank">
+                <a href={href} target="_blank">
                     <ButtonComponent text={buttonText} borderRadius={borderRadius} backgroundColor={bgcolor}/>
                 </a>
             </div>

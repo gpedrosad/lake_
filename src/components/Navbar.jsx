@@ -63,7 +63,7 @@ const Navbar = () => {
                         <div className="w-full flex justify-center mb-5 flex-col">
                             <img src={logo} alt="Logo" className="mx-auto w-36 h-auto mb-10" />
                             <button
-    className="bg-button-green text-white rounded-lg cursor-pointer hover:bg-green-700 px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 text-base md:text-lg lg:text-xl ml-44 mr-44 "
+    className="bg-button-green text-white rounded-lg cursor-pointer hover:bg-green-700 px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 text-base md:text-lg lg:text-xl ml-20 mr-20 "
     onClick={handleReservationClick}
 >
     Reservation

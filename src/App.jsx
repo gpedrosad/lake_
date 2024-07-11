@@ -4,6 +4,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../src/global.css"
 import Footer from './components/Footer';
+import Pixel from './pixel'; // Asegúrate de importar el archivo Pixel
+import React, { useEffect } from 'react';
+
 
 // import reactLogo from './assets/react.svg';
 // import viteLogo from '/vite.svg';
@@ -31,6 +34,9 @@ import { Routes, Route } from 'react-router-dom';
 
 function App() {
   // const [buttonClicked, setButtonClicked] = useState(false); // Define el estado para manejar el clic
+  useEffect(() => {
+    Pixel.init();
+  }, []);
 
   return (
     <>

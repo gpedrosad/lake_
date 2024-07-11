@@ -13,7 +13,7 @@ const ImageText = () => {
 
     <Link to='/functions'>
     <button className="mb-10 md:mb-0 w-48 h-16 bg-[#3C5220] text-white rounded-lg text-lg cursor-pointer" onclick="window.location.href='URL_AQUI'">
-      Explore</button>
+      Discover Functions</button>
       </Link>
     </div>
     </div>

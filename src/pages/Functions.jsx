@@ -58,6 +58,8 @@ function Functions() {
                 borderRadius='0px'
                 bgcolorbutton='#3C5220'
                 images={imagesFirstSlider}
+                href="https://bookings.nowbookit.com/?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&colors=hex,0d5302&font=Barlow"
+
             />    
             <GreenFeatureSection
                 title="The Teahouse at Lake Barrine"
@@ -65,10 +67,12 @@ function Functions() {
                 Teahouse. Nestled on the edge of our tranquil lake, and surrounded by beautiful gardens,
                 our historic venue offers a unique setting for celebrations of all kinds. Its warm atmosphere
                 mixed with the heart of its staff promote a feeling of joy and togetherness."
-                buttonText='Book Now'
+                buttonText='Contact us'
                 borderRadius='0px'
                 bgcolor='#F0B92B'
                 images={imagesSecondSlider}
+                href="/contact"
+
             />
 
             
@@ -79,10 +83,11 @@ function Functions() {
                 drawn to the natural serenity of the Lake, the beauty of our gardens, or the historical allure
                 of the Teahouse, we are here to create an event that seamlessly blends your personal style
                 with the captivating essence of this extraordinary venue."
-                buttonText='Book Now'
+                buttonText='Contact us'
                 borderRadius='0px'
                 bgcolorbutton='#3C5220'
                 images={imagesThirdSlider}
+                href="/contact"
             />
         
             <RatingSliderSecond />

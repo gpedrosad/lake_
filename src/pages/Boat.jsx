@@ -53,6 +53,7 @@ function Boat() {
                 borderRadius='0px'
                 bgcolorbutton='#3C5220'
                 images={imagesFirstSlider}
+                href="https://bookings.nowbookit.com/?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&colors=hex,0d5302&font=Barlow"
             />
             <div className="mx-auto bg-yellow-500 h-1 w-3/4 sm:w-1/2"></div>
 

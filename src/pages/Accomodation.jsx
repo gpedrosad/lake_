@@ -5,7 +5,7 @@ import FeatureAccom from "../components/FeatureAccom";
 import GreenFeatureAccom from "../components/GreenFeatAccom";
 import { useEffect } from "react";
 //img
-import imgHeroSection from '/public/images/30ef8a84f0f4e51616f759e50c285eff.png';
+import imgHeroSection from '/public/images/30ef8a84f0f4e51616f759e50c285eff.jpg';
 import sliderCopas from '/public/images/slider-copas.png';
 import sliderGreen from '/public/images/slider-green.png';
 import cardImage1 from '/public/images/card-image-1.png';

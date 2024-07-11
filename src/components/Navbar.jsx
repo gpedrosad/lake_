@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 
 // img
 import logo from '/public/images/logo-lake.png';
+const handleReservationClick = () => {
+    window.location.href = 'https://bookings.nowbookit.com/?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&colors=hex,0d5302&font=Barlow';
+};
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -31,12 +34,12 @@ const Navbar = () => {
                         <Link to="/contact" className="whitespace-nowrap text-sm lg:text-lg 2xl:text-2xl text-white hover:text-new-green transition duration-300">Contact us</Link>
 
                         <div className="pl-0 lg:mr-12">
-                            <a href="https://bookings.nowbookit.com/?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&colors=hex,0d5302&font=Barlow" target="_blank">
-                            <button
-                                className="bg-button-green text-white rounded-lg cursor-pointer hover:bg-green-700 px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 text-base md:text-lg lg:text-xl"
-                                onClick="window.location.href='<https://example.com>';">Reservation
-                            </button>
-                            </a>
+                        <button
+    className="bg-button-green text-white rounded-lg cursor-pointer hover:bg-green-700 px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 text-base md:text-lg lg:text-xl"
+    onClick={handleReservationClick}
+>
+    Reservation
+</button>
                         </div>
                     </div>
                     {/* Botón de menú móvil */}
@@ -57,15 +60,15 @@ const Navbar = () => {
                     </svg>
                 </div>
                 <div className="flex flex-col items-center justify-center w-full h-full py-12 px-4 mt-4">
-                    <Link to="/" className="block mb-6" onClick={handleLinkClick}>
                         <div className="w-full flex justify-center mb-5 flex-col">
                             <img src={logo} alt="Logo" className="mx-auto w-36 h-auto mb-10" />
                             <button
-                            className="bg-button-green text-white rounded-lg cursor-pointer hover:bg-green-700 px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 text-base md:text-lg lg:text-xl"
-                            onClick="window.location.href='<https://google.com>';">Reservation
-                            </button>
+    className="bg-button-green text-white rounded-lg cursor-pointer hover:bg-green-700 px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 text-base md:text-lg lg:text-xl ml-44 mr-44 "
+    onClick={handleReservationClick}
+>
+    Reservation
+</button>
                         </div>
-                    </Link>
                     {/* Enlaces actualizados para el menú móvil */}
                     <Link to="/" className="mt-4 font-inika font-normal block py-2 px-4 text-3xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Home</Link>
                     <Link to="/about" className="mt-4 font-inika font-normal block py-2 px-4 text-3xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>About</Link>

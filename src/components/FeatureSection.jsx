@@ -2,6 +2,8 @@ import ButtonComponent from './ButtonComponent';
 import ImageCarousel from './ImageCarrousel';
 import hojaizq from '/public/images/hojaizq.png';
 import hojader from '/public/images/hojader.png';
+import { Link } from 'react-router-dom';
+
 
 const FeatureSection = ({ title, description, buttonText, borderRadius, bgcolorbutton, images, href }) => {
   return (
@@ -25,9 +27,9 @@ const FeatureSection = ({ title, description, buttonText, borderRadius, bgcolorb
       </div>
 
       <div className="flex justify-center pb-10">
-        <a href={href}>
+      <Link to={href} style={{ textDecoration: 'none' }}>
           <ButtonComponent text={buttonText} borderRadius={borderRadius} backgroundColor={bgcolorbutton} />
-        </a>
+        </Link>
       </div>
     </div>
   );

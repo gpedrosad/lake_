@@ -21,7 +21,7 @@ function Home() {
                 <meta property="og:description" content="Explore the natural beauty of Lake Barrine with our boat cruises, teahouse delights, and forest accommodations. Perfect for any occasion from a peaceful breakfast to special functions." />
                 <meta property="og:type" content="website" />
                 <meta property="og:image" content="URL_TO_AN_IMAGE_OF_LAKE_BARRINE" />
-                <meta property="og:url" content="CURRENT_PAGE_URL" />
+                <meta property="og:url" content="lakebarrine.com.au" />
             </Helmet>
             <HeroBanner/>
             <CardSlider/>

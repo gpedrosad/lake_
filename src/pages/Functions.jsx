@@ -35,7 +35,7 @@ function Functions() {
                 <meta property="og:description" content="Discover the perfect venue for weddings, corporate events, and private functions at Lake Barrine, featuring unique boat cruises and charming teahouse gatherings." />
                 <meta property="og:type" content="website" />
                 <meta property="og:image" content="URL_TO_AN_IMAGE_OF_LAKE_BARRINE_EVENT" />
-                <meta property="og:url" content="CURRENT_PAGE_URL" />
+                <meta property="og:url" content="lakebarrine.com.au/functions" />
             </Helmet>
             <HeroSection
                 imageSrc={imgHeroSection}

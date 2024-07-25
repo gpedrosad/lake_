@@ -4,6 +4,7 @@ import HeroSection from "../components/SecondHeroSection";
 import FeatureSection from "../components/FeatureSection";
 import GreenFeatureSection from "../components/GreenFeatureSection";
 import RatingSliderSecond from "../components/RatSliderSecond";
+import BookingForm from '../components/BookingForm';
 
 // Importar imágenes
 import imgHeroSection from '/public/images/boat.jpg';
@@ -72,13 +73,18 @@ function Functions() {
                 drawn to the natural serenity of the Lake, the beauty of our gardens, or the historical allure
                 of the Teahouse, we are here to create an event that seamlessly blends your personal style
                 with the captivating essence of this extraordinary venue."
-                buttonText='Contact us'
+                buttonText='Get Quote'
                 borderRadius='0px'
                 bgcolorbutton='#3C5220'
                 images={imagesThirdSlider}
                 href="/contact"
             />
             <RatingSliderSecond />
+            {/*<BookingForm/>*/}
+
+
+            
+            
         </div>
     );
 }

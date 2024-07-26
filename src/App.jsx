@@ -28,6 +28,7 @@ import Accomodation from './pages/Accomodation.jsx';
 import Restaurant from './pages/Restaurant.jsx';
 import Functions from './pages/Functions.jsx'
 import Contact from './pages/Contact.jsx'
+import GetQuote from './pages/GetQuote';
 
 //React router
 import { Routes, Route } from 'react-router-dom';
@@ -50,6 +51,8 @@ function App() {
         <Route path="/restaurant" element={<Restaurant/>} />
         <Route path="/functions" element={<Functions/>} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/getquote" element={<GetQuote/>} />
+
 
 
     </Routes>

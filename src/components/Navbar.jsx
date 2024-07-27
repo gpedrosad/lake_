@@ -77,8 +77,8 @@ const Navbar = () => {
                     <Link to="/functions" className="mt-4 font-inika font-normal block py-2 px-4 text-3xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Functions</Link>
                     <Link to="/accomodation" className="mt-4 font-inika font-normal block py-2 px-4 text-3xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Accommodation</Link>
                     <Link to="/contact" className="mt-4 font-inika font-normal block py-2 px-4 text-3xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Contact us</Link>
-                    <Link to="/getquote" className="mt-4 font-inika font-normal block py-2 px-4 text-3xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Get Quote</Link>
-                    <Link to="https://giftcards.nowbookit.com/cards/card-selection?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&accent=0,149,135" className="mt-4 font-inika font-normal block py-2 px-4 text-3xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Gift Cards</Link>
+                    {/*<Link to="/getquote" className="mt-4 font-inika font-normal block py-2 px-4 text-3xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Get Quote</Link>*/}
+                    {/*<Link to="https://giftcards.nowbookit.com/cards/card-selection?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&accent=0,149,135" className="mt-4 font-inika font-normal block py-2 px-4 text-3xl text-third-green hover:bg-green-800 hover:text-white rounded-md transition duration-300 m-2" onClick={handleLinkClick}>Gift Cards</Link>*/}
 
 
 

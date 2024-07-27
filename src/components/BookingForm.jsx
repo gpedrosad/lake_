@@ -71,6 +71,8 @@ function BookingForm() {
             </Helmet>
             <div className="mx-auto p-6">
                 <div className="text-center font-rufina text-lg md:text-xl lg:text-2xl text-custom-green mt-20 mb-20">
+                    <h1 class="text-2xl">Ready to hire our venue or private boat for a function?</h1>
+                    <br></br>
                     <p>Complete the form to let us know about your function or event. We'll get back to you within the day.</p>
                 </div>
                 <div className="bg-white shadow-md rounded-lg p-6">
@@ -107,7 +109,7 @@ function BookingForm() {
                         </div>
                         <div>
                             <label htmlFor="details" className="block text-sm font-medium text-gray-700">Details about your event</label>
-                            <textarea id="details" name="details" value={bookingData.details} onChange={handleInputChange} rows="4" className="mt-1 block w-full rounded-md border border-custom-green px-4 focus:border-custom-green focus:ring focus:ring-custom-green focus:ring-opacity-50" placeholder="Provide any additional details here"></textarea>
+                            <textarea id="details" name="details" value={bookingData.details} onChange={handleInputChange} rows="4" className="mt-1 block w-full rounded-md border border-gray-700 px-4 focus:border-gray-700 focus:ring focus:ring-border-gray-700 focus:ring-opacity-50" placeholder="Provide any additional details here"></textarea>
                         </div>
                         <div className="text-center">
                             <button type="submit" className="mt-2 px-4 py-2 bg-custom-green text-white rounded-md hover:bg-green-700 focus:outline-none focus:border-green-700 focus:ring focus:ring-green-500 focus:ring-opacity-50">

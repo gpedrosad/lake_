@@ -11,7 +11,7 @@ const HoursAndBookingInfo = () => {
         <br></br>
         <p className="text-center text-custom-green px-2 ml-2 mr-4">Bookings are highly recommended.<br></br> For groups of 20 people or under, bookings can be made online</p>
         <br></br>
-        <p className="text-center text-custom-green px-2 mr-2 ml-4">For groups of over 20 people, <br></br>please call to book (07) 4095 3847</p>
+        <p className="text-center text-custom-green px-2 mr-2 ml-4">For groups of over 20 people, <br></br>please call to book (61) 4559 6688</p>
 
         <p className="mb-2 text-custom-green">
         </p>

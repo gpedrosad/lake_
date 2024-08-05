@@ -51,7 +51,7 @@ function Contact() {
                 <HoursAndBookingInfo/>
                 <div className="mx-auto bg-yellow-500 h-1 w-3/4 sm:w-1/2"></div>
                 <DropdownButton/>
-                {/*<ImageGallery images={images}/>*/}
+                <ImageGallery images={images}/>
             </div>
         </>
     );

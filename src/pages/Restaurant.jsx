@@ -19,12 +19,12 @@ import celeb from '/public/images/celeb.jpg'
 
 function Contact() {
     const images = [
-        { src: drinks1, alt: 'Descripción de la imagen 1' },
-        { src: drinks2, alt: 'Descripción de la imagen 2' },
         { src: brk1, alt: 'Descripción de la imagen 2' },
         { src: brk2, alt: 'Descripción de la imagen 2' },
         { src: ln1, alt: 'Descripción de la imagen 2' },
         { src: ln2, alt: 'Descripción de la imagen 2' },
+        { src: drinks1, alt: 'Descripción de la imagen 1' },
+        { src: drinks2, alt: 'Descripción de la imagen 2' },
         { src: celeb, alt: 'Descripción de la imagen 2' },
 
         // Agrega más imágenes según sea necesario
@@ -50,7 +50,8 @@ function Contact() {
                 <div className="mx-auto bg-yellow-500 h-1 w-3/4 sm:w-1/2"></div>
                 <HoursAndBookingInfo/>
                 <div className="mx-auto bg-yellow-500 h-1 w-3/4 sm:w-1/2"></div>
-                <DropdownButton/>
+                {/*<DropdownButton/>*/}
+                <br />
                 <ImageGallery images={images}/>
             </div>
         </>

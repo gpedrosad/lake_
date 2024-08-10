@@ -53,11 +53,11 @@ function Boat() {
             <GreenFeatureSection
                 title="Sail into Celebration"
                 description="Set against the backdrop of a hundred-year-old rainforest, with the tranquil waters reflecting the hues of the sky, each moment on our boat is crafted to be memorable. Let us turn your event into an occasion that not only stands out but remains etched in the hearts of all who attend."
-                buttonText='Book Now'
+                buttonText='Get Quote'
                 borderRadius='0px'
                 bgcolor='#F0B92B'
                 images={imagesSecondSlider}
-                href="https://bookings.nowbookit.com/?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&colors=hex,0d5302&font=Barlow"
+                href="/getquote"
             />
             <div className="mx-auto bg-yellow-500 h-1 w-3/4 sm:w-1/2"></div>
 

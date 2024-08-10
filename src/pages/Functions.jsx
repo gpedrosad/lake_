@@ -48,11 +48,11 @@ function Functions() {
                 hues of the sky, each moment on our boat is crafted to be memorable. Let us turn your
                 event into an occasion that not only stands out but remains etched in the hearts of all who
                 attend."
-                buttonText='Book Now'
+                buttonText='Get Quote'
                 borderRadius='0px'
                 bgcolorbutton='#3C5220'
                 images={imagesFirstSlider}
-                href="https://bookings.nowbookit.com/?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&colors=hex,0d5302&font=Barlow"
+                href="/getquote"
             />
             <GreenFeatureSection
                 title="The Teahouse at Lake Barrine"
@@ -60,11 +60,11 @@ function Functions() {
                 Teahouse. Nestled on the edge of our tranquil lake, and surrounded by beautiful gardens,
                 our historic venue offers a unique setting for celebrations of all kinds. Its warm atmosphere
                 mixed with the heart of its staff promote a feeling of joy and togetherness."
-                buttonText='Contact us'
+                buttonText='Get Quote'
                 borderRadius='0px'
                 bgcolor='#F0B92B'
                 images={imagesSecondSlider}
-                href="/contact"
+                href="/getquote"
             />
             <FeatureSection
                 title="Create your own Event"
@@ -77,7 +77,7 @@ function Functions() {
                 borderRadius='0px'
                 bgcolorbutton='#3C5220'
                 images={imagesThirdSlider}
-                href="/contact"
+                href="/getquote"
             />
             <RatingSliderSecond />
             {/*<BookingForm/>*/}

@@ -25,11 +25,9 @@ function BookingForm() {
     const [formValid, setFormValid] = useState(false);
 
     useEffect(() => {
-        const isValid = bookingData.firstName && bookingData.lastName && bookingData.email && bookingData.phone &&
-                        bookingData.eventType && bookingData.date && bookingData.time && bookingData.guest &&
-                        bookingData.budget && bookingData.details && bookingData.venue.length > 0;
+        const isValid = bookingData.details.trim() !== '';
         setFormValid(isValid);
-    }, [bookingData]);
+    }, [bookingData.details]);
 
     const eventTypeOptions = [
         { value: 'Birthday', label: 'Birthday' },
@@ -84,7 +82,7 @@ function BookingForm() {
         e.preventDefault();
 
         if (!formValid) {
-            alert("Please fill out all fields before submitting.");
+            alert("Please provide details about your event.");
             return;
         }
 
@@ -210,7 +208,7 @@ function BookingForm() {
                             </div>
                             <div>
                                 <label htmlFor="details" className="block text-sm font-medium text-gray-700">Details about your event</label>
-                                <textarea id="details" name="details" value={bookingData.details} onChange={handleInputChange} rows="4" className="mt-1 block w-full rounded-md border border-gray-700 px-4 focus:border-gray-700 focus:ring focus:ring-border-gray-700 focus:ring-opacity-50" placeholder="Provide any additional details here"></textarea>
+                                <textarea id="details" name="details" value={bookingData.details} onChange={handleInputChange} rows="4" className="mt-1 block w-full rounded-md border border-gray-700 px-4 focus:border-gray-700 focus:ring focus:ring-border-gray-700 focus:ring-opacity-50" placeholder="Provide any additional details here" required></textarea>
                             </div>
                             <div className="text-center">
                                 <button type="submit" className={`mt-2 px-4 py-2 bg-custom-green text-white rounded-md hover:bg-green-700 focus:outline-none focus:border-green-700 focus:ring focus:ring-green-500 focus:ring-opacity-50 ${!formValid ? 'opacity-50 cursor-not-allowed' : ''}`} disabled={!formValid}>

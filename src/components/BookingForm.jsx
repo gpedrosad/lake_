@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import emailjs from 'emailjs-com';
-import HeroSection from '../components/SecondHeroSection';
 import Select from 'react-select';
-import contactImage from '/public/images/contact.jpg';
 
 function BookingForm() {
     useEffect(() => {
@@ -11,11 +9,17 @@ function BookingForm() {
     }, []);
 
     const [bookingData, setBookingData] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
         eventType: '',
         date: '',
         time: '',
-        email: '',  // Campo de correo electrónico
-        details: ''
+        guest: '',
+        budget: '',
+        details: '',
+        venue: []  // Para almacenar los valores seleccionados en los checkboxes
     });
 
     const eventTypeOptions = [
@@ -43,42 +47,71 @@ function BookingForm() {
             ...prev,
             [name]: value
         }));
-    };
-
-    const handleSelectChange = (selectedOption, action) => {
+    };    const handleSelectChange = (selectedOption, action) => {
         setBookingData(prev => ({
             ...prev,
             [action.name]: selectedOption.value
         }));
     };
 
+    const handleCheckboxChange = (e) => {
+        const { value, checked } = e.target;
+        setBookingData(prev => {
+            if (checked) {
+                return {
+                    ...prev,
+                    venue: [...prev.venue, value]
+                };
+            } else {
+                return {
+                    ...prev,
+                    venue: prev.venue.filter(item => item !== value)
+                };
+            }
+        });
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
         emailjs.send('service_55qyrmd', 'template_unf6ojj', {
+            first_name: bookingData.firstName,
+            last_name: bookingData.lastName,
+            email: bookingData.email,
+            phone: bookingData.phone,
             event_type: bookingData.eventType,
             event_date: bookingData.date,
             event_time: bookingData.time,
-            email: bookingData.email,  // Enviar el correo electrónico
-            event_details: bookingData.details
+            guest: bookingData.guest,
+            budget: bookingData.budget,
+            event_details: bookingData.details,
+            venue: bookingData.venue.join(', ')
         }, 'VAJlaJb5Q_FJhE9rr')
             .then((result) => {
                 alert("Thank you for your booking inquiry. We will contact you soon!");
-                setBookingData({ eventType: '', date: '', time: '', email: '', details: '' });
+                setBookingData({
+                    firstName: '',
+                    lastName: '',
+                    email: '',
+                    phone: '',
+                    eventType: '',
+                    date: '',
+                    time: '',
+                    guest: '',
+                    budget: '',
+                    details: '',
+                    venue: []
+                });
             }, (error) => {
                 alert("Failed to send booking. Please try again later.");
             });
-    };
-
-    return (
+    };    return (
         <div className="bg-[#F7F7F7] relative">
             <Helmet>
                 <title>Book Venue or Private Boat | Lake Barrine Teahouse</title>
             </Helmet>
             <div className="mx-auto p-6">
-                {/* Contenedor con Grid para gestionar la disposición en móvil y escritorio */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {/* Sección del título y la información adicional */}
                     <div className="text-center md:text-left font-rufina text-sm md:text-sm lg:text-sm text-custom-green mt-20 mb-20">
                         <h1 className="text-2xl font-bold">Ready to hire our venue or private boat for a function?</h1>
                         <p className="mt-4">Complete the form and let us know a bit more about your function or event. We’ll get back to you within the day and get to work on finding that right package for your experience.</p>
@@ -96,9 +129,28 @@ function BookingForm() {
                         <h2 className="text-xl font-semibold mt-6">Sounds good, right? Let's get started!</h2>
                     </div>
                     
-                    {/* Sección del formulario */}
                     <div className="bg-white shadow-md rounded-lg p-6 md:mt-20">
                         <form className="space-y-4" onSubmit={handleSubmit}>
+                            <div className="flex flex-col md:flex-row gap-4">
+                                <div className="md:w-1/2 mt-1">
+                                    <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">First Name</label>
+                                    <input type="text" id="firstName" name="firstName" value={bookingData.firstName} onChange={handleInputChange} className="mt-1 block w-full rounded-md border border-gray-300 px-4 py-1.5 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50" placeholder="First Name" />
+                                </div>
+                                <div className="md:w-1/2 mt-1">
+                                    <label htmlFor="lastName" className="block text-sm font-medium text-gray-700">Last Name</label>
+                                    <input type="text" id="lastName" name="lastName" value={bookingData.lastName} onChange={handleInputChange} className="mt-1 block w-full rounded-md border border-gray-300 px-4 py-1.5 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50" placeholder="Last Name" />
+                                </div>
+                            </div>
+                            <div className="flex flex-col md:flex-row gap-4">
+                                <div className="md:w-1/2 mt-1">
+                                    <label htmlFor="email" className="block text-sm font-medium text-gray-700">Your Email</label>
+                                    <input type="email" id="email" name="email" value={bookingData.email} onChange={handleInputChange} className="mt-1 block w-full rounded-md border border-gray-300 px-4 py-1.5 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50" placeholder="your-email@example.com" />
+                                </div>
+                                <div className="md:w-1/2 mt-1">
+                                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" value={bookingData.phone} onChange={handleInputChange} className="mt-1 block w-full rounded-md border border-gray-300 px-4 py-1.5 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50" placeholder="Phone Number" />
+                                </div>
+                            </div>
                             <div>
                                 <label htmlFor="eventType" className="block text-sm font-medium text-gray-700">Event type</label>
                                 <Select
@@ -111,27 +163,36 @@ function BookingForm() {
                                     classNamePrefix="select"
                                 />
                             </div>
-                            <div className="flex flex-col md:flex-row gap-4">
-                                <div className="md:w-1/2">
-                                    <label htmlFor="date" className="block text-sm font-medium text-gray-700">Date for the event or function</label>
-                                    <input type="date" id="date" name="date" value={bookingData.date} onChange={handleInputChange} className="mt-1 block w-full rounded-md border border-gray-300 px-4 py-1.5 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50" />
-                                </div>
-                                <div className="md:w-1/2">
-                                    <label htmlFor="time" className="block text-sm font-medium text-gray-700">Function or event time</label>
-                                    <Select
-                                        id="time"
-                                        name="time"
-                                        options={timeOptions}
-                                        value={timeOptions.find(option => option.value === bookingData.time)}
-                                        onChange={(option) => handleSelectChange(option, { name: 'time' })}
-                                        className="basic-single"
-                                        classNamePrefix="select"
-                                    />
+                            <div className="mt-4">
+                                <label className="block text-sm font-medium text-gray-700">What venue are you interested in?</label>
+                                <div className="flex space-x-4 mt-2">
+                                    <label className="inline-flex items-center">
+                                        <input type="checkbox" value="Boat Cruise" onChange={handleCheckboxChange} className="form-checkbox" />
+                                        <span className="ml-2">Boat Cruise</span>
+                                    </label>
+                                    <label className="inline-flex items-center">
+                                        <input type="checkbox" value="Outdoor area" onChange={handleCheckboxChange} className="form-checkbox" />
+                                        <span className="ml-2">Outdoor area</span>
+                                    </label>
+                                    <label className="inline-flex items-center">
+                                        <input type="checkbox" value="Function area" onChange={handleCheckboxChange} className="form-checkbox" />
+                                        <span className="ml-2">Function area</span>
+                                    </label>
+                                    <label className="inline-flex items-center">
+                                        <input type="checkbox" value="Teahouse building" onChange={handleCheckboxChange} className="form-checkbox" />
+                                        <span className="ml-2">Teahouse building</span>
+                                    </label>
                                 </div>
                             </div>
-                            <div>
-                                <label htmlFor="email" className="block text-sm font-medium text-gray-700">Your Email</label>
-                                <input type="email" id="email" name="email" value={bookingData.email} onChange={handleInputChange} className="mt-1 block w-full rounded-md border border-gray-300 px-4 py-1.5 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50" placeholder="your-email@example.com" />
+                            <div className="flex flex-col md:flex-row gap-4">
+                                <div className="md:w-1/2 mt-1">
+                                    <label htmlFor="guest" className="block text-sm font-medium text-gray-700">Approximate Number of Guests</label>
+                                    <input type="number" id="guest" name="guest" value={bookingData.guest} onChange={handleInputChange} className="mt-1 block w-full rounded-md border border-gray-300 px-4 py-1.5 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50" placeholder="Number of Guests" />
+                                </div>
+                                <div className="md:w-1/2 mt-1">
+                                    <label htmlFor="budget" className="block text-sm font-medium text-gray-700">Estimated Budget</label>
+                                    <input type="text" id="budget" name="budget" value={bookingData.budget} onChange={handleInputChange} className="mt-1 block w-full rounded-md border border-gray-300 px-4 py-1.5 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50" placeholder="Budget" />
+                                </div>
                             </div>
                             <div>
                                 <label htmlFor="details" className="block text-sm font-medium text-gray-700">Details about your event</label>

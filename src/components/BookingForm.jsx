@@ -22,6 +22,15 @@ function BookingForm() {
         venue: []  // Para almacenar los valores seleccionados en los checkboxes
     });
 
+    const [formValid, setFormValid] = useState(false);
+
+    useEffect(() => {
+        const isValid = bookingData.firstName && bookingData.lastName && bookingData.email && bookingData.phone &&
+                        bookingData.eventType && bookingData.date && bookingData.time && bookingData.guest &&
+                        bookingData.budget && bookingData.details && bookingData.venue.length > 0;
+        setFormValid(isValid);
+    }, [bookingData]);
+
     const eventTypeOptions = [
         { value: 'Birthday', label: 'Birthday' },
         { value: 'Friends day out', label: 'Friends day out' },
@@ -39,15 +48,15 @@ function BookingForm() {
         { value: 'Morning', label: 'Morning' },
         { value: 'Afternoon', label: 'Afternoon' },
         { value: 'Evening', label: 'Evening' }
-    ];
-
-    const handleInputChange = (e) => {
+    ];    const handleInputChange = (e) => {
         const { name, value } = e.target;
         setBookingData(prev => ({
             ...prev,
             [name]: value
         }));
-    };    const handleSelectChange = (selectedOption, action) => {
+    };
+
+    const handleSelectChange = (selectedOption, action) => {
         setBookingData(prev => ({
             ...prev,
             [action.name]: selectedOption.value
@@ -73,6 +82,11 @@ function BookingForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        if (!formValid) {
+            alert("Please fill out all fields before submitting.");
+            return;
+        }
 
         emailjs.send('service_55qyrmd', 'template_unf6ojj', {
             first_name: bookingData.firstName,
@@ -199,7 +213,7 @@ function BookingForm() {
                                 <textarea id="details" name="details" value={bookingData.details} onChange={handleInputChange} rows="4" className="mt-1 block w-full rounded-md border border-gray-700 px-4 focus:border-gray-700 focus:ring focus:ring-border-gray-700 focus:ring-opacity-50" placeholder="Provide any additional details here"></textarea>
                             </div>
                             <div className="text-center">
-                                <button type="submit" className="mt-2 px-4 py-2 bg-custom-green text-white rounded-md hover:bg-green-700 focus:outline-none focus:border-green-700 focus:ring focus:ring-green-500 focus:ring-opacity-50">
+                                <button type="submit" className={`mt-2 px-4 py-2 bg-custom-green text-white rounded-md hover:bg-green-700 focus:outline-none focus:border-green-700 focus:ring focus:ring-green-500 focus:ring-opacity-50 ${!formValid ? 'opacity-50 cursor-not-allowed' : ''}`} disabled={!formValid}>
                                     Submit
                                 </button>
                             </div>

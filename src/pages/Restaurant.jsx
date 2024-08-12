@@ -25,7 +25,6 @@ function Contact() {
         { src: ln2, alt: 'Descripción de la imagen 2' },
         { src: drinks1, alt: 'Descripción de la imagen 1' },
         { src: drinks2, alt: 'Descripción de la imagen 2' },
-        { src: celeb, alt: 'Descripción de la imagen 2' },
 
         // Agrega más imágenes según sea necesario
       ];

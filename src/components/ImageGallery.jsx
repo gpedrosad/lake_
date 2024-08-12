@@ -2,12 +2,15 @@ import React, { useState } from 'react';
 
 function ImageGallery({ images }) {
   const [selectedImgIndex, setSelectedImgIndex] = useState(null);
+  const [isGalleryOpen, setIsGalleryOpen] = useState(false);
 
-  const openModal = (index) => {
-    setSelectedImgIndex(index);
+  const openModal = () => {
+    setSelectedImgIndex(0); // Mostrar la primera imagen en el carrusel
+    setIsGalleryOpen(true); // Abrir el carrusel
   };
 
   const closeModal = () => {
+    setIsGalleryOpen(false);
     setSelectedImgIndex(null);
   };
 
@@ -27,19 +30,18 @@ function ImageGallery({ images }) {
 
   return (
     <div>
-      <div className="flex flex-wrap justify-center items-center">
-        {images.map((img, index) => (
-          <img
-            key={index}
-            src={img.src}
-            alt={img.alt}
-            onClick={() => openModal(index)}
-            className="cursor-pointer max-w-[100px] m-1 hover:opacity-75"
-          />
-        ))}
+      {/* Mostrar solo la primera imagen inicialmente */}
+      <div className="flex justify-center items-center m-5">
+        <img
+          src={images[0].src}
+          alt={images[0].alt}
+          onClick={openModal}
+          className="cursor-pointer max-w-[300px] m-1 hover:opacity-75"
+        />
       </div>
 
-      {selectedImgIndex !== null && (
+      {/* Mostrar el carrusel al hacer clic en la imagen inicial */}
+      {isGalleryOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center">
           <div className="relative bg-white rounded-lg shadow-xl">
             <button onClick={closeModal} className="absolute top-3 right-3 text-gray-600 hover:text-gray-900">

@@ -186,13 +186,10 @@ function BookingForm() {
                                         <input type="checkbox" value="Outdoor area" onChange={handleCheckboxChange} className="form-checkbox" />
                                         <span className="ml-2">Outdoor area</span>
                                     </label>
-                                    <label className="inline-flex items-center">
-                                        <input type="checkbox" value="Function area" onChange={handleCheckboxChange} className="form-checkbox" />
-                                        <span className="ml-2">Function area</span>
-                                    </label>
+                                    
                                     <label className="inline-flex items-center">
                                         <input type="checkbox" value="Teahouse building" onChange={handleCheckboxChange} className="form-checkbox" />
-                                        <span className="ml-2">Teahouse building</span>
+                                        <span className="ml-2">Teahouse</span>
                                     </label>
                                 </div>
                             </div>

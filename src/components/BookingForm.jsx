@@ -128,7 +128,7 @@ function BookingForm() {
                         <h1 className="text-2xl font-bold">Ready to hire our venue or private boat for a function?</h1>
                         <p className="mt-4">Complete the form and let us know a bit more about your function or event. We’ll get back to you within the day and get to work on finding that right package for your experience.</p>
                         
-                        <h2 className="text-xl font-semibold mt-6">Why hire our venue or private boat through us?</h2>
+                        <h2 className="text-xl font-semibold mt-6">Why hire our venue or boat?</h2>
                         <ul className="list-disc list-inside mt-4 space-y-2">
                             <li><strong>Idyllic Location:</strong> Nestled in lush rainforest surroundings with picturesque lake and beautiful views.</li>
                             <li><strong>Distinctive Atmosphere:</strong> Our historic Teahouse offers unique charm for birthdays, weddings, retreats, and private events. Opt for our private boat for exclusive lake experiences.</li>

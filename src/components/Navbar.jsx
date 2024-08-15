@@ -24,7 +24,7 @@ const Navbar = () => {
                         </Link>
                     </div>
                     {/* Links de escritorio */}
-                    <div className="hidden md:flex items-center space-x-3 xl:space-x-4 2xl:space-x-7">
+                    <div className="hidden md:flex items-center space-x-3 xl:space-x-3 2xl:space-x-7">
                         <Link to="/" className="whitespace-nowrap text-sm lg:text-lg 2xl:text-2xl text-white hover:text-new-green transition duration-300">Home</Link>
                         <Link to="/about" className="whitespace-nowrap text-sm lg:text-lg 2xl:text-2xl text-white hover:text-new-green transition duration-300">About us</Link>
                         <Link to="/restaurant" className="whitespace-nowrap text-sm lg:text-lg 2xl:text-2xl text-white hover:text-new-green transition duration-300">Restaurant</Link>
@@ -32,10 +32,11 @@ const Navbar = () => {
                         <Link to="/functions" className="whitespace-nowrap text-sm lg:text-lg 2xl:text-2xl text-white hover:text-new-green transition duration-300">Functions</Link>
                         <Link to="/accomodation" className="whitespace-nowrap text-sm lg:text-lg 2xl:text-2xl text-white hover:text-new-green transition duration-300">Accommodation</Link>
                         <Link to="/contact" className="whitespace-nowrap text-sm lg:text-lg 2xl:text-2xl text-white hover:text-new-green transition duration-300">Contact us</Link>
+                        <Link to="https://giftcards.nowbookit.com/cards/card-selection?accountid=01ef376f-9a34-42b0-a930-87a37b427ef2&venueid=12083&theme=light&accent=0,149,135" className="whitespace-nowrap text-sm lg:text-lg 2xl:text-2xl text-white hover:text-new-green transition duration-300" onClick={handleLinkClick}>Gift Cards</Link>
 
                         <div className="pl-0 lg:mr-12">
                         <button
-    className="bg-button-green text-white rounded-lg cursor-pointer hover:bg-green-700 px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 text-base md:text-lg lg:text-xl"
+    className="bg-button-green text-white rounded-lg cursor-pointer hover:bg-green-700 px-4 py-2 md:px-6 md:py-3 lg:px-5 lg:py-4 text-base md:text-lg lg:text-xl"
     onClick={handleReservationClick}
 >
     Reservation

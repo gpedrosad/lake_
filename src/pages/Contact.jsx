@@ -94,7 +94,7 @@ function Contact() {
                         {/* Social Links and other contact info */}
                         <div className="grid grid-cols-8 grid-rows-5 items-center">
                             <img src={Phone} alt="Phone icon" className="w-7 h-7 cursor-pointer col-start-1" />
-                            <p className="whitespace-nowrap col-start-2 col-span-7">(61) 4559 6688</p>
+                            <p className="whitespace-nowrap col-start-2 col-span-7">(61) 455916688</p>
                             <img src={Email} alt="Email icon" className="w-6 h-6 cursor-pointer col-start-1 row-start-3" />
                             <p className="whitespace-nowrap col-start-2 col-span-7 row-start-3">info@lakebarrine.com.au</p>
                             <a href="https://www.facebook.com/LakeBarrine" target="_blank" rel="noopener noreferrer" className="col-start-1 row-start-4">

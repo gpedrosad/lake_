@@ -107,7 +107,7 @@ function Contact() {
                             <a href="https://maps.app.goo.gl/36dBFdTyxmWJEo3o7" target="_blank" rel="noopener noreferrer" className="col-start-1 row-start-2">                                
                                 <img src={map} alt="map icon" className="w-6 h-6 cursor-pointer col-start-1 row-start-5" />
                             </a>
-                            <p className="whitespace-nowrap col-start-2 col-span-7 row-start-2">27 Lake Barrine Road, Yunguburra, QLD 4884</p>
+                            <p className="whitespace-nowrap col-start-2 col-span-7 row-start-2">Lake Barrine Teahouse, Gillies Highway, Queensland</p>
 
 
                             <p className="col-start-2 col-span-7 row-start-5">instagram.com/lakebarrine</p>

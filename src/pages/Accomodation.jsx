@@ -4,7 +4,7 @@ import HeroSection from "../components/SecondHeroSection";
 import RatingSlider from "../components/rating_slider/RatingSlider";
 import FeatureAccom from "../components/FeatureAccom";
 import GreenFeatureAccom from "../components/GreenFeatAccom";
-import imgHeroSection from '/public/images/30ef8a84f0f4e51616f759e50c285eff.jpg';
+import imgHeroSection from '/public/images/banner_accom.jpg';
 import coming from '/public/images/coming.png';
 
 const imagesFirstSlider = [coming];

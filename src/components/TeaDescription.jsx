@@ -5,7 +5,7 @@ import hojader from '/public/images/hojader.svg';
 
 
 // Img
-import teaPhoto from '/public/images/TeaPhoto.png';
+import teaPhoto from '/public/images/Sandwich.png';
 
 const TeaDescription = () => {
   return (

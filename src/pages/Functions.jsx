@@ -7,7 +7,7 @@ import RatingSliderSecond from "../components/RatSliderSecond";
 import BookingForm from '../components/BookingForm';
 
 // Importar imágenes
-import imgHeroSection from '/public/images/boat.jpg';
+import imgHeroSection from '/public/images/functionsbanner.jpg';
 import tres1 from  '/public/images/tres1.jpg';
 import tres2 from  '/public/images/tres2.jpg';
 import fun1 from     '/public/images/fun1.jpg';
@@ -16,10 +16,12 @@ import sail1 from     '/public/images/sail1.jpg';
 import sail2 from     '/public/images/sail2.jpg';
 import sail3 from     '/public/images/sail3.jpg';
 import sail4 from     '/public/images/sail4.jpg';
+import tres3 from     '/public/images/tres3.jpg';
+
 
 const imagesFirstSlider = [sail1, sail2, sail3, sail4];
 const imagesSecondSlider = [fun1, fun2];
-const imagesThirdSlider = [tres1, tres2];
+const imagesThirdSlider = [tres1, tres2,tres3];
 
 function Functions() {
     useEffect(() => {

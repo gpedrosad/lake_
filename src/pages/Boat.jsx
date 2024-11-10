@@ -7,16 +7,16 @@ import RatingSliderSecond from "../components/RatSliderSecond";
 import QuoteSection from "../components/QuoteSection";
 
 // Importar imágenes
-import imgHeroSection from '/public/images/boat.jpg';
+import imgHeroSection from '/public/images/boat_banner.jpg';
 import sliderCopas from '/public/images/family-cruise.jpg';
 import cardImage1 from '/public/images/boat1.jpg';
 import cardImage3 from '/public/images/boat2.jpg';
 import sliderGreen from '/public/images/boat3.jpg';
 import sliderWedding from '/public/images/boat4.jpg';
 
-import bote1 from '/public/images/bote1.jpg';
-import bote2 from '/public/images/bote2.jpg';
-import bote3 from '/public/images/bote3.jpg';
+import bote1 from '/public/images/barco1.jpg';
+import bote2 from '/public/images/barco2.jpg';
+import bote3 from '/public/images/barco3.jpg';
 
 const imagesFirstSlider = [bote1, bote2, bote3];
 const imagesSecondSlider = [sliderGreen, cardImage1, cardImage3];

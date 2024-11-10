@@ -1,5 +1,5 @@
 import Navbar from './Navbar';
-import heroimg from '/public/images/banner_home.jpg';
+import heroimg from '/public/images/banner_home2.jpg';
 import line from '/public/images/Line1.png'
 
 const HeroBanner = () => {

@@ -1,0 +1,8 @@
+# Redirigir de www a no-www
+https://www.lakebarrine.com.au/* https://lakebarrine.com.au/:splat 301! Permanent
+
+# O de no-www a www
+https://lakebarrine.com.au/* https://www.lakebarrine.com.au/:splat 301! Permanent
+
+# Asegúrate de que todas las rutas se manejen mediante index.html para SPA
+/*  /index.html  200

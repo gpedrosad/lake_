@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import HeroBanner from "../components/HeroBanner";
 import CardSlider from "../components/card_slider/CardSlider";
 import RatingSlider from "../components/rating_slider/RatingSlider";
-import imgHeroSection from '/public/images/boat.jpg';
+import imgHeroSection from '/public/images/bannerget.jpg';
 import HeroSection from '../components/SecondHeroSection';
 import BookingForm from '../components/BookingForm';
 

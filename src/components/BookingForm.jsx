@@ -1,11 +1,14 @@
+
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import emailjs from 'emailjs-com';
 import Select from 'react-select';
+import Pixel from '../pixel'; // Importar el Pixel de Facebook
 
 function BookingForm() {
     useEffect(() => {
         window.scrollTo(0, 0);
+        Pixel.init(); // Inicializar el Pixel de Facebook
     }, []);
 
     const [bookingData, setBookingData] = useState({
@@ -19,7 +22,7 @@ function BookingForm() {
         guest: '',
         budget: '',
         details: '',
-        venue: []  // Para almacenar los valores seleccionados en los checkboxes
+        venue: [] // Para almacenar los valores seleccionados en los checkboxes
     });
 
     const [formValid, setFormValid] = useState(false);
@@ -46,7 +49,9 @@ function BookingForm() {
         { value: 'Morning', label: 'Morning' },
         { value: 'Afternoon', label: 'Afternoon' },
         { value: 'Evening', label: 'Evening' }
-    ];    const handleInputChange = (e) => {
+    ];
+
+    const handleInputChange = (e) => {
         const { name, value } = e.target;
         setBookingData(prev => ({
             ...prev,
@@ -100,6 +105,16 @@ function BookingForm() {
             venue: bookingData.venue.join(', ')
         }, 'VAJlaJb5Q_FJhE9rr')
             .then((result) => {
+                // Llama al evento personalizado del Pixel de Facebook
+                Pixel.trackGetQuote({
+                    firstName: bookingData.firstName,
+                    lastName: bookingData.lastName,
+                    email: bookingData.email,
+                    phone: bookingData.phone,
+                    eventType: bookingData.eventType,
+                    budget: bookingData.budget
+                });
+
                 alert("Thank you for your booking inquiry. We will contact you soon!");
                 setBookingData({
                     firstName: '',
@@ -117,7 +132,9 @@ function BookingForm() {
             }, (error) => {
                 alert("Failed to send booking. Please try again later.");
             });
-    };    return (
+    };
+
+    return (
         <div className="bg-[#F7F7F7] relative">
             <Helmet>
                 <title>Book Venue or Private Boat | Lake Barrine Teahouse</title>
@@ -186,7 +203,6 @@ function BookingForm() {
                                         <input type="checkbox" value="Outdoor area" onChange={handleCheckboxChange} className="form-checkbox" />
                                         <span className="ml-2">Outdoor area</span>
                                     </label>
-                                    
                                     <label className="inline-flex items-center">
                                         <input type="checkbox" value="Teahouse building" onChange={handleCheckboxChange} className="form-checkbox" />
                                         <span className="ml-2">Teahouse</span>

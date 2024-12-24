@@ -13,18 +13,17 @@ import brk2 from '/public/images/brk2.jpg'
 import ln1 from '/public/images/ln1.jpg'
 import ln2 from '/public/images/ln2.jpg'
 import celeb from '/public/images/celeb.jpg'
+import menu1 from '/public/images/menu1.jpg'
+import menu2 from '/public/images/menu2.jpg'
+
 
 
 
 
 function Contact() {
     const images = [
-        { src: brk1, alt: 'Descripción de la imagen 2' },
-        { src: brk2, alt: 'Descripción de la imagen 2' },
-        { src: ln1, alt: 'Descripción de la imagen 2' },
-        { src: ln2, alt: 'Descripción de la imagen 2' },
-        { src: drinks1, alt: 'Descripción de la imagen 1' },
-        { src: drinks2, alt: 'Descripción de la imagen 2' },
+        { src: menu1, alt: 'Descripción de la imagen 2' },
+        { src: menu2, alt: 'Descripción de la imagen 2' },
 
         // Agrega más imágenes según sea necesario
       ];

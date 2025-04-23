@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 // Importar imágenes
 import hojaIzq from '/public/images/hojader1.svg';
-import nalita2 from '/public/images/nalita3.png';
+import nalita2 from '/public/images/nalita2.png';
 import hojaDer from '/public/images/hojaizq1.svg';
 import ramaizq from '/public/images/ramaizq.svg';
 import ramader from '/public/images/ramader.svg';

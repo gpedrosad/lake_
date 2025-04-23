@@ -12,7 +12,7 @@ const HoursAndBookingInfo = () => {
         <p className="text-center text-custom-green px-2 ml-2 mr-4">Bookings are highly recommended.<br></br> For groups of 20 people or under, bookings can be made online</p>
         <br></br>
         <p className="text-center text-custom-green px-2 mr-2 ml-4">For groups of over 20 people, <br></br>please call to book 0455916688</p>
-
+        <p className="text-center text-custom-green px-2 mr-2 ml-4 font-bold mt-10">Please note: Our kitchen closes 40 minutes before the teahouse closing time.</p>
         <p className="mb-2 text-custom-green">
         </p>
         <p className="text-custom-green">

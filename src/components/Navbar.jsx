@@ -39,7 +39,7 @@ const Navbar = () => {
     className="bg-button-green text-white rounded-lg cursor-pointer hover:bg-green-700 px-4 py-2 md:px-6 md:py-3 lg:px-5 lg:py-4 text-base md:text-lg lg:text-xl"
     onClick={handleReservationClick}
 >
-    Reservation
+    Book Now
 </button>
                         </div>
                     </div>

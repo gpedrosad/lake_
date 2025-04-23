@@ -5,9 +5,12 @@ import RatingSlider from "../components/rating_slider/RatingSlider";
 import FeatureAccom from "../components/FeatureAccom";
 import GreenFeatureAccom from "../components/GreenFeatAccom";
 import imgHeroSection from '/public/images/banner_accom.jpg';
-import coming from '/public/images/coming.png';
+import acom1 from '/public/images/1acomm.jpg';
+import acom2 from '/public/images/2acomm.jpg';
+import acom3 from '/public/images/3acomm.jpg';
+import acom4 from '/public/images/4acomm.jpg';
 
-const imagesFirstSlider = [coming];
+const imagesFirstSlider = [acom1, acom2, acom3, acom4];
 
 function Accomodation() {
     useEffect(() => {

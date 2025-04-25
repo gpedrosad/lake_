@@ -4,6 +4,14 @@ import hojaizq from '/public/images/hojaizq.svg';
 import hojader from '/public/images/hojader.svg';
 import teaPhoto from '/public/images/restofoto.jpg';
 
+import CarruselDos from './CarruselDos';
+
+const teaPhoto2 = [
+  '/images/restofoto.jpg',
+  '/images/restofoto.jpg'
+];
+
+<CarruselDos images={teaPhoto2}/>
 const TeaDescription = () => {
   return (
     <>
@@ -23,12 +31,14 @@ const TeaDescription = () => {
         />
 
         {/* Contenedor para aplicar borde redondeado */}
-        <div className="w-full md:w-full h-5/6 lg:h-4/6 rounded-3xl overflow-hidden">
-          <img
-            src={teaPhoto}
+        <div className="w-full md:w-full h-5/6 lg:h-4/6 md:ml-96 rounded-3xl overflow-hidden">
+          {/*<img
+            src={teaPhoto
+            }
             alt="foto"
             className="w-full h-full object-cover"
-          />
+          />*/}
+        <CarruselDos images={teaPhoto2}/>
         </div>
 
         {/* Contenido de descripción */}

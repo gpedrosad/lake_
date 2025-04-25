@@ -9,8 +9,10 @@ import acom1 from '/public/images/1acomm.jpg';
 import acom2 from '/public/images/2acomm.jpg';
 import acom3 from '/public/images/3acomm.jpg';
 import acom4 from '/public/images/4acomm.jpg';
+import coming from '/public/images/coming.png';
 
 const imagesFirstSlider = [acom1, acom2, acom3, acom4];
+const imagesSecondSlider = [coming];
 
 function Accomodation() {
     useEffect(() => {
@@ -49,7 +51,7 @@ function Accomodation() {
                 buttonText='Coming soon'
                 borderRadius='0px'
                 bgcolorbutton='#3C5220'
-                images={imagesFirstSlider}
+                images={imagesSecondSlider}
                 url="/accomodation"
             />
 
@@ -61,7 +63,7 @@ function Accomodation() {
                 buttonText='Coming soon'
                 borderRadius='0px'
                 bgcolorbutton='#8DA260'
-                images={imagesFirstSlider}
+                images={imagesSecondSlider}
                 url="/accomodation"
             />
 

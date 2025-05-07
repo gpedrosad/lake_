@@ -34,11 +34,11 @@ function Accomodation() {
             <FeatureAccom
                 title="Lakeside Studio"
                 description="Nestled right beside the water's edge is our cosy studio apartment. Walk out your front door and straight onto the grass lawn where you can sit and watch time go by with the setting of the sun across Lake Barrine’s tranquil waters. Bring your kayaks and hiking boots to make the most of this beautiful setting."
-                buttonText='Coming soon'
+                buttonText='Contact us'
                 borderRadius='0px'
                 bgcolorbutton='#273812'
                 images={imagesFirstSlider}
-                url="/accomodation"
+                url="/contact"
             />
 
             <div className="bg-[#F7F7F7]">

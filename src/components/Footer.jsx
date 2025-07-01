@@ -19,8 +19,8 @@ const Footer = () => {
 
     </div>
     <div className="flex flex-col xs:items-center md:items-start justify-center p-16 sm:pt-3 md:pt-24">
-        <h1 className="whitespace-nowrap font-rufina font-bold text-white text-3xl md:text-3xl xl:text-3xl pb-5">Opening Times 7 days a week</h1>
-        <p className="text-white text-xl md:text-md xl:text-xl">9.00 am - 15.00 pm</p>
+        <h1 className="whitespace-nowrap font-rufina font-bold text-white text-3xl md:text-3xl xl:text-3xl pb-5">Opening 7 days a week</h1>
+        <p className="text-white text-xl md:text-md xl:text-xl font-bold">9.00 am - 15.00 pm</p>
         <p className="sm:mr-0 text-white sm:text-xl md:text-md xl:text-xl text-center md:text-left mt-10">Please note:
           <br />Our kitchen closes 30 minutes before the teahouse closing time.</p>
         <h1 className="whitespace-nowrap font-rufina font-bold text-white text-3xl sm:text-3xl md:text-3xl xl:text-3xl md:pt-10 sm:pb-3 sm:pt-12 mt-4 xs:pt-6">Stay connected</h1>

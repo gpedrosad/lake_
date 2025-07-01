@@ -6,7 +6,9 @@ const HoursAndBookingInfo = () => {
     <div className="flex justify-center items-center h-2/3 bg-second-green xl:text-2xl">
       <div className="text-center bg-second-green max-w-2xl p-15">
         <p className="font-rufina font-bold text-3xl mb-2 text-custom-green p-5 xl:text-5xl">Open 7 days a week</p>
-        <p className="text-center text-custom-green px-2 ml-2 mr-4">9.00 am - 15.00 pm <br></br> For groups of 20 people or under, bookings can be made online</p>
+        <p className="text-center text-custom-green px-2 ml-2 mr-4 font-bold">9.00 am - 15.00 pm</p>
+        <br />
+        <p className="text-center text-custom-green px-2 ml-2 mr-4">For groups of 20 people or under, bookings can be made online</p>
         <br></br>
         <p className="text-center text-custom-green px-2 ml-2 mr-4">Bookings are highly recommended.<br></br> For groups of 20 people or under, bookings can be made online</p>
         <br></br>

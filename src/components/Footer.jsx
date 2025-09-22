@@ -1,5 +1,4 @@
 import SocialMediaIcons from './SocialMediaIcons';
-import { FaWhatsapp } from "react-icons/fa";
 //img
 import logo from '/public/images/logo-lake.png'
 
@@ -35,7 +34,7 @@ const Footer = () => {
         <p className="m- text-white">© 2025. All Rights Reserved</p>
 
         {/* agregado: crédito que abre WhatsApp al +56968257817 con mini ícono */}
-        <p className="mt-1 text-white/90 text-xs">
+        <p className="mt-1 text-white/90 text-xs mb-6">
           Created by{" "}
           <a
             href="https://wa.me/56968257817"
@@ -45,7 +44,6 @@ const Footer = () => {
             title="Contact Gonzalo Pedrosa by WhatsApp"
           >
             <span>Gonzalo Pedrosa</span>
-            <FaWhatsapp className="h-3.5 w-3.5 opacity-90 -mt-[1px]" aria-hidden />
           </a>
         </p>
       </div>
